@@ -17,6 +17,40 @@
       "icon": "⏰"
     },
     {
+      "id": "howmanyozinacup",
+      "title": "How Many Oz in a Cup​",
+      "description": "Calculate and convert time-related measurements from your How Many Oz in a Cup​ query",
+      "category": "time",
+      "url": "how many oz in a cup​/index.html",
+      "folder_name": "how many oz in a cup​",
+      "keywords": [
+        "how",
+        "many",
+        "oz",
+        "in",
+        "a",
+        "cup​"
+      ],
+      "icon": "⏰"
+    },
+    {
+      "id": "howmanyteaspoonsinatablespoon",
+      "title": "How Many Teaspoons in a Tablespoon",
+      "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
+      "category": "time",
+      "url": "how many teaspoons in a tablespoon/index.html",
+      "folder_name": "how many teaspoons in a tablespoon",
+      "keywords": [
+        "how",
+        "many",
+        "teaspoons",
+        "in",
+        "a",
+        "tablespoon"
+      ],
+      "icon": "⏰"
+    },
+    {
       "id": "howmanyouncesinapound",
       "title": "How Many Ounces in a Pound",
       "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
@@ -49,6 +83,23 @@
         "quart"
       ],
       "icon": "🧪"
+    },
+    {
+      "id": "howmanygramsinanounce",
+      "title": "How Many Grams in an Ounce​",
+      "description": "Convert between different weight and mass units for your How Many Grams in an Ounce​ needs",
+      "category": "weight",
+      "url": "how many grams in an ounce​/index.html",
+      "folder_name": "how many grams in an ounce​",
+      "keywords": [
+        "how",
+        "many",
+        "grams",
+        "in",
+        "an",
+        "ounce​"
+      ],
+      "icon": "⚖️"
     },
     {
       "id": "howmanyweeksinayear",
@@ -85,6 +136,23 @@
       "icon": "🧪"
     },
     {
+      "id": "howmanysecondsinaday",
+      "title": "How Many Seconds in a Day",
+      "description": "Calculate and convert time-related measurements from your How Many Seconds in a Day query",
+      "category": "time",
+      "url": "how many seconds in a day/index.html",
+      "folder_name": "how many seconds in a day",
+      "keywords": [
+        "how",
+        "many",
+        "seconds",
+        "in",
+        "a",
+        "day"
+      ],
+      "icon": "⏰"
+    },
+    {
       "id": "howmanyouncesinagallon",
       "title": "How Many Ounces in a Gallon",
       "description": "Convert between different volume units based on your How Many Ounces in a Gallon question",
@@ -98,6 +166,40 @@
         "in",
         "a",
         "gallon"
+      ],
+      "icon": "🧪"
+    },
+    {
+      "id": "howmanytablespoonsinacup",
+      "title": "How Many Tablespoons in a Cup​",
+      "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup​ query",
+      "category": "time",
+      "url": "how many tablespoons in a cup​/index.html",
+      "folder_name": "how many tablespoons in a cup​",
+      "keywords": [
+        "how",
+        "many",
+        "tablespoons",
+        "in",
+        "a",
+        "cup​"
+      ],
+      "icon": "⏰"
+    },
+    {
+      "id": "howmanyquartsinagallon",
+      "title": "How Many Quarts in a Gallon​",
+      "description": "Convert between different volume units based on your How Many Quarts in a Gallon​ question",
+      "category": "volume",
+      "url": "how_many_quarts_in_a_gallon​/index.html",
+      "folder_name": "how_many_quarts_in_a_gallon​",
+      "keywords": [
+        "how",
+        "many",
+        "quarts",
+        "in",
+        "a",
+        "gallon​"
       ],
       "icon": "🧪"
     }
@@ -125,6 +227,40 @@
           "icon": "⏰"
         },
         {
+          "id": "howmanyozinacup",
+          "title": "How Many Oz in a Cup​",
+          "description": "Calculate and convert time-related measurements from your How Many Oz in a Cup​ query",
+          "category": "time",
+          "url": "how many oz in a cup​/index.html",
+          "folder_name": "how many oz in a cup​",
+          "keywords": [
+            "how",
+            "many",
+            "oz",
+            "in",
+            "a",
+            "cup​"
+          ],
+          "icon": "⏰"
+        },
+        {
+          "id": "howmanyteaspoonsinatablespoon",
+          "title": "How Many Teaspoons in a Tablespoon",
+          "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
+          "category": "time",
+          "url": "how many teaspoons in a tablespoon/index.html",
+          "folder_name": "how many teaspoons in a tablespoon",
+          "keywords": [
+            "how",
+            "many",
+            "teaspoons",
+            "in",
+            "a",
+            "tablespoon"
+          ],
+          "icon": "⏰"
+        },
+        {
           "id": "howmanyweeksinayear",
           "title": "How Many Weeks in a Year",
           "description": "Calculate and convert time-related measurements from your How Many Weeks in a Year query",
@@ -138,6 +274,40 @@
             "in",
             "a",
             "year"
+          ],
+          "icon": "⏰"
+        },
+        {
+          "id": "howmanysecondsinaday",
+          "title": "How Many Seconds in a Day",
+          "description": "Calculate and convert time-related measurements from your How Many Seconds in a Day query",
+          "category": "time",
+          "url": "how many seconds in a day/index.html",
+          "folder_name": "how many seconds in a day",
+          "keywords": [
+            "how",
+            "many",
+            "seconds",
+            "in",
+            "a",
+            "day"
+          ],
+          "icon": "⏰"
+        },
+        {
+          "id": "howmanytablespoonsinacup",
+          "title": "How Many Tablespoons in a Cup​",
+          "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup​ query",
+          "category": "time",
+          "url": "how many tablespoons in a cup​/index.html",
+          "folder_name": "how many tablespoons in a cup​",
+          "keywords": [
+            "how",
+            "many",
+            "tablespoons",
+            "in",
+            "a",
+            "cup​"
           ],
           "icon": "⏰"
         }
@@ -215,13 +385,54 @@
             "gallon"
           ],
           "icon": "🧪"
+        },
+        {
+          "id": "howmanyquartsinagallon",
+          "title": "How Many Quarts in a Gallon​",
+          "description": "Convert between different volume units based on your How Many Quarts in a Gallon​ question",
+          "category": "volume",
+          "url": "how_many_quarts_in_a_gallon​/index.html",
+          "folder_name": "how_many_quarts_in_a_gallon​",
+          "keywords": [
+            "how",
+            "many",
+            "quarts",
+            "in",
+            "a",
+            "gallon​"
+          ],
+          "icon": "🧪"
+        }
+      ]
+    },
+    "weight": {
+      "name": "Weight",
+      "description": "Tools for weight calculations and conversions",
+      "icon": "⚖️",
+      "tools": [
+        {
+          "id": "howmanygramsinanounce",
+          "title": "How Many Grams in an Ounce​",
+          "description": "Convert between different weight and mass units for your How Many Grams in an Ounce​ needs",
+          "category": "weight",
+          "url": "how many grams in an ounce​/index.html",
+          "folder_name": "how many grams in an ounce​",
+          "keywords": [
+            "how",
+            "many",
+            "grams",
+            "in",
+            "an",
+            "ounce​"
+          ],
+          "icon": "⚖️"
         }
       ]
     }
   },
   "statistics": {
-    "total_tools": 6,
-    "total_categories": 2,
+    "total_tools": 12,
+    "total_categories": 3,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"
   },
