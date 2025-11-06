@@ -1,0 +1,110 @@
+name: Update Navigation Data
+
+on:
+  # 当有代码推送到主分支时触发
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**/index.html'  # 任何包含index.html的文件变更
+      - '!index.html'    # 但排除根目录的index.html（首页）
+      - '**/README.md'
+      - '**/*.md'
+  
+  # 手动触发
+  workflow_dispatch:
+  
+  # 定时任务：每天凌晨2点检查一次
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  update-navigation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取完整历史记录，用于检测文件变更
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # 如果有其他依赖，在这里安装
+        # pip install -r requirements.txt
+    
+    - name: Run Navigation Generator
+      run: |
+        python3 navigation_generator.py
+        echo "导航数据生成完成"
+    
+    - name: Check if navigation data changed
+      id: check-changes
+      run: |
+        if git diff --quiet HEAD -- navigation_data.json; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "没有检测到导航数据变更"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "检测到导航数据变更"
+          git diff navigation_data.json
+        fi
+    
+    - name: Commit and push changes
+      if: steps.check-changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add navigation_data.json
+        git commit -m "🤖 Auto-update navigation data [skip ci]" || echo "No changes to commit"
+        git push
+    
+    - name: Create Pull Request
+      if: steps.check-changes.outputs.changed == 'true'
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "🤖 Auto-update navigation data"
+        title: "🤖 自动更新导航数据"
+        body: |
+          ## 🤖 自动更新报告
+          
+          导航数据已自动更新，包括：
+          - 新增的内页工具
+          - 分类信息更新
+          - 统计数据刷新
+          
+          ### 📊 更新详情
+          - 更新时间: ${{ github.event.head_commit.timestamp }}
+          - 触发者: ${{ github.actor }}
+          - 提交消息: ${{ github.event.head_commit.message }}
+          
+          ### 📁 变更文件
+          - `navigation_data.json` - 导航数据文件
+          
+          ---
+          *此PR由GitHub Actions自动创建*
+        branch: auto-update-navigation
+        delete-branch: true
+        add-paths: navigation_data.json
+
+    - name: Upload navigation data as artifact
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: navigation-data
+        path: navigation_data.json
+        retention-days: 30
+
+    - name: Post summary
+      run: |
+        if [ "${{ steps.check-changes.outputs.changed }}" == "true" ]; then
+          echo "✅ 导航数据已成功更新"
+        else
+          echo "ℹ️  无需更新导航数据"
+        fi
