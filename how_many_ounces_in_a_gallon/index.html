@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert ounces to gallons instantly with our iOS-style converter. Support for US/UK measurements, quarts, pints, cups, and liters. Free, fast, and accurate volume calculator.">
+    <meta name="keywords" content="ounces to gallons, oz to gallon converter, volume conversion, liquid measurements, cooking calculator, quart to gallon, pint to gallon">
+    <meta name="author" content="Volume Converter">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ounces to Gallons Converter - Free Volume Calculator">
+    <meta property="og:description" content="Convert ounces to gallons instantly with our iOS-style converter. Support for US/UK measurements, quarts, pints, cups, and liters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ounces to Gallons Converter - Free Volume Calculator">
+    <meta name="twitter:description" content="Convert ounces to gallons instantly with our iOS-style converter. Support for US/UK measurements, quarts, pints, cups, and liters.">
+    <meta name="twitter:image" content="">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Ounces to Gallons Converter",
+        "description": "Free online converter to transform ounces to gallons with support for US/UK measurements, quarts, pints, cups, and liters",
+        "url": "",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Ounces to Gallons conversion",
+            "US and UK measurement support",
+            "Quarts, pints and cups conversion",
+            "Liters and milliliters conversion",
+            "Real-time calculation",
+            "Multi-language support"
+        ]
+    }
+    </script>
+    
+    <title>Ounces to Gallons Converter - Free Volume Calculator & Liquid Measurement Tool</title>
+    
+    <style>
+        /* iOS-inspired Design System */
+        :root {
+            --primary-color: #007AFF;
+            --secondary-color: #FF3B30;
+            --success-color: #34C759;
+            --warning-color: #FF9500;
+            --background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-background: rgba(255, 255, 255, 0.95);
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #C7C7CC;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 20px;
+            --border-radius-small: 12px;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            background: var(--background);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: var(--card-background);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FECA57);
+            border-radius: var(--border-radius);
+            z-index: -1;
+            animation: borderGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes borderGlow {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .language-selector {
+            margin-bottom: 20px;
+        }
+        
+        .language-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .language-btn:hover {
+            background: #0056CC;
+            transform: translateY(-2px);
+        }
+        
+        .language-btn.active {
+            background: var(--success-color);
+        }
+        
+        .converter-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .main-converter {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .input-group {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+        }
+        
+        .input-label {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: var(--border-radius-small);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .input-wrapper:focus-within {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0, 122, 255, 0.2);
+        }
+        
+        .main-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: transparent;
+        }
+        
+        .unit-selector {
+            border: none;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 12px;
+            border-radius: var(--border-radius-small);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-left: 15px;
+            min-width: 80px;
+        }
+        
+        .equals-sign {
+            font-size: 2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            align-self: flex-end;
+            padding-bottom: 15px;
+        }
+        
+        .result-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 25px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .result-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+        }
+        
+        .result-value {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .result-unit {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .conversion-details {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius-small);
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .detail-item {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: var(--border-radius-small);
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .detail-value {
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .detail-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        .quick-conversions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .quick-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 8px;
+            border-radius: var(--border-radius-small);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-btn:hover {
+            background: #0056CC;
+            transform: translateY(-2px);
+        }
+        
+        .info-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        
+        .info-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            text-align: center;
+        }
+        
+        .info-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .conversion-facts {
+            background: rgba(0, 122, 255, 0.1);
+            border-radius: var(--border-radius-small);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .facts-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .facts-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .facts-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 122, 255, 0.1);
+            color: var(--text-secondary);
+        }
+        
+        .facts-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--text-tertiary);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .title {
+                font-size: 2.2rem;
+            }
+            
+            .main-converter {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .equals-sign {
+                transform: rotate(90deg);
+                padding: 0;
+                margin: 10px 0;
+            }
+            
+            .result-value {
+                font-size: 2.8rem;
+            }
+            
+            .main-input {
+                font-size: 1.2rem;
+            }
+            
+            .detail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .quick-conversions {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .language-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-conversions {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .result-value {
+                font-size: 2.2rem;
+            }
+        }
+        
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        button:focus,
+        .unit-selector:focus,
+        .main-input:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        /* Error states */
+        .error {
+            border-color: var(--secondary-color) !important;
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        /* Success states */
+        .success {
+            border-color: var(--success-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title" id="mainTitle">How Many Ounces in a Gallon</h1>
+            <p class="subtitle" id="subtitle">Free volume calculator for precise liquid measurements</p>
+            
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="en" id="langEn">English</button>
+                <button class="language-btn" data-lang="es" id="langEs">Español</button>
+                <button class="language-btn" data-lang="fr" id="langFr">Français</button>
+                <button class="language-btn" data-lang="de" id="langDe">Deutsch</button>
+                <button class="language-btn" data-lang="zh" id="langZh">中文</button>
+            </div>
+        </header>
+        
+        <main class="converter-section">
+            <div class="main-converter">
+                <div class="input-group">
+                    <label class="input-label" id="fromLabel">From:</label>
+                    <div class="input-wrapper" id="fromWrapper">
+                        <input type="number" class="main-input" id="fromInput" placeholder="0" min="0" step="0.01" aria-label="Enter amount to convert">
+                        <select class="unit-selector" id="fromUnit" aria-label="Select unit to convert from">
+                            <option value="oz">oz</option>
+                            <option value="gallon">gallon</option>
+                            <option value="quart">quart</option>
+                            <option value="pint">pint</option>
+                            <option value="cup">cup</option>
+                            <option value="liter">L</option>
+                            <option value="ml">ml</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="equals-sign">=</div>
+                
+                <div class="input-group">
+                    <label class="input-label" id="toLabel">To:</label>
+                    <div class="input-wrapper" id="toWrapper">
+                        <span class="main-input" id="toValue" style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">0</span>
+                        <span class="unit-selector" id="toUnit" style="cursor: default;">gallon</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quick-conversions">
+                <button class="quick-btn" data-value="1" data-unit="oz" id="quick1oz">1 oz</button>
+                <button class="quick-btn" data-value="8" data-unit="oz" id="quick8oz">8 oz</button>
+                <button class="quick-btn" data-value="16" data-unit="oz" id="quick16oz">16 oz</button>
+                <button class="quick-btn" data-value="32" data-unit="oz" id="quick32oz">32 oz</button>
+                <button class="quick-btn" data-value="128" data-unit="oz" id="quick128oz">128 oz</button>
+                <button class="quick-btn" data-value="1" data-unit="gallon" id="quick1gallon">1 gallon</button>
+            </div>
+        </main>
+        
+        <section class="result-section" id="resultSection">
+            <div class="result-value" id="resultValue">0</div>
+            <div class="result-unit" id="resultUnit">gallons</div>
+        </section>
+        
+        <section class="conversion-details" id="conversionDetails" style="display: none;">
+            <h3 id="detailsTitle">Other Conversions</h3>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <span class="detail-value" id="quartValue">--</span>
+                    <span class="detail-label" id="quartLabel">Quarts</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="pintValue">--</span>
+                    <span class="detail-label" id="pintLabel">Pints</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="cupValue">--</span>
+                    <span class="detail-label" id="cupLabel">Cups</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="literValue">--</span>
+                    <span class="detail-label" id="literLabel">Liters</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="mlValue">--</span>
+                    <span class="detail-label" id="mlLabel">Milliliters</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2 class="info-title" id="infoTitle">About Volume Conversions</h2>
+            <p class="info-text" id="infoText">
+                This converter helps you convert between different volume measurements commonly used in cooking, brewing, and everyday liquid measurements. 
+                The tool supports US customary units and metric measurements, making it easy to work with recipes and measurements from any country.
+            </p>
+            
+            <div class="conversion-facts">
+                <h3 class="facts-title" id="factsTitle">Quick Conversion Facts</h3>
+                <ul class="facts-list" id="factsList">
+                    <li id="fact1">1 US gallon = 128 US fluid ounces</li>
+                    <li id="fact2">1 US gallon = 4 US quarts</li>
+                    <li id="fact3">1 US gallon = 8 US pints</li>
+                    <li id="fact4">1 US gallon = 16 US cups</li>
+                    <li id="fact5">1 US gallon ≈ 3.785 liters</li>
+                </ul>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p id="footerText">© 2024 Volume Converter. Made with ❤️ for precise measurements worldwide.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Multi-language support
+        const translations = {
+            en: {
+                title: "Ounces to Gallons Converter",
+                subtitle: "Free volume calculator for precise liquid measurements",
+                fromLabel: "From:",
+                toLabel: "To:",
+                resultUnit: "gallons",
+                detailsTitle: "Other Conversions",
+                quartLabel: "Quarts",
+                pintLabel: "Pints",
+                cupLabel: "Cups",
+                literLabel: "Liters",
+                mlLabel: "Milliliters",
+                infoTitle: "About Volume Conversions",
+                infoText: "This converter helps you convert between different volume measurements commonly used in cooking, brewing, and everyday liquid measurements. The tool supports US customary units and metric measurements, making it easy to work with recipes and measurements from any country.",
+                factsTitle: "Quick Conversion Facts",
+                fact1: "1 US gallon = 128 US fluid ounces",
+                fact2: "1 US gallon = 4 US quarts",
+                fact3: "1 US gallon = 8 US pints",
+                fact4: "1 US gallon = 16 US cups",
+                fact5: "1 US gallon ≈ 3.785 liters",
+                footer: "© 2024 Volume Converter. Made with ❤️ for precise measurements worldwide.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz",
+                    "32oz": "32 oz",
+                    "128oz": "128 oz",
+                    "1gallon": "1 gallon"
+                }
+            },
+            es: {
+                title: "Convertidor de Onzas a Galones",
+                subtitle: "Calculadora de volumen gratuita para mediciones líquidas precisas",
+                fromLabel: "De:",
+                toLabel: "A:",
+                resultUnit: "galones",
+                detailsTitle: "Otras Conversiones",
+                quartLabel: "Cuartos",
+                pintLabel: "Pintas",
+                cupLabel: "Tazas",
+                literLabel: "Litros",
+                mlLabel: "Mililitros",
+                infoTitle: "Acerca de las Conversiones de Volumen",
+                infoText: "Este convertidor te ayuda a convertir entre diferentes medidas de volumen comúnmente usadas en cocina, elaboración y mediciones líquidas diarias. La herramienta soporta unidades customary de EE.UU. y medidas métricas, facilitando el trabajo con recetas y medidas de cualquier país.",
+                factsTitle: "Datos Rápidos de Conversión",
+                fact1: "1 galón US = 128 onzas líquidas US",
+                fact2: "1 galón US = 4 cuartos US",
+                fact3: "1 galón US = 8 pintas US",
+                fact4: "1 galón US = 16 tazas US",
+                fact5: "1 galón US ≈ 3.785 litros",
+                footer: "© 2024 Convertidor de Volumen. Hecho con ❤️ para mediciones precisas en todo el mundo.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz",
+                    "32oz": "32 oz",
+                    "128oz": "128 oz",
+                    "1gallon": "1 galón"
+                }
+            },
+            fr: {
+                title: "Convertisseur Onces en Gallons",
+                subtitle: "Calculatrice de volume gratuite pour des mesures liquides précises",
+                fromLabel: "De:",
+                toLabel: "À:",
+                resultUnit: "gallons",
+                detailsTitle: "Autres Conversions",
+                quartLabel: "Quarts",
+                pintLabel: "Pintes",
+                cupLabel: "Tasses",
+                literLabel: "Litres",
+                mlLabel: "Millilitres",
+                infoTitle: "À Propos des Conversions de Volume",
+                infoText: "Ce convertisseur vous aide à convertir entre différentes mesures de volume couramment utilisées en cuisine, brassage et mesures liquides quotidiennes. L'outil supporte les unités coutumières américaines et les mesures métriques, facilitant le travail avec des recettes et mesures de n'importe quel pays.",
+                factsTitle: "Faits Rapides de Conversion",
+                fact1: "1 gallon US = 128 onces liquides US",
+                fact2: "1 gallon US = 4 quarts US",
+                fact3: "1 gallon US = 8 pintes US",
+                fact4: "1 gallon US = 16 tasses US",
+                fact5: "1 gallon US ≈ 3.785 litres",
+                footer: "© 2024 Convertisseur de Volume. Fait avec ❤️ pour des mesures précises dans le monde entier.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz",
+                    "32oz": "32 oz",
+                    "128oz": "128 oz",
+                    "1gallon": "1 gallon"
+                }
+            },
+            de: {
+                title: "Unzen-zu-Gallonen Konverter",
+                subtitle: "Kostenloser Volumenrechner für präzise Flüssigkeitsmessungen",
+                fromLabel: "Von:",
+                toLabel: "Zu:",
+                resultUnit: "Gallonen",
+                detailsTitle: "Andere Konvertierungen",
+                quartLabel: "Quarts",
+                pintLabel: "Pints",
+                cupLabel: "Tassen",
+                literLabel: "Liter",
+                mlLabel: "Milliliter",
+                infoTitle: "Über Volumenkonvertierungen",
+                infoText: "Dieser Konverter hilft Ihnen, zwischen verschiedenen Volumenmessungen zu konvertieren, die häufig beim Kochen, Brauen und bei täglichen Flüssigkeitsmessungen verwendet werden. Das Tool unterstützt US-übliche Einheiten und metrische Messungen, wodurch es einfach ist, mit Rezepten und Messungen aus jedem Land zu arbeiten.",
+                factsTitle: "Schnelle Konvertierungsfakten",
+                fact1: "1 US-Gallone = 128 US-Flüssigunzen",
+                fact2: "1 US-Gallone = 4 US-Quarts",
+                fact3: "1 US-Gallone = 8 US-Pints",
+                fact4: "1 US-Gallone = 16 US-Tassen",
+                fact5: "1 US-Gallone ≈ 3.785 Liter",
+                footer: "© 2024 Volumen-Konverter. Mit ❤️ für präzise Messungen weltweit gemacht.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz",
+                    "32oz": "32 oz",
+                    "128oz": "128 oz",
+                    "1gallon": "1 Gallone"
+                }
+            },
+            zh: {
+                title: "盎司到加仑转换器",
+                subtitle: "免费体积计算器，实现精确液体测量",
+                fromLabel: "从：",
+                toLabel: "到：",
+                resultUnit: "加仑",
+                detailsTitle: "其他转换",
+                quartLabel: "夸脱",
+                pintLabel: "品脱",
+                cupLabel: "杯",
+                literLabel: "升",
+                mlLabel: "毫升",
+                infoTitle: "关于体积转换",
+                infoText: "此转换器帮助您在烹饪、酿造和日常液体测量中常用的不同体积测量单位之间进行转换。该工具支持美制单位制和公制测量，让您轻松处理来自任何国家的食谱和测量数据。",
+                factsTitle: "快速转换知识",
+                fact1: "1美制加仑 = 128美制液体盎司",
+                fact2: "1美制加仑 = 4美制夸脱",
+                fact3: "1美制加仑 = 8美制品脱",
+                fact4: "1美制加仑 = 16美制杯",
+                fact5: "1美制加仑 ≈ 3.785升",
+                footer: "© 2024 体积转换器。为全世界的精确测量用心制作。",
+                quickBtns: {
+                    "1oz": "1盎司",
+                    "8oz": "8盎司",
+                    "16oz": "16盎司",
+                    "32oz": "32盎司",
+                    "128oz": "128盎司",
+                    "1gallon": "1加仑"
+                }
+            }
+        };
+        
+        // Conversion constants (US customary units to gallons)
+        const conversions = {
+            'oz': { gallon: 0.0078125, quart: 0.03125, pint: 0.0625, cup: 0.125, liter: 0.0295735, ml: 29.5735 },
+            'gallon': { oz: 128, quart: 4, pint: 8, cup: 16, liter: 3.78541, ml: 3785.41 },
+            'quart': { oz: 32, gallon: 0.25, pint: 2, cup: 4, liter: 0.946353, ml: 946.353 },
+            'pint': { oz: 16, gallon: 0.125, quart: 0.5, cup: 2, liter: 0.473176, ml: 473.176 },
+            'cup': { oz: 8, gallon: 0.0625, quart: 0.25, pint: 0.5, liter: 0.236588, ml: 236.588 },
+            'liter': { oz: 33.814, gallon: 0.264172, quart: 1.05669, pint: 2.11338, cup: 4.22675, ml: 1000 },
+            'ml': { oz: 0.033814, gallon: 0.000264172, quart: 0.00105669, pint: 0.00211338, cup: 0.00422675, liter: 0.001 }
+        };
+        
+        let currentLang = localStorage.getItem('volume-converter-lang') || 'en';
+        
+        // Update language function
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('volume-converter-lang', lang);
+            
+            const t = translations[lang];
+            if (!t) return;
+            
+            // Update text content
+            document.getElementById('mainTitle').textContent = t.title;
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('fromLabel').textContent = t.fromLabel;
+            document.getElementById('toLabel').textContent = t.toLabel;
+            document.getElementById('resultUnit').textContent = t.resultUnit;
+            document.getElementById('detailsTitle').textContent = t.detailsTitle;
+            document.getElementById('quartLabel').textContent = t.quartLabel;
+            document.getElementById('pintLabel').textContent = t.pintLabel;
+            document.getElementById('cupLabel').textContent = t.cupLabel;
+            document.getElementById('literLabel').textContent = t.literLabel;
+            document.getElementById('mlLabel').textContent = t.mlLabel;
+            document.getElementById('infoTitle').textContent = t.infoTitle;
+            document.getElementById('infoText').textContent = t.infoText;
+            document.getElementById('factsTitle').textContent = t.factsTitle;
+            document.getElementById('fact1').textContent = t.fact1;
+            document.getElementById('fact2').textContent = t.fact2;
+            document.getElementById('fact3').textContent = t.fact3;
+            document.getElementById('fact4').textContent = t.fact4;
+            document.getElementById('fact5').textContent = t.fact5;
+            document.getElementById('footerText').textContent = t.footer;
+            
+            // Update quick conversion buttons
+            if (t.quickBtns) {
+                document.getElementById('quick1oz').textContent = t.quickBtns['1oz'];
+                document.getElementById('quick8oz').textContent = t.quickBtns['8oz'];
+                document.getElementById('quick16oz').textContent = t.quickBtns['16oz'];
+                document.getElementById('quick32oz').textContent = t.quickBtns['32oz'];
+                document.getElementById('quick128oz').textContent = t.quickBtns['128oz'];
+                document.getElementById('quick1gallon').textContent = t.quickBtns['1gallon'];
+            }
+            
+            // Update result unit display
+            const toUnit = document.getElementById('toUnit');
+            if (currentLang === 'es') {
+                toUnit.textContent = 'galón';
+            } else if (currentLang === 'zh') {
+                toUnit.textContent = '加仑';
+            } else {
+                toUnit.textContent = 'gallon';
+            }
+            
+            // Update active language button
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`)?.classList.add('active');
+            
+            // Re-trigger conversion if there's a value
+            if (document.getElementById('fromInput').value) {
+                convertValue();
+            }
+        }
+        
+        // Conversion function
+        function convertValue() {
+            const input = document.getElementById('fromInput');
+            const fromUnit = document.getElementById('fromUnit').value;
+            const value = parseFloat(input.value);
+            
+            if (isNaN(value) || value < 0) {
+                showError('Please enter a valid positive number');
+                return;
+            }
+            
+            // Calculate conversion to gallons (base unit)
+            let gallons;
+            if (fromUnit === 'gallon') {
+                gallons = value;
+            } else if (conversions[fromUnit] && conversions[fromUnit].gallon !== undefined) {
+                gallons = value * conversions[fromUnit].gallon;
+            } else {
+                showError('Conversion not available');
+                return;
+            }
+            
+            // Update main result
+            const resultElement = document.getElementById('resultValue');
+            const unitElement = document.getElementById('resultUnit');
+            const toValueElement = document.getElementById('toValue');
+            
+            // Format result based on value size
+            if (gallons < 0.001) {
+                const oz = gallons * 128; // Convert to ounces for small values
+                resultElement.textContent = oz.toFixed(2);
+                unitElement.textContent = 'ounces';
+                toValueElement.textContent = oz.toFixed(2);
+                document.getElementById('toUnit').textContent = 'oz';
+            } else {
+                resultElement.textContent = gallons.toFixed(4);
+                unitElement.textContent = translations[currentLang].resultUnit;
+                toValueElement.textContent = gallons.toFixed(4);
+                
+                // Update to unit display
+                const toUnitElement = document.getElementById('toUnit');
+                if (currentLang === 'es') {
+                    toUnitElement.textContent = 'galón';
+                } else if (currentLang === 'zh') {
+                    toUnitElement.textContent = '加仑';
+                } else {
+                    toUnitElement.textContent = 'gallon';
+                }
+            }
+            
+            // Update detailed conversions
+            updateDetailedConversions(gallons);
+            
+            // Show success state
+            input.parentElement.classList.remove('error');
+            input.parentElement.classList.add('success');
+            document.getElementById('conversionDetails').style.display = 'block';
+            
+            setTimeout(() => {
+                input.parentElement.classList.remove('success');
+            }, 1000);
+        }
+        
+        // Update detailed conversion display
+        function updateDetailedConversions(gallons) {
+            const quart = gallons * 4; // 1 gallon = 4 quarts
+            const pint = gallons * 8; // 1 gallon = 8 pints
+            const cup = gallons * 16; // 1 gallon = 16 cups
+            const liter = gallons * 3.78541; // 1 gallon = 3.78541 L
+            const ml = gallons * 3785.41; // 1 gallon = 3785.41 ml
+            
+            document.getElementById('quartValue').textContent = quart.toFixed(2);
+            document.getElementById('pintValue').textContent = pint.toFixed(1);
+            document.getElementById('cupValue').textContent = cup.toFixed(0);
+            document.getElementById('literValue').textContent = liter.toFixed(3);
+            document.getElementById('mlValue').textContent = ml.toFixed(0);
+        }
+        
+        // Show error state
+        function showError(message) {
+            const input = document.getElementById('fromInput');
+            input.parentElement.classList.add('error');
+            document.getElementById('resultValue').textContent = 'Error';
+            document.getElementById('resultUnit').textContent = message;
+            document.getElementById('toValue').textContent = 'Error';
+            document.getElementById('conversionDetails').style.display = 'none';
+            
+            setTimeout(() => {
+                input.parentElement.classList.remove('error');
+            }, 2000);
+        }
+        
+        // Quick conversion handlers
+        function setupQuickConversions() {
+            document.querySelectorAll('.quick-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const value = parseFloat(e.target.dataset.value);
+                    const unit = e.target.dataset.unit;
+                    
+                    document.getElementById('fromInput').value = value;
+                    document.getElementById('fromUnit').value = unit;
+                    convertValue();
+                });
+            });
+        }
+        
+        // Event listeners
+        function setupEventListeners() {
+            // Input change listeners
+            document.getElementById('fromInput').addEventListener('input', convertValue);
+            document.getElementById('fromUnit').addEventListener('change', convertValue);
+            
+            // Language selector
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const lang = e.target.dataset.lang;
+                    updateLanguage(lang);
+                });
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    convertValue();
+                }
+            });
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateLanguage(currentLang);
+            setupEventListeners();
+            setupQuickConversions();
+            
+            // Add placeholder animation
+            const input = document.getElementById('fromInput');
+            if (!input.value) {
+                input.placeholder = '0';
+            }
+        });
+        
+        // Performance optimization
+        let conversionTimeout;
+        function debounceConversion(func, wait) {
+            clearTimeout(conversionTimeout);
+            conversionTimeout = setTimeout(func, wait);
+        }
+        
+        // Add debounced conversion for better performance
+        document.getElementById('fromInput').addEventListener('input', () => {
+            debounceConversion(convertValue, 300);
+        });
+    </script>
+</body>
+</html>

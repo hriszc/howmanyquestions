@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert ounces to cups instantly with our iOS-style converter. Support for US/UK measurements, tablespoons, teaspoons, and milliliters. Free, fast, and accurate.">
+    <meta name="keywords" content="How many ounces in a cup, ounces to cups, oz to cup converter, volume conversion, cooking measurements, kitchen calculator, tbsp to cup, tsp to cup">
+    <meta name="author" content="Volume Converter">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How many ounces in a cup - Free Kitchen Calculator">
+    <meta property="og:description" content="Convert ounces to cups instantly with our iOS-style converter. Support for US/UK measurements, tablespoons, teaspoons, and milliliters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ounces to Cups Converter - Free Kitchen Calculator">
+    <meta name="twitter:description" content="Convert ounces to cups instantly with our iOS-style converter. Support for US/UK measurements, tablespoons, teaspoons, and milliliters.">
+    <meta name="twitter:image" content="">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Ounces to Cups Converter",
+        "description": "Free online converter to transform ounces to cups with support for US/UK measurements, tablespoons, teaspoons, and milliliters",
+        "url": "",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Ounces to Cups conversion",
+            "US and UK measurement support",
+            "Tablespoons and teaspoons conversion", 
+            "Milliliters conversion",
+            "Real-time calculation",
+            "Multi-language support"
+        ]
+    }
+    </script>
+    
+    <title>Ounces to Cups Converter - Free Kitchen Calculator & Volume Tool</title>
+    
+    <style>
+        /* iOS-inspired Design System */
+        :root {
+            --primary-color: #007AFF;
+            --secondary-color: #FF3B30;
+            --success-color: #34C759;
+            --warning-color: #FF9500;
+            --background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-background: rgba(255, 255, 255, 0.95);
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #C7C7CC;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 20px;
+            --border-radius-small: 12px;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            background: var(--background);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: var(--card-background);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FECA57);
+            border-radius: var(--border-radius);
+            z-index: -1;
+            animation: borderGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes borderGlow {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .language-selector {
+            margin-bottom: 20px;
+        }
+        
+        .language-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .language-btn:hover {
+            background: #0056CC;
+            transform: translateY(-2px);
+        }
+        
+        .language-btn.active {
+            background: var(--success-color);
+        }
+        
+        .converter-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-label {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: var(--border-radius-small);
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .input-wrapper:focus-within {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0, 122, 255, 0.2);
+        }
+        
+        .main-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: transparent;
+        }
+        
+        .unit-selector {
+            border: none;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 12px;
+            border-radius: var(--border-radius-small);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-left: 15px;
+            min-width: 80px;
+        }
+        
+        .result-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 25px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .result-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+        }
+        
+        .result-value {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .result-unit {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .conversion-details {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius-small);
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .detail-item {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: var(--border-radius-small);
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .detail-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .detail-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .info-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        
+        .info-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            text-align: center;
+        }
+        
+        .info-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .quick-conversions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .quick-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 8px;
+            border-radius: var(--border-radius-small);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-btn:hover {
+            background: #0056CC;
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--text-tertiary);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .result-value {
+                font-size: 2.5rem;
+            }
+            
+            .main-input {
+                font-size: 1.2rem;
+            }
+            
+            .detail-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .quick-conversions {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .language-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-conversions {
+                grid-template-columns: 1fr;
+            }
+            
+            .result-value {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        button:focus,
+        .unit-selector:focus,
+        .main-input:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        /* Error states */
+        .error {
+            border-color: var(--secondary-color) !important;
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        /* Success states */
+        .success {
+            border-color: var(--success-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title" id="mainTitle">Ounces to Cups Converter</h1>
+            <p class="subtitle" id="subtitle">Free kitchen calculator for precise volume conversions</p>
+            
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="en" id="langEn">English</button>
+                <button class="language-btn" data-lang="es" id="langEs">Español</button>
+                <button class="language-btn" data-lang="fr" id="langFr">Français</button>
+                <button class="language-btn" data-lang="de" id="langDe">Deutsch</button>
+                <button class="language-btn" data-lang="zh" id="langZh">中文</button>
+            </div>
+        </header>
+        
+        <main class="converter-section">
+            <div class="input-group">
+                <label class="input-label" id="inputLabel">Enter amount:</label>
+                <div class="input-wrapper" id="inputWrapper">
+                    <input type="number" class="main-input" id="mainInput" placeholder="0" min="0" step="0.01">
+                    <select class="unit-selector" id="fromUnit">
+                        <option value="oz">oz</option>
+                        <option value="cup">cup</option>
+                        <option value="tbsp">tbsp</option>
+                        <option value="tsp">tsp</option>
+                        <option value="ml">ml</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="quick-conversions">
+                <button class="quick-btn" data-value="1" data-unit="oz" id="quick1oz">1 oz</button>
+                <button class="quick-btn" data-value="8" data-unit="oz" id="quick8oz">8 oz</button>
+                <button class="quick-btn" data-value="16" data-unit="oz" id="quick16oz">16 oz</button>
+                <button class="quick-btn" data-value="1" data-unit="cup" id="quick1cup">1 cup</button>
+                <button class="quick-btn" data-value="0.5" data-unit="cup" id="quickHalfCup">½ cup</button>
+                <button class="quick-btn" data-value="2" data-unit="cup" id="quick2cup">2 cups</button>
+            </div>
+        </main>
+        
+        <section class="result-section" id="resultSection">
+            <div class="result-value" id="resultValue">--</div>
+            <div class="result-unit" id="resultUnit">cups</div>
+        </section>
+        
+        <section class="conversion-details" id="conversionDetails" style="display: none;">
+            <h3 id="detailsTitle">Other Conversions</h3>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <span class="detail-value" id="tbspValue">--</span>
+                    <span class="detail-label" id="tbspLabel">Tablespoons</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="tspValue">--</span>
+                    <span class="detail-label" id="tspLabel">Teaspoons</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="mlValue">--</span>
+                    <span class="detail-label" id="mlLabel">Milliliters</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-value" id="lValue">--</span>
+                    <span class="detail-label" id="lLabel">Liters</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2 class="info-title" id="infoTitle">About Volume Conversions</h2>
+            <p class="info-text" id="infoText">
+                This converter helps you convert between different volume measurements commonly used in cooking and baking. 
+                The tool supports US customary units and metric measurements, making it easy to follow recipes from any country.
+            </p>
+            <div class="info-text">
+                <strong id="conversionFactsTitle">Quick Facts:</strong>
+                <ul style="text-align: left; margin-left: 20px; margin-top: 10px;">
+                    <li id="fact1">1 US cup = 8 US fluid ounces</li>
+                    <li id="fact2">1 US tablespoon = 0.5 US fluid ounces</li>
+                    <li id="fact3">1 US teaspoon ≈ 0.17 US fluid ounces</li>
+                    <li id="fact4">1 US cup ≈ 236.59 milliliters</li>
+                </ul>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p id="footerText">© 2024 Volume Converter. Made with ❤️ for cooking enthusiasts worldwide.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Multi-language support
+        const translations = {
+            en: {
+                title: "Ounces to Cups Converter",
+                subtitle: "Free kitchen calculator for precise volume conversions",
+                inputLabel: "Enter amount:",
+                resultUnit: "cups",
+                detailsTitle: "Other Conversions",
+                tbspLabel: "Tablespoons",
+                tspLabel: "Teaspoons", 
+                mlLabel: "Milliliters",
+                lLabel: "Liters",
+                infoTitle: "About Volume Conversions",
+                infoText: "This converter helps you convert between different volume measurements commonly used in cooking and baking. The tool supports US customary units and metric measurements, making it easy to follow recipes from any country.",
+                conversionFactsTitle: "Quick Facts:",
+                fact1: "1 US cup = 8 US fluid ounces",
+                fact2: "1 US tablespoon = 0.5 US fluid ounces", 
+                fact3: "1 US teaspoon ≈ 0.17 US fluid ounces",
+                fact4: "1 US cup ≈ 236.59 milliliters",
+                footer: "© 2024 Volume Converter. Made with ❤️ for cooking enthusiasts worldwide.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz", 
+                    "16oz": "16 oz",
+                    "1cup": "1 cup",
+                    "halfCup": "½ cup",
+                    "2cup": "2 cups"
+                }
+            },
+            es: {
+                title: "Convertidor de Onzas a Tazas",
+                subtitle: "Calculadora de cocina gratuita para conversiones de volumen precisas",
+                inputLabel: "Ingrese cantidad:",
+                resultUnit: "tazas",
+                detailsTitle: "Otras Conversiones",
+                tbspLabel: "Cucharadas",
+                tspLabel: "Cucharaditas",
+                mlLabel: "Mililitros", 
+                lLabel: "Litros",
+                infoTitle: "Acerca de las Conversiones de Volumen",
+                infoText: "Este convertidor te ayuda a convertir entre diferentes medidas de volumen comúnmente usadas en cocina y repostería. La herramienta soporta unidades customary de EE.UU. y medidas métricas, facilitando seguir recetas de cualquier país.",
+                conversionFactsTitle: "Datos Rápidos:",
+                fact1: "1 taza de EE.UU. = 8 onzas líquidas de EE.UU.",
+                fact2: "1 cucharada de EE.UU. = 0.5 onzas líquidas de EE.UU.",
+                fact3: "1 cucharadita de EE.UU. ≈ 0.17 onzas líquidas de EE.UU.", 
+                fact4: "1 taza de EE.UU. ≈ 236.59 mililitros",
+                footer: "© 2024 Convertidor de Volumen. Hecho con ❤️ para entusiastas de la cocina en todo el mundo.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz", 
+                    "1cup": "1 taza",
+                    "halfCup": "½ taza",
+                    "2cup": "2 tazas"
+                }
+            },
+            fr: {
+                title: "Convertisseur Onces en Tasses",
+                subtitle: "Calculatrice de cuisine gratuite pour des conversions de volume précises",
+                inputLabel: "Entrez la quantité:",
+                resultUnit: "tasses",
+                detailsTitle: "Autres Conversions",
+                tbspLabel: "Cuillères à soupe",
+                tspLabel: "Cuillères à café",
+                mlLabel: "Millilitres",
+                lLabel: "Litres", 
+                infoTitle: "À Propos des Conversions de Volume",
+                infoText: "Ce convertisseur vous aide à convertir entre différentes mesures de volume couramment utilisées en cuisine et en pâtisserie. L'outil supporte les unités coutumières américaines et les mesures métriques, facilitant le suivi de recettes de n'importe quel pays.",
+                conversionFactsTitle: "Faits Rapides:",
+                fact1: "1 tasse US = 8 onces liquides US",
+                fact2: "1 cuillère à soupe US = 0.5 onces liquides US",
+                fact3: "1 cuillère à café US ≈ 0.17 onces liquides US",
+                fact4: "1 tasse US ≈ 236.59 millilitres",
+                footer: "© 2024 Convertisseur de Volume. Fait avec ❤️ pour les passionnés de cuisine dans le monde entier.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz",
+                    "1cup": "1 tasse", 
+                    "halfCup": "½ tasse",
+                    "2cup": "2 tasses"
+                }
+            },
+            de: {
+                title: "Unzen-zu-Tassen Konverter",
+                subtitle: "Kostenloser Küchenrechner für präzise Volumenkonvertierungen",
+                inputLabel: "Menge eingeben:",
+                resultUnit: "Tassen",
+                detailsTitle: "Andere Konvertierungen",
+                tbspLabel: "Esslöffel",
+                tspLabel: "Teelöffel",
+                mlLabel: "Milliliter",
+                lLabel: "Liter",
+                infoTitle: "Über Volumenkonvertierungen", 
+                infoText: "Dieser Konverter hilft Ihnen, zwischen verschiedenen Volumenmessungen zu konvertieren, die häufig beim Kochen und Backen verwendet werden. Das Tool unterstützt US-übliche Einheiten und metrische Messungen, wodurch es einfach ist, Rezepte aus jedem Land zu befolgen.",
+                conversionFactsTitle: "Schnelle Fakten:",
+                fact1: "1 US-Tasse = 8 US-Flüssigunzen",
+                fact2: "1 US-Esslöffel = 0.5 US-Flüssigunzen",
+                fact3: "1 US-Teelöffel ≈ 0.17 US-Flüssigunzen", 
+                fact4: "1 US-Tasse ≈ 236.59 Milliliter",
+                footer: "© 2024 Volumen-Konverter. Mit ❤️ für Koch-Enthusiasten weltweit gemacht.",
+                quickBtns: {
+                    "1oz": "1 oz",
+                    "8oz": "8 oz",
+                    "16oz": "16 oz",
+                    "1cup": "1 Tasse",
+                    "halfCup": "½ Tasse", 
+                    "2cup": "2 Tassen"
+                }
+            },
+            zh: {
+                title: "盎司到杯子转换器",
+                subtitle: "免费厨房计算器，实现精确体积转换",
+                inputLabel: "输入数量：",
+                resultUnit: "杯",
+                detailsTitle: "其他转换",
+                tbspLabel: "汤匙",
+                tspLabel: "茶匙",
+                mlLabel: "毫升",
+                lLabel: "升",
+                infoTitle: "关于体积转换",
+                infoText: "此转换器帮助您在烹饪和烘焙中常用的不同体积测量单位之间进行转换。该工具支持美制单位制和公制测量，让您轻松使用来自任何国家的食谱。",
+                conversionFactsTitle: "快速知识：",
+                fact1: "1美制杯 = 8美制液体盎司",
+                fact2: "1美制汤匙 = 0.5美制液体盎司",
+                fact3: "1美制茶匙 ≈ 0.17美制液体盎司",
+                fact4: "1美制杯 ≈ 236.59毫升",
+                footer: "© 2024 体积转换器。为全世界的烹饪爱好者用心制作。",
+                quickBtns: {
+                    "1oz": "1盎司",
+                    "8oz": "8盎司", 
+                    "16oz": "16盎司",
+                    "1cup": "1杯",
+                    "halfCup": "½杯",
+                    "2cup": "2杯"
+                }
+            }
+        };
+        
+        // Conversion constants (US customary units)
+        const conversions = {
+            'oz': { cup: 0.125, tbsp: 2, tsp: 6, ml: 29.57, l: 0.02957 },
+            'cup': { oz: 8, tbsp: 16, tsp: 48, ml: 236.59, l: 0.23659 },
+            'tbsp': { oz: 0.5, cup: 0.0625, tsp: 3, ml: 14.79, l: 0.01479 },
+            'tsp': { oz: 0.167, cup: 0.0208, tbsp: 0.333, ml: 4.93, l: 0.00493 },
+            'ml': { oz: 0.0338, cup: 0.00423, tbsp: 0.0676, tsp: 0.203, l: 0.001 },
+            'l': { oz: 33.81, cup: 4.23, tbsp: 67.63, tsp: 202.9, ml: 1000 }
+        };
+        
+        let currentLang = localStorage.getItem('volume-converter-lang') || 'en';
+        
+        // Update language function
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('volume-converter-lang', lang);
+            
+            const t = translations[lang];
+            if (!t) return;
+            
+            // Update text content
+            document.getElementById('mainTitle').textContent = t.title;
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('inputLabel').textContent = t.inputLabel;
+            document.getElementById('resultUnit').textContent = t.resultUnit;
+            document.getElementById('detailsTitle').textContent = t.detailsTitle;
+            document.getElementById('tbspLabel').textContent = t.tbspLabel;
+            document.getElementById('tspLabel').textContent = t.tspLabel;
+            document.getElementById('mlLabel').textContent = t.mlLabel;
+            document.getElementById('lLabel').textContent = t.lLabel;
+            document.getElementById('infoTitle').textContent = t.infoTitle;
+            document.getElementById('infoText').textContent = t.infoText;
+            document.getElementById('conversionFactsTitle').textContent = t.conversionFactsTitle;
+            document.getElementById('fact1').textContent = t.fact1;
+            document.getElementById('fact2').textContent = t.fact2;
+            document.getElementById('fact3').textContent = t.fact3;
+            document.getElementById('fact4').textContent = t.fact4;
+            document.getElementById('footerText').textContent = t.footer;
+            
+            // Update quick conversion buttons
+            if (t.quickBtns) {
+                document.getElementById('quick1oz').textContent = t.quickBtns['1oz'];
+                document.getElementById('quick8oz').textContent = t.quickBtns['8oz'];
+                document.getElementById('quick16oz').textContent = t.quickBtns['16oz'];
+                document.getElementById('quick1cup').textContent = t.quickBtns['1cup'];
+                document.getElementById('quickHalfCup').textContent = t.quickBtns['halfCup'];
+                document.getElementById('quick2cup').textContent = t.quickBtns['2cup'];
+            }
+            
+            // Update active language button
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`)?.classList.add('active');
+            
+            // Re-trigger conversion if there's a value
+            if (document.getElementById('mainInput').value) {
+                convertValue();
+            }
+        }
+        
+        // Conversion function
+        function convertValue() {
+            const input = document.getElementById('mainInput');
+            const fromUnit = document.getElementById('fromUnit').value;
+            const value = parseFloat(input.value);
+            
+            if (isNaN(value) || value < 0) {
+                showError('Please enter a valid positive number');
+                return;
+            }
+            
+            // Calculate conversion to cups (base unit)
+            let cups;
+            if (fromUnit === 'cup') {
+                cups = value;
+            } else if (conversions[fromUnit] && conversions[fromUnit].cup !== undefined) {
+                cups = value * conversions[fromUnit].cup;
+            } else {
+                showError('Conversion not available');
+                return;
+            }
+            
+            // Update main result
+            const resultElement = document.getElementById('resultValue');
+            const unitElement = document.getElementById('resultUnit');
+            
+            if (cups < 0.1) {
+                resultElement.textContent = (cups * 8).toFixed(2);
+                unitElement.textContent = fromUnit === 'oz' ? 'oz' : 'oz';
+            } else {
+                resultElement.textContent = cups.toFixed(3);
+                unitElement.textContent = translations[currentLang].resultUnit;
+            }
+            
+            // Update detailed conversions
+            updateDetailedConversions(cups);
+            
+            // Show success state
+            input.parentElement.classList.remove('error');
+            input.parentElement.classList.add('success');
+            document.getElementById('conversionDetails').style.display = 'block';
+            
+            setTimeout(() => {
+                input.parentElement.classList.remove('success');
+            }, 1000);
+        }
+        
+        // Update detailed conversion display
+        function updateDetailedConversions(cups) {
+            const tbsp = cups * 16; // 1 cup = 16 tbsp
+            const tsp = cups * 48; // 1 cup = 48 tsp
+            const ml = cups * 236.59; // 1 cup = 236.59 ml
+            const l = cups * 0.23659; // 1 cup = 0.23659 L
+            
+            document.getElementById('tbspValue').textContent = tbsp.toFixed(2);
+            document.getElementById('tspValue').textContent = tsp.toFixed(1);
+            document.getElementById('mlValue').textContent = ml.toFixed(0);
+            document.getElementById('lValue').textContent = l.toFixed(3);
+        }
+        
+        // Show error state
+        function showError(message) {
+            const input = document.getElementById('mainInput');
+            input.parentElement.classList.add('error');
+            document.getElementById('resultValue').textContent = 'Error';
+            document.getElementById('resultUnit').textContent = message;
+            document.getElementById('conversionDetails').style.display = 'none';
+            
+            setTimeout(() => {
+                input.parentElement.classList.remove('error');
+            }, 2000);
+        }
+        
+        // Quick conversion handlers
+        function setupQuickConversions() {
+            document.querySelectorAll('.quick-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const value = parseFloat(e.target.dataset.value);
+                    const unit = e.target.dataset.unit;
+                    
+                    document.getElementById('mainInput').value = value;
+                    document.getElementById('fromUnit').value = unit;
+                    convertValue();
+                });
+            });
+        }
+        
+        // Event listeners
+        function setupEventListeners() {
+            // Input change listeners
+            document.getElementById('mainInput').addEventListener('input', convertValue);
+            document.getElementById('fromUnit').addEventListener('change', convertValue);
+            
+            // Language selector
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const lang = e.target.dataset.lang;
+                    updateLanguage(lang);
+                });
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    convertValue();
+                }
+            });
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateLanguage(currentLang);
+            setupEventListeners();
+            setupQuickConversions();
+            
+            // Add placeholder animation
+            const input = document.getElementById('mainInput');
+            if (!input.value) {
+                input.placeholder = '0';
+            }
+        });
+        
+        // Performance optimization
+        let conversionTimeout;
+        function debounceConversion(func, wait) {
+            clearTimeout(conversionTimeout);
+            conversionTimeout = setTimeout(func, wait);
+        }
+        
+        // Add debounced conversion for better performance
+        document.getElementById('mainInput').addEventListener('input', () => {
+            debounceConversion(convertValue, 300);
+        });
+    </script>
+</body>
+</html>

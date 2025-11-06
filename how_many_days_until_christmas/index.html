@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How many days until Christmas? Real-time countdown calculator showing exact days, hours, minutes and seconds until Christmas Day. Christmas countdown timer 2024.">
+    <meta name="keywords" content="how many days until christmas, christmas countdown, days until christmas, christmas timer, christmas clock, holiday countdown, christmas 2024">
+    <meta name="author" content="Christmas Countdown Calculator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Days Until Christmas? - Christmas Countdown Calculator 2024">
+    <meta property="og:description" content="Calculate exactly how many days until Christmas with our real-time countdown. Christmas countdown timer showing days, hours, minutes and seconds.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Christmas Countdown Calculator">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How Many Days Until Christmas? - Christmas Countdown 2024">
+    <meta name="twitter:description" content="Real-time Christmas countdown calculator. See exactly how many days until Christmas!">
+    <meta name="twitter:image" content="">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Christmas Countdown Calculator",
+        "description": "Calculate exactly how many days until Christmas with real-time countdown showing days, hours, minutes and seconds",
+        "url": "",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "keywords": "how many days until christmas, christmas countdown, days until christmas",
+        "author": {
+            "@type": "Organization",
+            "name": "Christmas Countdown Calculator"
+        }
+    }
+    </script>
+    
+    <title>How Many Days Until Christmas? - Christmas Countdown Calculator 2024</title>
+    
+    <style>
+        /* iOS Design System with Advanced Gray Theme */
+        :root {
+            --primary-gray: #2C2C2E;
+            --secondary-gray: #3A3A3C;
+            --light-gray: #48484A;
+            --background-gray: #1C1C1E;
+            --card-gray: #2C2C2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent-blue: #0A84FF;
+            --accent-green: #30D158;
+            --accent-orange: #FF9500;
+            --border-color: #38383A;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --border-radius: 16px;
+            --border-radius-large: 20px;
+            --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            background: var(--background-gray);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: var(--font-weight-bold);
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 1.125rem;
+            font-weight: var(--font-weight-normal);
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+        
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background: var(--light-gray);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            transition: all 0.2s ease;
+            font-family: var(--font-family);
+        }
+        
+        .lang-btn:hover {
+            background: var(--secondary-gray);
+            color: var(--text-primary);
+        }
+        
+        .lang-btn.active {
+            background: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
+        }
+        
+        .countdown-card {
+            background: var(--card-gray);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-large);
+            padding: 40px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 8px 32px var(--shadow-color);
+            margin-bottom: 32px;
+        }
+        
+        .main-countdown {
+            font-size: 3.5rem;
+            font-weight: var(--font-weight-bold);
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        
+        .countdown-label {
+            font-size: 1.25rem;
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+        
+        .time-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .time-unit {
+            background: var(--light-gray);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 20px 16px;
+            text-align: center;
+        }
+        
+        .time-number {
+            font-size: 2.5rem;
+            font-weight: var(--font-weight-bold);
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 4px;
+            letter-spacing: -0.02em;
+        }
+        
+        .time-label {
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .progress-section {
+            margin-bottom: 32px;
+        }
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .progress-title {
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+        }
+        
+        .progress-percentage {
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            color: var(--accent-green);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: var(--light-gray);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+        
+        .christmas-info {
+            background: var(--secondary-gray);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        
+        .info-title {
+            font-size: 1.125rem;
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        
+        .info-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .share-section {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .share-title {
+            font-size: 1rem;
+            font-weight: var(--font-weight-medium);
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        
+        .share-btn {
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            font-size: 0.875rem;
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: var(--font-family);
+        }
+        
+        .share-btn:hover {
+            background: #0066CC;
+            transform: translateY(-1px);
+        }
+        
+        .footer {
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 0.75rem;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .main-countdown {
+                font-size: 2.5rem;
+            }
+            
+            .countdown-card {
+                padding: 24px;
+            }
+            
+            .time-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            
+            .time-number {
+                font-size: 2rem;
+            }
+            
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.75rem;
+            }
+            
+            .main-countdown {
+                font-size: 2rem;
+            }
+            
+            .time-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            
+            .time-unit {
+                padding: 16px 12px;
+            }
+            
+            .time-number {
+                font-size: 1.75rem;
+            }
+            
+            .time-label {
+                font-size: 0.75rem;
+            }
+            
+            .countdown-card {
+                padding: 20px;
+            }
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--text-tertiary);
+            border-radius: 50%;
+            border-top-color: var(--accent-blue);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Focus styles for accessibility */
+        .lang-btn:focus,
+        .share-btn:focus {
+            outline: 2px solid var(--accent-blue);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title" id="mainTitle">How Many Days Until Christmas?</h1>
+            <p class="subtitle" id="subtitle">Real-time countdown to Christmas Day</p>
+            
+            <div class="language-selector" role="navigation" aria-label="Language selection">
+                <button class="lang-btn active" data-lang="en" id="langEn" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" data-lang="es" id="langEs" aria-label="Cambiar a Español">ES</button>
+                <button class="lang-btn" data-lang="fr" id="langFr" aria-label="Passer au Français">FR</button>
+                <button class="lang-btn" data-lang="de" id="langDe" aria-label="Auf Deutsch umschalten">DE</button>
+                <button class="lang-btn" data-lang="zh" id="langZh" aria-label="切换到中文">中文</button>
+            </div>
+        </header>
+        
+        <main class="countdown-card" role="main">
+            <div class="main-countdown" id="mainCountdown">
+                <span class="loading" aria-label="Loading countdown"></span>
+            </div>
+            <div class="countdown-label" id="countdownLabel">days until Christmas</div>
+            
+            <div class="time-grid" role="group" aria-label="Time units">
+                <div class="time-unit">
+                    <span class="time-number" id="days">--</span>
+                    <span class="time-label" id="daysLabel">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">--</span>
+                    <span class="time-label" id="hoursLabel">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">--</span>
+                    <span class="time-label" id="minutesLabel">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">--</span>
+                    <span class="time-label" id="secondsLabel">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span class="progress-title" id="progressTitle">Year Progress</span>
+                    <span class="progress-percentage" id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Year progress">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </main>
+        
+        <section class="christmas-info">
+            <h2 class="info-title" id="infoTitle">About This Christmas Countdown</h2>
+            <p class="info-text" id="infoText">
+                Christmas is celebrated on December 25th every year. This countdown calculator shows you exactly how many days, hours, minutes and seconds are left until Christmas Day. Use it to plan your holiday activities, shopping, and celebrations!
+            </p>
+        </section>
+        
+        <section class="share-section">
+            <h3 class="share-title" id="shareTitle">Share the Christmas Countdown</h3>
+            <button class="share-btn" id="shareBtn" onclick="shareCountdown()" aria-label="Share Christmas countdown">
+                <span id="shareBtnText">Share</span>
+            </button>
+        </section>
+        
+        <footer class="footer">
+            <p id="footerText">© 2024 Christmas Countdown Calculator. Made for holiday enthusiasts worldwide.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Multi-language support with enhanced translations
+        const translations = {
+            en: {
+                title: "How Many Days Until Christmas?",
+                subtitle: "Real-time countdown to Christmas Day",
+                countdownLabel: "days until Christmas",
+                days: "Days",
+                hours: "Hours",
+                minutes: "Minutes", 
+                seconds: "Seconds",
+                progressTitle: "Year Progress",
+                infoTitle: "About This Christmas Countdown",
+                infoText: "Christmas is celebrated on December 25th every year. This countdown calculator shows you exactly how many days, hours, minutes and seconds are left until Christmas Day. Use it to plan your holiday activities, shopping, and celebrations!",
+                shareTitle: "Share the Christmas Countdown",
+                shareBtn: "Share",
+                footer: "© 2024 Christmas Countdown Calculator. Made for holiday enthusiasts worldwide.",
+                shareMessage: "🎄 Only {days} days, {hours} hours, {minutes} minutes, and {seconds} seconds until Christmas!",
+                loading: "Loading...",
+                yearProgressAria: "Year progress: {percent}%"
+            },
+            es: {
+                title: "¿Cuántos Días Faltan para Navidad?",
+                subtitle: "Cuenta regresiva en tiempo real hasta el Día de Navidad",
+                countdownLabel: "días hasta Navidad",
+                days: "Días",
+                hours: "Horas",
+                minutes: "Minutos",
+                seconds: "Segundos",
+                progressTitle: "Progreso del Año",
+                infoTitle: "Acerca de Esta Cuenta Regresiva de Navidad",
+                infoText: "La Navidad se celebra el 25 de diciembre cada año. Esta calculadora de cuenta regresiva te muestra exactamente cuántos días, horas, minutos y segundos faltan para el Día de Navidad. ¡Úsala para planificar tus actividades navideñas, compras y celebraciones!",
+                shareTitle: "Compartir la Cuenta Regresiva de Navidad",
+                shareBtn: "Compartir",
+                footer: "© 2024 Calculadora de Cuenta Regresiva de Navidad. Hecho para entusiastas de las vacaciones en todo el mundo.",
+                shareMessage: "🎄 ¡Solo faltan {days} días, {hours} horas, {minutes} minutos y {seconds} segundos para Navidad!",
+                loading: "Cargando...",
+                yearProgressAria: "Progreso del año: {percent}%"
+            },
+            fr: {
+                title: "Combien de Jours Jusqu'à Noël?",
+                subtitle: "Compte à rebours en temps réel jusqu'au jour de Noël",
+                countdownLabel: "jours jusqu'à Noël",
+                days: "Jours",
+                hours: "Heures",
+                minutes: "Minutes",
+                seconds: "Secondes",
+                progressTitle: "Progrès de l'Année",
+                infoTitle: "À Propos de Ce Compte à Rebours de Noël",
+                infoText: "Noël est célébré le 25 décembre chaque année. Ce calculateur de compte à rebours vous montre exactement combien de jours, heures, minutes et secondes restent jusqu'au jour de Noël. Utilisez-le pour planifier vos activités de vacances, achats et célébrations!",
+                shareTitle: "Partager le Compte à Rebours de Noël",
+                shareBtn: "Partager",
+                footer: "© 2024 Calculateur de Compte à Rebours de Noël. Fait pour les passionnés de vacances dans le monde entier.",
+                shareMessage: "🎄 Plus que {days} jours, {hours} heures, {minutes} minutes et {seconds} secondes jusqu'à Noël!",
+                loading: "Chargement...",
+                yearProgressAria: "Progrès de l'année: {percent}%"
+            },
+            de: {
+                title: "Wie Viele Tage bis Weihnachten?",
+                subtitle: "Echtzeit-Countdown bis zum Weihnachtstag",
+                countdownLabel: "Tage bis Weihnachten",
+                days: "Tage",
+                hours: "Stunden",
+                minutes: "Minuten",
+                seconds: "Sekunden",
+                progressTitle: "Jahresfortschritt",
+                infoTitle: "Über Diesen Weihnachts-Countdown",
+                infoText: "Weihnachten wird am 25. Dezember jedes Jahr gefeiert. Dieser Countdown-Rechner zeigt Ihnen genau, wie viele Tage, Stunden, Minuten und Sekunden bis zum Weihnachtstag verbleiben. Nutzen Sie ihn zur Planung Ihrer Feiertagsaktivitäten, Einkäufe und Feiern!",
+                shareTitle: "Den Weihnachts-Countdown Teilen",
+                shareBtn: "Teilen",
+                footer: "© 2024 Weihnachts-Countdown-Rechner. Gemacht für Urlaubsenthusiasten weltweit.",
+                shareMessage: "🎄 Nur noch {days} Tage, {hours} Stunden, {minutes} Minuten und {seconds} Sekunden bis Weihnachten!",
+                loading: "Laden...",
+                yearProgressAria: "Jahresfortschritt: {percent}%"
+            },
+            zh: {
+                title: "距离圣诞节还有多少天？",
+                subtitle: "实时倒计时到圣诞节",
+                countdownLabel: "天直到圣诞节",
+                days: "天",
+                hours: "小时",
+                minutes: "分钟",
+                seconds: "秒",
+                progressTitle: "年度进度",
+                infoTitle: "关于这个圣诞节倒计时",
+                infoText: "圣诞节每年12月25日庆祝。这个倒计时计算器向您显示距离圣诞节还有多少天、小时、分钟和秒。可以用它来规划您的节日活动、购物和庆祝活动！",
+                shareTitle: "分享圣诞节倒计时",
+                shareBtn: "分享",
+                footer: "© 2024 圣诞节倒计时计算器。为全世界的节日爱好者制作。",
+                shareMessage: "🎄 距离圣诞节只剩{days}天{hours}小时{minutes}分钟{seconds}秒了！",
+                loading: "加载中...",
+                yearProgressAria: "年度进度：{percent}%"
+            }
+        };
+        
+        let currentLang = localStorage.getItem('christmas-countdown-lang') || 'en';
+        
+        // Update language function
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('christmas-countdown-lang', lang);
+            
+            const t = translations[lang];
+            if (!t) return;
+            
+            // Update text content
+            document.getElementById('mainTitle').textContent = t.title;
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('countdownLabel').textContent = t.countdownLabel;
+            document.getElementById('daysLabel').textContent = t.days;
+            document.getElementById('hoursLabel').textContent = t.hours;
+            document.getElementById('minutesLabel').textContent = t.minutes;
+            document.getElementById('secondsLabel').textContent = t.seconds;
+            document.getElementById('progressTitle').textContent = t.progressTitle;
+            document.getElementById('infoTitle').textContent = t.infoTitle;
+            document.getElementById('infoText').textContent = t.infoText;
+            document.getElementById('shareTitle').textContent = t.shareTitle;
+            document.getElementById('shareBtnText').textContent = t.shareBtn;
+            document.getElementById('footerText').textContent = t.footer;
+            document.getElementById('mainCountdown').textContent = t.loading;
+            
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`)?.classList.add('active');
+            
+            // Update page title for SEO
+            document.title = `${t.title} - Christmas Countdown Calculator 2024`;
+            
+            // Update meta description
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.setAttribute('content', `How many days until Christmas? Real-time countdown calculator showing exact days, hours, minutes and seconds until Christmas Day. Christmas countdown timer 2024 in ${lang.toUpperCase()}.`);
+            }
+        }
+        
+        // Christmas countdown function
+        function getChristmasCountdown() {
+            const now = new Date();
+            let christmas = new Date(now.getFullYear(), 11, 25); // December 25th
+            
+            // If Christmas has already passed this year, get next year's Christmas
+            if (now > christmas) {
+                christmas = new Date(now.getFullYear() + 1, 11, 25);
+            }
+            
+            const diff = christmas - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            return { diff, days, hours, minutes, seconds };
+        }
+        
+        // Update countdown display
+        function updateCountdown() {
+            const { diff, days, hours, minutes, seconds } = getChristmasCountdown();
+            const t = translations[currentLang];
+            
+            if (diff <= 0) {
+                document.getElementById('mainCountdown').textContent = t ? t.title : "Merry Christmas!";
+                return;
+            }
+            
+            // Update main countdown
+            const dayWord = t?.days || "Days";
+            document.getElementById('mainCountdown').textContent = `${days} ${dayWord}`;
+            
+            // Update individual time units
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Update progress bar (percentage of year elapsed)
+            const now = new Date();
+            const yearStart = new Date(now.getFullYear(), 0, 1);
+            const yearEnd = new Date(now.getFullYear() + 1, 0, 1);
+            const yearProgress = Math.round(((now - yearStart) / (yearEnd - yearStart)) * 100);
+            
+            document.getElementById('progressFill').style.width = `${yearProgress}%`;
+            document.getElementById('progressPercent').textContent = `${yearProgress}%`;
+            
+            // Update progress bar ARIA
+            const progressBar = document.querySelector('.progress-bar');
+            progressBar.setAttribute('aria-valuenow', yearProgress);
+            progressBar.setAttribute('aria-label', t?.yearProgressAria?.replace('{percent}', yearProgress) || `Year progress: ${yearProgress}%`);
+        }
+        
+        // Share function
+        function shareCountdown() {
+            const { days, hours, minutes, seconds } = getChristmasCountdown();
+            const t = translations[currentLang];
+            let message = t?.shareMessage || "🎄 Only {days} days, {hours} hours, {minutes} minutes, and {seconds} seconds until Christmas!";
+            
+            message = message.replace('{days}', days).replace('{hours}', hours).replace('{minutes}', minutes).replace('{seconds}', seconds);
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Christmas Countdown Calculator',
+                    text: message,
+                    url: window.location.href
+                });
+            } else {
+                // Fallback: copy to clipboard
+                navigator.clipboard.writeText(`${message} ${window.location.href}`).then(() => {
+                    const btn = document.getElementById('shareBtnText');
+                    const originalText = btn.textContent;
+                    btn.textContent = t?.shareBtn ? `${t.shareBtn}ed!` : 'Copied!';
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                    }, 2000);
+                }).catch(() => {
+                    alert(message);
+                });
+            }
+        }
+        
+        // Event listeners
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const lang = e.target.dataset.lang;
+                updateLanguage(lang);
+            });
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateLanguage(currentLang);
+            updateCountdown();
+            
+            // Update countdown every second
+            setInterval(updateCountdown, 1000);
+        });
+        
+        // Performance optimization: Update on page visibility change
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                updateCountdown();
+            }
+        });
+        
+        // Keyboard navigation for accessibility
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                // Reset to English on Escape
+                updateLanguage('en');
+            }
+        });
+    </script>
+</body>
+</html>
