@@ -7,9 +7,9 @@
 | 5 | how many ounces in a pound​ |
 | 6 | how many cups in a quart​ | x
 | 7 | how many days till christmas​ |
-| 8 | how many oz in a cup​ |
-| 9 | how many quarts in a gallon​ |
-| 10 | how many seconds in a day​ |
+| 8 | how many oz in a cup​ | x
+| 9 | how many quarts in a gallon​ | x
+| 10 | how many seconds in a day​ |x
 | 11 | how many grams in an ounce​ |
 | 12 | how many oz in a gallon​ |
 | 13 | how many tablespoons in a cup​ |

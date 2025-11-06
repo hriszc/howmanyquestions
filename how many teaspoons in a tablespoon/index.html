@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>How Many Teaspoons in a Tablespoon - Free Cooking Converter Tool</title>
+    <meta name="description" content="Convert teaspoons to tablespoons instantly. Free online cooking converter tool. 1 tablespoon = 3 teaspoons. Fast, accurate, and easy to use for recipes.">
+    <meta name="keywords" content="how many teaspoons in a tablespoon, teaspoons to tablespoons, tablespoons to teaspoons, cooking converter, recipe converter, kitchen tool">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HowManyQ">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Teaspoons in a Tablespoon - Free Cooking Converter">
+    <meta property="og:description" content="Instantly convert between teaspoons and tablespoons. Free online cooking converter tool for perfect recipes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://howmanyq.com/how-many-teaspoons-in-a-tablespoon/">
+    <meta property="og:image" content="https://howmanyq.com/images/teaspoons-tablespoons-converter.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How Many Teaspoons in a Tablespoon - Free Cooking Converter">
+    <meta name="twitter:description" content="Convert teaspoons to tablespoons instantly. Free online cooking converter tool for recipes.">
+    <meta name="twitter:image" content="https://howmanyq.com/images/teaspoons-tablespoons-converter.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://howmanyq.com/how-many-teaspoons-in-a-tablespoon/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Teaspoons to Tablespoons Converter",
+        "description": "Free online tool to convert between teaspoons and tablespoons with instant results for cooking and baking",
+        "url": "https://howmanyq.com/how-many-teaspoons-in-a-tablespoon/",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    
+    <style>
+        /* iOS-style Global Styles with Premium Gray Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #2c2c2e 0%, #3a3a3c 50%, #48484a 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+        
+        .main-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: #a1a1aa;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #a1a1aa;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .lang-btn.active {
+            background: #007aff;
+            color: white;
+            border-color: #007aff;
+        }
+        
+        /* Main Converter Card */
+        .converter-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+        }
+        
+        /* Conversion Section */
+        .conversion-section {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .input-group {
+            text-align: center;
+        }
+        
+        .input-label {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .input-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .number-input {
+            width: 200px;
+            padding: 16px 20px;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            transition: all 0.3s ease;
+            outline: none;
+            backdrop-filter: blur(10px);
+        }
+        
+        .number-input::placeholder {
+            color: #a1a1aa;
+        }
+        
+        .number-input:focus {
+            border-color: #007aff;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.1);
+        }
+        
+        .unit-label {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            font-weight: 600;
+            color: #a1a1aa;
+            pointer-events: none;
+        }
+        
+        .arrow {
+            font-size: 32px;
+            color: #007aff;
+            font-weight: 600;
+        }
+        
+        /* Quick Conversion Info */
+        .conversion-info {
+            text-align: center;
+            background: rgba(0, 122, 255, 0.1);
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 122, 255, 0.3);
+        }
+        
+        .conversion-result {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .conversion-formula {
+            font-size: 16px;
+            color: #a1a1aa;
+            font-weight: 500;
+        }
+        
+        /* Additional Units */
+        .additional-units {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .unit-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .unit-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .unit-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #007aff;
+            margin-bottom: 5px;
+        }
+        
+        .unit-name {
+            font-size: 14px;
+            color: #a1a1aa;
+            font-weight: 500;
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #007aff 0%, #0056cc 100%);
+            color: white;
+            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 122, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+        }
+        
+        /* Information Section */
+        .info-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .info-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .info-content {
+            font-size: 16px;
+            color: #d1d5db;
+            line-height: 1.7;
+        }
+        
+        .info-content ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .info-content li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: rgba(0, 122, 255, 0.2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .converter-card {
+                padding: 25px;
+            }
+            
+            .conversion-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .arrow {
+                transform: rotate(90deg);
+            }
+            
+            .number-input {
+                width: 180px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .additional-units {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .converter-card {
+                padding: 20px;
+            }
+            
+            .number-input {
+                width: 160px;
+                font-size: 20px;
+            }
+            
+            .conversion-result {
+                font-size: 24px;
+            }
+            
+            .additional-units {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .pulse {
+            animation: pulse 0.5s ease-in-out;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Hidden class for multi-language support */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="main-title" data-en="How Many Teaspoons in a Tablespoon" data-zh="一汤匙等于多少茶匙">How Many Teaspoons in a Tablespoon</h1>
+            <p class="subtitle" data-en="Free online cooking converter tool. Convert teaspoons to tablespoons instantly with accurate results for perfect recipes." data-zh="免费在线烹饪转换工具。茶匙与汤匙实时转换，为完美食谱提供精确结果。">Free online cooking converter tool. Convert teaspoons to tablespoons instantly with accurate results for perfect recipes.</p>
+            
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en" data-en="English" data-zh="英语">English</button>
+                <button class="lang-btn" data-lang="zh" data-en="中文" data-zh="中文">中文</button>
+                <button class="lang-btn" data-lang="es" data-en="Español" data-zh="西班牙语">Español</button>
+                <button class="lang-btn" data-lang="fr" data-en="Français" data-zh="法语">Français</button>
+            </div>
+        </header>
+        
+        <!-- Main Converter Card -->
+        <main class="converter-card fade-in">
+            <div class="conversion-section">
+                <div class="input-group">
+                    <label class="input-label" data-en="Teaspoons" data-zh="茶匙" data-es="Cucharaditas" data-fr="Cuillères à café">Teaspoons</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="teaspoonsInput" class="number-input" placeholder="0" step="0.25" min="0">
+                        <span class="unit-label">tsp</span>
+                    </div>
+                </div>
+                
+                <div class="arrow">↔</div>
+                
+                <div class="input-group">
+                    <label class="input-label" data-en="Tablespoons" data-zh="汤匙" data-es="Cucharadas" data-fr="Cuillères à soupe">Tablespoons</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="tablespoonsInput" class="number-input" placeholder="0" step="0.1" min="0">
+                        <span class="unit-label">tbsp</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Conversion Result -->
+            <div class="conversion-info">
+                <div class="conversion-result" id="quickResult" data-en="1 tablespoon = 3 teaspoons" data-zh="1 汤匙 = 3 茶匙" data-es="1 cucharada = 3 cucharaditas" data-fr="1 cuillère à soupe = 3 cuillères à café">1 tablespoon = 3 teaspoons</div>
+                <div class="conversion-formula" data-en="Quick reference conversion" data-zh="快速参考换算" data-es="Conversión de referencia rápida" data-fr="Conversion de référence rapide">Quick reference conversion</div>
+            </div>
+            
+            <!-- Additional Units -->
+            <div class="additional-units" id="additionalUnits">
+                <div class="unit-card">
+                    <div class="unit-value" id="mlValue">14.79</div>
+                    <div class="unit-name" data-en="ml" data-zh="毫升" data-es="ml" data-fr="ml">ml</div>
+                </div>
+                <div class="unit-card">
+                    <div class="unit-value" id="cupsValue">0.06</div>
+                    <div class="unit-name" data-en="cups" data-zh="杯" data-es="tazas" data-fr="tasses">cups</div>
+                </div>
+                <div class="unit-card">
+                    <div class="unit-value" id="flozValue">0.5</div>
+                    <div class="unit-name" data-en="fl oz" data-zh="液体盎司" data-es="fl oz" data-fr="fl oz">fl oz</div>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="swapBtn" data-en="Swap Units" data-zh="交换单位" data-es="Intercambiar unidades" data-fr="Échanger les unités">Swap Units</button>
+                <button class="btn btn-secondary" id="clearBtn" data-en="Clear" data-zh="清除" data-es="Limpiar" data-fr="Effacer">Clear</button>
+            </div>
+        </main>
+        
+        <!-- Information Section -->
+        <section class="info-section fade-in">
+            <h2 class="info-title" data-en="Cooking Measurement Information" data-zh="烹饪测量信息" data-es="Información de medidas de cocina" data-fr="Informations sur les mesures de cuisine">Cooking Measurement Information</h2>
+            <div class="info-content" data-en-content>
+                <p><strong>Basic Conversion:</strong> <span class="highlight">1 tablespoon (tbsp) = 3 teaspoons (tsp)</span></p>
+                
+                <p><strong>Common Uses:</strong></p>
+                <ul>
+                    <li>Recipe scaling and measurements</li>
+                    <li>Cooking and baking ingredient conversion</li>
+                    <li>Spice and seasoning measurements</li>
+                    <li>Medication dosage calculations</li>
+                </ul>
+                
+                <p><strong>Quick Tips:</strong></p>
+                <ul>
+                    <li>Use <span class="highlight">1/2 tablespoon = 1.5 teaspoons</span> for smaller measurements</li>
+                    <li>Most standard measuring spoons include: 1/4 tsp, 1/2 tsp, 1 tsp, 1/2 tbsp, 1 tbsp</li>
+                    <li>This converter works in both directions automatically</li>
+                    <li>Perfect for adjusting recipes for different serving sizes</li>
+                </ul>
+                
+                <p><strong>Metric Equivalents:</strong></p>
+                <ul>
+                    <li>1 tablespoon = 14.79 milliliters (ml)</li>
+                    <li>1 teaspoon = 4.93 milliliters (ml)</li>
+                    <li>1 tablespoon = 0.5 fluid ounces (fl oz)</li>
+                </ul>
+            </div>
+            
+            <div class="info-content hidden" data-zh-content>
+                <p><strong>基本换算：</strong> <span class="highlight">1 汤匙 (tbsp) = 3 茶匙 (tsp)</span></p>
+                
+                <p><strong>常见用途：</strong></p>
+                <ul>
+                    <li>食谱缩放和测量</li>
+                    <li>烹饪和烘焙成分转换</li>
+                    <li>香料和调味料测量</li>
+                    <li>药物剂量计算</li>
+                </ul>
+                
+                <p><strong>快速提示：</strong></p>
+                <ul>
+                    <li>使用 <span class="highlight">1/2 汤匙 = 1.5 茶匙</span> 进行较小测量</li>
+                    <li>大多数标准测量勺包括：1/4茶匙、1/2茶匙、1茶匙、1/2汤匙、1汤匙</li>
+                    <li>此转换器自动双向工作</li>
+                    <li>非常适合调整不同份量的食谱</li>
+                </ul>
+                
+                <p><strong>公制当量：</strong></p>
+                <ul>
+                    <li>1 汤匙 = 14.79 毫升 (ml)</li>
+                    <li>1 茶匙 = 4.93 毫升 (ml)</li>
+                    <li>1 汤匙 = 0.5 液体盎司 (fl oz)</li>
+                </ul>
+            </div>
+            
+            <div class="info-content hidden" data-es-content>
+                <p><strong>Conversión Básica:</strong> <span class="highlight">1 cucharada (tbsp) = 3 cucharaditas (tsp)</span></p>
+                
+                <p><strong>Usos Comunes:</strong></p>
+                <ul>
+                    <li>Escalado y medidas de recetas</li>
+                    <li>Conversión de ingredientes para cocinar y hornear</li>
+                    <li>Medidas de especias y condimentos</li>
+                    <li>Cálculos de dosis de medicamentos</li>
+                </ul>
+                
+                <p><strong>Consejos Rápidos:</strong></p>
+                <ul>
+                    <li>Usa <span class="highlight">1/2 cucharada = 1.5 cucharaditas</span> para medidas más pequeñas</li>
+                    <li>La mayoría de las cucharas de medida estándar incluyen: 1/4 cdta, 1/2 cdta, 1 cdta, 1/2 cda, 1 cda</li>
+                    <li>Este convertidor funciona automáticamente en ambas direcciones</li>
+                    <li>Perfecto para ajustar recetas para diferentes tamaños de porciones</li>
+                </ul>
+                
+                <p><strong>Equivalentes Métricos:</strong></p>
+                <ul>
+                    <li>1 cucharada = 14.79 mililitros (ml)</li>
+                    <li>1 cucharadita = 4.93 mililitros (ml)</li>
+                    <li>1 cucharada = 0.5 onzas líquidas (fl oz)</li>
+                </ul>
+            </div>
+            
+            <div class="info-content hidden" data-fr-content>
+                <p><strong>Conversion de Base:</strong> <span class="highlight">1 cuillère à soupe (tbsp) = 3 cuillères à café (tsp)</span></p>
+                
+                <p><strong>Utilisations Communes:</strong></p>
+                <ul>
+                    <li>Mise à l'échelle et mesures de recettes</li>
+                    <li>Conversion d'ingrédients pour la cuisine et la pâtisserie</li>
+                    <li>Mesures d'épices et d'assaisonnements</li>
+                    <li>Calculs de doses de médicaments</li>
+                </ul>
+                
+                <p><strong>Conseils Rapides:</strong></p>
+                <ul>
+                    <li>Utilisez <span class="highlight">1/2 cuillère à soupe = 1.5 cuillères à café</span> pour des mesures plus petites</li>
+                    <li>La plupart des cuillères doseuses standard incluent: 1/4 cc, 1/2 cc, 1 cc, 1/2 cs, 1 cs</li>
+                    <li>Ce convertisseur fonctionne automatiquement dans les deux sens</li>
+                    <li>Parfait pour ajuster les recettes pour différentes tailles de portions</li>
+                </ul>
+                
+                <p><strong>Équivalents Métriques:</strong></p>
+                <ul>
+                    <li>1 cuillère à soupe = 14.79 millilitres (ml)</li>
+                    <li>1 cuillère à café = 4.93 millilitres (ml)</li>
+                    <li>1 cuillère à soupe = 0.5 onces liquides (fl oz)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        // Cooking conversion constants
+        const TABLESPOON_TO_TEASPOONS = 3;
+        const TEASPOONS_TO_TABLESPOONS = 1 / TABLESPOON_TO_TEASPOONS;
+        const TABLESPOON_TO_ML = 14.7868;
+        const TEASPOON_TO_ML = TABLESPOON_TO_ML / 3;
+        const TABLESPOON_TO_CUPS = 1/16;
+        const TABLESPOON_TO_FLOZ = 0.5;
+        
+        // DOM elements
+        const teaspoonsInput = document.getElementById('teaspoonsInput');
+        const tablespoonsInput = document.getElementById('tablespoonsInput');
+        const quickResult = document.getElementById('quickResult');
+        const swapBtn = document.getElementById('swapBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const mlValue = document.getElementById('mlValue');
+        const cupsValue = document.getElementById('cupsValue');
+        const flozValue = document.getElementById('flozValue');
+        
+        // Current language state
+        let currentLang = 'en';
+        let isUpdating = false;
+        
+        // Initialize the converter
+        function init() {
+            teaspoonsInput.addEventListener('input', teaspoonsToTablespoons);
+            tablespoonsInput.addEventListener('input', tablespoonsToTeaspoons);
+            swapBtn.addEventListener('click', swapUnits);
+            clearBtn.addEventListener('click', clearInputs);
+            
+            // Language switching
+            langBtns.forEach(btn => {
+                btn.addEventListener('click', () => switchLanguage(btn.dataset.lang));
+            });
+            
+            // Set initial values
+            teaspoonsInput.value = '';
+            tablespoonsInput.value = '';
+        }
+        
+        // Convert teaspoons to tablespoons
+        function teaspoonsToTablespoons() {
+            if (isUpdating) return;
+            isUpdating = true;
+            
+            const teaspoons = parseFloat(teaspoonsInput.value) || 0;
+            const tablespoons = teaspoons * TEASPOONS_TO_TABLESPOONS;
+            
+            tablespoonsInput.value = tablespoons > 0 ? tablespoons.toFixed(4) : '';
+            updateAdditionalUnits(tablespoons);
+            updateQuickResult(teaspoons, tablespoons);
+            isUpdating = false;
+        }
+        
+        // Convert tablespoons to teaspoons
+        function tablespoonsToTeaspoons() {
+            if (isUpdating) return;
+            isUpdating = true;
+            
+            const tablespoons = parseFloat(tablespoonsInput.value) || 0;
+            const teaspoons = tablespoons * TABLESPOON_TO_TEASPOONS;
+            
+            teaspoonsInput.value = teaspoons > 0 ? teaspoons.toFixed(4) : '';
+            updateAdditionalUnits(tablespoons);
+            updateQuickResult(teaspoons, tablespoons);
+            isUpdating = false;
+        }
+        
+        // Update additional units display
+        function updateAdditionalUnits(tablespoons) {
+            const ml = tablespoons * TABLESPOON_TO_ML;
+            const cups = tablespoons * TABLESPOON_TO_CUPS;
+            const floz = tablespoons * TABLESPOON_TO_FLOZ;
+            
+            mlValue.textContent = ml > 0 ? ml.toFixed(1) : '14.8';
+            cupsValue.textContent = cups > 0 ? cups.toFixed(3) : '0.063';
+            flozValue.textContent = floz > 0 ? floz.toFixed(1) : '0.5';
+        }
+        
+        // Update quick result display
+        function updateQuickResult(teaspoons, tablespoons) {
+            if (teaspoons > 0) {
+                const result = getText('quickResult', {
+                    en: `${teaspoons} teaspoons = ${tablespoons.toFixed(2)} tablespoons`,
+                    zh: `${teaspoons} 茶匙 = ${tablespoons.toFixed(2)} 汤匙`,
+                    es: `${teaspoons} cucharaditas = ${tablespoons.toFixed(2)} cucharadas`,
+                    fr: `${teaspoons} cuillères à café = ${tablespoons.toFixed(2)} cuillères à soupe`
+                });
+                quickResult.textContent = result;
+            } else {
+                const defaultText = getText('quickResult', {
+                    en: '1 tablespoon = 3 teaspoons',
+                    zh: '1 汤匙 = 3 茶匙',
+                    es: '1 cucharada = 3 cucharaditas',
+                    fr: '1 cuillère à soupe = 3 cuillères à café'
+                });
+                quickResult.textContent = defaultText;
+            }
+        }
+        
+        // Get localized text
+        function getText(elementId, translations) {
+            return translations[currentLang] || translations.en;
+        }
+        
+        // Swap units
+        function swapUnits() {
+            const tspValue = teaspoonsInput.value;
+            const tbspValue = tablespoonsInput.value;
+            
+            teaspoonsInput.value = tbspValue;
+            tablespoonsInput.value = tspValue;
+            
+            // Add pulse animation
+            document.querySelector('.conversion-section').classList.add('pulse');
+            setTimeout(() => {
+                document.querySelector('.conversion-section').classList.remove('pulse');
+            }, 500);
+            
+            // Trigger conversion
+            if (teaspoonsInput.value) teaspoonsToTablespoons();
+            if (tablespoonsInput.value) tablespoonsToTeaspoons();
+        }
+        
+        // Clear inputs
+        function clearInputs() {
+            teaspoonsInput.value = '';
+            tablespoonsInput.value = '';
+            updateAdditionalUnits(0);
+            
+            const defaultText = getText('quickResult', {
+                en: '1 tablespoon = 3 teaspoons',
+                zh: '1 汤匙 = 3 茶匙',
+                es: '1 cucharada = 3 cucharaditas',
+                fr: '1 cuillère à soupe = 3 cuillères à café'
+            });
+            quickResult.textContent = defaultText;
+        }
+        
+        // Language switching
+        function switchLanguage(lang) {
+            currentLang = lang;
+            
+            // Update active button
+            langBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+            
+            // Update text content
+            updateTextContent();
+            
+            // Update content sections
+            updateContentSections();
+            
+            // Refresh conversion display
+            if (teaspoonsInput.value) teaspoonsToTablespoons();
+            if (tablespoonsInput.value) tablespoonsToTeaspoons();
+        }
+        
+        // Update text content
+        function updateTextContent() {
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = currentLang === 'en' ? element.dataset.en :
+                            currentLang === 'zh' ? element.dataset.zh :
+                            currentLang === 'es' ? element.dataset.es :
+                            currentLang === 'fr' ? element.dataset.fr : element.dataset.en;
+                element.textContent = text;
+            });
+        }
+        
+        // Update content sections
+        function updateContentSections() {
+            const enContent = document.querySelector('[data-en-content]');
+            const zhContent = document.querySelector('[data-zh-content]');
+            const esContent = document.querySelector('[data-es-content]');
+            const frContent = document.querySelector('[data-fr-content]');
+            
+            enContent.classList.add('hidden');
+            zhContent.classList.add('hidden');
+            esContent.classList.add('hidden');
+            frContent.classList.add('hidden');
+            
+            if (currentLang === 'en') {
+                enContent.classList.remove('hidden');
+            } else if (currentLang === 'zh') {
+                zhContent.classList.remove('hidden');
+            } else if (currentLang === 'es') {
+                esContent.classList.remove('hidden');
+            } else if (currentLang === 'fr') {
+                frContent.classList.remove('hidden');
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'l':
+                    case 'L':
+                        e.preventDefault();
+                        swapUnits();
+                        break;
+                    case 'c':
+                    case 'C':
+                        e.preventDefault();
+                        clearInputs();
+                        break;
+                }
+            }
+        });
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
