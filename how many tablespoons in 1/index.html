@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Tablespoons in 1/4 Cup - Tbsp to Cup Converter | HowManyQ</title>
+    <meta name="description" content="Convert tablespoons to cups and cups to tablespoons instantly. Learn how many tablespoons are in 1/4 cup with our easy-to-use converter tool. Perfect for cooking, baking, and recipe conversions.">
+    <meta name="keywords" content="how many tablespoons in 1/4 cup, tablespoons to cup converter, tbsp cup conversion, cup tablespoons calculator, 4 tablespoons in 1/4 cup">
+    <meta name="author" content="HowManyQ">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Tablespoons in 1/4 Cup - Easy Tbsp to Cup Converter">
+    <meta property="og:description" content="Instantly convert tablespoons to cups and vice versa. Learn that 1/4 cup equals 4 tablespoons with our user-friendly converter.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- iOS Web App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Tbsp to Cup Converter">
+
+    <style>
+        /* Advanced Gray iOS Design System */
+        :root {
+            --primary-gray: #8E8E93;
+            --secondary-gray: #C7C7CC;
+            --background-gray: #F2F2F7;
+            --card-gray: #FFFFFF;
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --accent-orange: #FF9500;
+            --border-gray: #E5E5EA;
+            --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --cooking-red: #FF3B30;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .converter-section {
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            border: 2px solid var(--border-gray);
+            border-radius: 12px;
+            background: var(--card-gray);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 0 3px rgba(255, 149, 0, 0.1);
+        }
+
+        .input-field::placeholder {
+            color: var(--secondary-gray);
+        }
+
+        .unit-label {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        .swap-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: var(--accent-orange);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 16px auto;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+        }
+
+        .swap-button:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .swap-button:active {
+            transform: scale(0.95);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--accent-orange), #FF6B35);
+            color: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .result-card .result-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-card .result-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .result-card .result-unit {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .info-section {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .info-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .info-section p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-button {
+            background: var(--card-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-button:hover {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+        }
+
+        .lang-button.active {
+            background: var(--accent-orange);
+            color: white;
+            border-color: var(--accent-orange);
+        }
+
+        /* Measurement type selector */
+        .measurement-selector {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .measurement-button {
+            flex: 1;
+            padding: 8px 12px;
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .measurement-button.active {
+            background: var(--accent-orange);
+            color: white;
+            border-color: var(--accent-orange);
+        }
+
+        /* Quick conversion buttons */
+        .quick-conversions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .quick-btn {
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .quick-btn:hover {
+            background: var(--secondary-gray);
+            color: var(--text-primary);
+        }
+
+        /* Additional conversions */
+        .additional-conversions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .conversion-card {
+            background: var(--background-gray);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .conversion-card .conversion-number {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 4px;
+        }
+
+        .conversion-card .conversion-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Fraction display */
+        .fraction-display {
+            text-align: center;
+            padding: 16px;
+            background: var(--background-gray);
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .fraction-display .fraction-title {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .fraction-display .fraction-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent-orange);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .input-field {
+                font-size: 16px;
+                padding: 14px;
+            }
+
+            .result-card .result-value {
+                font-size: 28px;
+            }
+
+            .measurement-selector {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .container {
+                padding: 24px;
+            }
+        }
+
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Animation for results */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-card {
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-gray: #1C1C1E;
+                --card-gray: #2C2C2E;
+                --text-primary: #FFFFFF;
+                --border-gray: #3A3A3C;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <button class="lang-button active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-button" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 data-lang="title">How Many Tablespoons in 1/4 Cup</h1>
+            <p class="subtitle" data-lang="subtitle">Convert tablespoons to cups and cups to tablespoons instantly</p>
+        </header>
+
+        <main class="card">
+            <div class="fraction-display">
+                <div class="fraction-title" data-lang="fraction-title">1/4 Cup Equals</div>
+                <div class="fraction-value">4 Tablespoons</div>
+            </div>
+
+            <div class="measurement-selector">
+                <button class="measurement-button active" onclick="setMeasurementType('us', this)" data-lang="us">US Standard</button>
+                <button class="measurement-button" onclick="setMeasurementType('metric', this)" data-lang="metric">Metric</button>
+                <button class="measurement-button" onclick="setMeasurementType('uk', this)" data-lang="uk">UK/Imperial</button>
+            </div>
+
+            <section class="converter-section">
+                <div class="input-group">
+                    <label data-lang="tablespoons-label">Tablespoons</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="tablespoonsInput"
+                               placeholder="Enter tablespoons"
+                               aria-label="Enter tablespoons for conversion"
+                               oninput="convertTablespoonsToCups()">
+                        <span class="unit-label">tbsp</span>
+                    </div>
+                </div>
+
+                <button class="swap-button" onclick="swapValues()" aria-label="Swap conversion direction">
+                    ⇅
+                </button>
+
+                <div class="input-group">
+                    <label data-lang="cups-label">Cups</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="cupsInput"
+                               placeholder="Enter cups"
+                               aria-label="Enter cups for conversion"
+                               oninput="convertCupsToTablespoons()">
+                        <span class="unit-label">cups</span>
+                    </div>
+                </div>
+            </section>
+
+            <div id="resultContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label" data-lang="result-label">Conversion Result</div>
+                    <div class="result-value" id="resultValue">0</div>
+                    <div class="result-unit" id="resultUnit">tbsp = 0 cups</div>
+                </div>
+            </div>
+
+            <div class="quick-conversions">
+                <button class="quick-btn" onclick="setQuickValue(4)" data-lang="quick1">1/4 Cup (4 tbsp)</button>
+                <button class="quick-btn" onclick="setQuickValue(16)" data-lang="quick2">1 Cup (16 tbsp)</button>
+                <button class="quick-btn" onclick="setQuickValue(8)" data-lang="quick3">1/2 Cup (8 tbsp)</button>
+                <button class="quick-btn" onclick="setQuickValue(12)" data-lang="quick4">3/4 Cup (12 tbsp)</button>
+            </div>
+
+            <div class="additional-conversions"
+                <div class="conversion-card"
+                    <div class="conversion-number" id="teaspoonsValue">0</div>
+                    <div class="conversion-text" data-lang="teaspoons">Teaspoons (tsp)</div>
+                </div>
+                <div class="conversion-card"
+                    <div class="conversion-number" id="millilitersValue">0</div>
+                    <div class="conversion-text" data-lang="milliliters">Milliliters (ml)</div>
+                </div>
+                <div class="conversion-card"
+                    <div class="conversion-number" id="fluidOuncesValue">0</div>
+                    <div class="conversion-text" data-lang="fluid-ounces">Fluid Ounces (fl oz)</div>
+                </div>
+                <div class="conversion-card"
+                    <div class="conversion-number" id="litersValue">0</div>
+                    <div class="conversion-text" data-lang="liters">Liters (L)</div>
+                </div>
+            </div>
+        </main>
+
+        <section class="info-section">
+            <h3 data-lang="info-title">Conversion Information</h3>
+            <p data-lang="info-text1"><strong>1/4 cup = 4 tablespoons</strong> - This is the standard conversion used in US cooking and baking measurements. One cup contains 16 tablespoons, so 1/4 cup equals 4 tablespoons.</p>
+            <p data-lang="info-text2">Tablespoons and cups are volume measurements commonly used in cooking and baking recipes. This conversion is essential for following recipes accurately and adjusting ingredient quantities.</p>
+            <p data-lang="info-text3">To convert tablespoons to cups, divide by 16. To convert cups to tablespoons, multiply by 16. This applies to US standard measurements.</p>
+        </section>
+    </div>
+
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                title: "How Many Tablespoons in 1/4 Cup",
+                subtitle: "Convert tablespoons to cups and cups to tablespoons instantly",
+                "fraction-title": "1/4 Cup Equals",
+                "tablespoons-label": "Tablespoons",
+                "cups-label": "Cups",
+                "result-label": "Conversion Result",
+                "info-title": "Conversion Information",
+                "info-text1": "<strong>1/4 cup = 4 tablespoons</strong> - This is the standard conversion used in US cooking and baking measurements. One cup contains 16 tablespoons, so 1/4 cup equals 4 tablespoons.",
+                "info-text2": "Tablespoons and cups are volume measurements commonly used in cooking and baking recipes. This conversion is essential for following recipes accurately and adjusting ingredient quantities.",
+                "info-text3": "To convert tablespoons to cups, divide by 16. To convert cups to tablespoons, multiply by 16. This applies to US standard measurements.",
+                "quick1": "1/4 Cup (4 tbsp)",
+                "quick2": "1 Cup (16 tbsp)",
+                "quick3": "1/2 Cup (8 tbsp)",
+                "quick4": "3/4 Cup (12 tbsp)",
+                "us": "US Standard",
+                "metric": "Metric",
+                "uk": "UK/Imperial",
+                "teaspoons": "Teaspoons (tsp)",
+                "milliliters": "Milliliters (ml)",
+                "fluid-ounces": "Fluid Ounces (fl oz)",
+                "liters": "Liters (L)"
+            },
+            zh: {
+                title: "1/4杯有多少汤匙",
+                subtitle: "即时转换汤匙和杯",
+                "fraction-title": "1/4杯等于",
+                "tablespoons-label": "汤匙",
+                "cups-label": "杯",
+                "result-label": "转换结果",
+                "info-title": "转换信息",
+                "info-text1": "<strong>1/4杯 = 4汤匙</strong> - 这是美国烹饪和烘焙测量中使用的标准转换。一杯含有16汤匙，所以1/4杯等于4汤匙。",
+                "info-text2": "汤匙和杯是烹饪和烘焙食谱中常用的体积测量单位。这种转换对于准确遵循食谱和调整配料数量至关重要。",
+                "info-text3": "要将汤匙转换为杯，除以16。要将杯转换为汤匙，乘以16。这适用于美国标准测量。",
+                "quick1": "1/4杯 (4汤匙)",
+                "quick2": "1杯 (16汤匙)",
+                "quick3": "1/2杯 (8汤匙)",
+                "quick4": "3/4杯 (12汤匙)",
+                "us": "美制标准",
+                "metric": "公制",
+                "uk": "英制",
+                "teaspoons": "茶匙 (tsp)",
+                "milliliters": "毫升 (ml)",
+                "fluid-ounces": "液体盎司 (fl oz)",
+                "liters": "升 (L)"
+            }
+        };
+
+        let currentLang = 'en';
+        let currentMeasurementSystem = 'us';
+
+        // Conversion factors for different systems
+        const conversionFactors = {
+            us: {
+                tablespoonsPerCup: 16,
+                teaspoonsPerTablespoon: 3,
+                millilitersPerTablespoon: 14.7868,
+                fluidOuncesPerCup: 8,
+                litersPerCup: 0.236588
+            },
+            metric: {
+                tablespoonsPerCup: 16.6667, // Approximate
+                teaspoonsPerTablespoon: 3,
+                millilitersPerTablespoon: 15,
+                fluidOuncesPerCup: 8.4535, // Approximate
+                litersPerCup: 0.25
+            },
+            uk: {
+                tablespoonsPerCup: 16,
+                teaspoonsPerTablespoon: 3,
+                millilitersPerTablespoon: 17.7582,
+                fluidOuncesPerCup: 10, // UK fluid ounces
+                litersPerCup: 0.284131
+            }
+        };
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh';
+
+            // Update button states
+            document.querySelectorAll('.lang-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all text elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update SEO meta tags
+            updateSEOMeta(lang);
+
+            // Update fraction display
+            updateFractionDisplay();
+        }
+
+        function updateSEOMeta(lang) {
+            const title = translations[lang].title;
+            const description = translations[lang].subtitle;
+
+            document.title = title + ' - Tbsp to Cup Converter | HowManyQ';
+            document.querySelector('meta[name="description"]').setAttribute('content',
+                description + ' Learn how many tablespoons are in 1/4 cup with our easy-to-use converter tool.');
+        }
+
+        function setMeasurementSystem(system, button) {
+            currentMeasurementSystem = system;
+
+            // Update active state
+            document.querySelectorAll('.measurement-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+
+            // Update fraction display
+            updateFractionDisplay();
+
+            // Recalculate if there's input
+            const tbspInput = document.getElementById('tablespoonsInput');
+            const cupsInput = document.getElementById('cupsInput');
+
+            if (tbspInput.value) {
+                convertTablespoonsToCups();
+            } else if (cupsInput.value) {
+                convertCupsToTablespoons();
+            }
+        }
+
+        function updateFractionDisplay() {
+            const factors = conversionFactors[currentMeasurementSystem];
+            const fractionValue = factors.tablespoonsPerCup / 4;
+
+            const fractionDisplay = document.querySelector('.fraction-value');
+            fractionDisplay.textContent = `${fractionValue.toFixed(1)} ${currentLang === 'en' ? 'Tablespoons' : '汤匙'}`;
+        }
+
+        function convertTablespoonsToCups() {
+            const tbspInput = document.getElementById('tablespoonsInput');
+            const cupsInput = document.getElementById('cupsInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const tablespoons = parseFloat(tbspInput.value);
+
+            if (isNaN(tablespoons) || tablespoons < 0) {
+                cupsInput.value = '';
+                resultContainer.style.display = 'none';
+                updateAdditionalConversions(0);
+                return;
+            }
+
+            const factors = conversionFactors[currentMeasurementSystem];
+            const cups = tablespoons / factors.tablespoonsPerCup;
+            cupsInput.value = cups.toFixed(6).replace(/\.?0+$/, '');
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = tablespoons.toString();
+            resultUnit.textContent = `${currentLang === 'en' ? 'tbsp' : '汤匙'} = ${cups.toFixed(4).replace(/\.?0+$/, '')} ${currentLang === 'en' ? 'cups' : '杯'}`;
+
+            // Update additional conversions
+            updateAdditionalConversions(tablespoons);
+        }
+
+        function convertCupsToTablespoons() {
+            const tbspInput = document.getElementById('tablespoonsInput');
+            const cupsInput = document.getElementById('cupsInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const cups = parseFloat(cupsInput.value);
+
+            if (isNaN(cups) || cups < 0) {
+                tbspInput.value = '';
+                resultContainer.style.display = 'none';
+                updateAdditionalConversions(0);
+                return;
+            }
+
+            const factors = conversionFactors[currentMeasurementSystem];
+            const tablespoons = cups * factors.tablespoonsPerCup;
+            tbspInput.value = tablespoons.toString();
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = cups.toFixed(4).replace(/\.?0+$/, '');
+            resultUnit.textContent = `${currentLang === 'en' ? 'cups' : '杯'} = ${tablespoons.toFixed(1).replace(/\.?0+$/, '')} ${currentLang === 'en' ? 'tbsp' : '汤匙'}`;
+
+            // Update additional conversions
+            updateAdditionalConversions(tablespoons);
+        }
+
+        function updateAdditionalConversions(tablespoons) {
+            const factors = conversionFactors[currentMeasurementSystem];
+
+            // Convert to teaspoons
+            const teaspoons = tablespoons * factors.teaspoonsPerTablespoon;
+            document.getElementById('teaspoonsValue').textContent = teaspoons.toString();
+
+            // Convert to milliliters
+            const milliliters = tablespoons * factors.millilitersPerTablespoon;
+            document.getElementById('millilitersValue').textContent = milliliters.toFixed(1).replace(/\.?0+$/, '');
+
+            // Convert to fluid ounces (1 fl oz = 2 tbsp)
+            const fluidOunces = tablespoons / 2;
+            document.getElementById('fluidOuncesValue').textContent = fluidOunces.toFixed(2).replace(/\.?0+$/, '');
+
+            // Convert to liters
+            const liters = (tablespoons * factors.millilitersPerTablespoon) / 1000;
+            document.getElementById('litersValue').textContent = liters.toFixed(3).replace(/\.?0+$/, '');
+        }
+
+        function swapValues() {
+            const tbspInput = document.getElementById('tablespoonsInput');
+            const cupsInput = document.getElementById('cupsInput');
+
+            const temp = tbspInput.value;
+            tbspInput.value = cupsInput.value;
+            cupsInput.value = temp;
+
+            if (tbspInput.value) {
+                convertCupsToTablespoons();
+            } else if (cupsInput.value) {
+                convertTablespoonsToCups();
+            }
+        }
+
+        function setQuickValue(tablespoons) {
+            document.getElementById('tablespoonsInput').value = tablespoons.toString();
+            convertTablespoonsToCups();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Focus on tablespoons input for immediate usability
+            document.getElementById('tablespoonsInput').focus();
+
+            // Update initial fraction display
+            updateFractionDisplay();
+
+            // Add input validation
+            document.querySelectorAll('.input-field').forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    // Allow numbers, decimal point, and backspace
+                    const char = String.fromCharCode(e.which);
+                    if (!(/[0-9.]/.test(char)) && e.which !== 8) {
+                        e.preventDefault();
+                    }
+                    // Prevent multiple decimal points
+                    if (char === '.' && this.value.includes('.')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                swapValues();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Liters in a Gallon - Liters to Gallon Converter | HowManyQ</title>
+    <meta name="description" content="Convert liters to gallons and gallons to liters instantly. Learn how many liters are in a gallon with our easy-to-use converter tool. Perfect for cooking, fuel, and everyday conversions.">
+    <meta name="keywords" content="how many liters in a gallon, liters to gallon converter, liters gallon conversion, gallon liters calculator, 3.785 liters in gallon">
+    <meta name="author" content="HowManyQ">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Liters in a Gallon - Easy Liters to Gallon Converter">
+    <meta property="og:description" content="Instantly convert liters to gallons and vice versa. Learn that 1 gallon equals 3.785 liters with our user-friendly converter.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- iOS Web App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Liters to Gallon Converter">
+
+    <style>
+        /* Advanced Gray iOS Design System */
+        :root {
+            --primary-gray: #8E8E93;
+            --secondary-gray: #C7C7CC;
+            --background-gray: #F2F2F7;
+            --card-gray: #FFFFFF;
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --accent-blue: #007AFF;
+            --border-gray: #E5E5EA;
+            --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .converter-section {
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            border: 2px solid var(--border-gray);
+            border-radius: 12px;
+            background: var(--card-gray);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+
+        .input-field::placeholder {
+            color: var(--secondary-gray);
+        }
+
+        .unit-label {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        .swap-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: var(--accent-blue);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 16px auto;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+        }
+
+        .swap-button:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .swap-button:active {
+            transform: scale(0.95);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--accent-blue), #0051D5);
+            color: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .result-card .result-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-card .result-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .result-card .result-unit {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .info-section {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .info-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .info-section p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-button {
+            background: var(--card-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-button:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .lang-button.active {
+            background: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .input-field {
+                font-size: 16px;
+                padding: 14px;
+            }
+
+            .result-card .result-value {
+                font-size: 28px;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .container {
+                padding: 24px;
+            }
+        }
+
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Animation for results */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-card {
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        /* Quick conversion buttons */
+        .quick-conversions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .quick-btn {
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .quick-btn:hover {
+            background: var(--secondary-gray);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <button class="lang-button active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-button" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 data-lang="title">How Many Liters in a Gallon</h1>
+            <p class="subtitle" data-lang="subtitle">Convert liters to gallons and gallons to liters instantly</p>
+        </header>
+
+        <main class="card">
+            <section class="converter-section">
+                <div class="input-group">
+                    <label data-lang="liters-label">Liters</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="litersInput"
+                               placeholder="Enter liters"
+                               aria-label="Enter liters for conversion"
+                               oninput="convertLitersToGallons()">
+                        <span class="unit-label">L</span>
+                    </div>
+                </div>
+
+                <button class="swap-button" onclick="swapValues()" aria-label="Swap conversion direction">
+                    ⇅
+                </button>
+
+                <div class="input-group">
+                    <label data-lang="gallons-label">Gallons</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="gallonsInput"
+                               placeholder="Enter gallons"
+                               aria-label="Enter gallons for conversion"
+                               oninput="convertGallonsToLiters()">
+                        <span class="unit-label">gal</span>
+                    </div>
+                </div>
+            </section>
+
+            <div id="resultContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label" data-lang="result-label">Conversion Result</div>
+                    <div class="result-value" id="resultValue">0</div>
+                    <div class="result-unit" id="resultUnit">liters = 0 gallons</div>
+                </div>
+            </div>
+
+            <div class="quick-conversions">
+                <button class="quick-btn" onclick="setQuickValue(3.78541)" data-lang="quick1">1 Gallon (3.785 L)</button>
+                <button class="quick-btn" onclick="setQuickValue(7.57082)" data-lang="quick2">2 Gallons (7.571 L)</button>
+                <button class="quick-btn" onclick="setQuickValue(1.89271)" data-lang="quick3">0.5 Gallon (1.893 L)</button>
+                <button class="quick-btn" onclick="setQuickValue(0.94635)" data-lang="quick4">0.25 Gallon (0.946 L)</button>
+            </div>
+        </main>
+
+        <section class="info-section">
+            <h3 data-lang="info-title">Conversion Information</h3>
+            <p data-lang="info-text1"><strong>1 gallon = 3.78541 liters</strong> - This is the standard US liquid gallon conversion. Note that UK gallons are different (1 UK gallon = 4.546 liters).</p>
+            <p data-lang="info-text2">The gallon is a unit of volume in the imperial and US customary systems, while the liter is the standard unit in the metric system. This conversion is commonly used in cooking, fuel measurements, and everyday volume calculations.</p>
+            <p data-lang="info-text3">To convert gallons to liters, multiply by 3.78541. To convert liters to gallons, divide by 3.78541.</p>
+        </section>
+    </div>
+
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                title: "How Many Liters in a Gallon",
+                subtitle: "Convert liters to gallons and gallons to liters instantly",
+                "liters-label": "Liters",
+                "gallons-label": "Gallons",
+                "result-label": "Conversion Result",
+                "info-title": "Conversion Information",
+                "info-text1": "<strong>1 gallon = 3.78541 liters</strong> - This is the standard US liquid gallon conversion. Note that UK gallons are different (1 UK gallon = 4.546 liters).",
+                "info-text2": "The gallon is a unit of volume in the imperial and US customary systems, while the liter is the standard unit in the metric system. This conversion is commonly used in cooking, fuel measurements, and everyday volume calculations.",
+                "info-text3": "To convert gallons to liters, multiply by 3.78541. To convert liters to gallons, divide by 3.78541.",
+                "quick1": "1 Gallon (3.785 L)",
+                "quick2": "2 Gallons (7.571 L)",
+                "quick3": "0.5 Gallon (1.893 L)",
+                "quick4": "0.25 Gallon (0.946 L)"
+            },
+            zh: {
+                title: "一加仑有多少升",
+                subtitle: "即时转换升和加仑",
+                "liters-label": "升",
+                "gallons-label": "加仑",
+                "result-label": "转换结果",
+                "info-title": "转换信息",
+                "info-text1": "<strong>1加仑 = 3.78541升</strong> - 这是标准的美制液体加仑转换。注意英制加仑不同（1英制加仑 = 4.546升）。",
+                "info-text2": "加仑是英制和美制系统中的体积单位，而升是公制系统中的标准单位。这种转换常用于烹饪、燃料测量和日常体积计算。",
+                "info-text3": "要将加仑转换为升，乘以3.78541。要将升转换为加仑，除以3.78541。",
+                "quick1": "1加仑 (3.785升)",
+                "quick2": "2加仑 (7.571升)",
+                "quick3": "0.5加仑 (1.893升)",
+                "quick4": "0.25加仑 (0.946升)"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh';
+
+            // Update button states
+            document.querySelectorAll('.lang-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all text elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update SEO meta tags
+            updateSEOMeta(lang);
+        }
+
+        function updateSEOMeta(lang) {
+            const title = translations[lang].title;
+            const description = translations[lang].subtitle;
+
+            document.title = title + ' - Liters to Gallon Converter | HowManyQ';
+            document.querySelector('meta[name="description"]').setAttribute('content',
+                description + ' Learn how many liters are in a gallon with our easy-to-use converter tool.');
+        }
+
+        function convertLitersToGallons() {
+            const litersInput = document.getElementById('litersInput');
+            const gallonsInput = document.getElementById('gallonsInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const liters = parseFloat(litersInput.value);
+
+            if (isNaN(liters) || liters < 0) {
+                gallonsInput.value = '';
+                resultContainer.style.display = 'none';
+                return;
+            }
+
+            const gallons = liters / 3.78541;
+            gallonsInput.value = gallons.toFixed(6).replace(/\.?0+$/, '');
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = liters.toFixed(3).replace(/\.?0+$/, '');
+            resultUnit.textContent = `${currentLang === 'en' ? 'liters' : '升'} = ${gallons.toFixed(4).replace(/\.?0+$/, '')} ${currentLang === 'en' ? 'gallons' : '加仑'}`;
+        }
+
+        function convertGallonsToLiters() {
+            const litersInput = document.getElementById('litersInput');
+            const gallonsInput = document.getElementById('gallonsInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const gallons = parseFloat(gallonsInput.value);
+
+            if (isNaN(gallons) || gallons < 0) {
+                litersInput.value = '';
+                resultContainer.style.display = 'none';
+                return;
+            }
+
+            const liters = gallons * 3.78541;
+            litersInput.value = liters.toFixed(3).replace(/\.?0+$/, '');
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = gallons.toFixed(4).replace(/\.?0+$/, '');
+            resultUnit.textContent = `${currentLang === 'en' ? 'gallons' : '加仑'} = ${liters.toFixed(3).replace(/\.?0+$/, '')} ${currentLang === 'en' ? 'liters' : '升'}`;
+        }
+
+        function swapValues() {
+            const litersInput = document.getElementById('litersInput');
+            const gallonsInput = document.getElementById('gallonsInput');
+
+            const temp = litersInput.value;
+            litersInput.value = gallonsInput.value;
+            gallonsInput.value = temp;
+
+            if (litersInput.value) {
+                convertGallonsToLiters();
+            } else if (gallonsInput.value) {
+                convertLitersToGallons();
+            }
+        }
+
+        function setQuickValue(liters) {
+            document.getElementById('litersInput').value = liters;
+            convertLitersToGallons();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Focus on liters input for immediate usability
+            document.getElementById('litersInput').focus();
+
+            // Add input validation
+            document.querySelectorAll('.input-field').forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    // Allow numbers, decimal point, and backspace
+                    const char = String.fromCharCode(e.which);
+                    if (!(/[0-9.]/.test(char)) && e.which !== 8) {
+                        e.preventDefault();
+                    }
+                    // Prevent multiple decimal points
+                    if (char === '.' && this.value.includes('.')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                swapValues();
+            }
+        });
+    </script>
+</body>
+</html>
