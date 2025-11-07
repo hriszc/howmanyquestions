@@ -5,7 +5,9 @@
       "Bash(ping:*)",
       "Bash(curl:*)",
       "Bash(timeout 30 git status:*)",
-      "Bash(GIT_TRACE=1 git status:*)"
+      "Bash(GIT_TRACE=1 git status:*)",
+      "Bash(python3:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
