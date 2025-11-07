@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Tbsp in a Cup? | Cooking Measurement Converter</title>
+    <meta name="description" content="Convert cooking measurements instantly! Find out how many tablespoons are in a cup and convert between cups, tablespoons, teaspoons, ounces, grams, and milliliters with our easy-to-use cooking converter.">
+    <meta name="keywords" content="how many tbsp in a cup, cooking converter, tablespoon to cup, cooking measurements, recipe converter, cup to tbsp, kitchen measurements">
+    <meta name="author" content="HowManyQ">
+    <meta property="og:title" content="How Many Tbsp in a Cup? | Cooking Measurement Converter">
+    <meta property="og:description" content="Convert cooking measurements instantly! Find out how many tablespoons are in a cup and convert between cups, tablespoons, teaspoons, ounces, grams, and milliliters.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="https://howmanyq.github.io/how_many_tbsp_in_a_cup/">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #007AFF;
+            --primary-blue-hover: #0056CC;
+            --text-primary: #1D1D1F;
+            --text-secondary: #6E6E73;
+            --background: #FFFFFF;
+            --card-background: #F2F2F7;
+            --border-color: #E5E5EA;
+            --success-green: #34C759;
+            --error-red: #FF3B30;
+            --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --border-radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 0 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 0 40px;
+            background: linear-gradient(135deg, var(--card-background) 0%, #FFFFFF 100%);
+            border-radius: var(--border-radius);
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            line-height: 1.1;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .hero .hint {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            opacity: 0.8;
+        }
+
+        /* Converter Section */
+        .converter-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .input-card {
+            background: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .input-card:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .input-group {
+            display: flex;
+            gap: 12px;
+            align-items: stretch;
+            margin-bottom: 16px;
+        }
+
+        .amount-input {
+            flex: 1;
+            padding: 16px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            background: var(--background);
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .amount-input:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+        }
+
+        .amount-input.error {
+            border-color: var(--error-red);
+            background: #FFF5F5;
+        }
+
+        .unit-selector {
+            padding: 16px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            background: var(--background);
+            cursor: pointer;
+            transition: var(--transition);
+            outline: none;
+            min-width: 120px;
+        }
+
+        .unit-selector:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+        }
+
+        .error-message {
+            color: var(--error-red);
+            font-size: 0.875rem;
+            margin-top: 8px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        /* Results Section */
+        .results-card {
+            background: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .results-card:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .results-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-item:hover {
+            background: rgba(0, 122, 255, 0.05);
+            margin: 0 -24px;
+            padding: 16px 24px;
+            border-radius: 8px;
+        }
+
+        .result-label {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .result-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .result-unit {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-left: 4px;
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-background);
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 100;
+        }
+
+        .language-toggle:hover {
+            background: var(--primary-blue);
+            color: white;
+            border-color: var(--primary-blue);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        /* Sound Toggle */
+        .sound-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--card-background);
+            border: 2px solid var(--border-color);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 100;
+        }
+
+        .sound-toggle:hover {
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .sound-toggle:hover svg {
+            stroke: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .input-group {
+                flex-direction: column;
+            }
+
+            .unit-selector {
+                min-width: auto;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+        }
+
+        /* Loading State */
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* Quick Tips */
+        .quick-tips {
+            background: rgba(0, 122, 255, 0.08);
+            border-radius: var(--border-radius);
+            padding: 16px;
+            margin-top: 20px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .quick-tips h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+        }
+
+        .quick-tips p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <button class="sound-toggle" id="soundToggle" title="Toggle Sound">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+        </svg>
+    </button>
+
+    <button class="language-toggle" id="languageToggle">中文</button>
+
+    <div class="container">
+        <section class="hero">
+            <h1 id="heroTitle">How Many Tbsp in a Cup?</h1>
+            <p class="subtitle" id="heroSubtitle">Instant Cooking Measurement Converter</p>
+            <p class="hint" id="heroHint">Enter a value and select a unit to convert</p>
+        </section>
+
+        <section class="converter-section">
+            <div class="input-card">
+                <div class="input-group">
+                    <input type="number" class="amount-input" id="amountInput" placeholder="Enter amount" step="any" min="0">
+                    <select class="unit-selector" id="unitSelector">
+                        <option value="cup">Cups</option>
+                        <option value="tbsp">Tablespoons</option>
+                        <option value="tsp">Teaspoons</option>
+                        <option value="oz">Ounces</option>
+                        <option value="g">Grams</option>
+                        <option value="ml">Milliliters</option>
+                    </select>
+                </div>
+                <div class="error-message" id="errorMessage">Please enter a valid number</div>
+
+                <div class="quick-tips">
+                    <h3 id="tipsTitle">💡 Quick Tips</h3>
+                    <p id="tipsContent">1 cup = 16 tbsp = 48 tsp = 8 oz = 237 ml</p>
+                </div>
+            </div>
+
+            <div class="results-card" id="resultsCard">
+                <h2 class="results-title" id="resultsTitle">Conversion Results</h2>
+                <div id="resultsContainer">
+                    <div class="result-item">
+                        <span class="result-label">Tablespoons</span>
+                        <span>
+                            <span class="result-value" id="tbspResult">-</span>
+                            <span class="result-unit">tbsp</span>
+                        </span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Cups</span>
+                        <span>
+                            <span class="result-value" id="cupResult">-</span>
+                            <span class="result-unit">cups</span>
+                        </span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Teaspoons</span>
+                        <span>
+                            <span class="result-value" id="tspResult">-</span>
+                            <span class="result-unit">tsp</span>
+                        </span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Ounces</span>
+                        <span>
+                            <span class="result-value" id="ozResult">-</span>
+                            <span class="result-unit">oz</span>
+                        </span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Grams</span>
+                        <span>
+                            <span class="result-value" id="gResult">-</span>
+                            <span class="result-unit">g</span>
+                        </span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Milliliters</span>
+                        <span>
+                            <span class="result-value" id="mlResult">-</span>
+                            <span class="result-unit">ml</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p id="footerText">Made with ❤️ for cooking enthusiasts</p>
+        </footer>
+    </div>
+
+    <!-- Audio for sound effects -->
+    <audio id="clickSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmFgU7k9n1unEiBC13yO/eizEIHWq+8+OWT" type="audio/wav">
+    </audio>
+
+    <audio id="successSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmFgU7k9n1unEiBC13yO/eizEIHWq+8+OWT" type="audio/wav">
+    </audio>
+
+    <script>
+        class CookingConverter {
+            constructor() {
+                this.isEnglish = true;
+                this.soundEnabled = true;
+                this.conversions = {
+                    cup: { cup: 1, tbsp: 16, tsp: 48, oz: 8, ml: 236.588, g: 240 },
+                    tbsp: { cup: 1/16, tbsp: 1, tsp: 3, oz: 0.5, ml: 14.787, g: 15 },
+                    tsp: { cup: 1/48, tbsp: 1/3, tsp: 1, oz: 1/6, ml: 4.929, g: 5 },
+                    oz: { cup: 1/8, tbsp: 2, tsp: 6, oz: 1, ml: 29.574, g: 30 },
+                    ml: { cup: 1/236.588, tbsp: 1/14.787, tsp: 1/4.929, oz: 1/29.574, ml: 1, g: 1.014 },
+                    g: { cup: 1/240, tbsp: 1/15, tsp: 1/5, oz: 1/30, ml: 0.986, g: 1 }
+                };
+
+                this.translations = {
+                    en: {
+                        heroTitle: "How Many Tbsp in a Cup?",
+                        heroSubtitle: "Instant Cooking Measurement Converter",
+                        heroHint: "Enter a value and select a unit to convert",
+                        amountPlaceholder: "Enter amount",
+                        resultsTitle: "Conversion Results",
+                        errorMessage: "Please enter a valid number",
+                        tipsTitle: "💡 Quick Tips",
+                        tipsContent: "1 cup = 16 tbsp = 48 tsp = 8 oz = 237 ml",
+                        footerText: "Made with ❤️ for cooking enthusiasts",
+                        units: {
+                            cup: "Cups",
+                            tbsp: "Tablespoons",
+                            tsp: "Teaspoons",
+                            oz: "Ounces",
+                            g: "Grams",
+                            ml: "Milliliters"
+                        },
+                        abbreviations: {
+                            cup: "cups",
+                            tbsp: "tbsp",
+                            tsp: "tsp",
+                            oz: "oz",
+                            g: "g",
+                            ml: "ml"
+                        }
+                    },
+                    zh: {
+                        heroTitle: "一杯有多少汤匙？",
+                        heroSubtitle: "即时烹饪测量转换器",
+                        heroHint: "输入数值并选择要转换的单位",
+                        amountPlaceholder: "输入数量",
+                        resultsTitle: "转换结果",
+                        errorMessage: "请输入有效数字",
+                        tipsTitle: "💡 快速提示",
+                        tipsContent: "1杯 = 16汤匙 = 48茶匙 = 8盎司 = 237毫升",
+                        footerText: "用心为烹饪爱好者制作 ❤️",
+                        units: {
+                            cup: "杯",
+                            tbsp: "汤匙",
+                            tsp: "茶匙",
+                            oz: "盎司",
+                            g: "克",
+                            ml: "毫升"
+                        },
+                        abbreviations: {
+                            cup: "杯",
+                            tbsp: "汤匙",
+                            tsp: "茶匙",
+                            oz: "盎司",
+                            g: "克",
+                            ml: "毫升"
+                        }
+                    }
+                };
+
+                this.initializeElements();
+                this.bindEvents();
+                this.updateLanguage();
+            }
+
+            initializeElements() {
+                this.elements = {
+                    amountInput: document.getElementById('amountInput'),
+                    unitSelector: document.getElementById('unitSelector'),
+                    errorMessage: document.getElementById('errorMessage'),
+                    resultsCard: document.getElementById('resultsCard'),
+                    languageToggle: document.getElementById('languageToggle'),
+                    soundToggle: document.getElementById('soundToggle'),
+                    clickSound: document.getElementById('clickSound'),
+                    successSound: document.getElementById('successSound')
+                };
+            }
+
+            bindEvents() {
+                this.elements.amountInput.addEventListener('input', () => this.handleConversion());
+                this.elements.unitSelector.addEventListener('change', () => this.handleConversion());
+                this.elements.languageToggle.addEventListener('click', () => this.toggleLanguage());
+                this.elements.soundToggle.addEventListener('click', () => this.toggleSound());
+
+                // Add keyboard support
+                this.elements.amountInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        this.handleConversion();
+                        this.playSound('success');
+                    }
+                });
+
+                // Add focus effects
+                this.elements.amountInput.addEventListener('focus', () => {
+                    this.elements.amountInput.parentElement.style.transform = 'scale(1.02)';
+                });
+
+                this.elements.amountInput.addEventListener('blur', () => {
+                    this.elements.amountInput.parentElement.style.transform = 'scale(1)';
+                });
+            }
+
+            handleConversion() {
+                const amount = this.elements.amountInput.value;
+                const unit = this.elements.unitSelector.value;
+
+                // Clear previous error
+                this.hideError();
+
+                if (!amount || amount === '') {
+                    this.clearResults();
+                    return;
+                }
+
+                // Validate input
+                const numAmount = parseFloat(amount);
+                if (isNaN(numAmount) || numAmount < 0) {
+                    this.showError();
+                    this.clearResults();
+                    return;
+                }
+
+                // Perform conversion
+                this.convertAndDisplay(numAmount, unit);
+                this.playSound('success');
+
+                // Add animation to results
+                this.elements.resultsCard.classList.add('fade-in');
+                setTimeout(() => {
+                    this.elements.resultsCard.classList.remove('fade-in');
+                }, 300);
+            }
+
+            convertAndDisplay(amount, fromUnit) {
+                const conversions = this.conversions[fromUnit];
+                const lang = this.isEnglish ? 'en' : 'zh';
+
+                Object.keys(conversions).forEach(unit => {
+                    const result = (amount * conversions[unit]).toFixed(2);
+                    const element = document.getElementById(`${unit}Result`);
+
+                    if (element) {
+                        // Remove trailing zeros and decimal if not needed
+                        const displayResult = parseFloat(result).toString();
+                        element.textContent = displayResult;
+
+                        // Add highlight effect
+                        element.style.color = 'var(--primary-blue)';
+                        setTimeout(() => {
+                            element.style.color = 'var(--text-primary)';
+                        }, 500);
+                    }
+                });
+            }
+
+            clearResults() {
+                ['tbsp', 'cup', 'tsp', 'oz', 'g', 'ml'].forEach(unit => {
+                    const element = document.getElementById(`${unit}Result`);
+                    if (element) {
+                        element.textContent = '-';
+                    }
+                });
+            }
+
+            showError() {
+                this.elements.amountInput.classList.add('error');
+                this.elements.errorMessage.classList.add('show');
+                this.playSound('click');
+            }
+
+            hideError() {
+                this.elements.amountInput.classList.remove('error');
+                this.elements.errorMessage.classList.remove('show');
+            }
+
+            toggleLanguage() {
+                this.isEnglish = !this.isEnglish;
+                this.updateLanguage();
+                this.playSound('click');
+
+                // Update button text
+                this.elements.languageToggle.textContent = this.isEnglish ? '中文' : 'EN';
+            }
+
+            updateLanguage() {
+                const lang = this.isEnglish ? 'en' : 'zh';
+                const translations = this.translations[lang];
+
+                // Update hero section
+                document.getElementById('heroTitle').textContent = translations.heroTitle;
+                document.getElementById('heroSubtitle').textContent = translations.heroSubtitle;
+                document.getElementById('heroHint').textContent = translations.heroHint;
+
+                // Update input section
+                this.elements.amountInput.placeholder = translations.amountPlaceholder;
+                document.getElementById('errorMessage').textContent = translations.errorMessage;
+
+                // Update unit selector options
+                const options = this.elements.unitSelector.options;
+                for (let i = 0; i < options.length; i++) {
+                    const value = options[i].value;
+                    options[i].textContent = translations.units[value];
+                }
+
+                // Update results section
+                document.getElementById('resultsTitle').textContent = translations.resultsTitle;
+                document.getElementById('tipsTitle').textContent = translations.tipsTitle;
+                document.getElementById('tipsContent').textContent = translations.tipsContent;
+                document.getElementById('footerText').textContent = translations.footerText;
+
+                // Update result unit labels
+                ['tbsp', 'cup', 'tsp', 'oz', 'g', 'ml'].forEach(unit => {
+                    const unitElement = document.querySelector(`#${unit}Result`).parentElement.querySelector('.result-unit');
+                    if (unitElement) {
+                        unitElement.textContent = translations.abbreviations[unit];
+                    }
+                });
+
+                // Update result labels
+                const resultLabels = document.querySelectorAll('.result-label');
+                const unitOrder = ['tbsp', 'cup', 'tsp', 'oz', 'g', 'ml'];
+                resultLabels.forEach((label, index) => {
+                    label.textContent = translations.units[unitOrder[index]];
+                });
+
+                // Re-run conversion with new language
+                this.handleConversion();
+            }
+
+            toggleSound() {
+                this.soundEnabled = !this.soundEnabled;
+                this.elements.soundToggle.style.opacity = this.soundEnabled ? '1' : '0.5';
+                this.playSound('click');
+            }
+
+            playSound(type) {
+                if (!this.soundEnabled) return;
+
+                try {
+                    const sound = type === 'success' ? this.elements.successSound : this.elements.clickSound;
+                    sound.currentTime = 0;
+                    sound.play().catch(() => {
+                        // Ignore audio play errors (e.g., user interaction required)
+                    });
+                } catch (e) {
+                    // Ignore audio errors
+                }
+            }
+        }
+
+        // Initialize the converter when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new CookingConverter();
+
+            // Add some interactive feedback
+            document.querySelectorAll('.result-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
+                });
+            });
+        });
+
+        // Add smooth scrolling for better UX
+        document.documentElement.style.scrollBehavior = 'smooth';
+    </script>
+</body>
+</html>
