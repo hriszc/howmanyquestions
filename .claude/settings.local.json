@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(ping:*)",
+      "Bash(curl:*)",
+      "Bash(timeout 30 git status:*)",
+      "Bash(GIT_TRACE=1 git status:*)"
     ],
     "deny": [],
     "ask": []
