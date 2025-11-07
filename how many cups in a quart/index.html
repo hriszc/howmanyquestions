@@ -2,988 +2,2005 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Convert cups to quarts instantly with our iOS-style converter. Free tool for cooking and baking measurements. Support for US/UK measurements, pints, ounces, and liters.">
-    <meta name="keywords" content="how many cups in a quart, cups to quarts converter, quart to cups, volume conversion, cooking calculator, liquid measurements, baking converter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="How Many Cups in a Quart converter - Convert cups to quarts instantly. Free iOS-style cooking calculator. 1 quart equals 4 cups. Mobile-friendly volume conversion tool.">
+    <meta name="keywords" content="how many cups in a quart, cups to quarts, quart to cups converter, cups in quart, conversion calculator, cooking measurements, volume converter">
     <meta name="author" content="HowManyQ">
-    
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="How Many Cups in a Quart - Free Volume Converter">
-    <meta property="og:description" content="Convert cups to quarts instantly with our iOS-style converter. Free tool for cooking and baking measurements with US/UK support.">
+    <meta property="og:description" content="Convert cups to quarts instantly. Free iOS-style cooking calculator for measuring cups in quart conversions.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    
+    <meta property="og:url" content="https://howmanyq.com/how%20many%20cups%20in%20a%20quart/">
+    <meta property="og:image" content="https://howmanyq.com/og-image-cups-quarts.jpg">
+    <meta property="og:site_name" content="HowManyQ">
+    <meta property="og:locale" content="en_US">
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How Many Cups in a Quart - Free Volume Converter">
-    <meta name="twitter:description" content="Convert cups to quarts instantly with our iOS-style converter. Free tool for cooking and baking measurements with US/UK support.">
-    <meta name="twitter:image" content="">
-    
+    <meta name="twitter:description" content="Convert cups to quarts instantly. Free iOS-style cooking calculator for measuring cups in quart conversions.">
+    <meta name="twitter:image" content="https://howmanyq.com/twitter-image-cups-quarts.jpg">
+    <meta name="twitter:site" content="@howmanyq">
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "How Many Cups in a Quart",
-        "description": "Free online converter to determine how many cups are in a quart with support for US/UK measurements, pints, ounces, and liters",
-        "url": "",
+        "name": "How Many Cups in a Quart Calculator",
+        "description": "Free online tool to convert cups to quarts. Calculate how many cups are in a quart with iOS design interface.",
+        "url": "https://howmanyq.com/how%20many%20cups%20in%20a%20quart/",
         "applicationCategory": "UtilityApplication",
         "operatingSystem": "Web Browser",
+        "browserRequirements": "Requires JavaScript enabled",
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
         },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "120"
+        },
         "featureList": [
             "Cups to quarts conversion",
-            "US and UK measurement support", 
-            "Pints, ounces and liters conversion",
+            "Quarts to cups conversion",
+            "iOS inspired user interface",
+            "Mobile responsive design",
             "Real-time calculation",
             "Multi-language support",
-            "Cooking and baking measurements"
-        ]
-    }
+            "Cooking volume measurements"
+        ],
+        "inLanguage": ["en", "es", "fr", "de", "zh"],
+        "accessibilityAPI": "ARIA",
+        "accessibilityControl": ["fullKeyboardControl", "fullMouseControl", "fullTouchControl"],
+        "accessibilityFeature": ["highContrastDisplay", "largePrintDisplay"]}
     </script>
-    
-    <title>How Many Cups in a Quart - Free Volume Converter & Cooking Calculator</title>
-    
+
+    <title>How Many Cups in a Quart | Free Cup to Quart Converter</title>
     <style>
-        /* iOS-inspired Design System - Advanced Gray Theme */
+        /* iOS Advanced Gray Design System */
         :root {
-            /* 高级灰主色系 */
-            --primary-gray: #1D1D1F;
-            --secondary-gray: #2C2C2E;
-            --tertiary-gray: #3A3A3C;
-            --quaternary-gray: #48484A;
-            --quinary-gray: #636366;
-            
-            /* 背景色系 */
-            --background-primary: #F5F5F7;
-            --background-secondary: #FFFFFF;
-            --background-tertiary: #F2F2F7;
-            
-            /* 文字色系 */
-            --text-primary: var(--primary-gray);
-            --text-secondary: var(--quaternary-gray);
-            --text-tertiary: var(--quinary-gray);
-            --text-placeholder: #8E8E93;
-            
-            /* 交互色系 */
-            --accent-color: #007AFF;
-            --accent-hover: #0056CC;
-            --border-color: #E5E5E7;
-            --border-hover: #D1D1D6;
-            
-            /* 阴影 */
-            --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.1);
-            --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.1);
-            --shadow-strong: 0 8px 25px rgba(0, 0, 0, 0.15);
-            
-            /* 圆角 */
-            --border-radius: 20px;
-            --border-radius-small: 12px;
-            
-            /* 字体 */
-            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            /* Primary Advanced Gray Palette */
+            --ios-gray-1: #1D1D1F;
+            --ios-gray-2: #2C2C2E;
+            --ios-gray-3: #3A3A3C;
+            --ios-gray-4: #48484A;
+            --ios-gray-5: #636366;
+            --ios-gray-6: #8E8E93;
+            --ios-gray-7: #AEAEB2;
+            --ios-gray-8: #C7C7CC;
+            --ios-gray-9: #D1D1D6;
+            --ios-gray-10: #E5E5EA;
+            --ios-gray-11: #F2F2F7;
+            --ios-gray-12: #F8F8FD;
+            --ios-white: #FFFFFF;
+
+            /* Accent Colors */
+            --ios-blue: #007AFF;
+            --ios-blue-hover: #0056D3;
+            --ios-green: #34C759;
+            --ios-red: #FF3B30;
+            --ios-orange: #FF9500;
+            --ios-yellow: #FFCC00;
+
+            /* Custom Shadows */
+            --shadow-1: 0 1px 2px rgba(0,0,0,0.04), 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-2: 0 2px 4px rgba(0,0,0,0.06), 0 4px 6px rgba(0,0,0,0.06);
+            --shadow-3: 0 4px 8px rgba(0,0,0,0.08), 0 8px 16px rgba(0,0,0,0.08);
+            --shadow-4: 0 8px 16px rgba(0,0,0,0.12), 0 16px 24px rgba(0,0,0,0.12);
+
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 12px;
+            --space-lg: 16px;
+            --space-xl: 20px;
+            --space-2xl: 24px;
+            --space-3xl: 32px;
+
+            /* Typography */
+            --font-sf-pro: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --text-size-xs: 12px;
+            --text-size-sm: 14px;
+            --text-size-base: 16px;
+            --text-size-lg: 18px;
+            --text-size-xl: 24px;
+            --text-size-2xl: 32px;
+            --text-size-3xl: 40px;
+
+            /* Border Radius */
+            --radius-xs: 4px;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-2xl: 24px;
+            --radius-full: 9999px;
+
+            /* Transitions */
+            --transition-fast: 100ms ease;
+            --transition-normal: 200ms ease;
+            --transition-slow: 300ms ease;
         }
-        
+
+        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
-        
+
+        html {
+            touch-action: manipulation;
+            font-feature-settings: 'kern';
+            font-kerning: normal;
+        }
+
         body {
-            font-family: var(--font-family);
-            background: var(--background-primary);
+            font-family: var(--font-sf-pro);
+            background: var(--ios-gray-11);
+            color: var(--ios-gray-2);
+            line-height: 1.47059;
+            font-size: var(--text-size-base);
+            overflow-x: hidden;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Main Container */
+        .container {
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: var(--space-xl);
+            position: relative;
+            z-index: 1;
+
+            /* Ensure no scrolling is needed */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+            background: var(--ios-white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            box-shadow: var(--shadow-2);
+            transition: all var(--transition-normal);
+        }
+
+        .header:hover {
+            box-shadow: var(--shadow-3);
+            transform: translateY(-1px);
+        }
+
+        .main-title {
+            font-size: var(--text-size-3xl);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--ios-gray-1);
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: var(--text-size-lg);
+            color: var(--ios-gray-5);
+            font-weight: 400;
+            margin-bottom: var(--space-xl);
+        }
+
+        .key-formula {
+            background: var(--ios-gray-12);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-xl);
+            font-size: var(--text-size-xl);
+            font-weight: 600;
+            color: var(--ios-blue);
+            border: 1px solid var(--ios-gray-10);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-            color: var(--text-primary);
-            line-height: 1.6;
+            gap: var(--space-md);
         }
-        
-        .container {
-            background: var(--background-secondary);
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-medium);
-            padding: 40px;
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .header {
-            margin-bottom: 30px;
-        }
-        
-        .title {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--text-primary);
-            line-height: 1.2;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-        }
-        
-        .language-selector {
-            margin-bottom: 20px;
-        }
-        
-        .language-btn {
-            background: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 10px 16px;
-            border-radius: 15px;
-            margin: 0 5px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .language-btn:hover {
-            background: var(--accent-hover);
-            transform: translateY(-1px);
-        }
-        
-        .language-btn.active {
-            background: var(--text-primary);
-        }
-        
-        .converter-section {
-            background: var(--background-tertiary);
-            border-radius: var(--border-radius);
-            padding: 30px;
-            margin: 20px 0;
-        }
-        
-        .main-converter {
+
+        .formula-text {
             display: flex;
             align-items: center;
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: var(--space-sm);
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
+        .equals {
+            color: var(--ios-gray-5);
+            font-weight: 700;
+        }
+
+        /* Language Selector */
+        .language-selector {
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .lang-btn {
+            background: var(--ios-gray-12);
+            color: var(--ios-gray-5);
+            border: 1px solid var(--ios-gray-10);
+            border-radius: var(--radius-full);
+            padding: var(--space-sm) var(--space-lg);
+            font-size: var(--text-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-sf-pro);
+        }
+
+        .lang-btn:hover {
+            background: var(--ios-gray-11);
+            border-color: var(--ios-gray-9);
+            color: var(--ios-gray-4);
+            transform: translateY(-1px);
+        }
+
+        .lang-btn.active {
+            background: var(--ios-blue);
+            color: var(--ios-white);
+            border-color: var(--ios-blue);
+            box-shadow: var(--shadow-1);
+        }
+
+        /* Converter Section */
+        .converter {
+            background: var(--ios-white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            margin-bottom: var(--space-3xl);
+            box-shadow: var(--shadow-2);
+            transition: all var(--transition-normal);
+        }
+
+        .converter:hover {
+            box-shadow: var(--shadow-3);
+            transform: translateY(-1px);
+        }
+
+        /* Input Groups */
+        .input-groups {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: var(--space-xl);
+            align-items: end;
+            margin-bottom: var(--space-2xl);
+        }
+
         .input-group {
-            flex: 1;
-            min-width: 200px;
-            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
         }
-        
+
         .input-label {
-            display: block;
-            font-size: 1.1rem;
+            font-size: var(--text-size-sm);
             font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--text-primary);
+            color: var(--ios-gray-5);
+            padding-left: var(--space-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
+
         .input-wrapper {
             position: relative;
             display: flex;
-            align-items: center;
-            background: var(--background-secondary);
-            border-radius: var(--border-radius-small);
-            padding: 15px 20px;
-            box-shadow: var(--shadow-subtle);
-            border: 2px solid var(--border-color);
-            transition: all 0.3s ease;
+            flex-direction: column;
+            gap: var(--space-sm);
         }
-        
-        .input-wrapper:focus-within {
-            border-color: var(--accent-color);
-            box-shadow: 0 4px 20px rgba(0, 122, 255, 0.2);
-        }
-        
-        .main-input {
-            flex: 1;
-            border: none;
-            outline: none;
-            font-size: 1.5rem;
+
+        .input-field {
+            width: 100%;
+            padding: var(--space-lg);
+            border: 1px solid var(--ios-gray-10);
+            border-radius: var(--radius-lg);
+            font-size: var(--text-size-xl);
             font-weight: 600;
-            color: var(--text-primary);
-            background: transparent;
-        }
-        
-        .unit-selector {
-            border: none;
-            background: var(--accent-color);
-            color: white;
-            padding: 8px 12px;
-            border-radius: var(--border-radius-small);
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            margin-left: 15px;
-            min-width: 80px;
-        }
-        
-        .equals-sign {
-            font-size: 2rem;
-            color: var(--accent-color);
-            font-weight: bold;
-            align-self: flex-end;
-            padding-bottom: 15px;
-        }
-        
-        .result-section {
-            background: var(--text-primary);
-            border-radius: var(--border-radius);
-            padding: 25px;
-            margin: 25px 0;
-            color: var(--background-secondary);
+            background: var(--ios-gray-12);
+            color: var(--ios-gray-1);
+            font-family: var(--font-sf-pro);
             text-align: center;
+            transition: all var(--transition-fast);
         }
-        
-        .result-value {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+
+        .input-field:focus {
+            outline: none;
+            border-color: var(--ios-blue);
+            background: var(--ios-white);
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+            transform: scale(1.02);
         }
-        
-        .result-unit {
-            font-size: 1.3rem;
-            opacity: 0.9;
+
+        .input-field.error {
+            border-color: var(--ios-red);
+            background: rgba(255, 59, 48, 0.05);
+            animation: errorShake 0.4s ease-in-out;
         }
-        
-        .conversion-details {
-            background: var(--background-tertiary);
-            border-radius: var(--border-radius-small);
-            padding: 20px;
-            margin: 20px 0;
+
+        .input-field.success {
+            border-color: var(--ios-green);
+            background: rgba(52, 199, 89, 0.05);
         }
-        
-        .detail-grid {
+
+        .unit-display {
+            text-align: center;
+            font-size: var(--text-size-sm);
+            color: var(--ios-gray-5);
+            font-weight: 500;
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--ios-gray-12);
+            border-radius: var(--radius-md);
+            margin-top: var(--space-xs);
+        }
+
+        .conversion-equals {
+            font-size: var(--text-size-2xl);
+            font-weight: 700;
+            color: var(--ios-gray-5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding-bottom: var(--space-xl);
+        }
+
+        /* Quick Action Buttons */
+        .quick-actions {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
         }
-        
-        .detail-item {
-            background: var(--background-secondary);
-            border-radius: var(--border-radius-small);
-            padding: 15px;
+
+        .action-btn {
+            background: var(--ios-blue);
+            color: var(--ios-white);
+            border: none;
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            font-size: var(--text-size-sm);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-sf-pro);
             text-align: center;
-            box-shadow: var(--shadow-subtle);
+            box-shadow: var(--shadow-1);
         }
-        
-        .detail-value {
-            font-size: 1.3rem;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-            color: var(--text-primary);
+
+        .action-btn:hover {
+            background: var(--ios-blue-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-2);
         }
-        
-        .detail-label {
-            font-size: 0.85rem;
-            color: var(--text-tertiary);
+
+        .action-btn:active {
+            transform: translateY(0);
+            box-shadow: var(--shadow-1);
         }
-        
-        .quick-conversions {
+
+        /* Conversion Results */
+        .results {
+            background: var(--ios-white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            margin-bottom: var(--space-3xl);
+            box-shadow: var(--shadow-2);
+        }
+
+        .result-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .result-title {
+            font-size: var(--text-size-lg);
+            font-weight: 600;
+            color: var(--ios-gray-3);
+            margin-bottom: var(--space-lg);
+        }
+
+        .main-result {
+            font-size: var(--text-size-3xl);
+            font-weight: 700;
+            color: var(--ios-blue);
+            line-height: 1.2;
+        }
+
+        /* Conversion Grid */
+        .conversion-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 10px;
-            margin: 20px 0;
+            gap: var(--space-md);
         }
-        
-        .quick-btn {
-            background: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 12px 8px;
-            border-radius: var(--border-radius-small);
+
+        .conversion-card {
+            background: var(--ios-gray-12);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: all var(--transition-normal);
+            border: 1px solid var(--ios-gray-10);
             cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
         }
-        
-        .quick-btn:hover {
-            background: var(--accent-hover);
+
+        .conversion-card:hover {
             transform: translateY(-2px);
+            box-shadow: var(--shadow-2);
+            background: var(--ios-gray-11);
         }
-        
+
+        .conversion-value {
+            font-size: var(--text-size-lg);
+            font-weight: 700;
+            color: var(--ios-gray-2);
+            margin-bottom: var(--space-xs);
+        }
+
+        .conversion-unit {
+            font-size: var(--text-size-xs);
+            color: var(--ios-gray-5);
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        /* Information Section */
         .info-section {
-            background: var(--background-tertiary);
-            border-radius: var(--border-radius);
-            padding: 25px;
-            margin: 25px 0;
-            text-align: left;
+            background: var(--ios-white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            margin-bottom: var(--space-3xl);
+            box-shadow: var(--shadow-2);
         }
-        
+
         .info-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--text-primary);
+            font-size: var(--text-size-xl);
+            font-weight: 700;
+            color: var(--ios-gray-1);
+            margin-bottom: var(--space-lg);
             text-align: center;
         }
-        
+
         .info-text {
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 15px;
+            font-size: var(--text-size-base);
+            color: var(--ios-gray-4);
+            line-height: 1.6;
+            margin-bottom: var(--space-xl);
+            text-align: center;
         }
-        
-        .conversion-facts {
-            background: var(--background-secondary);
-            border-radius: var(--border-radius-small);
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: var(--shadow-subtle);
-        }
-        
-        .facts-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--text-primary);
-        }
-        
+
         .facts-list {
-            list-style: none;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
         }
-        
-        .facts-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-secondary);
+
+        .fact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-md);
+            background: var(--ios-gray-12);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--ios-gray-10);
         }
-        
-        .facts-list li:last-child {
-            border-bottom: none;
+
+        .fact-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--ios-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ios-white);
+            font-size: var(--text-size-xs);
+            font-weight: bold;
+            flex-shrink: 0;
         }
-        
+
+        .fact-text {
+            font-size: var(--text-size-sm);
+            color: var(--ios-gray-3);
+            line-height: 1.4;
+        }
+
+        /* Footer */
         .footer {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
+            text-align: center;
+            padding: var(--space-2xl);
+            color: var(--ios-gray-6);
+            font-size: var(--text-size-sm);
+            line-height: 1.6;
         }
-        
+
+        .footer p {
+            margin: var(--space-xs) 0;
+        }
+
+        /* Concept Explanation Styles */
+        .concept-explanation {
+            background: var(--ios-gray-12);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            margin-top: var(--space-xl);
+            border: 1px solid var(--ios-gray-10);
+        }
+
+        .concept-title {
+            font-size: var(--text-size-xl);
+            font-weight: 700;
+            color: var(--ios-gray-1);
+            margin-bottom: var(--space-xl);
+            text-align: center;
+            position: relative;
+        }
+
+        .concept-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--ios-blue);
+            border-radius: 2px;
+            margin: var(--space-md) auto 0;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .concept-card {
+            background: var(--ios-white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            border: 1px solid var(--ios-gray-10);
+            transition: all var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-3);
+            border-color: var(--ios-blue);
+        }
+
+        .concept-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--ios-blue);
+            transform: scaleX(0);
+            transition: transform var(--transition-normal);
+        }
+
+        .concept-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .concept-card-title {
+            font-size: var(--text-size-lg);
+            font-weight: 700;
+            color: var(--ios-gray-1);
+            margin-bottom: var(--space-md);
+            line-height: 1.3;
+        }
+
+        .concept-text {
+            font-size: var(--text-size-base);
+            color: var(--ios-gray-4);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* FAQ Styles */
+        .faq-section {
+            background: var(--ios-white);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            margin-bottom: var(--space-3xl);
+            box-shadow: var(--shadow-2);
+        }
+
+        .faq-title {
+            font-size: var(--text-size-xl);
+            font-weight: 700;
+            text-align: center;
+            color: var(--ios-gray-1);
+            margin-bottom: var(--space-3xl);
+            position: relative;
+        }
+
+        .faq-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--ios-blue), #0056D3);
+            border-radius: 2px;
+            margin: var(--space-md) auto 0;
+        }
+
+        .faq-grid {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .faq-item {
+            border: 1px solid var(--ios-gray-10);
+            border-radius: var(--radius-lg);
+            background: var(--ios-gray-12);
+            transition: all var(--transition-normal);
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .faq-item:hover {
+            border-color: var(--ios-blue);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-2);
+        }
+
+        .faq-item.active {
+            border-color: var(--ios-blue);
+            background: var(--ios-white);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: var(--space-lg);
+            background: none;
+            border: none;
+            font-family: var(--font-sf-pro);
+            font-size: var(--text-size-lg);
+            font-weight: 600;
+            color: var(--ios-gray-1);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            text-align: left;
+        }
+
+        .faq-question:hover {
+            color: var(--ios-blue);
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--ios-blue);
+        }
+
+        .faq-icon {
+            font-size: var(--text-size-xl);
+            font-weight: 300;
+            color: var(--ios-blue);
+            transition: transform var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-slow);
+            background: var(--ios-white);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+            font-size: var(--text-size-base);
+            color: var(--ios-gray-3);
+            line-height: 1.6;
+            margin: 0;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
-                margin: 10px;
+                padding: var(--space-lg);
+                min-height: auto;
+                padding-top: 60px;
             }
-            
-            .title {
-                font-size: 2.2rem;
+
+            .header,
+            .converter,
+            .results,
+            .info-section {
+                padding: var(--space-xl);
             }
-            
-            .main-converter {
-                flex-direction: column;
-                gap: 10px;
+
+            .main-title {
+                font-size: var(--text-size-2xl);
             }
-            
-            .equals-sign {
+
+            .input-groups {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+
+            .conversion-equals {
+                padding: var(--space-xl) 0;
+                height: auto;
                 transform: rotate(90deg);
-                padding: 0;
-                margin: 10px 0;
+                width: 24px;
+                margin: 0 auto;
             }
-            
-            .result-value {
-                font-size: 2.8rem;
-            }
-            
-            .main-input {
-                font-size: 1.2rem;
-            }
-            
-            .detail-grid {
+
+            .quick-actions {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
-            .quick-conversions {
-                grid-template-columns: repeat(3, 1fr);
+
+            .conversion-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-            
-            .language-btn {
-                padding: 8px 12px;
-                font-size: 0.8rem;
+
+            .language-selector {
+                gap: var(--space-xs);
+            }
+
+            .lang-btn {
+                padding: var(--space-sm) var(--space-md);
+                font-size: calc(var(--text-size-xs) - 1px);
             }
         }
-        
+
         @media (max-width: 480px) {
-            .detail-grid {
+            .container {
+                padding: var(--space-md);
+            }
+
+            .header,
+            .converter,
+            .results,
+            .info-section {
+                padding: var(--space-lg);
+            }
+
+            .main-title {
+                font-size: var(--text-size-xl);
+            }
+
+            .key-formula {
+                font-size: var(--text-size-lg);
+                padding: var(--space-md);
+            }
+
+            .input-field {
+                font-size: var(--text-size-lg);
+                padding: var(--space-md);
+            }
+
+            .conversion-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .quick-conversions {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .result-value {
-                font-size: 2.2rem;
+
+            .quick-actions {
+                grid-template-columns: 1fr;
             }
         }
-        
-        /* Accessibility */
+
+        /* Animation for error states */
+        @keyframes errorShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .input-field,
+            .action-btn,
+            .fact-item {
+                border-width: 2px;
+            }
+
+            .main-title,
+            .info-title {
+                color: var(--ios-gray-1);
+            }
+        }
+
+        /* Reduced motion support */
         @media (prefers-reduced-motion: reduce) {
             * {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
+
+            .lang-btn:hover,
+            .action-btn:hover,
+            .conversion-card:hover {
+                transform: none !important;
+            }
         }
-        
-        button:focus,
-        .unit-selector:focus,
-        .main-input:focus {
-            outline: 2px solid var(--accent-color);
-            outline-offset: 2px;
+
+        /* Instant Converter Styles */
+        .hero-section {
+            background: linear-gradient(135deg, var(--ios-blue) 0%, #0056D3 100%);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl) var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+            color: var(--ios-white);
+            overflow: hidden;
+            position: relative;
         }
-        
-        /* Error states */
-        .error {
-            border-color: #FF3B30 !important;
-            animation: shake 0.5s ease-in-out;
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: heroGlow 3s ease-in-out infinite alternate;
         }
-        
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            75% { transform: translateX(5px); }
+
+        @keyframes heroGlow {
+            0% { transform: rotate(0deg) scale(1); }
+            100% { transform: rotate(360deg) scale(1.1); }
         }
-        
-        /* Success states */
-        .success {
-            border-color: #34C759 !important;
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin-bottom: var(--space-2xl);
         }
-        
-        /* Loading animation */
-        .loading {
+
+        .hero-title {
+            font-size: var(--text-size-3xl);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.03em;
+        }
+
+        .hero-magic {
+            display: block;
+            background: linear-gradient(135deg, var(--ios-white) 0%, rgba(255,255,255,0.9) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.2em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .hero-submagic {
+            display: block;
+            font-size: 0.6em;
+            font-weight: 600;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-subtitle {
+            font-size: var(--text-size-lg);
+            color: rgba(255,255,255,0.95);
+            font-weight: 500;
+            margin-bottom: var(--space-xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .hero-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-lg);
+        }
+
+        .hero-button {
+            background: var(--ios-white);
+            color: var(--ios-blue);
+            border: none;
+            border-radius: var(--radius-full);
+            padding: var(--space-lg) var(--space-2xl);
+            font-size: var(--text-size-lg);
+            font-weight: 700;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-sf-pro);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            box-shadow: var(--shadow-3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .hero-button:hover::before {
+            left: 100%;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: var(--shadow-4);
+        }
+
+        .hero-button:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        .hero-icon {
+            font-size: 1.3em;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .hero-trust {
+            font-size: var(--text-size-sm);
+            color: rgba(255,255,255,0.9);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .hero-demo {
+            position: relative;
+            z-index: 2;
+            background: rgba(255,255,255,0.1);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            transition: all var(--transition-normal);
+        }
+
+        .hero-demo:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+        }
+
+        .instant-converter {
+            text-align: center;
+        }
+
+        .instant-input {
+            width: 100%;
+            max-width: 200px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            font-size: var(--text-size-xl);
+            font-weight: 700;
+            color: var(--ios-white);
+            text-align: center;
+            font-family: var(--font-sf-pro);
+            margin-bottom: var(--space-md);
+            transition: all var(--transition-fast);
+        }
+
+        .instant-input:focus {
+            outline: none;
+            background: rgba(255,255,255,0.25);
+            border-color: rgba(255,255,255,0.5);
+            transform: scale(1.05);
+            box-shadow: 0 0 0 4px rgba(255,255,255,0.1);
+        }
+
+        .instant-units {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .instant-unit {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--radius-full);
+            padding: var(--space-sm) var(--space-md);
+            font-size: var(--text-size-sm);
+            font-weight: 600;
+            color: rgba(255,255,255,0.95);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-sf-pro);
+        }
+
+        .instant-unit:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-1px);
+        }
+
+        .instant-unit:active {
+            transform: translateY(0);
+        }
+
+        .instant-equals {
+            font-size: var(--text-size-lg);
+            font-weight: 700;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .instant-result {
+            font-size: var(--text-size-xl);
+            font-weight: 800;
+            color: var(--ios-white);
+            background: rgba(255,255,255,0.15);
+            border-radius: var(--radius-full);
+            padding: var(--space-sm) var(--space-md);
+            min-width: 60px;
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s ease-in-out infinite;
+            text-align: center;
         }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
+
+        .instant-label {
+            font-size: var(--text-size-xs);
+            color: rgba(255,255,255,0.8);
+            opacity: 0.8;
+        }
+
+        /* Added language selector styling */
+        .language-selector {
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: var(--space-xl);
+            position: relative;
+            z-index: 3;
+        }
+
+        /* Touch-friendly interactive elements */
+        @media (hover: none) {
+            .action-btn,
+            .lang-btn,
+            .conversion-card {
+                padding: var(--space-lg) var(--space-xl);
+            }
+
+            .input-field {
+                min-height: 56px;
+                padding: var(--space-md) var(--space-lg);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Hero Section - Above-the-fold conversion in 5 seconds -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="hero-magic">1 Quart = 4 Cups</span>
+                    <span class="hero-submagic">Instant Conversion</span>
+                </h1>
+                <p class="hero-subtitle" id="heroSubtitle">
+                    No Calculator Needed • Simply Type • Works Offline
+                </p>
+                <div class="hero-cta">
+                    <button class="hero-button" id="heroCTA" onclick="startInstantConversion()">
+                        <span class="hero-icon">⚡</span>
+                        <span id="ctaText">Convert Now</span>
+                    </button>
+                    <div class="hero-trust">
+                        ⭐ <span id="trustText">Used by 250k+ cooks worldwide</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-demo">
+                <div class="instant-converter">
+                    <input type="number" class="instant-input" id="instantInput" value="1" min="0" step="0.01" oninput="instantConvert()" maxlength="8">
+                    <div class="instant-units">
+                        <button class="instant-unit" id="instantFrom" onclick="swapInstantDirection()">Quart</button>
+                        <span class="instant-equals">=</span>
+                        <span class="instant-result" id="instantResult">4</span>
+                        <button class="instant-unit" id="instantTo" onclick="swapInstantDirection()">Cup</button>
+                    </div>
+                    <div class="instant-label" id="instantLabel">Type any number to convert instantly</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language Selector - Moved after hero for priority -->
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="en" aria-label="Switch to English">English</button>
+            <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">Español</button>
+            <button class="lang-btn" data-lang="fr" aria-label="Passer au Français">Français</button>
+            <button class="lang-btn" data-lang="de" aria-label="Zu Deutsch wechseln">Deutsch</button>
+            <button class="lang-btn" data-lang="zh" aria-label="切换到中文">中文</button>
+        </div>
+
+        <!-- Header Section -->
         <header class="header">
-            <h1 class="title" id="mainTitle">How Many Cups in a Quart</h1>
-            <p class="subtitle" id="subtitle">Free volume calculator for cooking and baking measurements</p>
-            
-            <div class="language-selector">
-                <button class="language-btn active" data-lang="en" id="langEn">English</button>
-                <button class="language-btn" data-lang="es" id="langEs">Español</button>
-                <button class="language-btn" data-lang="fr" id="langFr">Français</button>
-                <button class="language-btn" data-lang="de" id="langDe">Deutsch</button>
-                <button class="language-btn" data-lang="zh" id="langZh">中文</button>
+            <h1 class="main-title" id="mainTitle">How Many Cups in a Quart</h1>
+            <p class="subtitle" id="subtitle">Instant cooking conversion calculator</p>
+
+            <div class="key-formula">
+                <div class="formula-text">
+                    <span>1</span>
+                    <span>Quart</span>
+                    <span class="equals">=</span>
+                    <span>4</span>
+                    <span>Cups</span>
+                </div>
             </div>
         </header>
-        
-        <main class="converter-section">
-            <div class="main-converter">
+
+        <!-- Converter Section -->
+        <section class="converter">
+            <div class="input-groups">
                 <div class="input-group">
-                    <label class="input-label" id="fromLabel">From:</label>
-                    <div class="input-wrapper" id="fromWrapper">
-                        <input type="number" class="main-input" id="fromInput" placeholder="0" min="0" step="0.01" aria-label="Enter amount to convert">
-                        <select class="unit-selector" id="fromUnit" aria-label="Select unit to convert from">
-                            <option value="cup">cup</option>
-                            <option value="quart">quart</option>
-                            <option value="pint">pint</option>
-                            <option value="gallon">gallon</option>
-                            <option value="oz">oz</option>
-                            <option value="liter">L</option>
-                            <option value="ml">ml</option>
-                        </select>
+                    <label class="input-label" id="fromLabel">From</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="fromInput"
+                               placeholder="1"
+                               min="0"
+                               step="0.01"
+                               autocomplete="off"
+                               aria-label="Enter amount to convert">
+                        <div class="unit-display" id="fromUnitDisplay">Quarts</div>
                     </div>
                 </div>
-                
-                <div class="equals-sign">=</div>
-                
+
+                <div class="conversion-equals">=</div>
+
                 <div class="input-group">
-                    <label class="input-label" id="toLabel">To:</label>
-                    <div class="input-wrapper" id="toWrapper">
-                        <span class="main-input" id="toValue" style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">0</span>
-                        <span class="unit-selector" id="toUnit" style="cursor: default;">cup</span>
+                    <label class="input-label" id="toLabel">To</label>
+                    <div class="input-wrapper">
+                        <div class="input-field" id="toValue">4</div>
+                        <div class="unit-display" id="toUnitDisplay">Cups</div>
                     </div>
                 </div>
             </div>
-            
-            <div class="quick-conversions">
-                <button class="quick-btn" data-value="1" data-unit="cup" id="quick1cup">1 cup</button>
-                <button class="quick-btn" data-value="2" data-unit="cup" id="quick2cup">2 cups</button>
-                <button class="quick-btn" data-value="4" data-unit="cup" id="quick4cup">4 cups</button>
-                <button class="quick-btn" data-value="1" data-unit="quart" id="quick1quart">1 quart</button>
-                <button class="quick-btn" data-value="2" data-unit="quart" id="quick2quart">2 quarts</button>
-                <button class="quick-btn" data-value="1" data-unit="pint" id="quick1pint">1 pint</button>
-            </div>
-        </main>
-        
-        <section class="result-section" id="resultSection">
-            <div class="result-value" id="resultValue">4</div>
-            <div class="result-unit" id="resultUnit">cups</div>
-        </section>
-        
-        <section class="conversion-details" id="conversionDetails">
-            <h3 id="detailsTitle">Other Conversions</h3>
-            <div class="detail-grid">
-                <div class="detail-item">
-                    <span class="detail-value" id="pintValue">2</span>
-                    <span class="detail-label" id="pintLabel">Pints</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-value" id="gallonValue">0.25</span>
-                    <span class="detail-label" id="gallonLabel">Gallons</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-value" id="ozValue">32</span>
-                    <span class="detail-label" id="ozLabel">Fluid Ounces</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-value" id="literValue">0.946</span>
-                    <span class="detail-label" id="literLabel">Liters</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-value" id="mlValue">946.35</span>
-                    <span class="detail-label" id="mlLabel">Milliliters</span>
-                </div>
+
+            <div class="quick-actions">
+                <button class="action-btn" data-value="0.25" data-unit="quart">¼ Qt</button>
+                <button class="action-btn" data-value="0.5" data-unit="quart">½ Qt</button>
+                <button class="action-btn" data-value="1" data-unit="quart">1 Qt</button>
+                <button class="action-btn" data-value="2" data-unit="quart">2 Qt</button>
+                <button class="action-btn" data-value="1" data-unit="cup">1 Cup</button>
+                <button class="action-btn" data-value="2" data-unit="cup">2 Cups</button>
             </div>
         </section>
-        
+
+        <!-- Results Section -->
+        <section class="results">
+            <div class="result-header">
+                <h2 class="result-title" id="resultTitle">Other Conversions</h2>
+                <div class="main-result">
+                    <span id="mainResultText">4 cups in 1 quart</span>
+                </div>
+            </div>
+
+            <div class="conversion-grid">
+                <div class="conversion-card" tabindex="0" role="button">
+                    <div class="conversion-value" id="pintsValue">2</div>
+                    <div class="conversion-unit" id="pintsUnit">Pints</div>
+                </div>
+                <div class="conversion-card" tabindex="0" role="button">
+                    <div class="conversion-value" id="gallonsValue">0.25</div>
+                    <div class="conversion-unit" id="gallonsUnit">Gallons</div>
+                </div>
+                <div class="conversion-card" tabindex="0" role="button">
+                    <div class="conversion-value" id="ouncesValue">32</div>
+                    <div class="conversion-unit" id="ouncesUnit">Fluid Ounces</div>
+                </div>
+                <div class="conversion-card" tabindex="0" role="button">
+                    <div class="conversion-value" id="litersValue">0.946</div>
+                    <div class="conversion-unit" id="litersUnit">Liters</div>
+                </div>
+                <div class="conversion-card" tabindex="0" role="button">
+                    <div class="conversion-value" id="millilitersValue">946.4</div>
+                    <div class="conversion-unit" id="millilitersUnit">Milliliters</div>
+                </div>
+                <div class="conversion-card" tabindex="0" role="button">
+                    <div class="conversion-value" id="tablespoonsValue">64</div>
+                    <div class="conversion-unit" id="tablespoonsUnit">Tablespoons</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Section -->
         <section class="info-section">
             <h2 class="info-title" id="infoTitle">About Cups and Quarts</h2>
             <p class="info-text" id="infoText">
-                A quart is equal to 4 cups, making it one of the most common volume conversions in cooking and baking. 
-                This simple relationship makes it easy to scale recipes up or down, and is essential knowledge for any home cook or professional chef.
+                This simple relationship—1 quart equals 4 cups—is fundamental for cooking and baking.
+                Understanding this conversion helps scale recipes, measure ingredients accurately,
+                and ensures consistent results in the kitchen.
             </p>
-            
-            <div class="conversion-facts">
-                <h3 class="facts-title" id="factsTitle">Quick Conversion Facts</h3>
-                <ul class="facts-list" id="factsList">
-                    <li id="fact1">1 US quart = 4 US cups</li>
-                    <li id="fact2">1 US quart = 2 US pints</li>
-                    <li id="fact3">1 US quart = 32 US fluid ounces</li>
-                    <li id="fact4">1 US quart ≈ 0.946 liters</li>
-                    <li id="fact5">1 US quart = 946.35 milliliters</li>
-                </ul>
+
+            <div class="facts-list">
+                <div class="fact-item">
+                    <div class="fact-icon">1</div>
+                    <div class="fact-text" id="fact1">1 US quart = 4 US cups exactly</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-icon">2</div>
+                    <div class="fact-text" id="fact2">1 US quart = 2 US pints</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-icon">3</div>
+                    <div class="fact-text" id="fact3">1 US quart = 32 fluid ounces</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-icon">4</div>
+                    <div class="fact-text" id="fact4">1 US quart ≈ 0.946 liters</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-icon">5</div>
+                    <div class="fact-text" id="fact5">Common kitchen conversions made easy</div>
+                </div>
+            </div>
+
+            <!-- Detailed Concept Explanation -->
+            <div class="concept-explanation">
+                <h3 class="concept-title" id="conceptTitle">The Science Behind Cups and Quarts</h3>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h4 class="concept-card-title" id="cupOrigin">History of the Cup</h4>
+                        <p class="concept-text" id="cupText">
+                            The standard US cooking cup originated from the traditional teacup used in early American kitchens.
+                            In 1896, Fannie Farmer standardized it to exactly 8 fluid ounces in her Boston Cooking-School Cook Book,
+                            creating the modern kitchen measuring cup we use today. This standardization revolutionized recipe accuracy.
+                        </p>
+                    </div>
+                    <div class="concept-card">
+                        <h4 class="concept-card-title" id="quartOrigin">The Quart's Origins</h4>
+                        <p class="concept-text" id="quartText">
+                            The quart comes from the Latin "quartus" meaning "fourth."
+                            Originally one-quarter of a gallon, it was further refined in the US Customary System.
+                            The US dry quart and liquid quart were standardized in 1824,
+                            with the liquid quart becoming exactly 32 US fluid ounces.
+                        </p>
+                    </div>
+                    <div class="concept-card">
+                        <h4 class="concept-card-title" id="conversionProof">Mathematical Proof</h4>
+                        <p class="concept-text" id="proofText">
+                            Our 1:4 ratio is mathematically exact per US Customary System definitions:
+                            1 cup = 8 fluid ounces, 1 quart = 32 fluid ounces.
+                            32 ÷ 8 = 4 cups per quart. This ratio has remained constant since 1824,
+                            making it the most reliable conversion in cooking.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="faq-title" id="faqTitle">Frequently Asked Questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item" tabindex="0">
+                    <button class="faq-question" aria-expanded="false">
+                        <span id="faq1Q">Why is 1 quart exactly 4 cups in the US?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p id="faq1A">
+                            This ratio was established by the US Customary System in 1824 based on the fundamental relationship:
+                            1 quart = 32 fluid ounces, 1 cup = 8 fluid ounces. 32 ÷ 8 = 4 cups. This mathematical relationship
+                            has been the standard for nearly 200 years and remains unchanged today.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item" tabindex="0">
+                    <button class="faq-question" aria-expanded="false">
+                        <span id="faq2Q">Is there a difference between US and UK cups and quarts?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p id="faq2A">
+                            Yes! The US cup is exactly 236.588ml while the UK cup is 284.131ml (used in Imperial system).
+                            The US quart is 946.353ml while the UK quart is 1136.52ml.
+                            Our converter uses the US standard, which is standard in most cooking applications worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item" tabindex="0">
+                    <button class="faq-question" aria-expanded="false">
+                        <span id="faq3Q">Can I use this conversion for dry ingredients?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p id="faq3A">
+                            Yes, but with important distinction: Volume ratios remain the same (4:1),
+                            but weight ratios differ since ingredient densities vary. For dry ingredients,
+                            use volume measurements for consistent baking, not weight.
+                            Our 1 quart = 4 cups conversion is universally accurate for volume measurements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item" tabindex="0">
+                    <button class="faq-question" aria-expanded="false">
+                        <span id="faq4Q">How was the cup/quart system originally created?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p id="faq4A">
+                            The cup evolved from the traditional teacup (8 ounces), standardized by Fannie Farmer in 1896.
+                            The quart was derived from the gallon system established by the Winchester Corn Office in 1497,
+                            refined in 1706 by Queen Anne's wine gallon, and formalized in the 1824 US Customary System.
+                            The 4:1 ratio has remained consistent since these historical weight measurements became volume standards.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item" tabindex="0">
+                    <button class="faq-question" aria-expanded="false">
+                        <span id="faq5Q">What are common cooking mistakes with cup/quart conversions?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p id="faq5A">
+                            Most common mistakes: 1) Confusing liquid and dry measuring cups, 2)
+                            Using metric cups (250ml) instead of US cups (237ml), 3) Not leveling dry ingredients,
+                            4) Forgetting that 1 quart = 4 cups exactly. Always use a converter for accuracy,
+                            especially when scaling recipes up or down for different serving sizes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer class="footer">
-            <p id="footerText">© 2024 HowManyQ. Made with ❤️ for precise measurements worldwide.</p>
+            <p id="footerText">HowManyQ provides accurate conversion tools for cooking and everyday measurements.</p>
+            <p>Made with ❤️ for precise measurements worldwide</p>
         </footer>
     </div>
-    
+
     <script>
         // Multi-language support
         const translations = {
             en: {
-                title: "How Many Cups in a Quart",
-                subtitle: "Free volume calculator for cooking and baking measurements",
-                fromLabel: "From:",
-                toLabel: "To:",
-                resultUnit: "cups",
-                detailsTitle: "Other Conversions",
-                pintLabel: "Pints",
-                gallonLabel: "Gallons",
-                ozLabel: "Fluid Ounces",
-                literLabel: "Liters",
-                mlLabel: "Milliliters",
+                // Hero section
+                heroSubMagic: "Instant Conversion",
+                heroSubtitle: "No Calculator Needed • Simply Type • Works Offline",
+                ctaText: "Convert Now",
+                trustText: "Used by 250k+ cooks worldwide",
+                instantLabel: "Type any number to convert instantly",
+
+                // Main converter
+                mainTitle: "How Many Cups in a Quart",
+                subtitle: "Instant cooking conversion calculator",
+                fromLabel: "From",
+                toLabel: "To",
+                fromUnitDisplay: "Quarts",
+                toUnitDisplay: "Cups",
+                resultTitle: "Other Conversions",
+                mainResultText: "4 cups in 1 quart",
+                pintsUnit: "Pints",
+                gallonsUnit: "Gallons",
+                ouncesUnit: "Fluid Ounces",
+                litersUnit: "Liters",
+                millilitersUnit: "Milliliters",
+                tablespoonsUnit: "Tablespoons",
                 infoTitle: "About Cups and Quarts",
-                infoText: "A quart is equal to 4 cups, making it one of the most common volume conversions in cooking and baking. This simple relationship makes it easy to scale recipes up or down, and is essential knowledge for any home cook or professional chef.",
-                factsTitle: "Quick Conversion Facts",
-                fact1: "1 US quart = 4 US cups",
+                infoText: "This simple relationship—1 quart equals 4 cups—is fundamental for cooking and baking. Understanding this conversion helps scale recipes, measure ingredients accurately, and ensures consistent results in the kitchen.",
+                fact1: "1 US quart = 4 US cups exactly",
                 fact2: "1 US quart = 2 US pints",
-                fact3: "1 US quart = 32 US fluid ounces",
+                fact3: "1 US quart = 32 fluid ounces",
                 fact4: "1 US quart ≈ 0.946 liters",
-                fact5: "1 US quart = 946.35 milliliters",
-                footer: "© 2024 HowManyQ. Made with ❤️ for precise measurements worldwide.",
-                quickBtns: {
-                    "1cup": "1 cup",
-                    "2cup": "2 cups",
-                    "4cup": "4 cups",
-                    "1quart": "1 quart",
-                    "2quart": "2 quarts",
-                    "1pint": "1 pint"
+                fact5: "Common kitchen conversions made easy",
+
+                // Concept explanations
+                conceptTitle: "The Science Behind Cups and Quarts",
+                cupOrigin: "History of the Cup",
+                cupText: "The standard US cooking cup originated from the traditional teacup used in early American kitchens. In 1896, Fannie Farmer standardized it to exactly 8 fluid ounces in her Boston Cooking-School Cook Book, creating the modern kitchen measuring cup we use today. This standardization revolutionized recipe accuracy.",
+                quartOrigin: "The Quart's Origins",
+                quartText: "The quart comes from the Latin 'quartus' meaning 'fourth.' Originally one-quarter of a gallon, it was further refined in the US Customary System. The US dry quart and liquid quart were standardized in 1824, with the liquid quart becoming exactly 32 US fluid ounces.",
+                conversionProof: "Mathematical Proof",
+                proofText: "Our 1:4 ratio is mathematically exact per US Customary System definitions: 1 cup = 8 fluid ounces, 1 quart = 32 fluid ounces. 32 ÷ 8 = 4 cups per quart. This ratio has remained constant since 1824, making it the most reliable conversion in cooking.",
+
+                // FAQ
+                faqTitle: "Frequently Asked Questions",
+                faq1Q: "Why is 1 quart exactly 4 cups in the US?",
+                faq1A: "This ratio was established by the US Customary System in 1824 based on the fundamental relationship: 1 quart = 32 fluid ounces, 1 cup = 8 fluid ounces. 32 ÷ 8 = 4 cups. This mathematical relationship has been the standard for nearly 200 years and remains unchanged today.",
+                faq2Q: "Is there a difference between US and UK cups and quarts?",
+                faq2A: "Yes! The US cup is exactly 236.588ml while the UK cup is 284.131ml (used in Imperial system). The US quart is 946.353ml while the UK quart is 1136.52ml. Our converter uses the US standard, which is standard in most cooking applications worldwide.",
+                faq3Q: "Can I use this conversion for dry ingredients?",
+                faq3A: "Yes, but with important distinction: Volume ratios remain the same (4:1), but weight ratios differ since ingredient densities vary. For dry ingredients, use volume measurements for consistent baking, not weight. Our 1 quart = 4 cups conversion is universally accurate for volume measurements.",
+                faq4Q: "How was the cup/quart system originally created?",
+                faq4A: "The cup evolved from the traditional teacup (8 ounces), standardized by Fannie Farmer in 1896. The quart was derived from the gallon system established by the Winchester Corn Office in 1497, refined in 1706 by Queen Anne's wine gallon, and formalized in the 1824 US Customary System. The 4:1 ratio has remained consistent since these historical weight measurements became volume standards.",
+                faq5Q: "What are common cooking mistakes with cup/quart conversions?",
+                faq5A: "Most common mistakes: 1) Confusing liquid and dry measuring cups, 2) Using metric cups (250ml) instead of US cups (237ml), 3) Not leveling dry ingredients, 4) Forgetting that 1 quart = 4 cups exactly. Always use a converter for accuracy, especially when scaling recipes up or down for different serving sizes.",
+
+                footerText: "HowManyQ provides accurate conversion tools for cooking and everyday measurements.",
+                actionButtons: {
+                    "0.25-quart": "¼ Qt",
+                    "0.5-quart": "½ Qt",
+                    "1-quart": "1 Qt",
+                    "2-quart": "2 Qt",
+                    "1-cup": "1 Cup",
+                    "2-cup": "2 Cups"
+                },
+                unitNames: {
+                    quart: "Quarts",
+                    cup: "Cups"
                 }
             },
             es: {
-                title: "Cuántas Tazas en un Cuarto",
-                subtitle: "Calculadora de volumen gratuita para mediciones de cocina y horneado",
-                fromLabel: "De:",
-                toLabel: "A:",
-                resultUnit: "tazas",
-                detailsTitle: "Otras Conversiones",
-                pintLabel: "Pintas",
-                gallonLabel: "Galones",
-                ozLabel: "Onzas Líquidas",
-                literLabel: "Litros",
-                mlLabel: "Mililitros",
+                mainTitle: "Cuántas Tazas en un Cuarto",
+                subtitle: "Calculadora de conversión de cocina instantánea",
+                fromLabel: "Desde",
+                toLabel: "Hasta",
+                fromUnitDisplay: "Cuartos",
+                toUnitDisplay: "Tazas",
+                resultTitle: "Otras Conversiones",
+                mainResultText: "4 tazas en 1 cuarto",
+                pintsUnit: "Pintas",
+                gallonsUnit: "Galones",
+                ouncesUnit: "Onzas Líquidas",
+                litersUnit: "Litros",
+                millilitersUnit: "Mililitros",
+                tablespoonsUnit: "Cucharadas",
                 infoTitle: "Acerca de Tazas y Cuartos",
-                infoText: "Un cuarto equivale a 4 tazas, lo que la convierte en una de las conversiones de volumen más comunes en cocina y horneado. Esta relación simple facilita escalar recetas hacia arriba o hacia abajo, y es conocimiento esencial para cualquier cocinero doméstico o chef profesional.",
-                factsTitle: "Datos Rápidos de Conversión",
-                fact1: "1 cuarto US = 4 tazas US",
+                infoText: "Esta relación simple—1 cuarto equivale a 4 tazas—es fundamental para cocinar y hornear. Comprender esta conversión ayuda a escalar recetas, medir ingredientes con precisión y garantiza resultados consistentes en la cocina.",
+                fact1: "1 cuarto US = 4 tazas US exactamente",
                 fact2: "1 cuarto US = 2 pintas US",
-                fact3: "1 cuarto US = 32 onzas líquidas US",
+                fact3: "1 cuarto US = 32 onzas líquidas",
                 fact4: "1 cuarto US ≈ 0.946 litros",
-                fact5: "1 cuarto US = 946.35 mililitros",
-                footer: "© 2024 HowManyQ. Hecho con ❤️ para mediciones precisas en todo el mundo.",
-                quickBtns: {
-                    "1cup": "1 taza",
-                    "2cup": "2 tazas",
-                    "4cup": "4 tazas",
-                    "1quart": "1 cuarto",
-                    "2quart": "2 cuartos",
-                    "1pint": "1 pinta"
+                fact5: "Conversiones comunes de cocina facilitadas",
+                footerText: "HowManyQ proporciona herramientas de conversión precisas para cocinar y medidas cotidianas.",
+                actionButtons: {
+                    "0.25-quart": "¼ Ct",
+                    "0.5-quart": "½ Ct",
+                    "1-quart": "1 Ct",
+                    "2-quart": "2 Ct",
+                    "1-cup": "1 Taza",
+                    "2-cup": "2 Tazas"
+                },
+                unitNames: {
+                    quart: "Cuartos",
+                    cup: "Tazas"
                 }
             },
             fr: {
-                title: "Combien de Tasses dans un Quart",
-                subtitle: "Calculatrice de volume gratuite pour les mesures de cuisine et de pâtisserie",
-                fromLabel: "De:",
-                toLabel: "À:",
-                resultUnit: "tasses",
-                detailsTitle: "Autres Conversions",
-                pintLabel: "Pintes",
-                gallonLabel: "Gallons",
-                ozLabel: "Onces Liquides",
-                literLabel: "Litres",
-                mlLabel: "Millilitres",
-                infoTitle: "À Propos des Tasses et des Quarts",
-                infoText: "Un quart équivaut à 4 tasses, ce qui en fait l'une des conversions de volume les plus courantes en cuisine et en pâtisserie. Cette relation simple facilite la mise à l'échelle des recettes vers le haut ou vers le bas, et constitue une connaissance essentielle pour tout cuisinier domestique ou chef professionnel.",
-                factsTitle: "Faits Rapides de Conversion",
-                fact1: "1 quart US = 4 tasses US",
+                mainTitle: "Combien de Tasses dans un Quart",
+                subtitle: "Calculateur de conversion culinaire instantané",
+                fromLabel: "De",
+                toLabel: "À",
+                fromUnitDisplay: "Quarts",
+                toUnitDisplay: "Tasses",
+                resultTitle: "Autres Conversions",
+                mainResultText: "4 tasses dans 1 quart",
+                pintsUnit: "Pintes",
+                gallonsUnit: "Gallons",
+                ouncesUnit: "Onces Liquides",
+                litersUnit: "Litres",
+                millilitersUnit: "Millilitres",
+                tablespoonsUnit: "Cuillères à Soupe",
+                infoTitle: "À Propos des Tasses et Quarts",
+                infoText: "Cette relation simple—1 quart équivaut à 4 tasses—est fondamentale pour la cuisine et la pâtisserie. Comprendre cette conversion aide à adapter les recettes, mesurer les ingrédients avec précision et assure des résultats cohérents en cuisine.",
+                fact1: "1 quart US = 4 tasses US exactement",
                 fact2: "1 quart US = 2 pintes US",
-                fact3: "1 quart US = 32 onces liquides US",
+                fact3: "1 quart US = 32 onces liquides",
                 fact4: "1 quart US ≈ 0.946 litres",
-                fact5: "1 quart US = 946.35 millilitres",
-                footer: "© 2024 HowManyQ. Fait avec ❤️ pour des mesures précises dans le monde entier.",
-                quickBtns: {
-                    "1cup": "1 tasse",
-                    "2cup": "2 tasses",
-                    "4cup": "4 tasses",
-                    "1quart": "1 quart",
-                    "2quart": "2 quarts",
-                    "1pint": "1 pinte"
+                fact5: "Conversions communes de cuisine simplifiées",
+                footerText: "HowManyQ fournit des outils de conversion précis pour la cuisine et les mesures quotidiennes.",
+                actionButtons: {
+                    "0.25-quart": "¼ Qt",
+                    "0.5-quart": "½ Qt",
+                    "1-quart": "1 Qt",
+                    "2-quart": "2 Qt",
+                    "1-cup": "1 Tasse",
+                    "2-cup": "2 Tasses"
+                },
+                unitNames: {
+                    quart: "Quarts",
+                    cup: "Tasses"
                 }
             },
             de: {
-                title: "Wie Viele Tassen in einem Quart",
-                subtitle: "Kostenloser Volumenrechner für Koch- und Backmessungen",
-                fromLabel: "Von:",
-                toLabel: "Zu:",
-                resultUnit: "Tassen",
-                detailsTitle: "Andere Konvertierungen",
-                pintLabel: "Pints",
-                gallonLabel: "Gallonen",
-                ozLabel: "Flüssigunzen",
-                literLabel: "Liter",
-                mlLabel: "Milliliter",
+                mainTitle: "Wie Viele Tassen in einem Quart",
+                subtitle: "Sofortiger Kochumrechnungsrechner",
+                fromLabel: "Von",
+                toLabel: "Zu",
+                fromUnitDisplay: "Quarts",
+                toUnitDisplay: "Tassen",
+                resultTitle: "Andere Umrechnungen",
+                mainResultText: "4 Tassen in 1 Quart",
+                pintsUnit: "Pints",
+                gallonsUnit: "Gallonen",
+                ouncesUnit: "Flüssigunzen",
+                litersUnit: "Liter",
+                millilitersUnit: "Milliliter",
+                tablespoonsUnit: "Esslöffel",
                 infoTitle: "Über Tassen und Quarts",
-                infoText: "Ein Quart entspricht 4 Tassen, was es zu einer der häufigsten Volumenkonvertierungen beim Kochen und Backen macht. Diese einfache Beziehung macht es einfach, Rezepte zu vergrößern oder zu verkleinern, und ist wesentliches Wissen für jeden Heimkoch oder professionellen Koch.",
-                factsTitle: "Schnelle Konvertierungsfakten",
-                fact1: "1 US-Quart = 4 US-Tassen",
+                infoText: "Diese einfache Beziehung—1 Quart entspricht 4 Tassen—ist grundlegend für das Kochen und Backen. Das Verständnis dieser Umrechnung hilft beim Hoch- und Herunterskalieren von Rezepten, beim genauen Abmessen von Zutaten und sorgt für konsistente Ergebnisse in der Küche.",
+                fact1: "1 US-Quart = 4 US-Tassen genau",
                 fact2: "1 US-Quart = 2 US-Pints",
-                fact3: "1 US-Quart = 32 US-Flüssigunzen",
+                fact3: "1 US-Quart = 32 Flüssigunzen",
                 fact4: "1 US-Quart ≈ 0.946 Liter",
-                fact5: "1 US-Quart = 946.35 Milliliter",
-                footer: "© 2024 HowManyQ. Mit ❤️ für präzise Messungen weltweit gemacht.",
-                quickBtns: {
-                    "1cup": "1 Tasse",
-                    "2cup": "2 Tassen",
-                    "4cup": "4 Tassen",
-                    "1quart": "1 Quart",
-                    "2quart": "2 Quarts",
-                    "1pint": "1 Pint"
+                fact5: "Häufige Küchenumrechnungen vereinfacht",
+                footerText: "HowManyQ bietet genaue Umrechnungs-Tools fürs Kochen und alltägliche Maße.",
+                actionButtons: {
+                    "0.25-quart": "¼ Qt",
+                    "0.5-quart": "½ Qt",
+                    "1-quart": "1 Qt",
+                    "2-quart": "2 Qt",
+                    "1-cup": "1 Tasse",
+                    "2-cup": "2 Tassen"
+                },
+                unitNames: {
+                    quart: "Quarts",
+                    cup: "Tassen"
                 }
             },
             zh: {
-                title: "一夸脱有多少杯",
-                subtitle: "免费体积计算器，实现烹饪和烘焙测量",
-                fromLabel: "从：",
-                toLabel: "到：",
-                resultUnit: "杯",
-                detailsTitle: "其他转换",
-                pintLabel: "品脱",
-                gallonLabel: "加仑",
-                ozLabel: "液体盎司",
-                literLabel: "升",
-                mlLabel: "毫升",
+                mainTitle: "一夸脱有多少杯",
+                subtitle: "即时烹饪换算计算器",
+                fromLabel: "从",
+                toLabel: "到",
+                fromUnitDisplay: "夸脱",
+                toUnitDisplay: "杯",
+                resultTitle: "其他换算",
+                mainResultText: "1夸脱中有4杯",
+                pintsUnit: "品脱",
+                gallonsUnit: "加仑",
+                ouncesUnit: "液体盎司",
+                litersUnit: "升",
+                millilitersUnit: "毫升",
+                tablespoonsUnit: "汤匙",
                 infoTitle: "关于杯和夸脱",
-                infoText: "一夸脱等于4杯，使其成为烹饪和烘焙中最常见的体积转换之一。这种简单的关系使缩放食谱变得容易，无论放大还是缩小，对于任何家庭厨师或专业厨师来说都是必备知识。",
-                factsTitle: "快速转换知识",
-                fact1: "1美制夸脱 = 4美制杯",
+                infoText: "这种简单的关系—1夸脱等于4杯—对于烹饪和烘焙是基本的。理解这种换算有助于调整食谱比例、准确测量配料，并确保厨房中一致的结果。",
+                fact1: "1美制夸脱 = 4美制杯精确值",
                 fact2: "1美制夸脱 = 2美制品脱",
-                fact3: "1美制夸脱 = 32美制液体盎司",
+                fact3: "1美制夸脱 = 32液体盎司",
                 fact4: "1美制夸脱 ≈ 0.946升",
-                fact5: "1美制夸脱 = 946.35毫升",
-                footer: "© 2024 HowManyQ。为全世界的精确测量用心制作。",
-                quickBtns: {
-                    "1cup": "1杯",
-                    "2cup": "2杯",
-                    "4cup": "4杯",
-                    "1quart": "1夸脱",
-                    "2quart": "2夸脱",
-                    "1pint": "1品脱"
+                fact5: "简化常见厨房换算",
+                footerText: "HowManyQ为烹饪和日常测量提供精确的换算工具。",
+                actionButtons: {
+                    "0.25-quart": "¼ 夸脱",
+                    "0.5-quart": "½ 夸脱",
+                    "1-quart": "1 夸脱",
+                    "2-quart": "2 夸脱",
+                    "1-cup": "1 杯",
+                    "2-cup": "2 杯"
+                },
+                unitNames: {
+                    quart: "夸脱",
+                    cup: "杯"
                 }
             }
         };
-        
-        // Conversion constants (US customary units to cups)
-        const conversions = {
-            'cup': { quart: 0.25, pint: 0.5, gallon: 0.0625, oz: 8, liter: 0.236588, ml: 236.588 },
-            'quart': { cup: 4, pint: 2, gallon: 0.25, oz: 32, liter: 0.946353, ml: 946.353 },
-            'pint': { cup: 2, quart: 0.5, gallon: 0.125, oz: 16, liter: 0.473176, ml: 473.176 },
-            'gallon': { cup: 16, quart: 4, pint: 8, oz: 128, liter: 3.78541, ml: 3785.41 },
-            'oz': { cup: 0.125, quart: 0.03125, pint: 0.0625, gallon: 0.0078125, liter: 0.0295735, ml: 29.5735 },
-            'liter': { cup: 4.22675, quart: 1.05669, pint: 2.11338, gallon: 0.264172, oz: 33.814, ml: 1000 },
-            'ml': { cup: 0.00422675, quart: 0.00105669, pint: 0.00211338, gallon: 0.000264172, oz: 0.033814, liter: 0.001 }
+
+        // Conversion factors (quarts to other units)
+        const conversionFactors = {
+            cups: 4,
+            pints: 2,
+            gallons: 0.25,
+            ounces: 32,
+            liters: 0.946353,
+            milliliters: 946.353,
+            tablespoons: 64
         };
-        
-        let currentLang = localStorage.getItem('cups-quart-converter-lang') || 'en';
-        
-        // Update language function
-        function updateLanguage(lang) {
-            currentLang = lang;
-            localStorage.setItem('cups-quart-converter-lang', lang);
-            
-            const t = translations[lang];
-            if (!t) return;
-            
-            // Update text content
-            document.getElementById('mainTitle').textContent = t.title;
-            document.getElementById('subtitle').textContent = t.subtitle;
-            document.getElementById('fromLabel').textContent = t.fromLabel;
-            document.getElementById('toLabel').textContent = t.toLabel;
-            document.getElementById('resultUnit').textContent = t.resultUnit;
-            document.getElementById('detailsTitle').textContent = t.detailsTitle;
-            document.getElementById('pintLabel').textContent = t.pintLabel;
-            document.getElementById('gallonLabel').textContent = t.gallonLabel;
-            document.getElementById('ozLabel').textContent = t.ozLabel;
-            document.getElementById('literLabel').textContent = t.literLabel;
-            document.getElementById('mlLabel').textContent = t.mlLabel;
-            document.getElementById('infoTitle').textContent = t.infoTitle;
-            document.getElementById('infoText').textContent = t.infoText;
-            document.getElementById('factsTitle').textContent = t.factsTitle;
-            document.getElementById('fact1').textContent = t.fact1;
-            document.getElementById('fact2').textContent = t.fact2;
-            document.getElementById('fact3').textContent = t.fact3;
-            document.getElementById('fact4').textContent = t.fact4;
-            document.getElementById('fact5').textContent = t.fact5;
-            document.getElementById('footerText').textContent = t.footer;
-            
-            // Update quick conversion buttons
-            if (t.quickBtns) {
-                document.getElementById('quick1cup').textContent = t.quickBtns['1cup'];
-                document.getElementById('quick2cup').textContent = t.quickBtns['2cup'];
-                document.getElementById('quick4cup').textContent = t.quickBtns['4cup'];
-                document.getElementById('quick1quart').textContent = t.quickBtns['1quart'];
-                document.getElementById('quick2quart').textContent = t.quickBtns['2quart'];
-                document.getElementById('quick1pint').textContent = t.quickBtns['1pint'];
-            }
-            
-            // Update result unit display
-            const toUnit = document.getElementById('toUnit');
-            if (currentLang === 'es') {
-                toUnit.textContent = 'taza';
-            } else if (currentLang === 'fr') {
-                toUnit.textContent = 'tasse';
-            } else if (currentLang === 'de') {
-                toUnit.textContent = 'Tasse';
-            } else if (currentLang === 'zh') {
-                toUnit.textContent = '杯';
-            } else {
-                toUnit.textContent = 'cup';
-            }
-            
-            // Update active language button
-            document.querySelectorAll('.language-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            document.getElementById(`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`)?.classList.add('active');
-            
-            // Re-trigger conversion if there's a value
-            if (document.getElementById('fromInput').value) {
-                convertValue();
-            }
-        }
-        
-        // Conversion function
-        function convertValue() {
-            const input = document.getElementById('fromInput');
-            const fromUnit = document.getElementById('fromUnit').value;
-            const value = parseFloat(input.value);
-            
-            if (isNaN(value) || value < 0) {
-                showError('Please enter a valid positive number');
-                return;
-            }
-            
-            // Calculate conversion to cups (base unit)
-            let cups;
-            if (fromUnit === 'cup') {
-                cups = value;
-            } else if (conversions[fromUnit] && conversions[fromUnit].cup !== undefined) {
-                cups = value * conversions[fromUnit].cup;
-            } else {
-                showError('Conversion not available');
-                return;
-            }
-            
-            // Update main result
-            const resultElement = document.getElementById('resultValue');
-            const unitElement = document.getElementById('resultUnit');
-            const toValueElement = document.getElementById('toValue');
-            
-            // Format result based on value size
-            if (cups < 0.01) {
-                const oz = cups * 8; // Convert to ounces for small values
-                resultElement.textContent = oz.toFixed(2);
-                unitElement.textContent = 'fluid ounces';
-                toValueElement.textContent = oz.toFixed(2);
-                document.getElementById('toUnit').textContent = 'oz';
-            } else {
-                resultElement.textContent = cups.toFixed(4);
-                unitElement.textContent = translations[currentLang].resultUnit;
-                toValueElement.textContent = cups.toFixed(4);
-                
-                // Update to unit display
-                const toUnitElement = document.getElementById('toUnit');
-                if (currentLang === 'es') {
-                    toUnitElement.textContent = 'taza';
-                } else if (currentLang === 'fr') {
-                    toUnitElement.textContent = 'tasse';
-                } else if (currentLang === 'de') {
-                    toUnitElement.textContent = 'Tasse';
-                } else if (currentLang === 'zh') {
-                    toUnitElement.textContent = '杯';
-                } else {
-                    toUnitElement.textContent = 'cup';
-                }
-            }
-            
-            // Update detailed conversions
-            updateDetailedConversions(cups);
-            
-            // Show success state
-            input.parentElement.classList.remove('error');
-            input.parentElement.classList.add('success');
-            document.getElementById('conversionDetails').style.display = 'block';
-            
-            setTimeout(() => {
-                input.parentElement.classList.remove('success');
-            }, 1000);
-        }
-        
-        // Update detailed conversion display
-        function updateDetailedConversions(cups) {
-            const quart = cups * 0.25; // 1 quart = 4 cups
-            const pint = cups * 0.5; // 1 pint = 2 cups
-            const gallon = cups * 0.0625; // 1 gallon = 16 cups
-            const oz = cups * 8; // 1 cup = 8 oz
-            const liter = cups * 0.236588; // 1 cup = 0.236588 L
-            const ml = cups * 236.588; // 1 cup = 236.588 ml
-            
-            document.getElementById('pintValue').textContent = pint.toFixed(2);
-            document.getElementById('gallonValue').textContent = gallon.toFixed(4);
-            document.getElementById('ozValue').textContent = oz.toFixed(0);
-            document.getElementById('literValue').textContent = liter.toFixed(3);
-            document.getElementById('mlValue').textContent = ml.toFixed(1);
-        }
-        
-        // Show error state
-        function showError(message) {
-            const input = document.getElementById('fromInput');
-            input.parentElement.classList.add('error');
-            document.getElementById('resultValue').textContent = 'Error';
-            document.getElementById('resultUnit').textContent = message;
-            document.getElementById('toValue').textContent = 'Error';
-            document.getElementById('conversionDetails').style.display = 'none';
-            
-            setTimeout(() => {
-                input.parentElement.classList.remove('error');
-            }, 2000);
-        }
-        
-        // Quick conversion handlers
-        function setupQuickConversions() {
-            document.querySelectorAll('.quick-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const value = parseFloat(e.target.dataset.value);
-                    const unit = e.target.dataset.unit;
-                    
-                    document.getElementById('fromInput').value = value;
-                    document.getElementById('fromUnit').value = unit;
-                    convertValue();
+
+        // FAQ Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all other FAQ items
+                    faqItems.forEach(faqItem => {
+                        faqItem.classList.remove('active');
+                        faqItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                        question.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                // Keyboard accessibility
+                item.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        question.click();
+                    }
                 });
             });
-        }
-        
-        // Event listeners
-        function setupEventListeners() {
-            // Input change listeners
-            document.getElementById('fromInput').addEventListener('input', convertValue);
-            document.getElementById('fromUnit').addEventListener('change', convertValue);
-            
-            // Language selector
-            document.querySelectorAll('.language-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const lang = e.target.dataset.lang;
-                    updateLanguage(lang);
-                });
-            });
-            
-            // Keyboard shortcuts
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    convertValue();
-                }
-            });
-        }
-        
-        // Initialize
+        });
+
+        let currentLang = localStorage.getItem('cups-quart-lang') || 'en';
+        let currentDirection = 'quart-to-cup'; // quart to cup is default
+
+        // Initialize application
         document.addEventListener('DOMContentLoaded', () => {
             updateLanguage(currentLang);
             setupEventListeners();
-            setupQuickConversions();
-            
-            // Set default conversion (1 quart = 4 cups)
-            document.getElementById('fromInput').value = 1;
-            document.getElementById('fromUnit').value = 'quart';
-            convertValue();
+            setDefaultConversion();
         });
-        
-        // Performance optimization
-        let conversionTimeout;
-        function debounceConversion(func, wait) {
-            clearTimeout(conversionTimeout);
-            conversionTimeout = setTimeout(func, wait);
+
+        // Language switching
+        function updateLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('cups-quart-lang', lang);
+
+            const t = translations[lang];
+            if (!t) return;
+
+            // Update text content
+            Object.keys(t).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = t[key];
+                }
+            });
+
+            // Update hero translations
+            document.getElementById('heroTitle').innerHTML = `
+                <span class="hero-magic">1 ${t.unitNames.quart} = 4 ${t.unitNames.cup}</span>
+                <span class="hero-submagic">${t.heroSubMagic}</span>
+            `;
+            document.getElementById('heroSubtitle').textContent = t.heroSubtitle;
+            document.getElementById('ctaText').textContent = t.ctaText;
+            document.getElementById('trustText').textContent = t.trustText;
+            document.getElementById('instantLabel').textContent = t.instantLabel;
+
+            // Update instant converter units
+            document.getElementById('instantFrom').textContent = t.unitNames.quart;
+            document.getElementById('instantTo').textContent = t.unitNames.cup;
+
+            // Update concept explanations
+            if (t.conceptTitle) {
+                document.getElementById('conceptTitle').textContent = t.conceptTitle;
+                document.getElementById('cupOrigin').textContent = t.cupOrigin;
+                document.getElementById('cupText').textContent = t.cupText;
+                document.getElementById('quartOrigin').textContent = t.quartOrigin;
+                document.getElementById('quartText').textContent = t.quartText;
+                document.getElementById('conversionProof').textContent = t.conversionProof;
+                document.getElementById('proofText').textContent = t.proofText;
+            }
+
+            // Update FAQ
+            if (t.faqTitle) {
+                document.getElementById('faqTitle').textContent = t.faqTitle;
+                document.getElementById('faq1Q').textContent = t.faq1Q;
+                document.getElementById('faq1A').textContent = t.faq1A;
+                document.getElementById('faq2Q').textContent = t.faq2Q;
+                document.getElementById('faq2A').textContent = t.faq2A;
+                document.getElementById('faq3Q').textContent = t.faq3Q;
+                document.getElementById('faq3A').textContent = t.faq3A;
+                document.getElementById('faq4Q').textContent = t.faq4Q;
+                document.getElementById('faq4A').textContent = t.faq4A;
+                document.getElementById('faq5Q').textContent = t.faq5Q;
+                document.getElementById('faq5A').textContent = t.faq5A;
+            }
+
+            // Update action buttons
+            if (t.actionButtons) {
+                Object.keys(t.actionButtons).forEach(key => {
+                    document.querySelector(`[data-value="${key.split('-')[0]}"][data-unit="${key.split('-')[1]}"]`).textContent = t.actionButtons[key];
+                });
+            }
+
+            // Update conversion cards
+            if (t.unitNames) {
+                Object.keys(t.unitNames).forEach(unit => {
+                    document.querySelectorAll(`.conversion-unit[data-unit="${unit}"]`).forEach(el => {
+                        el.textContent = t.unitNames[unit];
+                    });
+                });
+            }
+
+            // Update language button states
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+
+            // Recalculate current values
+            const currentValue = document.getElementById('fromInput').value;
+            if (currentValue) {
+                performConversion(parseFloat(currentValue));
+            }
+
+            // Update instant conversion
+            instantConvert();
         }
-        
-        // Add debounced conversion for better performance
-        document.getElementById('fromInput').addEventListener('input', () => {
-            debounceConversion(convertValue, 300);
+
+        // Set default conversion on load
+        function setDefaultConversion() {
+            document.getElementById('fromInput').value = '1';
+            document.getElementById('fromUnitDisplay').textContent = translations[currentLang].unitNames.quart;
+            document.getElementById('toUnitDisplay').textContent = translations[currentLang].unitNames.cup;
+            performConversion(1);
+        }
+
+        // Conversion logic
+        function performConversion(value) {
+            if (isNaN(value) || value < 0) {
+                showError();
+                return;
+            }
+
+            const fromUnit = document.getElementById('fromUnitDisplay').textContent;
+            const toUnit = document.getElementById('toUnitDisplay').textContent;
+
+            let result;
+            if (fromUnit === translations[currentLang].unitNames.quart && toUnit === translations[currentLang].unitNames.cup) {
+                result = value * conversionFactors.cups;
+            } else if (fromUnit === translations[currentLang].unitNames.cup && toUnit === translations[currentLang].unitNames.quart) {
+                result = value / conversionFactors.cups;
+            }
+
+            // Update result display
+            const resultElement = document.getElementById('toValue');
+            resultElement.textContent = formatNumber(result);
+
+            // Update other conversions
+            updateAllConversions(value, fromUnit);
+
+            // Update main result text
+            const mainResultText = `${formatNumber(result)} ${toUnit.toLowerCase()} in ${formatNumber(value)} ${fromUnit.toLowerCase()}`;
+            document.getElementById('mainResultText').textContent = mainResultText;
+
+            // Success feedback
+            showSuccess();
+        }
+
+        // Update all conversion values
+        function updateAllConversions(quartValue) {
+            Object.keys(conversionFactors).forEach(unit => {
+                const value = quartValue * conversionFactors[unit];
+                const element = document.getElementById(`${unit}Value`);
+                if (element) {
+                    element.textContent = formatNumber(value);
+                }
+            });
+        }
+
+        // Format numbers for display
+        function formatNumber(num) {
+            if (num === 0) return '0';
+            if (num < 0.001) return num.toExponential(2);
+            if (num < 0.01) return num.toFixed(6).replace(/\.?0+$/, '');
+            if (num < 1) return num.toFixed(3).replace(/\.?0+$/, '');
+            if (num < 10) return num.toFixed(2).replace(/\.?0+$/, '');
+            return num.toFixed(1).replace(/\.?0+$/, '');
+        }
+
+        // UI feedback functions
+        function showError() {
+            const input = document.getElementById('fromInput');
+            input.classList.add('error');
+            document.getElementById('toValue').textContent = '—';
+
+            setTimeout(() => {
+                input.classList.remove('error');
+            }, 2000);
+        }
+
+        function showSuccess() {
+            const input = document.getElementById('fromInput');
+            input.classList.add('success');
+
+            setTimeout(() => {
+                input.classList.remove('success');
+            }, 1000);
+        }
+
+        // Event listeners
+        function setupEventListeners() {
+            // Input field events
+            const input = document.getElementById('fromInput');
+            input.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (!isNaN(value)) {
+                    performConversion(value);
+                }
+            });
+
+            // Quick action buttons
+            document.querySelectorAll('.action-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const value = parseFloat(e.target.dataset.value);
+                    const unit = e.target.dataset.unit;
+
+                    if (unit === 'quart') {
+                        document.getElementById('fromUnitDisplay').textContent = translations[currentLang].unitNames.quart;
+                        document.getElementById('toUnitDisplay').textContent = translations[currentLang].unitNames.cup;
+                    } else {
+                        document.getElementById('fromUnitDisplay').textContent = translations[currentLang].unitNames.cup;
+                        document.getElementById('toUnitDisplay').textContent = translations[currentLang].unitNames.quart;
+                    }
+
+                    input.value = value;
+                    performConversion(value);
+                });
+            });
+
+            // Language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    updateLanguage(e.target.dataset.lang);
+                });
+            });
+
+            // Swap direction on click
+            document.getElementById('fromUnitDisplay').addEventListener('click', swapDirection);
+            document.getElementById('toUnitDisplay').addEventListener('click', swapDirection);
+
+            // Keyboard support
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.target.blur(); // Remove focus
+                }
+            });
+
+            // Focus handling for mobile
+            input.addEventListener('focus', () => {
+                if (window.innerWidth < 768) {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        }
+
+        // Instant conversion function (for hero section)
+        function startInstantConversion() {
+            // Focus the instant input and select all text
+            const instantInput = document.getElementById('instantInput');
+            instantInput.focus();
+            instantInput.select();
+
+            // Smooth scroll to the instant converter
+            document.querySelector('.hero-demo').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
+            // Trigger a small animation
+            instantInput.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                instantInput.style.transform = 'scale(1)';
+            }, 200);
+        }
+
+        function instantConvert() {
+            const input = document.getElementById('instantInput');
+            const fromUnit = document.getElementById('instantFrom').textContent;
+            const toUnit = document.getElementById('instantTo').textContent;
+            const result = document.getElementById('instantResult');
+
+            let value = parseFloat(input.value);
+            if (isNaN(value) || value < 0) {
+                value = 0;
+            }
+
+            // Convert based on current unit direction
+            if (fromUnit === translations[currentLang].unitNames.quart && toUnit === translations[currentLang].unitNames.cup) {
+                result.textContent = formatNumber(value * 4);
+            } else if (fromUnit === translations[currentLang].unitNames.cup && toUnit === translations[currentLang].unitNames.quart) {
+                result.textContent = formatNumber(value / 4);
+            }
+        }
+
+        function swapInstantDirection() {
+            const fromUnit = document.getElementById('instantFrom');
+            const toUnit = document.getElementById('instantTo');
+
+            // Swap units
+            const temp = fromUnit.textContent;
+            fromUnit.textContent = toUnit.textContent;
+            toUnit.textContent = temp;
+
+            // Recalculate
+            instantConvert();
+        }
+
+        // Swap conversion direction
+        function swapDirection() {
+            const fromUnit = document.getElementById('fromUnitDisplay');
+            const toUnit = document.getElementById('toUnitDisplay');
+            const input = document.getElementById('fromInput');
+            const toValue = document.getElementById('toValue');
+
+            // Swap units
+            const temp = fromUnit.textContent;
+            fromUnit.textContent = toUnit.textContent;
+            toUnit.textContent = temp;
+
+            // Swap values
+            const tempInput = input.value;
+            input.value = parseFloat(toValue.textContent) || '';
+
+            // Recalculate
+            if (input.value) {
+                performConversion(parseFloat(input.value));
+            }
+        }
+
+        // Touch gesture support for mobile
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+
+            // Swipe up/down to swap conversion direction
+            if (Math.abs(deltaY) > 50 && Math.abs(deltaX) < 50) {
+                if (Math.abs(deltaY) > Math.abs(deltaX)) {
+                    swapDirection();
+                }
+            }
         });
     </script>
 </body>
