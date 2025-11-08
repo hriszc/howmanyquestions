@@ -92,6 +92,41 @@ class NavigationGenerator:
         }
         
         return descriptions.get(category, f'Find accurate answers to your {title} question')
+
+    def check_sharing_enabled(self, folder_path):
+        """Check if sharing functionality is enabled in the tool"""
+        try:
+            index_file = folder_path / 'index.html'
+            if index_file.exists():
+                with open(index_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Check for sharing indicators
+                    sharing_indicators = [
+                        'share-utils.js',
+                        'HowManyQShare',
+                        'shareCountdown',
+                        'shareOnTwitter',
+                        'shareOnFacebook',
+                        'copyResults',
+                        'class="share-section"',
+                        'id="shareButtons"'
+                    ]
+                    return any(indicator in content for indicator in sharing_indicators)
+        except Exception as e:
+            print(f"Warning: Could not check sharing status for {folder_path}: {e}")
+        return False
+
+    def generate_share_text(self, folder_name, title, category):
+        """Generate appropriate share text for the tool"""
+        share_texts = {
+            'time': f'Check out this {title} calculator! 🕐',
+            'volume': f'Convert volumes easily with this {title} tool! 🧪',
+            'weight': f'Calculate weights with this {title} calculator! ⚖️',
+            'length': f'Measure distances with this {title} tool! 📏',
+            'measurement': f'Get accurate measurements with this {title} calculator! 📊'
+        }
+
+        return share_texts.get(category, f'Try this amazing {title} calculator! 🧮')
     
     def generate_tool_data(self, folder_path):
         """Generate tool data for a single folder"""
@@ -112,7 +147,9 @@ class NavigationGenerator:
             'url': f'{folder_name}/index.html',
             'folder_name': folder_name,
             'keywords': keywords,
-            'icon': self.icon_mapping.get(category, '🧮')
+            'icon': self.icon_mapping.get(category, '🧮'),
+            'sharing_enabled': self.check_sharing_enabled(folder_path),
+            'share_text': self.generate_share_text(folder_name, title, category)
         }
     
     def discover_tools(self):
@@ -200,14 +237,23 @@ def main():
     print("📋 Discovered Tools:")
     print("-" * 30)
     for i, tool in enumerate(data['tools'], 1):
-        print(f"{i:2d}. {tool['title']} ({tool['category']})")
+        sharing_status = "✅" if tool.get('sharing_enabled') else "❌"
+        print(f"{i:2d}. {tool['title']} ({tool['category']}) {sharing_status}")
         print(f"    📁 {tool['folder_name']}/index.html")
+        if tool.get('sharing_enabled'):
+            print(f"    🔄 Sharing enabled")
         print()
-    
+
     print("📂 Categories Found:")
     print("-" * 20)
     for category, info in data['categories'].items():
         print(f"{category.title()}: {len(info['tools'])} tools")
+
+    # Sharing statistics
+    sharing_enabled_count = sum(1 for tool in data['tools'] if tool.get('sharing_enabled'))
+    print(f"\n🔄 Sharing Statistics:")
+    print(f"Tools with sharing enabled: {sharing_enabled_count}/{data['statistics']['total_tools']}")
+    print(f"Sharing coverage: {(sharing_enabled_count/data['statistics']['total_tools']*100):.1f}%")
     
     return data
 

@@ -566,6 +566,83 @@
                 swapValues();
             }
         });
+
+        // Sharing functionality
+        function initializeSharing() {
+            // Create share section
+            const shareSection = document.createElement('div');
+            shareSection.className = 'share-section';
+            shareSection.innerHTML = `
+                <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-gray);">
+                    <h3 style="margin-bottom: 16px; color: var(--text-primary); font-size: 18px; font-weight: 600;">Share Your Conversion</h3>
+                    <div id="shareButtonsContainer"></div>
+                </div>
+            `;
+
+            // Insert after the converter card
+            const container = document.querySelector('.container');
+            if (container) {
+                container.appendChild(shareSection);
+            }
+
+            // Generate share text based on current values
+            function generateShareText() {
+                const litersValue = document.getElementById('litersInput').value;
+                const gallonsValue = document.getElementById('gallonsInput').value;
+
+                if (litersValue && gallonsValue) {
+                    return `I just converted ${litersValue} liters to ${gallonsValue} gallons! 🧪 Try this liters to gallons converter:`;
+                } else if (litersValue) {
+                    return `I just entered ${litersValue} liters for conversion! 🧪 Check out this liters to gallons converter:`;
+                } else if (gallonsValue) {
+                    return `I just entered ${gallonsValue} gallons for conversion! 🧪 Check out this gallons to liters converter:`;
+                }
+                return 'Check out this amazing liters to gallons converter! 🧪';
+            }
+
+            // Initialize share buttons
+            const sharer = new HowManyQShare({
+                title: 'Liters to Gallons Converter',
+                text: generateShareText(),
+                url: window.location.href,
+                platforms: ['native', 'twitter', 'facebook', 'copy'],
+                hashtags: ['Converter', 'Liters', 'Gallons', 'HowManyQ'],
+                showToast: true,
+                onShare: function(platform, options) {
+                    console.log(`Shared on ${platform}:`, options.text);
+                },
+                onCopy: function(text) {
+                    console.log('Copied to clipboard:', text);
+                }
+            });
+
+            sharer.createShareButtons('shareButtonsContainer');
+
+            // Update share text when values change
+            function updateShareText() {
+                const newText = generateShareText();
+                const shareButtonsContainer = document.getElementById('shareButtonsContainer');
+                if (shareButtonsContainer) {
+                    // Recreate buttons with updated text
+                    sharer.options.text = newText;
+                    sharer.createShareButtons('shareButtonsContainer');
+                }
+            }
+
+            // Add listeners for value changes
+            document.getElementById('litersInput').addEventListener('input', updateShareText);
+            document.getElementById('gallonsInput').addEventListener('input', updateShareText);
+        }
+
+        // Initialize sharing after DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeSharing);
+        } else {
+            initializeSharing();
+        }
     </script>
+
+    <!-- Sharing Component -->
+    <script src="../share-utils.js"></script>
 </body>
 </html>

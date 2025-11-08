@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>How Many Ounces in a Pint? | Quick & Accurate Volume Converter</title>
+    <meta name="title" content="How Many Ounces in a Pint? | Quick & Accurate Volume Converter">
+    <meta name="description" content="Convert pints to ounces and ounces to pints instantly. Find out how many ounces are in a pint (16 fl oz). Free, accurate, and easy-to-use volume converter for cooking and measurements.">
+    <meta name="keywords" content="ounces in a pint, pint to ounces, how many ounces in a pint, fluid ounces, cooking measurements, volume converter">
+    <meta name="author" content="HowManyQ Tools">
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://howmanyq.com/how_many_ounces_in_a_pint/">
+    <meta property="og:title" content="How Many Ounces in a Pint? | Quick & Accurate Volume Converter">
+    <meta property="og:description" content="Convert pints to ounces and ounces to pints instantly. Find out how many ounces are in a pint (16 fl oz).">
+    <meta property="og:image" content="https://howmanyq.com/assets/pint-ounces-converter.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://howmanyq.com/how_many_ounces_in_a_pint/">
+    <meta property="twitter:title" content="How Many Ounces in a Pint? | Quick & Accurate Volume Converter">
+    <meta property="twitter:description" content="Convert pints to ounces and ounces to pints instantly. Find out how many ounces are in a pint (16 fl oz).">
+    <meta property="twitter:image" content="https://howmanyq.com/assets/pint-ounces-converter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Pints to Ounces Converter",
+      "url": "https://howmanyq.com/how_many_ounces_in_a_pint/",
+      "description": "Instantly convert pints to fluid ounces and vice versa.",
+      "applicationCategory": "Utility",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Real-time conversion",
+        "Mobile-friendly design",
+        "One-click copy results",
+        "Social sharing"
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            color: #1d1d1f;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            font-size: 21px;
+            font-weight: 600;
+            color: #1d1d1f;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-link {
+            font-size: 12px;
+            color: #1d1d1f;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            transition: opacity 0.3s;
+        }
+
+        .nav-link:hover {
+            opacity: 0.6;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 80px;
+            text-align: center;
+            background: linear-gradient(180deg, #fbfbfd 0%, #ffffff 100%);
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 1.07143;
+            letter-spacing: -0.005rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1d1d1f 0%, #4a4a4f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 21px;
+            line-height: 1.381;
+            color: #86868b;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-weight: 400;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            background: #0071e3;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 24px rgba(0, 113, 227, 0.2);
+        }
+
+        .hero-cta:hover {
+            background: #0077ed;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 113, 227, 0.3);
+        }
+
+        /* Calculator Section */
+        .calculator-section {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1d1d1f;
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .conversion-box {
+            background: #fbfbfd;
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .conversion-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+        }
+
+        .conversion-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #1d1d1f;
+        }
+
+        .input-group {
+            margin-bottom: 24px;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #86868b;
+            margin-bottom: 8px;
+        }
+
+        .input-field {
+            width: 100%;
+            height: 56px;
+            padding: 0 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 12px;
+            font-size: 17px;
+            transition: all 0.3s;
+            font-family: inherit;
+            background: #ffffff;
+            color: #1d1d1f;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #0071e3;
+            box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+        }
+
+        .input-field.error {
+            border-color: #e30000;
+            box-shadow: 0 0 0 4px rgba(227, 0, 0, 0.1);
+        }
+
+        .result-display {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 24px;
+            border: 1px solid #e8e8ed;
+        }
+
+        .result-text {
+            font-size: 28px;
+            font-weight: 600;
+            color: #1d1d1f;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .result-unit {
+            font-size: 14px;
+            color: #86868b;
+            text-align: center;
+        }
+
+        .copy-button {
+            width: 100%;
+            height: 44px;
+            margin-top: 16px;
+            background: #0071e3;
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .copy-button:hover {
+            background: #0077ed;
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            color: #e30000;
+            font-size: 13px;
+            margin-top: 8px;
+            display: none;
+        }
+
+        /* Quick Reference */
+        .quick-reference {
+            padding: 80px 0;
+            background: #fbfbfd;
+        }
+
+        .reference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .reference-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .reference-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+        }
+
+        .reference-value {
+            font-size: 36px;
+            font-weight: 600;
+            color: #0071e3;
+            margin-bottom: 8px;
+        }
+
+        .reference-label {
+            font-size: 17px;
+            color: #86868b;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            background: #fbfbfd;
+            color: #0071e3;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        .feature-description {
+            font-size: 16px;
+            color: #86868b;
+            line-height: 1.5;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: #fbfbfd;
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .faq-question {
+            padding: 24px;
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 17px;
+            font-weight: 600;
+            color: #1d1d1f;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 24px 24px;
+            color: #86868b;
+            line-height: 1.5;
+            display: none;
+        }
+
+        .faq-arrow {
+            transition: transform 0.3s;
+            color: #86868b;
+        }
+
+        .faq-item.active .faq-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Social Share */
+        .social-share {
+            padding: 80px 0;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .share-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .share-button.twitter {
+            background: #1da1f2;
+            color: #ffffff;
+        }
+
+        .share-button.facebook {
+            background: #1877f2;
+            color: #ffffff;
+        }
+
+        .share-button.copy {
+            background: #fbfbfd;
+            color: #1d1d1f;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .share-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 60px 0 80px;
+            background: #fbfbfd;
+            text-align: center;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .footer-content {
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-container {
+                padding: 0 16px;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #ffffff;
+                flex-direction: column;
+                padding: 16px;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 120px 0 60px;
+            }
+
+            .hero-title {
+                font-size: 40px;
+            }
+
+            .hero-subtitle {
+                font-size: 19px;
+            }
+
+            .calculator-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .conversion-box {
+                padding: 32px 24px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .reference-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                gap: 32px;
+            }
+
+            .share-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .conversion-title {
+                font-size: 20px;
+            }
+
+            .result-text {
+                font-size: 24px;
+            }
+
+            .reference-value {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">HowManyQ</a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/how_many_grams_in_an_ounce/" class="nav-link">Converters</a>
+                <a href="/how_many_lights_in_a_gallon/" class="nav-link">Tools</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21M3 6H21M3 18H21" stroke="#1d1d1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">How Many Ounces in a Pint?</h1>
+            <p class="hero-subtitle">
+                Instantly convert pints to fluid ounces and vice versa. Perfect for cooking, baking, and accurate measurements.
+            </p>
+            <a href="#calculator" class="hero-cta">Start Converting Now</a>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Pints ↔ Ounces Converter</h2>
+            <div class="calculator-grid">
+                <!-- Pints to Ounces -->
+                <div class="conversion-box">
+                    <h3 class="conversion-title">Pints to Fluid Ounces</h3>
+                    <div class="input-group">
+                        <label class="input-label">Enter pints</label>
+                        <input type="number" class="input-field" id="pintsInput" placeholder="0" step="0.01" min="0">
+                        <div class="error-message" id="pintsError">Please enter a valid number</div>
+                    </div>
+                    <div class="result-display" id="pintsResult">
+                        <div class="result-text" id="pintsResultText">0</div>
+                        <div class="result-unit">fluid ounces</div>
+                        <button class="copy-button" onclick="copyResult('pints')">Copy Result</button>
+                    </div>
+                </div>
+
+                <!-- Ounces to Pints -->
+                <div class="conversion-box">
+                    <h3 class="conversion-title">Fluid Ounces to Pints</h3>
+                    <div class="input-group">
+                        <label class="input-label">Enter fluid ounces</label>
+                        <input type="number" class="input-field" id="ouncesInput" placeholder="0" step="0.01" min="0">
+                        <div class="error-message" id="ouncesError">Please enter a valid number</div>
+                    </div>
+                    <div class="result-display" id="ouncesResult">
+                        <div class="result-text" id="ouncesResultText">0</div>
+                        <div class="result-unit">pints</div>
+                        <button class="copy-button" onclick="copyResult('ounces')">Copy Result</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="quick-reference">
+        <div class="container">
+            <h2 class="section-title">Quick Conversion Reference</h2>
+            <div class="reference-grid">
+                <div class="reference-card">
+                    <div class="reference-value">16</div>
+                    <div class="reference-label">fluid ounces in a pint</div>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-value">32</div>
+                    <div class="reference-label">fluid ounces in a quart</div>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-value">128</div>
+                    <div class="reference-label">fluid ounces in a gallon</div>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-value">2</div>
+                    <div class="reference-label">pints in a quart</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Converter?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Instant Results</h3>
+                    <p class="feature-description">Get real-time conversions as you type. No need to click any buttons.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Mobile Friendly</h3>
+                    <p class="feature-description">Perfectly optimized for all devices - phones, tablets, and desktops.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3 class="feature-title">100% Accurate</h3>
+                    <p class="feature-description">Based on US customary units: 1 pint = 16 fluid ounces. Precise calculations.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💾</div>
+                    <h3 class="feature-title">One-Click Copy</h3>
+                    <p class="feature-description">Easily copy results to clipboard with a single tap. Perfect for recipes.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">No Data Stored</h3>
+                    <p class="feature-description">All calculations happen in your browser. We don't track or store your data.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🆓</div>
+                    <h3 class="feature-title">Completely Free</h3>
+                    <p class="feature-description">No ads, no subscriptions, no hidden costs. 100% free to use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How many ounces are in a pint?
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        There are exactly 16 fluid ounces in a US liquid pint. This is the standard measurement used in cooking and baking throughout the United States.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Is this converter accurate for cooking?
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes! Our converter is based on the standard US customary measurement: 1 pint = 16 fluid ounces. This is the exact measurement used in American recipes.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        What's the difference between dry and liquid pints?
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Liquid pints measure volume (16 fl oz) and are used for liquids. Dry pints measure volume for dry ingredients and are different (about 18.6 oz by weight). This converter is for liquid measurements.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Can I use this for UK measurements?
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        No, UK pints are different. A UK pint equals 20 UK fluid ounces (approximately 19.2 US fluid ounces). Always check which measurement system your recipe uses.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Share -->
+    <section class="social-share">
+        <div class="container">
+            <h2 class="section-title">Share This Tool</h2>
+            <p style="color: #86868b; margin-bottom: 32px;">
+                Found this converter helpful? Share it with friends and family!
+            </p>
+            <div class="share-buttons">
+                <a href="#" class="share-button twitter" onclick="shareToTwitter(event)">
+                    <span>🐦</span> Share on Twitter
+                </a>
+                <a href="#" class="share-button facebook" onclick="shareToFacebook(event)">
+                    <span>📘</span> Share on Facebook
+                </a>
+                <a href="#" class="share-button copy" onclick="copyPageLink(event)">
+                    <span>🔗</span> Copy Link
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 HowManyQ Tools. All rights reserved.</p>
+                <p style="margin-top: 8px;">Made with ❤️ for home cooks and bakers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Conversion Constants
+        const OUNCES_PER_PINT = 16;
+
+        // DOM Elements
+        const pintsInput = document.getElementById('pintsInput');
+        const ouncesInput = document.getElementById('ouncesInput');
+        const pintsResultText = document.getElementById('pintsResultText');
+        const ouncesResultText = document.getElementById('ouncesResultText');
+        const pintsError = document.getElementById('pintsError');
+        const ouncesError = document.getElementById('ouncesError');
+
+        // Mobile Menu Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Pints to Ounces Conversion
+        pintsInput.addEventListener('input', (e) => {
+            const value = e.target.value.trim();
+            const pints = parseFloat(value);
+
+            if (value === '' || value === '-') {
+                pintsResultText.textContent = '0';
+                pintsInput.classList.remove('error');
+                pintsError.style.display = 'none';
+                return;
+            }
+
+            if (isNaN(pints) || pints < 0) {
+                pintsInput.classList.add('error');
+                pintsError.style.display = 'block';
+                pintsResultText.textContent = 'Invalid input';
+                return;
+            }
+
+            pintsInput.classList.remove('error');
+            pintsError.style.display = 'none';
+
+            const ounces = pints * OUNCES_PER_PINT;
+            pintsResultText.textContent = formatNumber(ounces);
+
+            // Subtle click sound effect (using Web Audio API)
+            playClickSound();
+        });
+
+        // Ounces to Pints Conversion
+        ouncesInput.addEventListener('input', (e) => {
+            const value = e.target.value.trim();
+            const ounces = parseFloat(value);
+
+            if (value === '' || value === '-') {
+                ouncesResultText.textContent = '0';
+                ouncesInput.classList.remove('error');
+                ouncesError.style.display = 'none';
+                return;
+            }
+
+            if (isNaN(ounces) || ounces < 0) {
+                ouncesInput.classList.add('error');
+                ouncesError.style.display = 'block';
+                ouncesResultText.textContent = 'Invalid input';
+                return;
+            }
+
+            ouncesInput.classList.remove('error');
+            ouncesError.style.display = 'none';
+
+            const pints = ounces / OUNCES_PER_PINT;
+            ouncesResultText.textContent = formatNumber(pints);
+
+            // Subtle click sound effect
+            playClickSound();
+        });
+
+        // Format number for display
+        function formatNumber(num) {
+            // Round to avoid floating point issues
+            const rounded = Math.round(num * 10000) / 10000;
+
+            // If it's an integer, return as integer
+            if (rounded % 1 === 0) {
+                return rounded.toString();
+            }
+
+            // Otherwise, format with appropriate decimal places
+            return rounded.toFixed(rounded < 0.01 ? 4 : rounded < 1 ? 3 : 2);
+        }
+
+        // Copy result to clipboard
+        function copyResult(type) {
+            let result;
+            let label;
+
+            if (type === 'pints') {
+                result = pintsResultText.textContent;
+                if (result === 'Invalid input') return;
+                label = 'fluid ounces';
+            } else {
+                result = ouncesResultText.textContent;
+                if (result === 'Invalid input') return;
+                label = 'pints';
+            }
+
+            const textToCopy = `${result} ${label}`;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                // Visual feedback
+                showCopyFeedback(type);
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = textToCopy;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showCopyFeedback(type);
+            });
+        }
+
+        function showCopyFeedback(type) {
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = '✓ Copied!';
+            button.style.background = '#34c759';
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '#0071e3';
+            }, 2000);
+
+            playSuccessSound();
+        }
+
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const answer = button.nextElementSibling;
+
+            faqItem.classList.toggle('active');
+
+            if (faqItem.classList.contains('active')) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+
+        // Social Sharing
+        function shareToTwitter(e) {
+            e.preventDefault();
+            const text = `Convert pints to ounces instantly! 🧮\nPerfect for cooking and baking.\n${window.location.href}`;
+            const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank', 'width=550,height=420');
+        }
+
+        function shareToFacebook(e) {
+            e.preventDefault();
+            const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank', 'width=550,height=420');
+        }
+
+        function copyPageLink(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const button = e.target.closest('.share-button');
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<span>✓</span> Link Copied!';
+                button.style.background = '#34c759';
+                button.style.color = '#ffffff';
+
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.style.background = '#fbfbfd';
+                    button.style.color = '#1d1d1f';
+                }, 2000);
+
+                playSuccessSound();
+            });
+        }
+
+        // Sound Effects
+        function playClickSound() {
+            try {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                oscillator.frequency.value = 800;
+                oscillator.type = 'sine';
+
+                gainNode.gain.setValueAtTime(0.01, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.1);
+
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.1);
+            } catch (e) {
+                // Silently fail if audio is not supported
+            }
+        }
+
+        function playSuccessSound() {
+            try {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                oscillator.frequency.value = 1000;
+                oscillator.type = 'sine';
+
+                gainNode.gain.setValueAtTime(0.02, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.15);
+
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.15);
+            } catch (e) {
+                // Silently fail if audio is not supported
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Auto-focus the first input on page load (for better UX)
+        window.addEventListener('load', () => {
+            pintsInput.focus();
+        });
+    </script>
+</body>
+</html>

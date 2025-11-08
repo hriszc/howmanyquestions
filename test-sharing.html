@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sharing Component</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .test-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .test-button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 8px;
+            transition: background 0.2s;
+        }
+
+        .test-button:hover {
+            background: #0056b3;
+        }
+
+        .result {
+            margin: 16px 0;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Sharing Component</h1>
+    <p>This page tests the HowManyQ sharing component functionality.</p>
+
+    <div class="test-section">
+        <h2>Test 1: Basic Sharing</h2>
+        <p>Test basic sharing functionality with predefined text.</p>
+        <button class="test-button" onclick="testBasicSharing()">Test Basic Sharing</button>
+        <div id="basicResult" class="result" style="display: none;"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: Calculator Style Sharing</h2>
+        <p>Test sharing with calculator-style dynamic content.</p>
+        <div style="text-align: center;">
+            <input type="number" id="testInput" placeholder="Enter a number" value="42">
+            <button class="test-button" onclick="testCalculatorSharing()">Calculate & Share</button>
+        </div>
+        <div id="calcResult" class="result" style="display: none;"></div>
+        <div id="calcShareButtons" style="margin-top: 20px;"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 3: Quick Share</h2>
+        <p>Test the quick share functionality for instant sharing.</p>
+        <button class="test-button" onclick="testQuickShare()">Test Quick Share</button>
+        <div id="quickResult" class="result" style="display: none;"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 4: Copy to Clipboard</h2>
+        <p>Test the copy functionality.</p>
+        <button class="test-button" onclick="testCopyFunctionality()">Test Copy</button>
+        <div id="copyResult" class="result" style="display: none;"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 5: Custom Share Buttons</h2>
+        <p>Test custom share button configurations.</p>
+        <div id="customShareButtons" style="margin-top: 20px;"></div>
+        <button class="test-button" onclick="testCustomButtons()">Create Custom Buttons</button>
+    </div>
+
+    <script src="share-utils.js"></script>
+
+    <script>
+        function showResult(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.style.display = 'block';
+        }
+
+        function testBasicSharing() {
+            try {
+                const sharer = new HowManyQShare({
+                    title: 'Test Share',
+                    text: 'This is a test of the HowManyQ sharing component! 🎯',
+                    url: window.location.href,
+                    platforms: ['native', 'twitter', 'facebook', 'copy']
+                });
+
+                sharer.createShareButtons('basicResult', {
+                    text: 'Basic sharing test successful! 🎉'
+                });
+
+                showResult('basicResult', '✅ Basic sharing initialized!\nButtons created below.');
+            } catch (error) {
+                showResult('basicResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        function testCalculatorSharing() {
+            try {
+                const input = document.getElementById('testInput').value;
+                const result = parseFloat(input) * 2.5;
+
+                // Show calculation result
+                showResult('calcResult', `Calculation: ${input} × 2.5 = ${result.toFixed(2)}`);
+
+                // Create calculator-style sharing
+                const sharer = new HowManyQShare({
+                    title: 'My Calculation Result',
+                    text: `I just calculated that ${input} × 2.5 = ${result.toFixed(2)}! 🧮`,
+                    url: window.location.href,
+                    hashtags: ['Calculator', 'Math', 'HowManyQ'],
+                    platforms: ['native', 'twitter', 'facebook', 'linkedin', 'copy']
+                });
+
+                sharer.createShareButtons('calcShareButtons');
+
+            } catch (error) {
+                showResult('calcResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        function testQuickShare() {
+            try {
+                HowManyQShare.quickShare(
+                    'conversion',
+                    123.45,
+                    'units',
+                    'Quick share test: 123.45 units calculated! ⚡'
+                );
+
+                showResult('quickResult', '✅ Quick share initiated!\nCheck if sharing dialog opened.');
+            } catch (error) {
+                showResult('quickResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        function testCopyFunctionality() {
+            try {
+                const sharer = new HowManyQShare({
+                    text: 'This is a test copy to clipboard! 📋',
+                    url: window.location.href
+                });
+
+                sharer.copyToClipboard({
+                    text: 'Copy functionality test successful!',
+                    url: window.location.href
+                });
+
+                showResult('copyResult', '✅ Copy functionality test initiated!\nCheck your clipboard.');
+            } catch (error) {
+                showResult('copyResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        function testCustomButtons() {
+            try {
+                const sharer = new HowManyQShare({
+                    title: 'Custom Share Buttons',
+                    text: 'Testing custom button configurations! 🎨',
+                    url: window.location.href
+                });
+
+                // Create custom configuration
+                const customConfig = {
+                    platforms: ['twitter', 'facebook', 'whatsapp', 'telegram', 'copy'],
+                    buttonClass: 'share-btn custom-btn',
+                    showToast: true,
+                    toastDuration: 3000,
+                    onShare: function(platform, options) {
+                        console.log(`Custom share on ${platform}:`, options);
+                    }
+                };
+
+                sharer.createShareButtons('customShareButtons', customConfig);
+
+                // Add some custom styling
+                const style = document.createElement('style');
+                style.textContent = `
+                    .custom-btn {
+                        border-radius: 20px !important;
+                        font-weight: bold !important;
+                        text-transform: uppercase !important;
+                        letter-spacing: 1px !important;
+                    }
+                `;
+                document.head.appendChild(style);
+
+            } catch (error) {
+                console.error('Custom buttons error:', error);
+            }
+        }
+
+        // Test on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🧪 Sharing component test page loaded');
+            console.log('📋 Available platforms:', Object.keys(new HowManyQShare().platforms));
+        });
+    </script>
+</body>
+</html>

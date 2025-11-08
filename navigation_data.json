@@ -17,7 +17,9 @@
         "a",
         "day"
       ],
-      "icon": "⚖️"
+      "icon": "⚖️",
+      "sharing_enabled": false,
+      "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
     },
     {
       "id": "howmanylitersinagallon",
@@ -34,7 +36,9 @@
         "a",
         "gallon​​"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": true,
+      "share_text": "Convert volumes easily with this How Many Liters in a Gallon​​ tool! 🧪"
     },
     {
       "id": "howmanydaysuntilchristmas",
@@ -50,7 +54,9 @@
         "until",
         "christmas"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Days Until Christmas calculator! 🕐"
     },
     {
       "id": "howmanyozinacup",
@@ -67,7 +73,9 @@
         "a",
         "cup​"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Oz in a Cup​ calculator! 🕐"
     },
     {
       "id": "howmanysquarefeetinanacre",
@@ -85,7 +93,9 @@
         "an",
         "acre​​​​​​"
       ],
-      "icon": "📏"
+      "icon": "📏",
+      "sharing_enabled": false,
+      "share_text": "Measure distances with this How Many Square Feet in an Acre​​​​​​ tool! 📏"
     },
     {
       "id": "howmanygramsinapound",
@@ -102,7 +112,9 @@
         "a",
         "pound​​​​"
       ],
-      "icon": "⚖️"
+      "icon": "⚖️",
+      "sharing_enabled": false,
+      "share_text": "Calculate weights with this How Many Grams in a Pound​​​​ calculator! ⚖️"
     },
     {
       "id": "howmanycontinentsarethere",
@@ -118,7 +130,9 @@
         "are",
         "there"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Continents Are There calculator! 🕐"
     },
     {
       "id": "howmanyteaspoonsinatablespoon",
@@ -135,7 +149,9 @@
         "a",
         "tablespoon"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
     },
     {
       "id": "howmanystepsinamile",
@@ -152,7 +168,9 @@
         "a",
         "mile​​​"
       ],
-      "icon": "📊"
+      "icon": "📊",
+      "sharing_enabled": false,
+      "share_text": "Get accurate measurements with this How Many Steps in a Mile​​​ calculator! 📊"
     },
     {
       "id": "howmanytbspinacup",
@@ -169,7 +187,28 @@
         "a",
         "cup"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
+    },
+    {
+      "id": "howmanymilesis10000steps",
+      "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
+      "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
+      "category": "length",
+      "url": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​/index.html",
+      "folder_name": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​",
+      "keywords": [
+        "how",
+        "many",
+        "miles",
+        "is",
+        "10000",
+        "steps​​​​​​​​​​​​​​​​​"
+      ],
+      "icon": "📏",
+      "sharing_enabled": true,
+      "share_text": "Measure distances with this How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​ tool! 📏"
     },
     {
       "id": "howmanyouncesinapound",
@@ -186,7 +225,9 @@
         "a",
         "pound"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
     },
     {
       "id": "howmanytablespoonsin1",
@@ -202,7 +243,9 @@
         "in",
         "1"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Tablespoons in 1 calculator! 🕐"
     },
     {
       "id": "howmanycminaninch",
@@ -219,7 +262,9 @@
         "an",
         "inch"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
     },
     {
       "id": "howmanycupsinaquart",
@@ -236,7 +281,9 @@
         "a",
         "quart"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
     },
     {
       "id": "howmanycupsinapint",
@@ -253,7 +300,9 @@
         "a",
         "pint​​​​​​​​"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Cups in a Pint​​​​​​​​ tool! 🧪"
     },
     {
       "id": "howmanygramsinanounce",
@@ -270,7 +319,9 @@
         "an",
         "ounce​"
       ],
-      "icon": "⚖️"
+      "icon": "⚖️",
+      "sharing_enabled": false,
+      "share_text": "Calculate weights with this How Many Grams in an Ounce​ calculator! ⚖️"
     },
     {
       "id": "howmanyhoursinayear",
@@ -287,7 +338,9 @@
         "a",
         "year"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
     },
     {
       "id": "howmanyweeksinayear",
@@ -304,7 +357,9 @@
         "a",
         "year"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Weeks in a Year calculator! 🕐"
     },
     {
       "id": "howmanyfeetinamile",
@@ -321,7 +376,9 @@
         "a",
         "mile​"
       ],
-      "icon": "📏"
+      "icon": "📏",
+      "sharing_enabled": false,
+      "share_text": "Measure distances with this How Many Feet in a Mile​ tool! 📏"
     },
     {
       "id": "howmanydaysuntilhalloween",
@@ -337,7 +394,28 @@
         "until",
         "halloween​​​​​"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Days Until Halloween​​​​​ calculator! 🕐"
+    },
+    {
+      "id": "howmanyouncesinapint",
+      "title": "How Many Ounces in a Pint",
+      "description": "Convert between different volume units based on your How Many Ounces in a Pint question",
+      "category": "volume",
+      "url": "how_many_ounces_in_a_pint/index.html",
+      "folder_name": "how_many_ounces_in_a_pint",
+      "keywords": [
+        "how",
+        "many",
+        "ounces",
+        "in",
+        "a",
+        "pint"
+      ],
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Ounces in a Pint tool! 🧪"
     },
     {
       "id": "howmanyouncesinacup",
@@ -354,7 +432,9 @@
         "a",
         "cup​"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Ounces in a Cup​ tool! 🧪"
     },
     {
       "id": "howmanysecondsinaday",
@@ -371,7 +451,9 @@
         "a",
         "day"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Seconds in a Day calculator! 🕐"
     },
     {
       "id": "howmanyminutesinaday",
@@ -388,7 +470,9 @@
         "a",
         "day​​​​​​​​​​"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Minutes in a Day​​​​​​​​​​ calculator! 🕐"
     },
     {
       "id": "howmanyouncesinagallon",
@@ -405,7 +489,9 @@
         "a",
         "gallon"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
     },
     {
       "id": "howmanytablespoonsinacup",
@@ -422,7 +508,9 @@
         "a",
         "cup​"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Tablespoons in a Cup​ calculator! 🕐"
     },
     {
       "id": "howmanyquartsinagallon",
@@ -439,7 +527,9 @@
         "a",
         "gallon​"
       ],
-      "icon": "🧪"
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
     },
     {
       "id": "howmanylettersareinthealphabet",
@@ -457,7 +547,9 @@
         "the",
         "alphabet"
       ],
-      "icon": "⏰"
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
     }
   ],
   "categories": {
@@ -483,7 +575,9 @@
             "a",
             "day"
           ],
-          "icon": "⚖️"
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
         },
         {
           "id": "howmanygramsinapound",
@@ -500,7 +594,9 @@
             "a",
             "pound​​​​"
           ],
-          "icon": "⚖️"
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Grams in a Pound​​​​ calculator! ⚖️"
         },
         {
           "id": "howmanygramsinanounce",
@@ -517,7 +613,9 @@
             "an",
             "ounce​"
           ],
-          "icon": "⚖️"
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Grams in an Ounce​ calculator! ⚖️"
         }
       ]
     },
@@ -541,7 +639,9 @@
             "a",
             "gallon​​"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": true,
+          "share_text": "Convert volumes easily with this How Many Liters in a Gallon​​ tool! 🧪"
         },
         {
           "id": "howmanytbspinacup",
@@ -558,7 +658,9 @@
             "a",
             "cup"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
         },
         {
           "id": "howmanyouncesinapound",
@@ -575,7 +677,9 @@
             "a",
             "pound"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
         },
         {
           "id": "howmanycupsinaquart",
@@ -592,7 +696,9 @@
             "a",
             "quart"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
         },
         {
           "id": "howmanycupsinapint",
@@ -609,7 +715,28 @@
             "a",
             "pint​​​​​​​​"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Cups in a Pint​​​​​​​​ tool! 🧪"
+        },
+        {
+          "id": "howmanyouncesinapint",
+          "title": "How Many Ounces in a Pint",
+          "description": "Convert between different volume units based on your How Many Ounces in a Pint question",
+          "category": "volume",
+          "url": "how_many_ounces_in_a_pint/index.html",
+          "folder_name": "how_many_ounces_in_a_pint",
+          "keywords": [
+            "how",
+            "many",
+            "ounces",
+            "in",
+            "a",
+            "pint"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Pint tool! 🧪"
         },
         {
           "id": "howmanyouncesinacup",
@@ -626,7 +753,9 @@
             "a",
             "cup​"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Cup​ tool! 🧪"
         },
         {
           "id": "howmanyouncesinagallon",
@@ -643,7 +772,9 @@
             "a",
             "gallon"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
         },
         {
           "id": "howmanyquartsinagallon",
@@ -660,7 +791,9 @@
             "a",
             "gallon​"
           ],
-          "icon": "🧪"
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
         }
       ]
     },
@@ -683,7 +816,9 @@
             "until",
             "christmas"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Days Until Christmas calculator! 🕐"
         },
         {
           "id": "howmanyozinacup",
@@ -700,7 +835,9 @@
             "a",
             "cup​"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Oz in a Cup​ calculator! 🕐"
         },
         {
           "id": "howmanycontinentsarethere",
@@ -716,7 +853,9 @@
             "are",
             "there"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Continents Are There calculator! 🕐"
         },
         {
           "id": "howmanyteaspoonsinatablespoon",
@@ -733,7 +872,9 @@
             "a",
             "tablespoon"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
         },
         {
           "id": "howmanytablespoonsin1",
@@ -749,7 +890,9 @@
             "in",
             "1"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Tablespoons in 1 calculator! 🕐"
         },
         {
           "id": "howmanycminaninch",
@@ -766,7 +909,9 @@
             "an",
             "inch"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
         },
         {
           "id": "howmanyhoursinayear",
@@ -783,7 +928,9 @@
             "a",
             "year"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
         },
         {
           "id": "howmanyweeksinayear",
@@ -800,7 +947,9 @@
             "a",
             "year"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Weeks in a Year calculator! 🕐"
         },
         {
           "id": "howmanydaysuntilhalloween",
@@ -816,7 +965,9 @@
             "until",
             "halloween​​​​​"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Days Until Halloween​​​​​ calculator! 🕐"
         },
         {
           "id": "howmanysecondsinaday",
@@ -833,7 +984,9 @@
             "a",
             "day"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Seconds in a Day calculator! 🕐"
         },
         {
           "id": "howmanyminutesinaday",
@@ -850,7 +1003,9 @@
             "a",
             "day​​​​​​​​​​"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Minutes in a Day​​​​​​​​​​ calculator! 🕐"
         },
         {
           "id": "howmanytablespoonsinacup",
@@ -867,7 +1022,9 @@
             "a",
             "cup​"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Tablespoons in a Cup​ calculator! 🕐"
         },
         {
           "id": "howmanylettersareinthealphabet",
@@ -885,7 +1042,9 @@
             "the",
             "alphabet"
           ],
-          "icon": "⏰"
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
         }
       ]
     },
@@ -910,7 +1069,28 @@
             "an",
             "acre​​​​​​"
           ],
-          "icon": "📏"
+          "icon": "📏",
+          "sharing_enabled": false,
+          "share_text": "Measure distances with this How Many Square Feet in an Acre​​​​​​ tool! 📏"
+        },
+        {
+          "id": "howmanymilesis10000steps",
+          "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
+          "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
+          "category": "length",
+          "url": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​/index.html",
+          "folder_name": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​",
+          "keywords": [
+            "how",
+            "many",
+            "miles",
+            "is",
+            "10000",
+            "steps​​​​​​​​​​​​​​​​​"
+          ],
+          "icon": "📏",
+          "sharing_enabled": true,
+          "share_text": "Measure distances with this How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​ tool! 📏"
         },
         {
           "id": "howmanyfeetinamile",
@@ -927,7 +1107,9 @@
             "a",
             "mile​"
           ],
-          "icon": "📏"
+          "icon": "📏",
+          "sharing_enabled": false,
+          "share_text": "Measure distances with this How Many Feet in a Mile​ tool! 📏"
         }
       ]
     },
@@ -951,13 +1133,15 @@
             "a",
             "mile​​​"
           ],
-          "icon": "📊"
+          "icon": "📊",
+          "sharing_enabled": false,
+          "share_text": "Get accurate measurements with this How Many Steps in a Mile​​​ calculator! 📊"
         }
       ]
     }
   },
   "statistics": {
-    "total_tools": 27,
+    "total_tools": 29,
     "total_categories": 5,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"
