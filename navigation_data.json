@@ -1,6 +1,25 @@
 {
   "tools": [
     {
+      "id": "howmanycaloriesshouldieataday",
+      "title": "How Many Calories Should I Eat a Day",
+      "description": "Convert between different weight and mass units for your How Many Calories Should I Eat a Day needs",
+      "category": "weight",
+      "url": "how many calories should i eat a day/index.html",
+      "folder_name": "how many calories should i eat a day",
+      "keywords": [
+        "how",
+        "many",
+        "calories",
+        "should",
+        "i",
+        "eat",
+        "a",
+        "day"
+      ],
+      "icon": "⚖️"
+    },
+    {
       "id": "howmanylitersinagallon",
       "title": "How Many Liters in a Gallon​​",
       "description": "Convert between different volume units based on your How Many Liters in a Gallon​​ question",
@@ -86,6 +105,22 @@
       "icon": "⚖️"
     },
     {
+      "id": "howmanycontinentsarethere",
+      "title": "How Many Continents Are There",
+      "description": "Calculate and convert time-related measurements from your How Many Continents Are There query",
+      "category": "time",
+      "url": "how many continents are there/index.html",
+      "folder_name": "how many continents are there",
+      "keywords": [
+        "how",
+        "many",
+        "continents",
+        "are",
+        "there"
+      ],
+      "icon": "⏰"
+    },
+    {
       "id": "howmanyteaspoonsinatablespoon",
       "title": "How Many Teaspoons in a Tablespoon",
       "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
@@ -120,6 +155,23 @@
       "icon": "📊"
     },
     {
+      "id": "howmanytbspinacup",
+      "title": "How Many Tbsp in a Cup",
+      "description": "Convert between different volume units based on your How Many Tbsp in a Cup question",
+      "category": "volume",
+      "url": "how_many_tbsp_in_a_cup/index.html",
+      "folder_name": "how_many_tbsp_in_a_cup",
+      "keywords": [
+        "how",
+        "many",
+        "tbsp",
+        "in",
+        "a",
+        "cup"
+      ],
+      "icon": "🧪"
+    },
+    {
       "id": "howmanyouncesinapound",
       "title": "How Many Ounces in a Pound",
       "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
@@ -149,6 +201,23 @@
         "tablespoons",
         "in",
         "1"
+      ],
+      "icon": "⏰"
+    },
+    {
+      "id": "howmanycminaninch",
+      "title": "How Many Cm in an Inch",
+      "description": "Calculate and convert time-related measurements from your How Many Cm in an Inch query",
+      "category": "time",
+      "url": "how many cm in an inch/index.html",
+      "folder_name": "how many cm in an inch",
+      "keywords": [
+        "how",
+        "many",
+        "cm",
+        "in",
+        "an",
+        "inch"
       ],
       "icon": "⏰"
     },
@@ -202,6 +271,23 @@
         "ounce​"
       ],
       "icon": "⚖️"
+    },
+    {
+      "id": "howmanyhoursinayear",
+      "title": "How Many Hours in a Year",
+      "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
+      "category": "time",
+      "url": "how many hours in a year/index.html",
+      "folder_name": "how many hours in a year",
+      "keywords": [
+        "how",
+        "many",
+        "hours",
+        "in",
+        "a",
+        "year"
+      ],
+      "icon": "⏰"
     },
     {
       "id": "howmanyweeksinayear",
@@ -354,9 +440,87 @@
         "gallon​"
       ],
       "icon": "🧪"
+    },
+    {
+      "id": "howmanylettersareinthealphabet",
+      "title": "How Many Letters Are in the Alphabet",
+      "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
+      "category": "time",
+      "url": "how many letters are in the alphabet/index.html",
+      "folder_name": "how many letters are in the alphabet",
+      "keywords": [
+        "how",
+        "many",
+        "letters",
+        "are",
+        "in",
+        "the",
+        "alphabet"
+      ],
+      "icon": "⏰"
     }
   ],
   "categories": {
+    "weight": {
+      "name": "Weight",
+      "description": "Tools for weight calculations and conversions",
+      "icon": "⚖️",
+      "tools": [
+        {
+          "id": "howmanycaloriesshouldieataday",
+          "title": "How Many Calories Should I Eat a Day",
+          "description": "Convert between different weight and mass units for your How Many Calories Should I Eat a Day needs",
+          "category": "weight",
+          "url": "how many calories should i eat a day/index.html",
+          "folder_name": "how many calories should i eat a day",
+          "keywords": [
+            "how",
+            "many",
+            "calories",
+            "should",
+            "i",
+            "eat",
+            "a",
+            "day"
+          ],
+          "icon": "⚖️"
+        },
+        {
+          "id": "howmanygramsinapound",
+          "title": "How Many Grams in a Pound​​​​",
+          "description": "Convert between different weight and mass units for your How Many Grams in a Pound​​​​ needs",
+          "category": "weight",
+          "url": "how many grams in a pound​​​​/index.html",
+          "folder_name": "how many grams in a pound​​​​",
+          "keywords": [
+            "how",
+            "many",
+            "grams",
+            "in",
+            "a",
+            "pound​​​​"
+          ],
+          "icon": "⚖️"
+        },
+        {
+          "id": "howmanygramsinanounce",
+          "title": "How Many Grams in an Ounce​",
+          "description": "Convert between different weight and mass units for your How Many Grams in an Ounce​ needs",
+          "category": "weight",
+          "url": "how many grams in an ounce​/index.html",
+          "folder_name": "how many grams in an ounce​",
+          "keywords": [
+            "how",
+            "many",
+            "grams",
+            "in",
+            "an",
+            "ounce​"
+          ],
+          "icon": "⚖️"
+        }
+      ]
+    },
     "volume": {
       "name": "Volume",
       "description": "Tools for volume calculations and conversions",
@@ -376,6 +540,23 @@
             "in",
             "a",
             "gallon​​"
+          ],
+          "icon": "🧪"
+        },
+        {
+          "id": "howmanytbspinacup",
+          "title": "How Many Tbsp in a Cup",
+          "description": "Convert between different volume units based on your How Many Tbsp in a Cup question",
+          "category": "volume",
+          "url": "how_many_tbsp_in_a_cup/index.html",
+          "folder_name": "how_many_tbsp_in_a_cup",
+          "keywords": [
+            "how",
+            "many",
+            "tbsp",
+            "in",
+            "a",
+            "cup"
           ],
           "icon": "🧪"
         },
@@ -522,6 +703,22 @@
           "icon": "⏰"
         },
         {
+          "id": "howmanycontinentsarethere",
+          "title": "How Many Continents Are There",
+          "description": "Calculate and convert time-related measurements from your How Many Continents Are There query",
+          "category": "time",
+          "url": "how many continents are there/index.html",
+          "folder_name": "how many continents are there",
+          "keywords": [
+            "how",
+            "many",
+            "continents",
+            "are",
+            "there"
+          ],
+          "icon": "⏰"
+        },
+        {
           "id": "howmanyteaspoonsinatablespoon",
           "title": "How Many Teaspoons in a Tablespoon",
           "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
@@ -551,6 +748,40 @@
             "tablespoons",
             "in",
             "1"
+          ],
+          "icon": "⏰"
+        },
+        {
+          "id": "howmanycminaninch",
+          "title": "How Many Cm in an Inch",
+          "description": "Calculate and convert time-related measurements from your How Many Cm in an Inch query",
+          "category": "time",
+          "url": "how many cm in an inch/index.html",
+          "folder_name": "how many cm in an inch",
+          "keywords": [
+            "how",
+            "many",
+            "cm",
+            "in",
+            "an",
+            "inch"
+          ],
+          "icon": "⏰"
+        },
+        {
+          "id": "howmanyhoursinayear",
+          "title": "How Many Hours in a Year",
+          "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
+          "category": "time",
+          "url": "how many hours in a year/index.html",
+          "folder_name": "how many hours in a year",
+          "keywords": [
+            "how",
+            "many",
+            "hours",
+            "in",
+            "a",
+            "year"
           ],
           "icon": "⏰"
         },
@@ -637,6 +868,24 @@
             "cup​"
           ],
           "icon": "⏰"
+        },
+        {
+          "id": "howmanylettersareinthealphabet",
+          "title": "How Many Letters Are in the Alphabet",
+          "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
+          "category": "time",
+          "url": "how many letters are in the alphabet/index.html",
+          "folder_name": "how many letters are in the alphabet",
+          "keywords": [
+            "how",
+            "many",
+            "letters",
+            "are",
+            "in",
+            "the",
+            "alphabet"
+          ],
+          "icon": "⏰"
         }
       ]
     },
@@ -682,47 +931,6 @@
         }
       ]
     },
-    "weight": {
-      "name": "Weight",
-      "description": "Tools for weight calculations and conversions",
-      "icon": "⚖️",
-      "tools": [
-        {
-          "id": "howmanygramsinapound",
-          "title": "How Many Grams in a Pound​​​​",
-          "description": "Convert between different weight and mass units for your How Many Grams in a Pound​​​​ needs",
-          "category": "weight",
-          "url": "how many grams in a pound​​​​/index.html",
-          "folder_name": "how many grams in a pound​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "grams",
-            "in",
-            "a",
-            "pound​​​​"
-          ],
-          "icon": "⚖️"
-        },
-        {
-          "id": "howmanygramsinanounce",
-          "title": "How Many Grams in an Ounce​",
-          "description": "Convert between different weight and mass units for your How Many Grams in an Ounce​ needs",
-          "category": "weight",
-          "url": "how many grams in an ounce​/index.html",
-          "folder_name": "how many grams in an ounce​",
-          "keywords": [
-            "how",
-            "many",
-            "grams",
-            "in",
-            "an",
-            "ounce​"
-          ],
-          "icon": "⚖️"
-        }
-      ]
-    },
     "measurement": {
       "name": "Measurement",
       "description": "Tools for measurement calculations and conversions",
@@ -749,7 +957,7 @@
     }
   },
   "statistics": {
-    "total_tools": 21,
+    "total_tools": 27,
     "total_categories": 5,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"
