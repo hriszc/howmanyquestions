@@ -192,6 +192,26 @@
       "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
     },
     {
+      "id": "howmanypeopleliveintheus",
+      "title": "How Many People Live in the Us",
+      "description": "Calculate and convert time-related measurements from your How Many People Live in the Us query",
+      "category": "time",
+      "url": "how many people live in the us/index.html",
+      "folder_name": "how many people live in the us",
+      "keywords": [
+        "how",
+        "many",
+        "people",
+        "live",
+        "in",
+        "the",
+        "us"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many People Live in the Us calculator! 🕐"
+    },
+    {
       "id": "howmanymilesis10000steps",
       "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
       "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
@@ -284,6 +304,23 @@
       "icon": "🧪",
       "sharing_enabled": false,
       "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
+    },
+    {
+      "id": "howmanyamericastates",
+      "title": "How Many America States",
+      "description": "Calculate and convert time-related measurements from your How Many America States query",
+      "category": "time",
+      "url": "how many america states/index.html",
+      "folder_name": "how many america states",
+      "keywords": [
+        "how",
+        "many",
+        "america",
+        "states"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many America States calculator! 🕐"
     },
     {
       "id": "howmanycupsinapint",
@@ -877,6 +914,26 @@
           "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
         },
         {
+          "id": "howmanypeopleliveintheus",
+          "title": "How Many People Live in the Us",
+          "description": "Calculate and convert time-related measurements from your How Many People Live in the Us query",
+          "category": "time",
+          "url": "how many people live in the us/index.html",
+          "folder_name": "how many people live in the us",
+          "keywords": [
+            "how",
+            "many",
+            "people",
+            "live",
+            "in",
+            "the",
+            "us"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many People Live in the Us calculator! 🕐"
+        },
+        {
           "id": "howmanytablespoonsin1",
           "title": "How Many Tablespoons in 1",
           "description": "Calculate and convert time-related measurements from your How Many Tablespoons in 1 query",
@@ -912,6 +969,23 @@
           "icon": "⏰",
           "sharing_enabled": false,
           "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
+        },
+        {
+          "id": "howmanyamericastates",
+          "title": "How Many America States",
+          "description": "Calculate and convert time-related measurements from your How Many America States query",
+          "category": "time",
+          "url": "how many america states/index.html",
+          "folder_name": "how many america states",
+          "keywords": [
+            "how",
+            "many",
+            "america",
+            "states"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many America States calculator! 🕐"
         },
         {
           "id": "howmanyhoursinayear",
@@ -1141,7 +1215,7 @@
     }
   },
   "statistics": {
-    "total_tools": 29,
+    "total_tools": 31,
     "total_categories": 5,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"
