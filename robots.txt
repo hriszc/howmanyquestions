@@ -1,0 +1,8 @@
+# HowManyQ Robots.txt
+# Generated on 2025-11-11
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://howmanyq.com/sitemap.xml

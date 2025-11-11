@@ -11,7 +11,9 @@
       "Bash(for:*)",
       "Bash(do echo -n \"Checking $id: \")",
       "Bash(done)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "Bash([ -f robots.txt ]:*)",
+      "Bash(./update_sitemap.sh)"
     ],
     "deny": [],
     "ask": []

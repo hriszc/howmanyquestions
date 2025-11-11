@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Core SEO -->
+  <title>How Many Chromosomes Do Humans Have? | Simple Genetic Explanation Tool</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="How many chromosomes do humans have? Use this simple interactive tool to learn why humans have 46 chromosomes, what 23 pairs mean, and quickly review key genetics facts." />
+
+  <!-- Basic Styling (consistent, clean, mobile-first) -->
+  <style>
+    :root {
+      --bg: #090909;
+      --bg-soft: #151515;
+      --accent: #4da3ff;
+      --accent-soft: rgba(77, 163, 255, 0.14);
+      --accent-alt: #9c6bff;
+      --text-main: #f5f5f5;
+      --text-soft: #a8a8a8;
+      --border-subtle: #272727;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.5);
+      --transition-fast: 0.18s ease-out;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, -apple-system, Segoe UI, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-main);
+      background-color: var(--bg);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrap {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 960px;
+      background: radial-gradient(circle at top left, #151515, #050505);
+      border-radius: 24px;
+      padding: 26px 22px 22px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        padding: 30px 28px 24px;
+        gap: 20px;
+      }
+    }
+
+    .pill-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 11px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--accent);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    .subtitle {
+      margin: 0;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-soft);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.9fr 1.4fr;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 720px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Left column: main tool */
+    .main-tool {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .answer-box {
+      padding: 14px 13px 12px;
+      background: var(--accent-soft);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(77, 163, 255, 0.26);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .answer-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+    }
+
+    .answer-main {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .answer-main span.value {
+      font-size: 22px;
+      color: var(--accent);
+    }
+
+    .answer-sub {
+      font-size: 11px;
+      color: var(--text-soft);
+    }
+
+    /* Quick explainer */
+    .explain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .explain-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .chip {
+      padding: 8px;
+      border-radius: 11px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.01);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .chip-title {
+      font-size: 10px;
+      color: var(--accent-alt);
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    .chip-main {
+      font-size: 11px;
+      color: var(--text-main);
+    }
+
+    .chip-sub {
+      font-size: 10px;
+      color: var(--text-soft);
+    }
+
+    /* Interactive Q&A Tool */
+    .tool-box {
+      margin-top: 4px;
+      padding: 11px 10px 10px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.01);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .tool-label {
+      font-size: 10px;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .tool-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .toggle-group {
+      display: inline-flex;
+      border-radius: var(--radius-pill);
+      padding: 3px;
+      background: #090909;
+      border: 1px solid var(--border-subtle);
+      gap: 3px;
+    }
+
+    .toggle-btn {
+      padding: 4px 10px;
+      font-size: 10px;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: transparent;
+      color: var(--text-soft);
+      cursor: pointer;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .toggle-btn span.dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: transparent;
+    }
+
+    .toggle-btn.active {
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      color: #050505;
+      font-weight: 600;
+    }
+
+    .toggle-btn.active span.dot {
+      background: #050505;
+    }
+
+    select,
+    input[type="number"] {
+      padding: 6px 9px;
+      font-size: 11px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-subtle);
+      background: #050505;
+      color: var(--text-main);
+      outline: none;
+      min-width: 0;
+      transition: var(--transition-fast);
+    }
+
+    select:focus,
+    input[type="number"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(77, 163, 255, 0.16);
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    .note {
+      font-size: 10px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .result-line {
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* Right column: key facts */
+    .side {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fact-card {
+      padding: 10px 10px 9px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: radial-gradient(circle at top right, rgba(77, 163, 255, 0.08), #050505);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .fact-label {
+      font-size: 9px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .fact-main {
+      font-size: 11px;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .fact-main strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .fact-list {
+      margin: 0;
+      padding-left: 15px;
+      font-size: 10px;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+
+    .fact-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+
+    .fact-pill {
+      font-size: 9px;
+      padding: 4px 9px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--text-soft);
+    }
+
+    .footer-note {
+      margin-top: 2px;
+      font-size: 9px;
+      color: #666;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <main class="card">
+      <div class="pill-label">
+        <span class="pill-dot"></span>
+        HOW MANY CHROMOSOMES DO HUMANS HAVE?
+        <span style="color:var(--text-soft);">Quick Genetics Tool</span>
+      </div>
+
+      <header>
+        <h1>How Many Chromosomes Do Humans Have?</h1>
+        <p class="subtitle">
+          Humans typically have <strong>46 chromosomes</strong>, arranged in <strong>23 pairs</strong>. 
+          Use this concise tool to understand what that means, how it splits into sex cells, and quickly answer common exam or quiz questions.
+        </p>
+      </header>
+
+      <section class="layout" aria-label="Chromosome explanation and key facts">
+        <!-- LEFT: Interactive tool + breakdown -->
+        <div class="main-tool">
+          <div class="answer-box">
+            <div class="answer-label">Direct answer</div>
+            <div class="answer-main">
+              Humans have
+              <span class="value">46</span>
+              chromosomes in most body cells.
+            </div>
+            <div class="answer-sub">
+              These are organized into <strong>23 pairs</strong>: 22 pairs of autosomes + 1 pair of sex chromosomes (XX or XY).
+            </div>
+          </div>
+
+          <div class="explain-grid" aria-label="Quick chromosome facts">
+            <div class="chip">
+              <div class="chip-title">Total in body cell</div>
+              <div class="chip-main">46 chromosomes</div>
+              <div class="chip-sub">Diploid (2n) number for humans.</div>
+            </div>
+            <div class="chip">
+              <div class="chip-title">Pairs</div>
+              <div class="chip-main">23 pairs</div>
+              <div class="chip-sub">Matching sets, one from each parent.</div>
+            </div>
+            <div class="chip">
+              <div class="chip-title">Sex cells</div>
+              <div class="chip-main">23 chromosomes</div>
+              <div class="chip-sub">Eggs and sperm are haploid (n).</div>
+            </div>
+          </div>
+
+          <!-- Interactive Q&A helper -->
+          <div class="tool-box" id="chromosomeTool">
+            <div class="tool-label">Interactive helper</div>
+            <div class="tool-row">
+              <div class="toggle-group" aria-label="Choose question type">
+                <button class="toggle-btn active" data-mode="total">
+                  <span class="dot"></span>Total per cell
+                </button>
+                <button class="toggle-btn" data-mode="pairs">
+                  <span class="dot"></span>Number of pairs
+                </button>
+                <button class="toggle-btn" data-mode="gamete">
+                  <span class="dot"></span>In sex cells
+                </button>
+              </div>
+
+              <select id="cellTypeSelect" aria-label="Cell type">
+                <option value="somatic" selected>Typical body cell</option>
+                <option value="gamete">Egg or sperm cell</option>
+                <option value="zygote">Fertilized egg (zygote)</option>
+              </select>
+            </div>
+
+            <div class="tool-row">
+              <label for="pairInput" class="note">
+                Default human setting: 23 pairs → 46 chromosomes.
+                Adjust only if exploring a hypothetical or class example:
+              </label>
+              <input
+                id="pairInput"
+                type="number"
+                min="1"
+                max="60"
+                value="23"
+              />
+            </div>
+
+            <div id="resultLine" class="result-line">
+              A human typical body cell with 23 pairs has 46 chromosomes.
+            </div>
+            <p class="note">
+              This tool is designed to quickly convert between
+              <span class="highlight">total chromosomes</span>,
+              <span class="highlight">pairs</span>, and
+              <span class="highlight">sex-cell counts</span> using the
+              core rule: humans are 2n = 46, n = 23.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Key facts + exam-style notes -->
+        <aside class="side" aria-label="Important chromosome facts">
+          <div class="fact-card">
+            <div class="fact-label">Key fact</div>
+            <div class="fact-main">
+              The accepted answer to 
+              <strong>"How many chromosomes do humans have?"</strong>
+              is <strong>46 chromosomes</strong> in most body cells.
+            </div>
+            <ul class="fact-list">
+              <li>22 pairs of autosomes (44 chromosomes)</li>
+              <li>1 pair of sex chromosomes (XX or XY)</li>
+              <li>Symbol: <strong>2n = 46</strong>, so <strong>n = 23</strong></li>
+            </ul>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-label">Gametes vs body cells</div>
+            <div class="fact-main">
+              Human sex cells (eggs and sperm) are <strong>haploid (n)</strong>.
+            </div>
+            <ul class="fact-list">
+              <li>Each gamete carries 23 chromosomes (one from each pair).</li>
+              <li>When egg and sperm combine → zygote has 46 chromosomes again.</li>
+            </ul>
+            <div class="fact-pill-row">
+              <div class="fact-pill">Gamete: 23</div>
+              <div class="fact-pill">Zygote: 46</div>
+              <div class="fact-pill">Body cell: 46</div>
+            </div>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-label">Exam / quiz helper</div>
+            <div class="fact-main">
+              For quick answers:
+            </div>
+            <ul class="fact-list">
+              <li>"How many chromosomes do humans have?" → <strong>46</strong></li>
+              <li>"How many pairs?" → <strong>23 pairs</strong></li>
+              <li>"How many in human gametes?" → <strong>23</strong></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <div class="footer-note">
+        Educational summary only. For medical or genetic concerns, consult a professional source.
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const modeButtons = document.querySelectorAll('.toggle-btn');
+      const cellTypeSelect = document.getElementById('cellTypeSelect');
+      const pairInput = document.getElementById('pairInput');
+      const resultLine = document.getElementById('resultLine');
+
+      function clampPairs(value) {
+        if (isNaN(value) || value <= 0) return 23;
+        if (value > 60) return 60;
+        return Math.round(value);
+      }
+
+      function getActiveMode() {
+        const active = document.querySelector('.toggle-btn.active');
+        return active ? active.dataset.mode : 'total';
+      }
+
+      function updateResult() {
+        const mode = getActiveMode();
+        const pairs = clampPairs(Number(pairInput.value));
+        if (pairs !== Number(pairInput.value)) {
+          pairInput.value = pairs;
+        }
+
+        const total = pairs * 2;
+        const cellType = cellTypeSelect.value;
+
+        let text = '';
+
+        if (mode === 'total') {
+          if (cellType === 'somatic') {
+            text = `A human typical body cell with ${pairs} pairs has ${total} chromosomes. (Standard: 23 pairs → 46 chromosomes.)`;
+          } else if (cellType === 'gamete') {
+            text = `A human sex cell (egg or sperm) carries ${pairs} chromosomes if the diploid number is ${total}. For humans: 2n = 46 → n = 23.`;
+          } else {
+            text = `A human zygote formed from two gametes each with ${pairs} chromosomes will have ${total} chromosomes. Standard human zygote: 46.`;
+          }
+        } else if (mode === 'pairs') {
+          if (cellType === 'somatic') {
+            text = `With a total of ${total} chromosomes, that equals ${pairs} pairs in a typical body cell. Humans: 46 → 23 pairs.`;
+          } else if (cellType === 'gamete') {
+            text = `If somatic cells have ${pairs} pairs, each gamete has ${pairs} chromosomes (one from each pair). Humans: 23.`;
+          } else {
+            text = `A zygote with ${pairs} pairs contains ${total} chromosomes in total. Humans: 23 pairs → 46.`;
+          }
+        } else if (mode === 'gamete') {
+          const gamete = pairs; // interpret input as n in this view
+          const diploid = gamete * 2;
+          if (cellType === 'somatic') {
+            text = `If each gamete has ${gamete} chromosomes, body cells would have ${diploid}. For humans: gamete 23 → body cell 46.`;
+          } else if (cellType === 'gamete') {
+            text = `Using ${gamete} as the haploid (n) number. Humans use n = 23.`;
+          } else {
+            text = `A zygote formed from gametes with ${gamete} chromosomes each will have ${diploid} total chromosomes. Humans: 23 + 23 = 46.`;
+          }
+        }
+
+        resultLine.textContent = text;
+      }
+
+      modeButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          modeButtons.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          updateResult();
+        });
+      });
+
+      cellTypeSelect.addEventListener('change', updateResult);
+      pairInput.addEventListener('input', updateResult);
+
+      // Initial render with default human values
+      updateResult();
+    })();
+  </script>
+</body>
+</html>

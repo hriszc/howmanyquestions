@@ -22,6 +22,44 @@
       "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
     },
     {
+      "id": "howmanyelectoralvotesarethere",
+      "title": "How Many Electoral Votes Are There​",
+      "description": "Calculate and convert time-related measurements from your How Many Electoral Votes Are There​ query",
+      "category": "time",
+      "url": "how_many_electoral_votes_are_there​/index.html",
+      "folder_name": "how_many_electoral_votes_are_there​",
+      "keywords": [
+        "how",
+        "many",
+        "electoral",
+        "votes",
+        "are",
+        "there​"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Electoral Votes Are There​ calculator! 🕐"
+    },
+    {
+      "id": "howmanyhoursinaweek",
+      "title": "How Many Hours in a Week​​​​​​​​",
+      "description": "Calculate and convert time-related measurements from your How Many Hours in a Week​​​​​​​​ query",
+      "category": "time",
+      "url": "how_many_hours_in_a_week​​​​​​​​/index.html",
+      "folder_name": "how_many_hours_in_a_week​​​​​​​​",
+      "keywords": [
+        "how",
+        "many",
+        "hours",
+        "in",
+        "a",
+        "week​​​​​​​​"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Hours in a Week​​​​​​​​ calculator! 🕐"
+    },
+    {
       "id": "howmanylitersinagallon",
       "title": "How Many Liters in a Gallon​​",
       "description": "Convert between different volume units based on your How Many Liters in a Gallon​​ question",
@@ -380,6 +418,25 @@
       "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
     },
     {
+      "id": "howmanycaloriesinabanana",
+      "title": "How Many Calories in a Banana​",
+      "description": "Convert between different weight and mass units for your How Many Calories in a Banana​ needs",
+      "category": "weight",
+      "url": "how_many_calories_in_a_banana​/index.html",
+      "folder_name": "how_many_calories_in_a_banana​",
+      "keywords": [
+        "how",
+        "many",
+        "calories",
+        "in",
+        "a",
+        "banana​"
+      ],
+      "icon": "⚖️",
+      "sharing_enabled": false,
+      "share_text": "Calculate weights with this How Many Calories in a Banana​ calculator! ⚖️"
+    },
+    {
       "id": "howmanyweeksinayear",
       "title": "How Many Weeks in a Year",
       "description": "Calculate and convert time-related measurements from your How Many Weeks in a Year query",
@@ -531,6 +588,25 @@
       "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
     },
     {
+      "id": "howmanychromosomesdohumanshave",
+      "title": "How Many Chromosomes Do Humans Have​",
+      "description": "Calculate and convert time-related measurements from your How Many Chromosomes Do Humans Have​ query",
+      "category": "time",
+      "url": "how_many_chromosomes_do_humans_have​/index.html",
+      "folder_name": "how_many_chromosomes_do_humans_have​",
+      "keywords": [
+        "how",
+        "many",
+        "chromosomes",
+        "do",
+        "humans",
+        "have​"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Chromosomes Do Humans Have​ calculator! 🕐"
+    },
+    {
       "id": "howmanytablespoonsinacup",
       "title": "How Many Tablespoons in a Cup​",
       "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup​ query",
@@ -653,184 +729,25 @@
           "icon": "⚖️",
           "sharing_enabled": false,
           "share_text": "Calculate weights with this How Many Grams in an Ounce​ calculator! ⚖️"
-        }
-      ]
-    },
-    "volume": {
-      "name": "Volume",
-      "description": "Tools for volume calculations and conversions",
-      "icon": "🧪",
-      "tools": [
-        {
-          "id": "howmanylitersinagallon",
-          "title": "How Many Liters in a Gallon​​",
-          "description": "Convert between different volume units based on your How Many Liters in a Gallon​​ question",
-          "category": "volume",
-          "url": "how many liters in a gallon​​/index.html",
-          "folder_name": "how many liters in a gallon​​",
-          "keywords": [
-            "how",
-            "many",
-            "liters",
-            "in",
-            "a",
-            "gallon​​"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": true,
-          "share_text": "Convert volumes easily with this How Many Liters in a Gallon​​ tool! 🧪"
         },
         {
-          "id": "howmanytbspinacup",
-          "title": "How Many Tbsp in a Cup",
-          "description": "Convert between different volume units based on your How Many Tbsp in a Cup question",
-          "category": "volume",
-          "url": "how_many_tbsp_in_a_cup/index.html",
-          "folder_name": "how_many_tbsp_in_a_cup",
+          "id": "howmanycaloriesinabanana",
+          "title": "How Many Calories in a Banana​",
+          "description": "Convert between different weight and mass units for your How Many Calories in a Banana​ needs",
+          "category": "weight",
+          "url": "how_many_calories_in_a_banana​/index.html",
+          "folder_name": "how_many_calories_in_a_banana​",
           "keywords": [
             "how",
             "many",
-            "tbsp",
+            "calories",
             "in",
             "a",
-            "cup"
+            "banana​"
           ],
-          "icon": "🧪",
+          "icon": "⚖️",
           "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
-        },
-        {
-          "id": "howmanyouncesinapound",
-          "title": "How Many Ounces in a Pound",
-          "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
-          "category": "volume",
-          "url": "how many ounces in a pound/index.html",
-          "folder_name": "how many ounces in a pound",
-          "keywords": [
-            "how",
-            "many",
-            "ounces",
-            "in",
-            "a",
-            "pound"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
-        },
-        {
-          "id": "howmanycupsinaquart",
-          "title": "How Many Cups in a Quart",
-          "description": "Convert between different volume units based on your How Many Cups in a Quart question",
-          "category": "volume",
-          "url": "how many cups in a quart/index.html",
-          "folder_name": "how many cups in a quart",
-          "keywords": [
-            "how",
-            "many",
-            "cups",
-            "in",
-            "a",
-            "quart"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
-        },
-        {
-          "id": "howmanycupsinapint",
-          "title": "How Many Cups in a Pint​​​​​​​​",
-          "description": "Convert between different volume units based on your How Many Cups in a Pint​​​​​​​​ question",
-          "category": "volume",
-          "url": "how many cups in a pint​​​​​​​​/index.html",
-          "folder_name": "how many cups in a pint​​​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "cups",
-            "in",
-            "a",
-            "pint​​​​​​​​"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Cups in a Pint​​​​​​​​ tool! 🧪"
-        },
-        {
-          "id": "howmanyouncesinapint",
-          "title": "How Many Ounces in a Pint",
-          "description": "Convert between different volume units based on your How Many Ounces in a Pint question",
-          "category": "volume",
-          "url": "how_many_ounces_in_a_pint/index.html",
-          "folder_name": "how_many_ounces_in_a_pint",
-          "keywords": [
-            "how",
-            "many",
-            "ounces",
-            "in",
-            "a",
-            "pint"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Ounces in a Pint tool! 🧪"
-        },
-        {
-          "id": "howmanyouncesinacup",
-          "title": "How Many Ounces in a Cup​",
-          "description": "Convert between different volume units based on your How Many Ounces in a Cup​ question",
-          "category": "volume",
-          "url": "how_many_ounces_in_a_cup​/index.html",
-          "folder_name": "how_many_ounces_in_a_cup​",
-          "keywords": [
-            "how",
-            "many",
-            "ounces",
-            "in",
-            "a",
-            "cup​"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Ounces in a Cup​ tool! 🧪"
-        },
-        {
-          "id": "howmanyouncesinagallon",
-          "title": "How Many Ounces in a Gallon",
-          "description": "Convert between different volume units based on your How Many Ounces in a Gallon question",
-          "category": "volume",
-          "url": "how_many_ounces_in_a_gallon/index.html",
-          "folder_name": "how_many_ounces_in_a_gallon",
-          "keywords": [
-            "how",
-            "many",
-            "ounces",
-            "in",
-            "a",
-            "gallon"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
-        },
-        {
-          "id": "howmanyquartsinagallon",
-          "title": "How Many Quarts in a Gallon​",
-          "description": "Convert between different volume units based on your How Many Quarts in a Gallon​ question",
-          "category": "volume",
-          "url": "how_many_quarts_in_a_gallon​/index.html",
-          "folder_name": "how_many_quarts_in_a_gallon​",
-          "keywords": [
-            "how",
-            "many",
-            "quarts",
-            "in",
-            "a",
-            "gallon​"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
+          "share_text": "Calculate weights with this How Many Calories in a Banana​ calculator! ⚖️"
         }
       ]
     },
@@ -839,6 +756,44 @@
       "description": "Tools for time calculations and conversions",
       "icon": "⏰",
       "tools": [
+        {
+          "id": "howmanyelectoralvotesarethere",
+          "title": "How Many Electoral Votes Are There​",
+          "description": "Calculate and convert time-related measurements from your How Many Electoral Votes Are There​ query",
+          "category": "time",
+          "url": "how_many_electoral_votes_are_there​/index.html",
+          "folder_name": "how_many_electoral_votes_are_there​",
+          "keywords": [
+            "how",
+            "many",
+            "electoral",
+            "votes",
+            "are",
+            "there​"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Electoral Votes Are There​ calculator! 🕐"
+        },
+        {
+          "id": "howmanyhoursinaweek",
+          "title": "How Many Hours in a Week​​​​​​​​",
+          "description": "Calculate and convert time-related measurements from your How Many Hours in a Week​​​​​​​​ query",
+          "category": "time",
+          "url": "how_many_hours_in_a_week​​​​​​​​/index.html",
+          "folder_name": "how_many_hours_in_a_week​​​​​​​​",
+          "keywords": [
+            "how",
+            "many",
+            "hours",
+            "in",
+            "a",
+            "week​​​​​​​​"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Hours in a Week​​​​​​​​ calculator! 🕐"
+        },
         {
           "id": "howmanydaysuntilchristmas",
           "title": "How Many Days Until Christmas",
@@ -1082,6 +1037,25 @@
           "share_text": "Check out this How Many Minutes in a Day​​​​​​​​​​ calculator! 🕐"
         },
         {
+          "id": "howmanychromosomesdohumanshave",
+          "title": "How Many Chromosomes Do Humans Have​",
+          "description": "Calculate and convert time-related measurements from your How Many Chromosomes Do Humans Have​ query",
+          "category": "time",
+          "url": "how_many_chromosomes_do_humans_have​/index.html",
+          "folder_name": "how_many_chromosomes_do_humans_have​",
+          "keywords": [
+            "how",
+            "many",
+            "chromosomes",
+            "do",
+            "humans",
+            "have​"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Chromosomes Do Humans Have​ calculator! 🕐"
+        },
+        {
           "id": "howmanytablespoonsinacup",
           "title": "How Many Tablespoons in a Cup​",
           "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup​ query",
@@ -1119,6 +1093,184 @@
           "icon": "⏰",
           "sharing_enabled": true,
           "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
+        }
+      ]
+    },
+    "volume": {
+      "name": "Volume",
+      "description": "Tools for volume calculations and conversions",
+      "icon": "🧪",
+      "tools": [
+        {
+          "id": "howmanylitersinagallon",
+          "title": "How Many Liters in a Gallon​​",
+          "description": "Convert between different volume units based on your How Many Liters in a Gallon​​ question",
+          "category": "volume",
+          "url": "how many liters in a gallon​​/index.html",
+          "folder_name": "how many liters in a gallon​​",
+          "keywords": [
+            "how",
+            "many",
+            "liters",
+            "in",
+            "a",
+            "gallon​​"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": true,
+          "share_text": "Convert volumes easily with this How Many Liters in a Gallon​​ tool! 🧪"
+        },
+        {
+          "id": "howmanytbspinacup",
+          "title": "How Many Tbsp in a Cup",
+          "description": "Convert between different volume units based on your How Many Tbsp in a Cup question",
+          "category": "volume",
+          "url": "how_many_tbsp_in_a_cup/index.html",
+          "folder_name": "how_many_tbsp_in_a_cup",
+          "keywords": [
+            "how",
+            "many",
+            "tbsp",
+            "in",
+            "a",
+            "cup"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
+        },
+        {
+          "id": "howmanyouncesinapound",
+          "title": "How Many Ounces in a Pound",
+          "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
+          "category": "volume",
+          "url": "how many ounces in a pound/index.html",
+          "folder_name": "how many ounces in a pound",
+          "keywords": [
+            "how",
+            "many",
+            "ounces",
+            "in",
+            "a",
+            "pound"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
+        },
+        {
+          "id": "howmanycupsinaquart",
+          "title": "How Many Cups in a Quart",
+          "description": "Convert between different volume units based on your How Many Cups in a Quart question",
+          "category": "volume",
+          "url": "how many cups in a quart/index.html",
+          "folder_name": "how many cups in a quart",
+          "keywords": [
+            "how",
+            "many",
+            "cups",
+            "in",
+            "a",
+            "quart"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
+        },
+        {
+          "id": "howmanycupsinapint",
+          "title": "How Many Cups in a Pint​​​​​​​​",
+          "description": "Convert between different volume units based on your How Many Cups in a Pint​​​​​​​​ question",
+          "category": "volume",
+          "url": "how many cups in a pint​​​​​​​​/index.html",
+          "folder_name": "how many cups in a pint​​​​​​​​",
+          "keywords": [
+            "how",
+            "many",
+            "cups",
+            "in",
+            "a",
+            "pint​​​​​​​​"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Cups in a Pint​​​​​​​​ tool! 🧪"
+        },
+        {
+          "id": "howmanyouncesinapint",
+          "title": "How Many Ounces in a Pint",
+          "description": "Convert between different volume units based on your How Many Ounces in a Pint question",
+          "category": "volume",
+          "url": "how_many_ounces_in_a_pint/index.html",
+          "folder_name": "how_many_ounces_in_a_pint",
+          "keywords": [
+            "how",
+            "many",
+            "ounces",
+            "in",
+            "a",
+            "pint"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Pint tool! 🧪"
+        },
+        {
+          "id": "howmanyouncesinacup",
+          "title": "How Many Ounces in a Cup​",
+          "description": "Convert between different volume units based on your How Many Ounces in a Cup​ question",
+          "category": "volume",
+          "url": "how_many_ounces_in_a_cup​/index.html",
+          "folder_name": "how_many_ounces_in_a_cup​",
+          "keywords": [
+            "how",
+            "many",
+            "ounces",
+            "in",
+            "a",
+            "cup​"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Cup​ tool! 🧪"
+        },
+        {
+          "id": "howmanyouncesinagallon",
+          "title": "How Many Ounces in a Gallon",
+          "description": "Convert between different volume units based on your How Many Ounces in a Gallon question",
+          "category": "volume",
+          "url": "how_many_ounces_in_a_gallon/index.html",
+          "folder_name": "how_many_ounces_in_a_gallon",
+          "keywords": [
+            "how",
+            "many",
+            "ounces",
+            "in",
+            "a",
+            "gallon"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
+        },
+        {
+          "id": "howmanyquartsinagallon",
+          "title": "How Many Quarts in a Gallon​",
+          "description": "Convert between different volume units based on your How Many Quarts in a Gallon​ question",
+          "category": "volume",
+          "url": "how_many_quarts_in_a_gallon​/index.html",
+          "folder_name": "how_many_quarts_in_a_gallon​",
+          "keywords": [
+            "how",
+            "many",
+            "quarts",
+            "in",
+            "a",
+            "gallon​"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
         }
       ]
     },
@@ -1215,7 +1367,7 @@
     }
   },
   "statistics": {
-    "total_tools": 31,
+    "total_tools": 35,
     "total_categories": 5,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"

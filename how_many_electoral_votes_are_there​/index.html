@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Core SEO: use folder name keyword exactly -->
+  <title>How Many Electoral Votes Are There: Interactive U.S. Electoral College Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How many electoral votes are there? Use this interactive Electoral College tool to see the total number of U.S. electoral votes (538), understand how they are allocated by state, and experiment with custom election scenarios.">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --bg-soft: #111827;
+      --card-bg: #111827;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56,189,248,0.12);
+      --accent-alt: #22c55e;
+      --text-main: #e5e7eb;
+      --text-soft: #9ca3af;
+      --border-subtle: #1f2937;
+      --radius-xl: 18px;
+      --radius-lg: 14px;
+      --radius-md: 10px;
+      --shadow-soft: 0 18px 55px rgba(15,23,42,0.65);
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, -system-ui, -apple-system, BlinkMacSystemFont, -apple-system, BlinkMacSystemFont, -apple-system, BlinkMacSystemFont, -apple-system, BlinkMacSystemFont, sans-serif;
+      --transition-fast: 0.22s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 18px 40px;
+      font-family: var(--font-sans);
+      background: radial-gradient(circle at top left, #111827 0, #020817 55%, #000 100%);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+    }
+
+    .app-shell {
+      width: 100%;
+      max-width: 1120px;
+      background: radial-gradient(circle at top, rgba(56,189,248,0.08), transparent 65%) fixed;
+      border-radius: 28px;
+      padding: 26px 22px 26px;
+      border: 1px solid rgba(148,163,253,0.12);
+      box-shadow: 0 26px 90px rgba(15,23,42,0.9);
+      backdrop-filter: blur(24px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.04), transparent 65%),
+        radial-gradient(circle at top right, rgba(79,70,229,0.05), transparent 70%);
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 20px;
+    }
+
+    .title-block {
+      max-width: 640px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+      color: #e5e7ff;
+    }
+
+    .keyword-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 10px 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(56,189,248,0.25);
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.14), rgba(15,23,42,1));
+      color: var(--accent);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .keyword-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 10px rgba(56,189,248,0.9);
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 12px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .summary-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+      padding: 10px 10px 9px;
+      border-radius: 14px;
+      background: radial-gradient(circle at top, rgba(56,189,248,0.18), rgba(9,9,11,1));
+      border: 1px solid rgba(148,163,253,0.16);
+      box-shadow: 0 12px 40px rgba(15,23,42,0.9);
+      min-width: 190px;
+    }
+
+    .summary-label {
+      font-size: 9px;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .summary-main {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .summary-number {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 0 14px rgba(56,189,248,0.75);
+    }
+
+    .summary-unit {
+      font-size: 10px;
+      color: var(--text-soft);
+    }
+
+    .summary-note {
+      font-size: 9px;
+      color: var(--accent-alt);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .summary-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(34,197,94,0.9);
+      box-shadow: 0 0 8px rgba(34,197,94,0.9);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 3fr 2.2fr;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .panel {
+      background: radial-gradient(circle at top left, rgba(15,23,42,0.2), rgba(2,6,23,1));
+      border-radius: var(--radius-xl);
+      padding: 11px 11px 10px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .panel-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #e5e7ff;
+    }
+
+    .panel-subtitle {
+      font-size: 9px;
+      color: var(--text-soft);
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .chip {
+      padding: 2px 7px 3px;
+      border-radius: 999px;
+      font-size: 8px;
+      border: 1px solid rgba(75,85,99,0.9);
+      color: var(--text-soft);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .chip span {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(148,163,253,0.9);
+    }
+
+    /* Main tool: interactive selector */
+    .controls-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.4fr);
+      gap: 8px;
+      margin-top: 2px;
+      align-items: flex-start;
+    }
+
+    .search-box {
+      position: relative;
+      margin-bottom: 5px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 7px 9px 7px 22px;
+      border-radius: var(--radius-md);
+      border: 1px solid #111827;
+      background: radial-gradient(circle at top left, rgba(15,23,42,0.7), #020817);
+      color: var(--text-main);
+      font-size: 9px;
+      outline: none;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .search-box input::placeholder {
+      color: #6b7280;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 12px rgba(56,189,248,0.38);
+      transform: translateY(-0.5px);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      border: 1px solid #6b7280;
+      box-shadow: 0 0 4px rgba(148,163,253,0.6);
+    }
+
+    .states-list {
+      max-height: 176px;
+      overflow-y: auto;
+      padding-right: 3px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px;
+      margin-top: 2px;
+    }
+
+    .state-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 6px;
+      border-radius: 9px;
+      background: rgba(9,9,11,0.98);
+      border: 1px solid rgba(31,41,55,0.95);
+      color: var(--text-soft);
+      font-size: 8px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .state-item span.name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .state-item span.votes {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 8px;
+    }
+
+    .state-item.selected {
+      background: radial-gradient(circle at top, rgba(56,189,248,0.16), rgba(9,9,11,1));
+      border-color: rgba(56,189,248,0.9);
+      color: #e5e7ff;
+      box-shadow: 0 0 14px rgba(56,189,248,0.45);
+    }
+
+    .state-item:hover {
+      border-color: rgba(75,85,99,0.95);
+      background: radial-gradient(circle at top, rgba(17,24,39,0.96), #020817);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(15,23,42,0.9);
+    }
+
+    .preset-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .preset-btn {
+      padding: 3px 7px 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(75,85,99,0.95);
+      background: rgba(9,9,11,0.98);
+      color: var(--text-soft);
+      font-size: 7px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all var(--transition-fast);
+    }
+
+    .preset-btn span.dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.9);
+      box-shadow: 0 0 6px rgba(56,189,248,0.9);
+    }
+
+    .preset-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 10px rgba(56,189,248,0.45);
+      transform: translateY(-0.5px);
+    }
+
+    .results-card {
+      padding: 7px 7px 6px;
+      border-radius: var(--radius-lg);
+      background: radial-gradient(circle at top, rgba(17,24,39,0.96), #020817);
+      border: 1px solid rgba(31,41,55,0.95);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .results-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      align-items: baseline;
+    }
+
+    .results-label {
+      font-size: 9px;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .results-total {
+      font-size: 16px;
+      font-weight: 650;
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(56,189,248,0.8);
+    }
+
+    .results-of {
+      font-size: 9px;
+      color: #6b7280;
+    }
+
+    .majority-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 7px 4px;
+      border-radius: 999px;
+      font-size: 8px;
+      color: var(--accent-alt);
+      background: rgba(22,163,74,0.08);
+      border: 1px solid rgba(22,163,74,0.4);
+      box-shadow: 0 0 8px rgba(22,163,74,0.35);
+    }
+
+    .majority-pill span {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent-alt);
+    }
+
+    .selection-summary {
+      font-size: 8px;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .selection-summary strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .mini-list {
+      margin-top: 2px;
+      font-size: 8px;
+      color: #6b7280;
+      max-height: 48px;
+      overflow-y: auto;
+    }
+
+    .mini-list span {
+      color: var(--accent);
+    }
+
+    /* Right panel: explanation + quick facts */
+    .facts-list {
+      list-style: none;
+      padding: 0;
+      margin: 4px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 8px;
+      color: var(--text-soft);
+    }
+
+    .facts-list li {
+      display: flex;
+      gap: 5px;
+      align-items: flex-start;
+    }
+
+    .facts-list li span.bullet {
+      margin-top: 2px;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.9);
+      box-shadow: 0 0 6px rgba(56,189,248,0.8);
+      flex: 0 0 auto;
+    }
+
+    .quote-box {
+      margin-top: 5px;
+      padding: 5px 7px;
+      border-radius: 10px;
+      font-size: 7px;
+      line-height: 1.5;
+      color: #9ca3af;
+      background: radial-gradient(circle at top, rgba(17,24,39,0.96), #020817);
+      border: 1px solid rgba(31,41,55,0.95);
+    }
+
+    .note {
+      margin-top: 4px;
+      font-size: 7px;
+      color: #6b7280;
+    }
+
+    /* Scrollbars subtle */
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #111827;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1f2937;
+    }
+
+    @media (max-width: 780px) {
+      .app-shell {
+        padding: 18px 14px 18px;
+        border-radius: 22px;
+      }
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .states-list {
+        max-height: 180px;
+      }
+      .summary-card {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="app-shell">
+  <header class="header">
+    <div class="title-block">
+      <div class="keyword-pill">
+        <div class="keyword-dot"></div>
+        HOW MANY ELECTORAL VOTES ARE THERE
+        <span style="color:#6b7280;">· Electoral College Tool</span>
+      </div>
+      <h1>How Many Electoral Votes Are There?</h1>
+      <p class="subtitle">
+        The United States Electoral College has a fixed total of <strong>538 electoral votes</strong>.
+        A candidate needs at least <strong>270</strong> to win the presidency.
+        Use this interactive tool to explore where those votes come from and simulate custom scenarios in seconds.
+      </p>
+    </div>
+    <aside class="summary-card">
+      <div class="summary-label">Total Electoral Votes (U.S.)</div>
+      <div class="summary-main">
+        <div class="summary-number">538</div>
+        <div class="summary-unit">votes</div>
+      </div>
+      <div class="summary-note">
+        <div class="summary-dot"></div>
+        435 House + 100 Senate + 3 D.C.
+      </div>
+    </aside>
+  </header>
+
+  <main class="layout">
+    <!-- Left: Interactive calculator -->
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title">Electoral College Scenario Builder</div>
+          <div class="panel-subtitle">
+            Select states to see how many electoral votes they represent and how close you are to 270.
+          </div>
+        </div>
+      </div>
+
+      <div class="chip-row">
+        <div class="chip"><span></span>Live total updates instantly</div>
+        <div class="chip"><span></span>Based on 538 electoral votes</div>
+        <div class="chip"><span></span>Default language: English</div>
+      </div>
+
+      <div class="controls-grid">
+        <div>
+          <div class="search-box">
+            <div class="search-icon"></div>
+            <input id="stateSearch" type="text" placeholder="Search states or abbreviations (e.g., CA, Texas, Florida) and tap to toggle selection…" autocomplete="off">
+          </div>
+          <div id="statesList" class="states-list" aria-label="U.S. states and electoral votes list"></div>
+        </div>
+
+        <div>
+          <div class="results-card">
+            <div class="results-topline">
+              <div>
+                <div class="results-label">Selected electoral votes</div>
+                <div>
+                  <span id="selectedTotal" class="results-total">0</span>
+                  <span class="results-of">of 538 total</span>
+                </div>
+              </div>
+              <div class="majority-pill">
+                <span></span>
+                270 needed to win
+              </div>
+            </div>
+            <div class="selection-summary" id="selectionSummary">
+              Start by selecting states on the left to see their combined electoral votes.
+            </div>
+            <div class="mini-list" id="selectionList"></div>
+          </div>
+
+          <div class="preset-buttons">
+            <button class="preset-btn" data-preset="clear">
+              <span class="dot"></span> Clear selection
+            </button>
+            <button class="preset-btn" data-preset="battleground">
+              <span class="dot"></span> 2024 key battlegrounds
+            </button>
+            <button class="preset-btn" data-preset="big">
+              <span class="dot"></span> Top population states
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Explanation & facts -->
+    <aside class="panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title">How Many Electoral Votes Are There?</div>
+          <div class="panel-subtitle">
+            A concise breakdown of the 538 votes and why the number matters.
+          </div>
+        </div>
+      </div>
+
+      <ul class="facts-list">
+        <li>
+          <span class="bullet"></span>
+          <div>
+            There are <strong>538 electoral votes</strong> in total.
+            This equals <strong>435</strong> U.S. House seats, <strong>100</strong> Senate seats, plus <strong>3</strong> for Washington, D.C.
+          </div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div>
+            To win the U.S. presidential election, a candidate must earn at least
+            <strong>270 electoral votes</strong>, which is just over half of 538.
+          </div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div>
+            Each state’s electoral votes are recalculated after every <strong>10-year census</strong>,
+            but the nationwide total has remained <strong>538</strong> since 1964 (after D.C. gained electors).
+          </div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div>
+            Most states use a <strong>winner-take-all</strong> rule.
+            Maine and Nebraska use a <strong>congressional district method</strong>, which your scenario builder can help you approximate.
+          </div>
+        </li>
+      </ul>
+
+      <div class="quote-box">
+        Tip for quick understanding:
+        If your selected states reach <strong>270 or more</strong> in the tool,
+        that combination alone would be enough to secure the presidency under current Electoral College rules.
+      </div>
+
+      <div class="note">
+        Data is based on the current official Electoral College allocation at the time of publication.
+        This tool is for educational and planning purposes only and does not provide real-time vote counts.
+      </div>
+    </aside>
+  </main>
+</div>
+
+<script>
+  // Core data: current Electoral College allocations (post-2020 census, 2024+ map)
+  const STATES = [
+    { name: "Alabama", code: "AL", votes: 9 },
+    { name: "Alaska", code: "AK", votes: 3 },
+    { name: "Arizona", code: "AZ", votes: 11 },
+    { name: "Arkansas", code: "AR", votes: 6 },
+    { name: "California", code: "CA", votes: 54 },
+    { name: "Colorado", code: "CO", votes: 10 },
+    { name: "Connecticut", code: "CT", votes: 7 },
+    { name: "Delaware", code: "DE", votes: 3 },
+    { name: "District of Columbia", code: "DC", votes: 3 },
+    { name: "Florida", code: "FL", votes: 30 },
+    { name: "Georgia", code: "GA", votes: 16 },
+    { name: "Hawaii", code: "HI", votes: 4 },
+    { name: "Idaho", code: "ID", votes: 4 },
+    { name: "Illinois", code: "IL", votes: 19 },
+    { name: "Indiana", code: "IN", votes: 11 },
+    { name: "Iowa", code: "IA", votes: 6 },
+    { name: "Kansas", code: "KS", votes: 6 },
+    { name: "Kentucky", code: "KY", votes: 8 },
+    { name: "Louisiana", code: "LA", votes: 8 },
+    { name: "Maine (at-large + districts)", code: "ME", votes: 4 },
+    { name: "Maryland", code: "MD", votes: 10 },
+    { name: "Massachusetts", code: "MA", votes: 11 },
+    { name: "Michigan", code: "MI", votes: 15 },
+    { name: "Minnesota", code: "MN", votes: 10 },
+    { name: "Mississippi", code: "MS", votes: 6 },
+    { name: "Missouri", code: "MO", votes: 10 },
+    { name: "Montana", code: "MT", votes: 4 },
+    { name: "Nebraska (at-large + districts)", code: "NE", votes: 5 },
+    { name: "Nevada", code: "NV", votes: 6 },
+    { name: "New Hampshire", code: "NH", votes: 4 },
+    { name: "New Jersey", code: "NJ", votes: 14 },
+    { name: "New Mexico", code: "NM", votes: 5 },
+    { name: "New York", code: "NY", votes: 28 },
+    { name: "North Carolina", code: "NC", votes: 16 },
+    { name: "North Dakota", code: "ND", votes: 3 },
+    { name: "Ohio", code: "OH", votes: 17 },
+    { name: "Oklahoma", code: "OK", votes: 7 },
+    { name: "Oregon", code: "OR", votes: 8 },
+    { name: "Pennsylvania", code: "PA", votes: 19 },
+    { name: "Rhode Island", code: "RI", votes: 4 },
+    { name: "South Carolina", code: "SC", votes: 9 },
+    { name: "South Dakota", code: "SD", votes: 3 },
+    { name: "Tennessee", code: "TN", votes: 11 },
+    { name: "Texas", code: "TX", votes: 40 },
+    { name: "Utah", code: "UT", votes: 6 },
+    { name: "Vermont", code: "VT", votes: 3 },
+    { name: "Virginia", code: "VA", votes: 13 },
+    { name: "Washington", code: "WA", votes: 12 },
+    { name: "West Virginia", code: "WV", votes: 4 },
+    { name: "Wisconsin", code: "WI", votes: 10 },
+    { name: "Wyoming", code: "WY", votes: 3 }
+  ];
+
+  const TOTAL_EVS = 538;
+  const MAJORITY = 270;
+
+  const stateSearch = document.getElementById("stateSearch");
+  const statesListEl = document.getElementById("statesList");
+  const selectedTotalEl = document.getElementById("selectedTotal");
+  const selectionSummaryEl = document.getElementById("selectionSummary");
+  const selectionListEl = document.getElementById("selectionList");
+  const presetButtons = document.querySelectorAll(".preset-btn");
+
+  let selectedCodes = new Set();
+
+  function renderStates(filter = "") {
+    const term = filter.trim().toLowerCase();
+    statesListEl.innerHTML = "";
+
+    STATES
+      .filter(s => {
+        if (!term) return true;
+        return (
+          s.name.toLowerCase().includes(term) ||
+          s.code.toLowerCase().includes(term) ||
+          String(s.votes) === term
+        );
+      })
+      .forEach(state => {
+        const item = document.createElement("div");
+        item.className = "state-item" + (selectedCodes.has(state.code) ? " selected" : "");
+        item.dataset.code = state.code;
+
+        const nameSpan = document.createElement("span");
+        nameSpan.className = "name";
+        nameSpan.textContent = state.name + " (" + state.code + ")";
+
+        const votesSpan = document.createElement("span");
+        votesSpan.className = "votes";
+        votesSpan.textContent = state.votes;
+
+        item.appendChild(nameSpan);
+        item.appendChild(votesSpan);
+
+        item.addEventListener("click", () => toggleState(state.code));
+        statesListEl.appendChild(item);
+      });
+  }
+
+  function toggleState(code) {
+    if (selectedCodes.has(code)) {
+      selectedCodes.delete(code);
+    } else {
+      selectedCodes.add(code);
+    }
+    updateSelectionUI();
+    renderStates(stateSearch.value);
+  }
+
+  function updateSelectionUI() {
+    const selectedStates = STATES.filter(s => selectedCodes.has(s.code));
+    const total = selectedStates.reduce((sum, s) => sum + s.votes, 0);
+    selectedTotalEl.textContent = total.toString();
+
+    if (selectedStates.length === 0) {
+      selectionSummaryEl.textContent =
+        "Start by selecting states to see how many electoral votes they combine for and how close that is to the 270 needed to win.";
+      selectionListEl.textContent = "";
+      return;
+    }
+
+    const diff = MAJORITY - total;
+    let statusText;
+    if (total >= MAJORITY) {
+      statusText =
+        "Your current selection reaches or exceeds the 270-vote threshold needed to win the presidency.";
+    } else {
+      statusText =
+        "You are " + diff + " electoral votes short of the 270 needed to win.";
+    }
+
+    selectionSummaryEl.innerHTML =
+      "You have selected <strong>" +
+      selectedStates.length +
+      "</strong> states (or districts) for a total of <strong>" +
+      total +
+      "</strong> electoral votes. " + statusText;
+
+    // Compact preview of selected states
+    const listText = selectedStates
+      .sort((a, b) => b.votes - a.votes)
+      .map(s => s.code + " (" + s.votes + ")")
+      .join(", ");
+
+    selectionListEl.innerHTML =
+      "<span>Selected:</span> " + listText;
+  }
+
+  function applyPreset(preset) {
+    if (preset === "clear") {
+      selectedCodes = new Set();
+    } else if (preset === "battleground") {
+      selectedCodes = new Set(["AZ", "GA", "MI", "PA", "WI", "NV", "NC"]);
+    } else if (preset === "big") {
+      selectedCodes = new Set(["CA", "TX", "FL", "NY", "PA", "IL", "OH"]);
+    }
+    updateSelectionUI();
+    renderStates(stateSearch.value);
+  }
+
+  stateSearch.addEventListener("input", (e) => {
+    renderStates(e.target.value);
+  });
+
+  presetButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const preset = btn.getAttribute("data-preset");
+      applyPreset(preset);
+    });
+  });
+
+  // Initial render
+  renderStates();
+  updateSelectionUI();
+</script>
+</body>
+</html>
