@@ -1,0 +1,85 @@
+{
+  "baseline": {
+    "date": "2024-07-01T00:00:00Z",
+    "population": 8045311447,
+    "annualGrowthRate": 0.0088,
+    "lastYearPopulation": 7973260900,
+    "dailyIncreaseEstimate": 194000
+  },
+  "forecast": [
+    {
+      "year": 2015,
+      "population": 7410000000
+    },
+    {
+      "year": 2016,
+      "population": 7480000000
+    },
+    {
+      "year": 2017,
+      "population": 7550000000
+    },
+    {
+      "year": 2018,
+      "population": 7630000000
+    },
+    {
+      "year": 2019,
+      "population": 7710000000
+    },
+    {
+      "year": 2020,
+      "population": 7795000000
+    },
+    {
+      "year": 2021,
+      "population": 7875000000
+    },
+    {
+      "year": 2022,
+      "population": 7950000000
+    },
+    {
+      "year": 2023,
+      "population": 8020000000
+    },
+    {
+      "year": 2024,
+      "population": 8090000000
+    },
+    {
+      "year": 2025,
+      "population": 8160000000
+    },
+    {
+      "year": 2026,
+      "population": 8230000000
+    },
+    {
+      "year": 2027,
+      "population": 8300000000
+    },
+    {
+      "year": 2028,
+      "population": 8370000000
+    },
+    {
+      "year": 2029,
+      "population": 8440000000
+    },
+    {
+      "year": 2030,
+      "population": 8510000000
+    }
+  ],
+  "sources": [
+    {
+      "name": "United Nations World Population Prospects 2024 (mid-variant)",
+      "url": "https://www.un.org/development/desa/pd/"
+    },
+    {
+      "name": "Worldometer live world population counter",
+      "url": "https://www.worldometers.info/world-population/"
+    }
+  ]
+}

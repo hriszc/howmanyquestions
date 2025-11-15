@@ -361,6 +361,26 @@
       "share_text": "Check out this How Many America States calculator! 🕐"
     },
     {
+      "id": "howmanypeopleareintheworld",
+      "title": "How Many People Are in the World​",
+      "description": "Calculate and convert time-related measurements from your How Many People Are in the World​ query",
+      "category": "time",
+      "url": "how_many_people_are_in_the_world​/index.html",
+      "folder_name": "how_many_people_are_in_the_world​",
+      "keywords": [
+        "how",
+        "many",
+        "people",
+        "are",
+        "in",
+        "the",
+        "world​"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many People Are in the World​ calculator! 🕐"
+    },
+    {
       "id": "howmanycupsinapint",
       "title": "How Many Cups in a Pint​​​​​​​​",
       "description": "Convert between different volume units based on your How Many Cups in a Pint​​​​​​​​ question",
@@ -943,6 +963,26 @@
           "share_text": "Check out this How Many America States calculator! 🕐"
         },
         {
+          "id": "howmanypeopleareintheworld",
+          "title": "How Many People Are in the World​",
+          "description": "Calculate and convert time-related measurements from your How Many People Are in the World​ query",
+          "category": "time",
+          "url": "how_many_people_are_in_the_world​/index.html",
+          "folder_name": "how_many_people_are_in_the_world​",
+          "keywords": [
+            "how",
+            "many",
+            "people",
+            "are",
+            "in",
+            "the",
+            "world​"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many People Are in the World​ calculator! 🕐"
+        },
+        {
           "id": "howmanyhoursinayear",
           "title": "How Many Hours in a Year",
           "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
@@ -1367,7 +1407,7 @@
     }
   },
   "statistics": {
-    "total_tools": 35,
+    "total_tools": 36,
     "total_categories": 5,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"
