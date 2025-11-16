@@ -41,6 +41,25 @@
       "share_text": "Check out this How Many Electoral Votes Are There​ calculator! 🕐"
     },
     {
+      "id": "howmanymilesisa5k",
+      "title": "How Many Miles Is a 5k",
+      "description": "Convert between different length and distance units from your How Many Miles Is a 5k",
+      "category": "length",
+      "url": "how many miles is a 5k/index.html",
+      "folder_name": "how many miles is a 5k",
+      "keywords": [
+        "how",
+        "many",
+        "miles",
+        "is",
+        "a",
+        "5k"
+      ],
+      "icon": "📏",
+      "sharing_enabled": true,
+      "share_text": "Measure distances with this How Many Miles Is a 5k tool! 📏"
+    },
+    {
       "id": "howmanyhoursinaweek",
       "title": "How Many Hours in a Week​​​​​​​​",
       "description": "Calculate and convert time-related measurements from your How Many Hours in a Week​​​​​​​​ query",
@@ -665,6 +684,25 @@
       "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
     },
     {
+      "id": "howmanyozinagallon",
+      "title": "How Many Oz in a Gallon",
+      "description": "Calculate and convert time-related measurements from your How Many Oz in a Gallon query",
+      "category": "time",
+      "url": "how many oz in a gallon/index.html",
+      "folder_name": "how many oz in a gallon",
+      "keywords": [
+        "how",
+        "many",
+        "oz",
+        "in",
+        "a",
+        "gallon"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Oz in a Gallon calculator! 🕐"
+    },
+    {
       "id": "howmanylettersareinthealphabet",
       "title": "How Many Letters Are in the Alphabet",
       "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
@@ -1115,6 +1153,25 @@
           "share_text": "Check out this How Many Tablespoons in a Cup​ calculator! 🕐"
         },
         {
+          "id": "howmanyozinagallon",
+          "title": "How Many Oz in a Gallon",
+          "description": "Calculate and convert time-related measurements from your How Many Oz in a Gallon query",
+          "category": "time",
+          "url": "how many oz in a gallon/index.html",
+          "folder_name": "how many oz in a gallon",
+          "keywords": [
+            "how",
+            "many",
+            "oz",
+            "in",
+            "a",
+            "gallon"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Oz in a Gallon calculator! 🕐"
+        },
+        {
           "id": "howmanylettersareinthealphabet",
           "title": "How Many Letters Are in the Alphabet",
           "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
@@ -1133,6 +1190,90 @@
           "icon": "⏰",
           "sharing_enabled": true,
           "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
+        }
+      ]
+    },
+    "length": {
+      "name": "Length",
+      "description": "Tools for length calculations and conversions",
+      "icon": "📏",
+      "tools": [
+        {
+          "id": "howmanymilesisa5k",
+          "title": "How Many Miles Is a 5k",
+          "description": "Convert between different length and distance units from your How Many Miles Is a 5k",
+          "category": "length",
+          "url": "how many miles is a 5k/index.html",
+          "folder_name": "how many miles is a 5k",
+          "keywords": [
+            "how",
+            "many",
+            "miles",
+            "is",
+            "a",
+            "5k"
+          ],
+          "icon": "📏",
+          "sharing_enabled": true,
+          "share_text": "Measure distances with this How Many Miles Is a 5k tool! 📏"
+        },
+        {
+          "id": "howmanysquarefeetinanacre",
+          "title": "How Many Square Feet in an Acre​​​​​​",
+          "description": "Convert between different length and distance units from your How Many Square Feet in an Acre​​​​​​",
+          "category": "length",
+          "url": "how many square feet in an acre​​​​​​/index.html",
+          "folder_name": "how many square feet in an acre​​​​​​",
+          "keywords": [
+            "how",
+            "many",
+            "square",
+            "feet",
+            "in",
+            "an",
+            "acre​​​​​​"
+          ],
+          "icon": "📏",
+          "sharing_enabled": false,
+          "share_text": "Measure distances with this How Many Square Feet in an Acre​​​​​​ tool! 📏"
+        },
+        {
+          "id": "howmanymilesis10000steps",
+          "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
+          "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
+          "category": "length",
+          "url": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​/index.html",
+          "folder_name": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​",
+          "keywords": [
+            "how",
+            "many",
+            "miles",
+            "is",
+            "10000",
+            "steps​​​​​​​​​​​​​​​​​"
+          ],
+          "icon": "📏",
+          "sharing_enabled": true,
+          "share_text": "Measure distances with this How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​ tool! 📏"
+        },
+        {
+          "id": "howmanyfeetinamile",
+          "title": "How Many Feet in a Mile​",
+          "description": "Convert between different length and distance units from your How Many Feet in a Mile​",
+          "category": "length",
+          "url": "how many feet in a mile​/index.html",
+          "folder_name": "how many feet in a mile​",
+          "keywords": [
+            "how",
+            "many",
+            "feet",
+            "in",
+            "a",
+            "mile​"
+          ],
+          "icon": "📏",
+          "sharing_enabled": false,
+          "share_text": "Measure distances with this How Many Feet in a Mile​ tool! 📏"
         }
       ]
     },
@@ -1314,71 +1455,6 @@
         }
       ]
     },
-    "length": {
-      "name": "Length",
-      "description": "Tools for length calculations and conversions",
-      "icon": "📏",
-      "tools": [
-        {
-          "id": "howmanysquarefeetinanacre",
-          "title": "How Many Square Feet in an Acre​​​​​​",
-          "description": "Convert between different length and distance units from your How Many Square Feet in an Acre​​​​​​",
-          "category": "length",
-          "url": "how many square feet in an acre​​​​​​/index.html",
-          "folder_name": "how many square feet in an acre​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "square",
-            "feet",
-            "in",
-            "an",
-            "acre​​​​​​"
-          ],
-          "icon": "📏",
-          "sharing_enabled": false,
-          "share_text": "Measure distances with this How Many Square Feet in an Acre​​​​​​ tool! 📏"
-        },
-        {
-          "id": "howmanymilesis10000steps",
-          "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
-          "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
-          "category": "length",
-          "url": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​/index.html",
-          "folder_name": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "miles",
-            "is",
-            "10000",
-            "steps​​​​​​​​​​​​​​​​​"
-          ],
-          "icon": "📏",
-          "sharing_enabled": true,
-          "share_text": "Measure distances with this How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​ tool! 📏"
-        },
-        {
-          "id": "howmanyfeetinamile",
-          "title": "How Many Feet in a Mile​",
-          "description": "Convert between different length and distance units from your How Many Feet in a Mile​",
-          "category": "length",
-          "url": "how many feet in a mile​/index.html",
-          "folder_name": "how many feet in a mile​",
-          "keywords": [
-            "how",
-            "many",
-            "feet",
-            "in",
-            "a",
-            "mile​"
-          ],
-          "icon": "📏",
-          "sharing_enabled": false,
-          "share_text": "Measure distances with this How Many Feet in a Mile​ tool! 📏"
-        }
-      ]
-    },
     "measurement": {
       "name": "Measurement",
       "description": "Tools for measurement calculations and conversions",
@@ -1407,7 +1483,7 @@
     }
   },
   "statistics": {
-    "total_tools": 36,
+    "total_tools": 38,
     "total_categories": 5,
     "last_updated": "2025-11-06",
     "last_scan": "2025-11-06 20:12:18"
