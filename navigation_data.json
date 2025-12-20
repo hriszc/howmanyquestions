@@ -1,101 +1,42 @@
 {
   "tools": [
     {
-      "id": "howmanycaloriesshouldieataday",
-      "title": "How Many Calories Should I Eat a Day",
-      "description": "Convert between different weight and mass units for your How Many Calories Should I Eat a Day needs",
-      "category": "weight",
-      "url": "how many calories should i eat a day/index.html",
-      "folder_name": "how many calories should i eat a day",
+      "id": "howmanycupsinaquart",
+      "title": "How Many Cups in a Quart",
+      "description": "Convert between different volume units based on your How Many Cups in a Quart question",
+      "category": "volume",
+      "url": "how_many_cups_in_a_quart/index.html",
+      "folder_name": "how_many_cups_in_a_quart",
       "keywords": [
         "how",
         "many",
-        "calories",
-        "should",
-        "i",
-        "eat",
+        "cups",
+        "in",
         "a",
-        "day"
+        "quart"
       ],
-      "icon": "⚖️",
+      "icon": "🧪",
       "sharing_enabled": false,
-      "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
-    },
-    {
-      "id": "howmanyelectoralvotesarethere",
-      "title": "How Many Electoral Votes Are There​",
-      "description": "Calculate and convert time-related measurements from your How Many Electoral Votes Are There​ query",
-      "category": "time",
-      "url": "how_many_electoral_votes_are_there​/index.html",
-      "folder_name": "how_many_electoral_votes_are_there​",
-      "keywords": [
-        "how",
-        "many",
-        "electoral",
-        "votes",
-        "are",
-        "there​"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": false,
-      "share_text": "Check out this How Many Electoral Votes Are There​ calculator! 🕐"
-    },
-    {
-      "id": "howmanymilesisa5k",
-      "title": "How Many Miles Is a 5k",
-      "description": "Convert between different length and distance units from your How Many Miles Is a 5k",
-      "category": "length",
-      "url": "how many miles is a 5k/index.html",
-      "folder_name": "how many miles is a 5k",
-      "keywords": [
-        "how",
-        "many",
-        "miles",
-        "is",
-        "a",
-        "5k"
-      ],
-      "icon": "📏",
-      "sharing_enabled": true,
-      "share_text": "Measure distances with this How Many Miles Is a 5k tool! 📏"
+      "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
     },
     {
       "id": "howmanyhoursinaweek",
-      "title": "How Many Hours in a Week​​​​​​​​",
-      "description": "Calculate and convert time-related measurements from your How Many Hours in a Week​​​​​​​​ query",
+      "title": "How Many Hours in a Week",
+      "description": "Calculate and convert time-related measurements from your How Many Hours in a Week query",
       "category": "time",
-      "url": "how_many_hours_in_a_week​​​​​​​​/index.html",
-      "folder_name": "how_many_hours_in_a_week​​​​​​​​",
+      "url": "how_many_hours_in_a_week/index.html",
+      "folder_name": "how_many_hours_in_a_week",
       "keywords": [
         "how",
         "many",
         "hours",
         "in",
         "a",
-        "week​​​​​​​​"
+        "week"
       ],
       "icon": "⏰",
       "sharing_enabled": false,
-      "share_text": "Check out this How Many Hours in a Week​​​​​​​​ calculator! 🕐"
-    },
-    {
-      "id": "howmanylitersinagallon",
-      "title": "How Many Liters in a Gallon​​",
-      "description": "Convert between different volume units based on your How Many Liters in a Gallon​​ question",
-      "category": "volume",
-      "url": "how many liters in a gallon​​/index.html",
-      "folder_name": "how many liters in a gallon​​",
-      "keywords": [
-        "how",
-        "many",
-        "liters",
-        "in",
-        "a",
-        "gallon​​"
-      ],
-      "icon": "🧪",
-      "sharing_enabled": true,
-      "share_text": "Convert volumes easily with this How Many Liters in a Gallon​​ tool! 🧪"
+      "share_text": "Check out this How Many Hours in a Week calculator! 🕐"
     },
     {
       "id": "howmanydaysuntilchristmas",
@@ -116,118 +57,23 @@
       "share_text": "Check out this How Many Days Until Christmas calculator! 🕐"
     },
     {
-      "id": "howmanyozinacup",
-      "title": "How Many Oz in a Cup​",
-      "description": "Calculate and convert time-related measurements from your How Many Oz in a Cup​ query",
-      "category": "time",
-      "url": "how many oz in a cup​/index.html",
-      "folder_name": "how many oz in a cup​",
+      "id": "howmanyquartsinagallon",
+      "title": "How Many Quarts in a Gallon",
+      "description": "Convert between different volume units based on your How Many Quarts in a Gallon question",
+      "category": "volume",
+      "url": "how_many_quarts_in_a_gallon/index.html",
+      "folder_name": "how_many_quarts_in_a_gallon",
       "keywords": [
         "how",
         "many",
-        "oz",
+        "quarts",
         "in",
         "a",
-        "cup​"
+        "gallon"
       ],
-      "icon": "⏰",
+      "icon": "🧪",
       "sharing_enabled": false,
-      "share_text": "Check out this How Many Oz in a Cup​ calculator! 🕐"
-    },
-    {
-      "id": "howmanysquarefeetinanacre",
-      "title": "How Many Square Feet in an Acre​​​​​​",
-      "description": "Convert between different length and distance units from your How Many Square Feet in an Acre​​​​​​",
-      "category": "length",
-      "url": "how many square feet in an acre​​​​​​/index.html",
-      "folder_name": "how many square feet in an acre​​​​​​",
-      "keywords": [
-        "how",
-        "many",
-        "square",
-        "feet",
-        "in",
-        "an",
-        "acre​​​​​​"
-      ],
-      "icon": "📏",
-      "sharing_enabled": false,
-      "share_text": "Measure distances with this How Many Square Feet in an Acre​​​​​​ tool! 📏"
-    },
-    {
-      "id": "howmanygramsinapound",
-      "title": "How Many Grams in a Pound​​​​",
-      "description": "Convert between different weight and mass units for your How Many Grams in a Pound​​​​ needs",
-      "category": "weight",
-      "url": "how many grams in a pound​​​​/index.html",
-      "folder_name": "how many grams in a pound​​​​",
-      "keywords": [
-        "how",
-        "many",
-        "grams",
-        "in",
-        "a",
-        "pound​​​​"
-      ],
-      "icon": "⚖️",
-      "sharing_enabled": false,
-      "share_text": "Calculate weights with this How Many Grams in a Pound​​​​ calculator! ⚖️"
-    },
-    {
-      "id": "howmanycontinentsarethere",
-      "title": "How Many Continents Are There",
-      "description": "Calculate and convert time-related measurements from your How Many Continents Are There query",
-      "category": "time",
-      "url": "how many continents are there/index.html",
-      "folder_name": "how many continents are there",
-      "keywords": [
-        "how",
-        "many",
-        "continents",
-        "are",
-        "there"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": false,
-      "share_text": "Check out this How Many Continents Are There calculator! 🕐"
-    },
-    {
-      "id": "howmanyteaspoonsinatablespoon",
-      "title": "How Many Teaspoons in a Tablespoon",
-      "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
-      "category": "time",
-      "url": "how many teaspoons in a tablespoon/index.html",
-      "folder_name": "how many teaspoons in a tablespoon",
-      "keywords": [
-        "how",
-        "many",
-        "teaspoons",
-        "in",
-        "a",
-        "tablespoon"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": false,
-      "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
-    },
-    {
-      "id": "howmanystepsinamile",
-      "title": "How Many Steps in a Mile​​​",
-      "description": "Get accurate measurements and calculations for your How Many Steps in a Mile​​​ question",
-      "category": "measurement",
-      "url": "how many steps in a mile​​​/index.html",
-      "folder_name": "how many steps in a mile​​​",
-      "keywords": [
-        "how",
-        "many",
-        "steps",
-        "in",
-        "a",
-        "mile​​​"
-      ],
-      "icon": "📊",
-      "sharing_enabled": false,
-      "share_text": "Get accurate measurements with this How Many Steps in a Mile​​​ calculator! 📊"
+      "share_text": "Convert volumes easily with this How Many Quarts in a Gallon tool! 🧪"
     },
     {
       "id": "howmanytbspinacup",
@@ -249,12 +95,124 @@
       "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
     },
     {
+      "id": "howmanymilesisa5k",
+      "title": "How Many Miles Is a 5k",
+      "description": "Convert between different length and distance units from your How Many Miles Is a 5k",
+      "category": "length",
+      "url": "how_many_miles_is_a_5k/index.html",
+      "folder_name": "how_many_miles_is_a_5k",
+      "keywords": [
+        "how",
+        "many",
+        "miles",
+        "is",
+        "a",
+        "5k"
+      ],
+      "icon": "📏",
+      "sharing_enabled": true,
+      "share_text": "Measure distances with this How Many Miles Is a 5k tool! 📏"
+    },
+    {
+      "id": "howmanysecondsinaday",
+      "title": "How Many Seconds in a Day",
+      "description": "Calculate and convert time-related measurements from your How Many Seconds in a Day query",
+      "category": "time",
+      "url": "how_many_seconds_in_a_day/index.html",
+      "folder_name": "how_many_seconds_in_a_day",
+      "keywords": [
+        "how",
+        "many",
+        "seconds",
+        "in",
+        "a",
+        "day"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Seconds in a Day calculator! 🕐"
+    },
+    {
+      "id": "howmanycaloriesinabanana",
+      "title": "How Many Calories in a Banana",
+      "description": "Convert between different weight and mass units for your How Many Calories in a Banana needs",
+      "category": "weight",
+      "url": "how_many_calories_in_a_banana/index.html",
+      "folder_name": "how_many_calories_in_a_banana",
+      "keywords": [
+        "how",
+        "many",
+        "calories",
+        "in",
+        "a",
+        "banana"
+      ],
+      "icon": "⚖️",
+      "sharing_enabled": false,
+      "share_text": "Calculate weights with this How Many Calories in a Banana calculator! ⚖️"
+    },
+    {
+      "id": "howmanyozinagallon",
+      "title": "How Many Oz in a Gallon",
+      "description": "Calculate and convert time-related measurements from your How Many Oz in a Gallon query",
+      "category": "time",
+      "url": "how_many_oz_in_a_gallon/index.html",
+      "folder_name": "how_many_oz_in_a_gallon",
+      "keywords": [
+        "how",
+        "many",
+        "oz",
+        "in",
+        "a",
+        "gallon"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Oz in a Gallon calculator! 🕐"
+    },
+    {
+      "id": "howmanyozinacup",
+      "title": "How Many Oz in a Cup",
+      "description": "Calculate and convert time-related measurements from your How Many Oz in a Cup query",
+      "category": "time",
+      "url": "how_many_oz_in_a_cup/index.html",
+      "folder_name": "how_many_oz_in_a_cup",
+      "keywords": [
+        "how",
+        "many",
+        "oz",
+        "in",
+        "a",
+        "cup"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Oz in a Cup calculator! 🕐"
+    },
+    {
+      "id": "howmanyamericastates",
+      "title": "How Many America States",
+      "description": "Calculate and convert time-related measurements from your How Many America States query",
+      "category": "time",
+      "url": "how_many_america_states/index.html",
+      "folder_name": "how_many_america_states",
+      "keywords": [
+        "how",
+        "many",
+        "america",
+        "states"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many America States calculator! 🕐"
+    },
+    {
       "id": "howmanypeopleliveintheus",
       "title": "How Many People Live in the Us",
       "description": "Calculate and convert time-related measurements from your How Many People Live in the Us query",
       "category": "time",
-      "url": "how many people live in the us/index.html",
-      "folder_name": "how many people live in the us",
+      "url": "how_many_people_live_in_the_us/index.html",
+      "folder_name": "how_many_people_live_in_the_us",
       "keywords": [
         "how",
         "many",
@@ -269,123 +227,12 @@
       "share_text": "Check out this How Many People Live in the Us calculator! 🕐"
     },
     {
-      "id": "howmanymilesis10000steps",
-      "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
-      "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
-      "category": "length",
-      "url": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​/index.html",
-      "folder_name": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​",
-      "keywords": [
-        "how",
-        "many",
-        "miles",
-        "is",
-        "10000",
-        "steps​​​​​​​​​​​​​​​​​"
-      ],
-      "icon": "📏",
-      "sharing_enabled": true,
-      "share_text": "Measure distances with this How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​ tool! 📏"
-    },
-    {
-      "id": "howmanyouncesinapound",
-      "title": "How Many Ounces in a Pound",
-      "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
-      "category": "volume",
-      "url": "how many ounces in a pound/index.html",
-      "folder_name": "how many ounces in a pound",
-      "keywords": [
-        "how",
-        "many",
-        "ounces",
-        "in",
-        "a",
-        "pound"
-      ],
-      "icon": "🧪",
-      "sharing_enabled": false,
-      "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
-    },
-    {
-      "id": "howmanytablespoonsin1",
-      "title": "How Many Tablespoons in 1",
-      "description": "Calculate and convert time-related measurements from your How Many Tablespoons in 1 query",
-      "category": "time",
-      "url": "how many tablespoons in 1/index.html",
-      "folder_name": "how many tablespoons in 1",
-      "keywords": [
-        "how",
-        "many",
-        "tablespoons",
-        "in",
-        "1"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": false,
-      "share_text": "Check out this How Many Tablespoons in 1 calculator! 🕐"
-    },
-    {
-      "id": "howmanycminaninch",
-      "title": "How Many Cm in an Inch",
-      "description": "Calculate and convert time-related measurements from your How Many Cm in an Inch query",
-      "category": "time",
-      "url": "how many cm in an inch/index.html",
-      "folder_name": "how many cm in an inch",
-      "keywords": [
-        "how",
-        "many",
-        "cm",
-        "in",
-        "an",
-        "inch"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": false,
-      "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
-    },
-    {
-      "id": "howmanycupsinaquart",
-      "title": "How Many Cups in a Quart",
-      "description": "Convert between different volume units based on your How Many Cups in a Quart question",
-      "category": "volume",
-      "url": "how many cups in a quart/index.html",
-      "folder_name": "how many cups in a quart",
-      "keywords": [
-        "how",
-        "many",
-        "cups",
-        "in",
-        "a",
-        "quart"
-      ],
-      "icon": "🧪",
-      "sharing_enabled": false,
-      "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
-    },
-    {
-      "id": "howmanyamericastates",
-      "title": "How Many America States",
-      "description": "Calculate and convert time-related measurements from your How Many America States query",
-      "category": "time",
-      "url": "how many america states/index.html",
-      "folder_name": "how many america states",
-      "keywords": [
-        "how",
-        "many",
-        "america",
-        "states"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": true,
-      "share_text": "Check out this How Many America States calculator! 🕐"
-    },
-    {
       "id": "howmanypeopleareintheworld",
-      "title": "How Many People Are in the World​",
-      "description": "Calculate and convert time-related measurements from your How Many People Are in the World​ query",
+      "title": "How Many People Are in the World",
+      "description": "Calculate and convert time-related measurements from your How Many People Are in the World query",
       "category": "time",
-      "url": "how_many_people_are_in_the_world​/index.html",
-      "folder_name": "how_many_people_are_in_the_world​",
+      "url": "how_many_people_are_in_the_world/index.html",
+      "folder_name": "how_many_people_are_in_the_world",
       "keywords": [
         "how",
         "many",
@@ -393,87 +240,166 @@
         "are",
         "in",
         "the",
-        "world​"
+        "world"
       ],
       "icon": "⏰",
       "sharing_enabled": true,
-      "share_text": "Check out this How Many People Are in the World​ calculator! 🕐"
+      "share_text": "Check out this How Many People Are in the World calculator! 🕐"
+    },
+    {
+      "id": "howmanylettersareinthealphabet",
+      "title": "How Many Letters Are in the Alphabet",
+      "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
+      "category": "time",
+      "url": "how_many_letters_are_in_the_alphabet/index.html",
+      "folder_name": "how_many_letters_are_in_the_alphabet",
+      "keywords": [
+        "how",
+        "many",
+        "letters",
+        "are",
+        "in",
+        "the",
+        "alphabet"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
+    },
+    {
+      "id": "howmanycaloriesshouldieataday",
+      "title": "How Many Calories Should I Eat a Day",
+      "description": "Convert between different weight and mass units for your How Many Calories Should I Eat a Day needs",
+      "category": "weight",
+      "url": "how_many_calories_should_i_eat_a_day/index.html",
+      "folder_name": "how_many_calories_should_i_eat_a_day",
+      "keywords": [
+        "how",
+        "many",
+        "calories",
+        "should",
+        "i",
+        "eat",
+        "a",
+        "day"
+      ],
+      "icon": "⚖️",
+      "sharing_enabled": false,
+      "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
+    },
+    {
+      "id": "howmanydaysuntilhalloween",
+      "title": "How Many Days Until Halloween",
+      "description": "Calculate and convert time-related measurements from your How Many Days Until Halloween query",
+      "category": "time",
+      "url": "how_many_days_until_halloween/index.html",
+      "folder_name": "how_many_days_until_halloween",
+      "keywords": [
+        "how",
+        "many",
+        "days",
+        "until",
+        "halloween"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": true,
+      "share_text": "Check out this How Many Days Until Halloween calculator! 🕐"
+    },
+    {
+      "id": "howmanyminutesinaday",
+      "title": "How Many Minutes in a Day",
+      "description": "Calculate and convert time-related measurements from your How Many Minutes in a Day query",
+      "category": "time",
+      "url": "how_many_minutes_in_a_day/index.html",
+      "folder_name": "how_many_minutes_in_a_day",
+      "keywords": [
+        "how",
+        "many",
+        "minutes",
+        "in",
+        "a",
+        "day"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Minutes in a Day calculator! 🕐"
     },
     {
       "id": "howmanycupsinapint",
-      "title": "How Many Cups in a Pint​​​​​​​​",
-      "description": "Convert between different volume units based on your How Many Cups in a Pint​​​​​​​​ question",
+      "title": "How Many Cups in a Pint",
+      "description": "Convert between different volume units based on your How Many Cups in a Pint question",
       "category": "volume",
-      "url": "how many cups in a pint​​​​​​​​/index.html",
-      "folder_name": "how many cups in a pint​​​​​​​​",
+      "url": "how_many_cups_in_a_pint/index.html",
+      "folder_name": "how_many_cups_in_a_pint",
       "keywords": [
         "how",
         "many",
         "cups",
         "in",
         "a",
-        "pint​​​​​​​​"
+        "pint"
       ],
       "icon": "🧪",
       "sharing_enabled": false,
-      "share_text": "Convert volumes easily with this How Many Cups in a Pint​​​​​​​​ tool! 🧪"
+      "share_text": "Convert volumes easily with this How Many Cups in a Pint tool! 🧪"
     },
     {
       "id": "howmanygramsinanounce",
-      "title": "How Many Grams in an Ounce​",
-      "description": "Convert between different weight and mass units for your How Many Grams in an Ounce​ needs",
+      "title": "How Many Grams in an Ounce",
+      "description": "Convert between different weight and mass units for your How Many Grams in an Ounce needs",
       "category": "weight",
-      "url": "how many grams in an ounce​/index.html",
-      "folder_name": "how many grams in an ounce​",
+      "url": "how_many_grams_in_an_ounce/index.html",
+      "folder_name": "how_many_grams_in_an_ounce",
       "keywords": [
         "how",
         "many",
         "grams",
         "in",
         "an",
-        "ounce​"
+        "ounce"
       ],
       "icon": "⚖️",
       "sharing_enabled": false,
-      "share_text": "Calculate weights with this How Many Grams in an Ounce​ calculator! ⚖️"
+      "share_text": "Calculate weights with this How Many Grams in an Ounce calculator! ⚖️"
     },
     {
-      "id": "howmanyhoursinayear",
-      "title": "How Many Hours in a Year",
-      "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
+      "id": "howmanytablespoonsinacup",
+      "title": "How Many Tablespoons in a Cup",
+      "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup query",
       "category": "time",
-      "url": "how many hours in a year/index.html",
-      "folder_name": "how many hours in a year",
+      "url": "how_many_tablespoons_in_a_cup/index.html",
+      "folder_name": "how_many_tablespoons_in_a_cup",
       "keywords": [
         "how",
         "many",
-        "hours",
+        "tablespoons",
         "in",
         "a",
-        "year"
+        "cup"
       ],
       "icon": "⏰",
       "sharing_enabled": false,
-      "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
+      "share_text": "Check out this How Many Tablespoons in a Cup calculator! 🕐"
     },
     {
-      "id": "howmanycaloriesinabanana",
-      "title": "How Many Calories in a Banana​",
-      "description": "Convert between different weight and mass units for your How Many Calories in a Banana​ needs",
-      "category": "weight",
-      "url": "how_many_calories_in_a_banana​/index.html",
-      "folder_name": "how_many_calories_in_a_banana​",
+      "id": "howmanysquarefeetinanacre",
+      "title": "How Many Square Feet in an Acre",
+      "description": "Convert between different length and distance units from your How Many Square Feet in an Acre",
+      "category": "length",
+      "url": "how_many_square_feet_in_an_acre/index.html",
+      "folder_name": "how_many_square_feet_in_an_acre",
       "keywords": [
         "how",
         "many",
-        "calories",
+        "square",
+        "feet",
         "in",
-        "a",
-        "banana​"
+        "an",
+        "acre"
       ],
-      "icon": "⚖️",
+      "icon": "📏",
       "sharing_enabled": false,
-      "share_text": "Calculate weights with this How Many Calories in a Banana​ calculator! ⚖️"
+      "share_text": "Measure distances with this How Many Square Feet in an Acre tool! 📏"
     },
     {
       "id": "howmanyweeksinayear",
@@ -495,41 +421,80 @@
       "share_text": "Check out this How Many Weeks in a Year calculator! 🕐"
     },
     {
-      "id": "howmanyfeetinamile",
-      "title": "How Many Feet in a Mile​",
-      "description": "Convert between different length and distance units from your How Many Feet in a Mile​",
-      "category": "length",
-      "url": "how many feet in a mile​/index.html",
-      "folder_name": "how many feet in a mile​",
+      "id": "howmanygramsinapound",
+      "title": "How Many Grams in a Pound",
+      "description": "Convert between different weight and mass units for your How Many Grams in a Pound needs",
+      "category": "weight",
+      "url": "how_many_grams_in_a_pound/index.html",
+      "folder_name": "how_many_grams_in_a_pound",
       "keywords": [
         "how",
         "many",
-        "feet",
+        "grams",
         "in",
         "a",
-        "mile​"
+        "pound"
       ],
-      "icon": "📏",
+      "icon": "⚖️",
       "sharing_enabled": false,
-      "share_text": "Measure distances with this How Many Feet in a Mile​ tool! 📏"
+      "share_text": "Calculate weights with this How Many Grams in a Pound calculator! ⚖️"
     },
     {
-      "id": "howmanydaysuntilhalloween",
-      "title": "How Many Days Until Halloween​​​​​",
-      "description": "Calculate and convert time-related measurements from your How Many Days Until Halloween​​​​​ query",
+      "id": "howmanyhoursinayear",
+      "title": "How Many Hours in a Year",
+      "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
       "category": "time",
-      "url": "how many days until halloween​​​​​/index.html",
-      "folder_name": "how many days until halloween​​​​​",
+      "url": "how_many_hours_in_a_year/index.html",
+      "folder_name": "how_many_hours_in_a_year",
       "keywords": [
         "how",
         "many",
-        "days",
-        "until",
-        "halloween​​​​​"
+        "hours",
+        "in",
+        "a",
+        "year"
       ],
       "icon": "⏰",
-      "sharing_enabled": true,
-      "share_text": "Check out this How Many Days Until Halloween​​​​​ calculator! 🕐"
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
+    },
+    {
+      "id": "howmanyouncesinapound",
+      "title": "How Many Ounces in a Pound",
+      "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
+      "category": "volume",
+      "url": "how_many_ounces_in_a_pound/index.html",
+      "folder_name": "how_many_ounces_in_a_pound",
+      "keywords": [
+        "how",
+        "many",
+        "ounces",
+        "in",
+        "a",
+        "pound"
+      ],
+      "icon": "🧪",
+      "sharing_enabled": false,
+      "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
+    },
+    {
+      "id": "howmanychromosomesdohumanshave",
+      "title": "How Many Chromosomes Do Humans Have",
+      "description": "Calculate and convert time-related measurements from your How Many Chromosomes Do Humans Have query",
+      "category": "time",
+      "url": "how_many_chromosomes_do_humans_have/index.html",
+      "folder_name": "how_many_chromosomes_do_humans_have",
+      "keywords": [
+        "how",
+        "many",
+        "chromosomes",
+        "do",
+        "humans",
+        "have"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Chromosomes Do Humans Have calculator! 🕐"
     },
     {
       "id": "howmanyouncesinapint",
@@ -552,60 +517,78 @@
     },
     {
       "id": "howmanyouncesinacup",
-      "title": "How Many Ounces in a Cup​",
-      "description": "Convert between different volume units based on your How Many Ounces in a Cup​ question",
+      "title": "How Many Ounces in a Cup",
+      "description": "Convert between different volume units based on your How Many Ounces in a Cup question",
       "category": "volume",
-      "url": "how_many_ounces_in_a_cup​/index.html",
-      "folder_name": "how_many_ounces_in_a_cup​",
+      "url": "how_many_ounces_in_a_cup/index.html",
+      "folder_name": "how_many_ounces_in_a_cup",
       "keywords": [
         "how",
         "many",
         "ounces",
         "in",
         "a",
-        "cup​"
+        "cup"
       ],
       "icon": "🧪",
       "sharing_enabled": false,
-      "share_text": "Convert volumes easily with this How Many Ounces in a Cup​ tool! 🧪"
+      "share_text": "Convert volumes easily with this How Many Ounces in a Cup tool! 🧪"
     },
     {
-      "id": "howmanysecondsinaday",
-      "title": "How Many Seconds in a Day",
-      "description": "Calculate and convert time-related measurements from your How Many Seconds in a Day query",
-      "category": "time",
-      "url": "how many seconds in a day/index.html",
-      "folder_name": "how many seconds in a day",
+      "id": "howmanylitersinagallon",
+      "title": "How Many Liters in a Gallon",
+      "description": "Convert between different volume units based on your How Many Liters in a Gallon question",
+      "category": "volume",
+      "url": "how_many_liters_in_a_gallon/index.html",
+      "folder_name": "how_many_liters_in_a_gallon",
       "keywords": [
         "how",
         "many",
-        "seconds",
+        "liters",
         "in",
         "a",
-        "day"
+        "gallon"
       ],
-      "icon": "⏰",
-      "sharing_enabled": false,
-      "share_text": "Check out this How Many Seconds in a Day calculator! 🕐"
+      "icon": "🧪",
+      "sharing_enabled": true,
+      "share_text": "Convert volumes easily with this How Many Liters in a Gallon tool! 🧪"
     },
     {
-      "id": "howmanyminutesinaday",
-      "title": "How Many Minutes in a Day​​​​​​​​​​",
-      "description": "Calculate and convert time-related measurements from your How Many Minutes in a Day​​​​​​​​​​ query",
+      "id": "howmanycontinentsarethere",
+      "title": "How Many Continents Are There",
+      "description": "Calculate and convert time-related measurements from your How Many Continents Are There query",
       "category": "time",
-      "url": "how many minutes in a day​​​​​​​​​​/index.html",
-      "folder_name": "how many minutes in a day​​​​​​​​​​",
+      "url": "how_many_continents_are_there/index.html",
+      "folder_name": "how_many_continents_are_there",
       "keywords": [
         "how",
         "many",
-        "minutes",
-        "in",
-        "a",
-        "day​​​​​​​​​​"
+        "continents",
+        "are",
+        "there"
       ],
       "icon": "⏰",
       "sharing_enabled": false,
-      "share_text": "Check out this How Many Minutes in a Day​​​​​​​​​​ calculator! 🕐"
+      "share_text": "Check out this How Many Continents Are There calculator! 🕐"
+    },
+    {
+      "id": "howmanycminaninch",
+      "title": "How Many Cm in an Inch",
+      "description": "Calculate and convert time-related measurements from your How Many Cm in an Inch query",
+      "category": "time",
+      "url": "how_many_cm_in_an_inch/index.html",
+      "folder_name": "how_many_cm_in_an_inch",
+      "keywords": [
+        "how",
+        "many",
+        "cm",
+        "in",
+        "an",
+        "inch"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
     },
     {
       "id": "howmanyouncesinagallon",
@@ -627,679 +610,162 @@
       "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
     },
     {
-      "id": "howmanychromosomesdohumanshave",
-      "title": "How Many Chromosomes Do Humans Have​",
-      "description": "Calculate and convert time-related measurements from your How Many Chromosomes Do Humans Have​ query",
-      "category": "time",
-      "url": "how_many_chromosomes_do_humans_have​/index.html",
-      "folder_name": "how_many_chromosomes_do_humans_have​",
+      "id": "howmanyfeetinamile",
+      "title": "How Many Feet in a Mile",
+      "description": "Convert between different length and distance units from your How Many Feet in a Mile",
+      "category": "length",
+      "url": "how_many_feet_in_a_mile/index.html",
+      "folder_name": "how_many_feet_in_a_mile",
       "keywords": [
         "how",
         "many",
-        "chromosomes",
-        "do",
-        "humans",
-        "have​"
+        "feet",
+        "in",
+        "a",
+        "mile"
+      ],
+      "icon": "📏",
+      "sharing_enabled": false,
+      "share_text": "Measure distances with this How Many Feet in a Mile tool! 📏"
+    },
+    {
+      "id": "howmanymilesis10000steps",
+      "title": "How Many Miles Is 10000 Steps",
+      "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps",
+      "category": "length",
+      "url": "how_many_miles_is_10000_steps/index.html",
+      "folder_name": "how_many_miles_is_10000_steps",
+      "keywords": [
+        "how",
+        "many",
+        "miles",
+        "is",
+        "10000",
+        "steps"
+      ],
+      "icon": "📏",
+      "sharing_enabled": true,
+      "share_text": "Measure distances with this How Many Miles Is 10000 Steps tool! 📏"
+    },
+    {
+      "id": "howmanystepsinamile",
+      "title": "How Many Steps in a Mile",
+      "description": "Get accurate measurements and calculations for your How Many Steps in a Mile question",
+      "category": "measurement",
+      "url": "how_many_steps_in_a_mile/index.html",
+      "folder_name": "how_many_steps_in_a_mile",
+      "keywords": [
+        "how",
+        "many",
+        "steps",
+        "in",
+        "a",
+        "mile"
+      ],
+      "icon": "📊",
+      "sharing_enabled": false,
+      "share_text": "Get accurate measurements with this How Many Steps in a Mile calculator! 📊"
+    },
+    {
+      "id": "howmanyelectoralvotesarethere",
+      "title": "How Many Electoral Votes Are There",
+      "description": "Calculate and convert time-related measurements from your How Many Electoral Votes Are There query",
+      "category": "time",
+      "url": "how_many_electoral_votes_are_there/index.html",
+      "folder_name": "how_many_electoral_votes_are_there",
+      "keywords": [
+        "how",
+        "many",
+        "electoral",
+        "votes",
+        "are",
+        "there"
       ],
       "icon": "⏰",
       "sharing_enabled": false,
-      "share_text": "Check out this How Many Chromosomes Do Humans Have​ calculator! 🕐"
+      "share_text": "Check out this How Many Electoral Votes Are There calculator! 🕐"
     },
     {
-      "id": "howmanytablespoonsinacup",
-      "title": "How Many Tablespoons in a Cup​",
-      "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup​ query",
+      "id": "howmanyteaspoonsinatablespoon",
+      "title": "How Many Teaspoons in a Tablespoon",
+      "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
       "category": "time",
-      "url": "how many tablespoons in a cup​/index.html",
-      "folder_name": "how many tablespoons in a cup​",
+      "url": "how_many_teaspoons_in_a_tablespoon/index.html",
+      "folder_name": "how_many_teaspoons_in_a_tablespoon",
+      "keywords": [
+        "how",
+        "many",
+        "teaspoons",
+        "in",
+        "a",
+        "tablespoon"
+      ],
+      "icon": "⏰",
+      "sharing_enabled": false,
+      "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
+    },
+    {
+      "id": "howmanytablespoonsin1",
+      "title": "How Many Tablespoons in 1",
+      "description": "Calculate and convert time-related measurements from your How Many Tablespoons in 1 query",
+      "category": "time",
+      "url": "how_many_tablespoons_in_1/index.html",
+      "folder_name": "how_many_tablespoons_in_1",
       "keywords": [
         "how",
         "many",
         "tablespoons",
         "in",
-        "a",
-        "cup​"
+        "1"
       ],
       "icon": "⏰",
       "sharing_enabled": false,
-      "share_text": "Check out this How Many Tablespoons in a Cup​ calculator! 🕐"
-    },
-    {
-      "id": "howmanyquartsinagallon",
-      "title": "How Many Quarts in a Gallon​",
-      "description": "Convert between different volume units based on your How Many Quarts in a Gallon​ question",
-      "category": "volume",
-      "url": "how_many_quarts_in_a_gallon​/index.html",
-      "folder_name": "how_many_quarts_in_a_gallon​",
-      "keywords": [
-        "how",
-        "many",
-        "quarts",
-        "in",
-        "a",
-        "gallon​"
-      ],
-      "icon": "🧪",
-      "sharing_enabled": false,
-      "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
-    },
-    {
-      "id": "howmanyozinagallon",
-      "title": "How Many Oz in a Gallon",
-      "description": "Calculate and convert time-related measurements from your How Many Oz in a Gallon query",
-      "category": "time",
-      "url": "how many oz in a gallon/index.html",
-      "folder_name": "how many oz in a gallon",
-      "keywords": [
-        "how",
-        "many",
-        "oz",
-        "in",
-        "a",
-        "gallon"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": true,
-      "share_text": "Check out this How Many Oz in a Gallon calculator! 🕐"
-    },
-    {
-      "id": "howmanylettersareinthealphabet",
-      "title": "How Many Letters Are in the Alphabet",
-      "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
-      "category": "time",
-      "url": "how many letters are in the alphabet/index.html",
-      "folder_name": "how many letters are in the alphabet",
-      "keywords": [
-        "how",
-        "many",
-        "letters",
-        "are",
-        "in",
-        "the",
-        "alphabet"
-      ],
-      "icon": "⏰",
-      "sharing_enabled": true,
-      "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
+      "share_text": "Check out this How Many Tablespoons in 1 calculator! 🕐"
     }
   ],
   "categories": {
-    "weight": {
-      "name": "Weight",
-      "description": "Tools for weight calculations and conversions",
-      "icon": "⚖️",
-      "tools": [
-        {
-          "id": "howmanycaloriesshouldieataday",
-          "title": "How Many Calories Should I Eat a Day",
-          "description": "Convert between different weight and mass units for your How Many Calories Should I Eat a Day needs",
-          "category": "weight",
-          "url": "how many calories should i eat a day/index.html",
-          "folder_name": "how many calories should i eat a day",
-          "keywords": [
-            "how",
-            "many",
-            "calories",
-            "should",
-            "i",
-            "eat",
-            "a",
-            "day"
-          ],
-          "icon": "⚖️",
-          "sharing_enabled": false,
-          "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
-        },
-        {
-          "id": "howmanygramsinapound",
-          "title": "How Many Grams in a Pound​​​​",
-          "description": "Convert between different weight and mass units for your How Many Grams in a Pound​​​​ needs",
-          "category": "weight",
-          "url": "how many grams in a pound​​​​/index.html",
-          "folder_name": "how many grams in a pound​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "grams",
-            "in",
-            "a",
-            "pound​​​​"
-          ],
-          "icon": "⚖️",
-          "sharing_enabled": false,
-          "share_text": "Calculate weights with this How Many Grams in a Pound​​​​ calculator! ⚖️"
-        },
-        {
-          "id": "howmanygramsinanounce",
-          "title": "How Many Grams in an Ounce​",
-          "description": "Convert between different weight and mass units for your How Many Grams in an Ounce​ needs",
-          "category": "weight",
-          "url": "how many grams in an ounce​/index.html",
-          "folder_name": "how many grams in an ounce​",
-          "keywords": [
-            "how",
-            "many",
-            "grams",
-            "in",
-            "an",
-            "ounce​"
-          ],
-          "icon": "⚖️",
-          "sharing_enabled": false,
-          "share_text": "Calculate weights with this How Many Grams in an Ounce​ calculator! ⚖️"
-        },
-        {
-          "id": "howmanycaloriesinabanana",
-          "title": "How Many Calories in a Banana​",
-          "description": "Convert between different weight and mass units for your How Many Calories in a Banana​ needs",
-          "category": "weight",
-          "url": "how_many_calories_in_a_banana​/index.html",
-          "folder_name": "how_many_calories_in_a_banana​",
-          "keywords": [
-            "how",
-            "many",
-            "calories",
-            "in",
-            "a",
-            "banana​"
-          ],
-          "icon": "⚖️",
-          "sharing_enabled": false,
-          "share_text": "Calculate weights with this How Many Calories in a Banana​ calculator! ⚖️"
-        }
-      ]
-    },
-    "time": {
-      "name": "Time",
-      "description": "Tools for time calculations and conversions",
-      "icon": "⏰",
-      "tools": [
-        {
-          "id": "howmanyelectoralvotesarethere",
-          "title": "How Many Electoral Votes Are There​",
-          "description": "Calculate and convert time-related measurements from your How Many Electoral Votes Are There​ query",
-          "category": "time",
-          "url": "how_many_electoral_votes_are_there​/index.html",
-          "folder_name": "how_many_electoral_votes_are_there​",
-          "keywords": [
-            "how",
-            "many",
-            "electoral",
-            "votes",
-            "are",
-            "there​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Electoral Votes Are There​ calculator! 🕐"
-        },
-        {
-          "id": "howmanyhoursinaweek",
-          "title": "How Many Hours in a Week​​​​​​​​",
-          "description": "Calculate and convert time-related measurements from your How Many Hours in a Week​​​​​​​​ query",
-          "category": "time",
-          "url": "how_many_hours_in_a_week​​​​​​​​/index.html",
-          "folder_name": "how_many_hours_in_a_week​​​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "hours",
-            "in",
-            "a",
-            "week​​​​​​​​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Hours in a Week​​​​​​​​ calculator! 🕐"
-        },
-        {
-          "id": "howmanydaysuntilchristmas",
-          "title": "How Many Days Until Christmas",
-          "description": "Calculate and convert time-related measurements from your How Many Days Until Christmas query",
-          "category": "time",
-          "url": "how_many_days_until_christmas/index.html",
-          "folder_name": "how_many_days_until_christmas",
-          "keywords": [
-            "how",
-            "many",
-            "days",
-            "until",
-            "christmas"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": true,
-          "share_text": "Check out this How Many Days Until Christmas calculator! 🕐"
-        },
-        {
-          "id": "howmanyozinacup",
-          "title": "How Many Oz in a Cup​",
-          "description": "Calculate and convert time-related measurements from your How Many Oz in a Cup​ query",
-          "category": "time",
-          "url": "how many oz in a cup​/index.html",
-          "folder_name": "how many oz in a cup​",
-          "keywords": [
-            "how",
-            "many",
-            "oz",
-            "in",
-            "a",
-            "cup​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Oz in a Cup​ calculator! 🕐"
-        },
-        {
-          "id": "howmanycontinentsarethere",
-          "title": "How Many Continents Are There",
-          "description": "Calculate and convert time-related measurements from your How Many Continents Are There query",
-          "category": "time",
-          "url": "how many continents are there/index.html",
-          "folder_name": "how many continents are there",
-          "keywords": [
-            "how",
-            "many",
-            "continents",
-            "are",
-            "there"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Continents Are There calculator! 🕐"
-        },
-        {
-          "id": "howmanyteaspoonsinatablespoon",
-          "title": "How Many Teaspoons in a Tablespoon",
-          "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
-          "category": "time",
-          "url": "how many teaspoons in a tablespoon/index.html",
-          "folder_name": "how many teaspoons in a tablespoon",
-          "keywords": [
-            "how",
-            "many",
-            "teaspoons",
-            "in",
-            "a",
-            "tablespoon"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
-        },
-        {
-          "id": "howmanypeopleliveintheus",
-          "title": "How Many People Live in the Us",
-          "description": "Calculate and convert time-related measurements from your How Many People Live in the Us query",
-          "category": "time",
-          "url": "how many people live in the us/index.html",
-          "folder_name": "how many people live in the us",
-          "keywords": [
-            "how",
-            "many",
-            "people",
-            "live",
-            "in",
-            "the",
-            "us"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many People Live in the Us calculator! 🕐"
-        },
-        {
-          "id": "howmanytablespoonsin1",
-          "title": "How Many Tablespoons in 1",
-          "description": "Calculate and convert time-related measurements from your How Many Tablespoons in 1 query",
-          "category": "time",
-          "url": "how many tablespoons in 1/index.html",
-          "folder_name": "how many tablespoons in 1",
-          "keywords": [
-            "how",
-            "many",
-            "tablespoons",
-            "in",
-            "1"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Tablespoons in 1 calculator! 🕐"
-        },
-        {
-          "id": "howmanycminaninch",
-          "title": "How Many Cm in an Inch",
-          "description": "Calculate and convert time-related measurements from your How Many Cm in an Inch query",
-          "category": "time",
-          "url": "how many cm in an inch/index.html",
-          "folder_name": "how many cm in an inch",
-          "keywords": [
-            "how",
-            "many",
-            "cm",
-            "in",
-            "an",
-            "inch"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
-        },
-        {
-          "id": "howmanyamericastates",
-          "title": "How Many America States",
-          "description": "Calculate and convert time-related measurements from your How Many America States query",
-          "category": "time",
-          "url": "how many america states/index.html",
-          "folder_name": "how many america states",
-          "keywords": [
-            "how",
-            "many",
-            "america",
-            "states"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": true,
-          "share_text": "Check out this How Many America States calculator! 🕐"
-        },
-        {
-          "id": "howmanypeopleareintheworld",
-          "title": "How Many People Are in the World​",
-          "description": "Calculate and convert time-related measurements from your How Many People Are in the World​ query",
-          "category": "time",
-          "url": "how_many_people_are_in_the_world​/index.html",
-          "folder_name": "how_many_people_are_in_the_world​",
-          "keywords": [
-            "how",
-            "many",
-            "people",
-            "are",
-            "in",
-            "the",
-            "world​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": true,
-          "share_text": "Check out this How Many People Are in the World​ calculator! 🕐"
-        },
-        {
-          "id": "howmanyhoursinayear",
-          "title": "How Many Hours in a Year",
-          "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
-          "category": "time",
-          "url": "how many hours in a year/index.html",
-          "folder_name": "how many hours in a year",
-          "keywords": [
-            "how",
-            "many",
-            "hours",
-            "in",
-            "a",
-            "year"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
-        },
-        {
-          "id": "howmanyweeksinayear",
-          "title": "How Many Weeks in a Year",
-          "description": "Calculate and convert time-related measurements from your How Many Weeks in a Year query",
-          "category": "time",
-          "url": "how_many_weeks_in_a_year/index.html",
-          "folder_name": "how_many_weeks_in_a_year",
-          "keywords": [
-            "how",
-            "many",
-            "weeks",
-            "in",
-            "a",
-            "year"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Weeks in a Year calculator! 🕐"
-        },
-        {
-          "id": "howmanydaysuntilhalloween",
-          "title": "How Many Days Until Halloween​​​​​",
-          "description": "Calculate and convert time-related measurements from your How Many Days Until Halloween​​​​​ query",
-          "category": "time",
-          "url": "how many days until halloween​​​​​/index.html",
-          "folder_name": "how many days until halloween​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "days",
-            "until",
-            "halloween​​​​​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": true,
-          "share_text": "Check out this How Many Days Until Halloween​​​​​ calculator! 🕐"
-        },
-        {
-          "id": "howmanysecondsinaday",
-          "title": "How Many Seconds in a Day",
-          "description": "Calculate and convert time-related measurements from your How Many Seconds in a Day query",
-          "category": "time",
-          "url": "how many seconds in a day/index.html",
-          "folder_name": "how many seconds in a day",
-          "keywords": [
-            "how",
-            "many",
-            "seconds",
-            "in",
-            "a",
-            "day"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Seconds in a Day calculator! 🕐"
-        },
-        {
-          "id": "howmanyminutesinaday",
-          "title": "How Many Minutes in a Day​​​​​​​​​​",
-          "description": "Calculate and convert time-related measurements from your How Many Minutes in a Day​​​​​​​​​​ query",
-          "category": "time",
-          "url": "how many minutes in a day​​​​​​​​​​/index.html",
-          "folder_name": "how many minutes in a day​​​​​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "minutes",
-            "in",
-            "a",
-            "day​​​​​​​​​​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Minutes in a Day​​​​​​​​​​ calculator! 🕐"
-        },
-        {
-          "id": "howmanychromosomesdohumanshave",
-          "title": "How Many Chromosomes Do Humans Have​",
-          "description": "Calculate and convert time-related measurements from your How Many Chromosomes Do Humans Have​ query",
-          "category": "time",
-          "url": "how_many_chromosomes_do_humans_have​/index.html",
-          "folder_name": "how_many_chromosomes_do_humans_have​",
-          "keywords": [
-            "how",
-            "many",
-            "chromosomes",
-            "do",
-            "humans",
-            "have​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Chromosomes Do Humans Have​ calculator! 🕐"
-        },
-        {
-          "id": "howmanytablespoonsinacup",
-          "title": "How Many Tablespoons in a Cup​",
-          "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup​ query",
-          "category": "time",
-          "url": "how many tablespoons in a cup​/index.html",
-          "folder_name": "how many tablespoons in a cup​",
-          "keywords": [
-            "how",
-            "many",
-            "tablespoons",
-            "in",
-            "a",
-            "cup​"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": false,
-          "share_text": "Check out this How Many Tablespoons in a Cup​ calculator! 🕐"
-        },
-        {
-          "id": "howmanyozinagallon",
-          "title": "How Many Oz in a Gallon",
-          "description": "Calculate and convert time-related measurements from your How Many Oz in a Gallon query",
-          "category": "time",
-          "url": "how many oz in a gallon/index.html",
-          "folder_name": "how many oz in a gallon",
-          "keywords": [
-            "how",
-            "many",
-            "oz",
-            "in",
-            "a",
-            "gallon"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": true,
-          "share_text": "Check out this How Many Oz in a Gallon calculator! 🕐"
-        },
-        {
-          "id": "howmanylettersareinthealphabet",
-          "title": "How Many Letters Are in the Alphabet",
-          "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
-          "category": "time",
-          "url": "how many letters are in the alphabet/index.html",
-          "folder_name": "how many letters are in the alphabet",
-          "keywords": [
-            "how",
-            "many",
-            "letters",
-            "are",
-            "in",
-            "the",
-            "alphabet"
-          ],
-          "icon": "⏰",
-          "sharing_enabled": true,
-          "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
-        }
-      ]
-    },
-    "length": {
-      "name": "Length",
-      "description": "Tools for length calculations and conversions",
-      "icon": "📏",
-      "tools": [
-        {
-          "id": "howmanymilesisa5k",
-          "title": "How Many Miles Is a 5k",
-          "description": "Convert between different length and distance units from your How Many Miles Is a 5k",
-          "category": "length",
-          "url": "how many miles is a 5k/index.html",
-          "folder_name": "how many miles is a 5k",
-          "keywords": [
-            "how",
-            "many",
-            "miles",
-            "is",
-            "a",
-            "5k"
-          ],
-          "icon": "📏",
-          "sharing_enabled": true,
-          "share_text": "Measure distances with this How Many Miles Is a 5k tool! 📏"
-        },
-        {
-          "id": "howmanysquarefeetinanacre",
-          "title": "How Many Square Feet in an Acre​​​​​​",
-          "description": "Convert between different length and distance units from your How Many Square Feet in an Acre​​​​​​",
-          "category": "length",
-          "url": "how many square feet in an acre​​​​​​/index.html",
-          "folder_name": "how many square feet in an acre​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "square",
-            "feet",
-            "in",
-            "an",
-            "acre​​​​​​"
-          ],
-          "icon": "📏",
-          "sharing_enabled": false,
-          "share_text": "Measure distances with this How Many Square Feet in an Acre​​​​​​ tool! 📏"
-        },
-        {
-          "id": "howmanymilesis10000steps",
-          "title": "How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
-          "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​",
-          "category": "length",
-          "url": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​/index.html",
-          "folder_name": "how many miles is 10000 steps​​​​​​​​​​​​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "miles",
-            "is",
-            "10000",
-            "steps​​​​​​​​​​​​​​​​​"
-          ],
-          "icon": "📏",
-          "sharing_enabled": true,
-          "share_text": "Measure distances with this How Many Miles Is 10000 Steps​​​​​​​​​​​​​​​​​ tool! 📏"
-        },
-        {
-          "id": "howmanyfeetinamile",
-          "title": "How Many Feet in a Mile​",
-          "description": "Convert between different length and distance units from your How Many Feet in a Mile​",
-          "category": "length",
-          "url": "how many feet in a mile​/index.html",
-          "folder_name": "how many feet in a mile​",
-          "keywords": [
-            "how",
-            "many",
-            "feet",
-            "in",
-            "a",
-            "mile​"
-          ],
-          "icon": "📏",
-          "sharing_enabled": false,
-          "share_text": "Measure distances with this How Many Feet in a Mile​ tool! 📏"
-        }
-      ]
-    },
     "volume": {
       "name": "Volume",
       "description": "Tools for volume calculations and conversions",
       "icon": "🧪",
       "tools": [
         {
-          "id": "howmanylitersinagallon",
-          "title": "How Many Liters in a Gallon​​",
-          "description": "Convert between different volume units based on your How Many Liters in a Gallon​​ question",
+          "id": "howmanycupsinaquart",
+          "title": "How Many Cups in a Quart",
+          "description": "Convert between different volume units based on your How Many Cups in a Quart question",
           "category": "volume",
-          "url": "how many liters in a gallon​​/index.html",
-          "folder_name": "how many liters in a gallon​​",
+          "url": "how_many_cups_in_a_quart/index.html",
+          "folder_name": "how_many_cups_in_a_quart",
           "keywords": [
             "how",
             "many",
-            "liters",
+            "cups",
             "in",
             "a",
-            "gallon​​"
+            "quart"
           ],
           "icon": "🧪",
-          "sharing_enabled": true,
-          "share_text": "Convert volumes easily with this How Many Liters in a Gallon​​ tool! 🧪"
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
+        },
+        {
+          "id": "howmanyquartsinagallon",
+          "title": "How Many Quarts in a Gallon",
+          "description": "Convert between different volume units based on your How Many Quarts in a Gallon question",
+          "category": "volume",
+          "url": "how_many_quarts_in_a_gallon/index.html",
+          "folder_name": "how_many_quarts_in_a_gallon",
+          "keywords": [
+            "how",
+            "many",
+            "quarts",
+            "in",
+            "a",
+            "gallon"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Quarts in a Gallon tool! 🧪"
         },
         {
           "id": "howmanytbspinacup",
@@ -1321,12 +787,31 @@
           "share_text": "Convert volumes easily with this How Many Tbsp in a Cup tool! 🧪"
         },
         {
+          "id": "howmanycupsinapint",
+          "title": "How Many Cups in a Pint",
+          "description": "Convert between different volume units based on your How Many Cups in a Pint question",
+          "category": "volume",
+          "url": "how_many_cups_in_a_pint/index.html",
+          "folder_name": "how_many_cups_in_a_pint",
+          "keywords": [
+            "how",
+            "many",
+            "cups",
+            "in",
+            "a",
+            "pint"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": false,
+          "share_text": "Convert volumes easily with this How Many Cups in a Pint tool! 🧪"
+        },
+        {
           "id": "howmanyouncesinapound",
           "title": "How Many Ounces in a Pound",
           "description": "Convert between different volume units based on your How Many Ounces in a Pound question",
           "category": "volume",
-          "url": "how many ounces in a pound/index.html",
-          "folder_name": "how many ounces in a pound",
+          "url": "how_many_ounces_in_a_pound/index.html",
+          "folder_name": "how_many_ounces_in_a_pound",
           "keywords": [
             "how",
             "many",
@@ -1338,44 +823,6 @@
           "icon": "🧪",
           "sharing_enabled": false,
           "share_text": "Convert volumes easily with this How Many Ounces in a Pound tool! 🧪"
-        },
-        {
-          "id": "howmanycupsinaquart",
-          "title": "How Many Cups in a Quart",
-          "description": "Convert between different volume units based on your How Many Cups in a Quart question",
-          "category": "volume",
-          "url": "how many cups in a quart/index.html",
-          "folder_name": "how many cups in a quart",
-          "keywords": [
-            "how",
-            "many",
-            "cups",
-            "in",
-            "a",
-            "quart"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Cups in a Quart tool! 🧪"
-        },
-        {
-          "id": "howmanycupsinapint",
-          "title": "How Many Cups in a Pint​​​​​​​​",
-          "description": "Convert between different volume units based on your How Many Cups in a Pint​​​​​​​​ question",
-          "category": "volume",
-          "url": "how many cups in a pint​​​​​​​​/index.html",
-          "folder_name": "how many cups in a pint​​​​​​​​",
-          "keywords": [
-            "how",
-            "many",
-            "cups",
-            "in",
-            "a",
-            "pint​​​​​​​​"
-          ],
-          "icon": "🧪",
-          "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Cups in a Pint​​​​​​​​ tool! 🧪"
         },
         {
           "id": "howmanyouncesinapint",
@@ -1398,22 +845,41 @@
         },
         {
           "id": "howmanyouncesinacup",
-          "title": "How Many Ounces in a Cup​",
-          "description": "Convert between different volume units based on your How Many Ounces in a Cup​ question",
+          "title": "How Many Ounces in a Cup",
+          "description": "Convert between different volume units based on your How Many Ounces in a Cup question",
           "category": "volume",
-          "url": "how_many_ounces_in_a_cup​/index.html",
-          "folder_name": "how_many_ounces_in_a_cup​",
+          "url": "how_many_ounces_in_a_cup/index.html",
+          "folder_name": "how_many_ounces_in_a_cup",
           "keywords": [
             "how",
             "many",
             "ounces",
             "in",
             "a",
-            "cup​"
+            "cup"
           ],
           "icon": "🧪",
           "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Ounces in a Cup​ tool! 🧪"
+          "share_text": "Convert volumes easily with this How Many Ounces in a Cup tool! 🧪"
+        },
+        {
+          "id": "howmanylitersinagallon",
+          "title": "How Many Liters in a Gallon",
+          "description": "Convert between different volume units based on your How Many Liters in a Gallon question",
+          "category": "volume",
+          "url": "how_many_liters_in_a_gallon/index.html",
+          "folder_name": "how_many_liters_in_a_gallon",
+          "keywords": [
+            "how",
+            "many",
+            "liters",
+            "in",
+            "a",
+            "gallon"
+          ],
+          "icon": "🧪",
+          "sharing_enabled": true,
+          "share_text": "Convert volumes easily with this How Many Liters in a Gallon tool! 🧪"
         },
         {
           "id": "howmanyouncesinagallon",
@@ -1433,25 +899,559 @@
           "icon": "🧪",
           "sharing_enabled": false,
           "share_text": "Convert volumes easily with this How Many Ounces in a Gallon tool! 🧪"
-        },
+        }
+      ]
+    },
+    "time": {
+      "name": "Time",
+      "description": "Tools for time calculations and conversions",
+      "icon": "⏰",
+      "tools": [
         {
-          "id": "howmanyquartsinagallon",
-          "title": "How Many Quarts in a Gallon​",
-          "description": "Convert between different volume units based on your How Many Quarts in a Gallon​ question",
-          "category": "volume",
-          "url": "how_many_quarts_in_a_gallon​/index.html",
-          "folder_name": "how_many_quarts_in_a_gallon​",
+          "id": "howmanyhoursinaweek",
+          "title": "How Many Hours in a Week",
+          "description": "Calculate and convert time-related measurements from your How Many Hours in a Week query",
+          "category": "time",
+          "url": "how_many_hours_in_a_week/index.html",
+          "folder_name": "how_many_hours_in_a_week",
           "keywords": [
             "how",
             "many",
-            "quarts",
+            "hours",
             "in",
             "a",
-            "gallon​"
+            "week"
           ],
-          "icon": "🧪",
+          "icon": "⏰",
           "sharing_enabled": false,
-          "share_text": "Convert volumes easily with this How Many Quarts in a Gallon​ tool! 🧪"
+          "share_text": "Check out this How Many Hours in a Week calculator! 🕐"
+        },
+        {
+          "id": "howmanydaysuntilchristmas",
+          "title": "How Many Days Until Christmas",
+          "description": "Calculate and convert time-related measurements from your How Many Days Until Christmas query",
+          "category": "time",
+          "url": "how_many_days_until_christmas/index.html",
+          "folder_name": "how_many_days_until_christmas",
+          "keywords": [
+            "how",
+            "many",
+            "days",
+            "until",
+            "christmas"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Days Until Christmas calculator! 🕐"
+        },
+        {
+          "id": "howmanysecondsinaday",
+          "title": "How Many Seconds in a Day",
+          "description": "Calculate and convert time-related measurements from your How Many Seconds in a Day query",
+          "category": "time",
+          "url": "how_many_seconds_in_a_day/index.html",
+          "folder_name": "how_many_seconds_in_a_day",
+          "keywords": [
+            "how",
+            "many",
+            "seconds",
+            "in",
+            "a",
+            "day"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Seconds in a Day calculator! 🕐"
+        },
+        {
+          "id": "howmanyozinagallon",
+          "title": "How Many Oz in a Gallon",
+          "description": "Calculate and convert time-related measurements from your How Many Oz in a Gallon query",
+          "category": "time",
+          "url": "how_many_oz_in_a_gallon/index.html",
+          "folder_name": "how_many_oz_in_a_gallon",
+          "keywords": [
+            "how",
+            "many",
+            "oz",
+            "in",
+            "a",
+            "gallon"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Oz in a Gallon calculator! 🕐"
+        },
+        {
+          "id": "howmanyozinacup",
+          "title": "How Many Oz in a Cup",
+          "description": "Calculate and convert time-related measurements from your How Many Oz in a Cup query",
+          "category": "time",
+          "url": "how_many_oz_in_a_cup/index.html",
+          "folder_name": "how_many_oz_in_a_cup",
+          "keywords": [
+            "how",
+            "many",
+            "oz",
+            "in",
+            "a",
+            "cup"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Oz in a Cup calculator! 🕐"
+        },
+        {
+          "id": "howmanyamericastates",
+          "title": "How Many America States",
+          "description": "Calculate and convert time-related measurements from your How Many America States query",
+          "category": "time",
+          "url": "how_many_america_states/index.html",
+          "folder_name": "how_many_america_states",
+          "keywords": [
+            "how",
+            "many",
+            "america",
+            "states"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many America States calculator! 🕐"
+        },
+        {
+          "id": "howmanypeopleliveintheus",
+          "title": "How Many People Live in the Us",
+          "description": "Calculate and convert time-related measurements from your How Many People Live in the Us query",
+          "category": "time",
+          "url": "how_many_people_live_in_the_us/index.html",
+          "folder_name": "how_many_people_live_in_the_us",
+          "keywords": [
+            "how",
+            "many",
+            "people",
+            "live",
+            "in",
+            "the",
+            "us"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many People Live in the Us calculator! 🕐"
+        },
+        {
+          "id": "howmanypeopleareintheworld",
+          "title": "How Many People Are in the World",
+          "description": "Calculate and convert time-related measurements from your How Many People Are in the World query",
+          "category": "time",
+          "url": "how_many_people_are_in_the_world/index.html",
+          "folder_name": "how_many_people_are_in_the_world",
+          "keywords": [
+            "how",
+            "many",
+            "people",
+            "are",
+            "in",
+            "the",
+            "world"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many People Are in the World calculator! 🕐"
+        },
+        {
+          "id": "howmanylettersareinthealphabet",
+          "title": "How Many Letters Are in the Alphabet",
+          "description": "Calculate and convert time-related measurements from your How Many Letters Are in the Alphabet query",
+          "category": "time",
+          "url": "how_many_letters_are_in_the_alphabet/index.html",
+          "folder_name": "how_many_letters_are_in_the_alphabet",
+          "keywords": [
+            "how",
+            "many",
+            "letters",
+            "are",
+            "in",
+            "the",
+            "alphabet"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Letters Are in the Alphabet calculator! 🕐"
+        },
+        {
+          "id": "howmanydaysuntilhalloween",
+          "title": "How Many Days Until Halloween",
+          "description": "Calculate and convert time-related measurements from your How Many Days Until Halloween query",
+          "category": "time",
+          "url": "how_many_days_until_halloween/index.html",
+          "folder_name": "how_many_days_until_halloween",
+          "keywords": [
+            "how",
+            "many",
+            "days",
+            "until",
+            "halloween"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": true,
+          "share_text": "Check out this How Many Days Until Halloween calculator! 🕐"
+        },
+        {
+          "id": "howmanyminutesinaday",
+          "title": "How Many Minutes in a Day",
+          "description": "Calculate and convert time-related measurements from your How Many Minutes in a Day query",
+          "category": "time",
+          "url": "how_many_minutes_in_a_day/index.html",
+          "folder_name": "how_many_minutes_in_a_day",
+          "keywords": [
+            "how",
+            "many",
+            "minutes",
+            "in",
+            "a",
+            "day"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Minutes in a Day calculator! 🕐"
+        },
+        {
+          "id": "howmanytablespoonsinacup",
+          "title": "How Many Tablespoons in a Cup",
+          "description": "Calculate and convert time-related measurements from your How Many Tablespoons in a Cup query",
+          "category": "time",
+          "url": "how_many_tablespoons_in_a_cup/index.html",
+          "folder_name": "how_many_tablespoons_in_a_cup",
+          "keywords": [
+            "how",
+            "many",
+            "tablespoons",
+            "in",
+            "a",
+            "cup"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Tablespoons in a Cup calculator! 🕐"
+        },
+        {
+          "id": "howmanyweeksinayear",
+          "title": "How Many Weeks in a Year",
+          "description": "Calculate and convert time-related measurements from your How Many Weeks in a Year query",
+          "category": "time",
+          "url": "how_many_weeks_in_a_year/index.html",
+          "folder_name": "how_many_weeks_in_a_year",
+          "keywords": [
+            "how",
+            "many",
+            "weeks",
+            "in",
+            "a",
+            "year"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Weeks in a Year calculator! 🕐"
+        },
+        {
+          "id": "howmanyhoursinayear",
+          "title": "How Many Hours in a Year",
+          "description": "Calculate and convert time-related measurements from your How Many Hours in a Year query",
+          "category": "time",
+          "url": "how_many_hours_in_a_year/index.html",
+          "folder_name": "how_many_hours_in_a_year",
+          "keywords": [
+            "how",
+            "many",
+            "hours",
+            "in",
+            "a",
+            "year"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Hours in a Year calculator! 🕐"
+        },
+        {
+          "id": "howmanychromosomesdohumanshave",
+          "title": "How Many Chromosomes Do Humans Have",
+          "description": "Calculate and convert time-related measurements from your How Many Chromosomes Do Humans Have query",
+          "category": "time",
+          "url": "how_many_chromosomes_do_humans_have/index.html",
+          "folder_name": "how_many_chromosomes_do_humans_have",
+          "keywords": [
+            "how",
+            "many",
+            "chromosomes",
+            "do",
+            "humans",
+            "have"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Chromosomes Do Humans Have calculator! 🕐"
+        },
+        {
+          "id": "howmanycontinentsarethere",
+          "title": "How Many Continents Are There",
+          "description": "Calculate and convert time-related measurements from your How Many Continents Are There query",
+          "category": "time",
+          "url": "how_many_continents_are_there/index.html",
+          "folder_name": "how_many_continents_are_there",
+          "keywords": [
+            "how",
+            "many",
+            "continents",
+            "are",
+            "there"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Continents Are There calculator! 🕐"
+        },
+        {
+          "id": "howmanycminaninch",
+          "title": "How Many Cm in an Inch",
+          "description": "Calculate and convert time-related measurements from your How Many Cm in an Inch query",
+          "category": "time",
+          "url": "how_many_cm_in_an_inch/index.html",
+          "folder_name": "how_many_cm_in_an_inch",
+          "keywords": [
+            "how",
+            "many",
+            "cm",
+            "in",
+            "an",
+            "inch"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Cm in an Inch calculator! 🕐"
+        },
+        {
+          "id": "howmanyelectoralvotesarethere",
+          "title": "How Many Electoral Votes Are There",
+          "description": "Calculate and convert time-related measurements from your How Many Electoral Votes Are There query",
+          "category": "time",
+          "url": "how_many_electoral_votes_are_there/index.html",
+          "folder_name": "how_many_electoral_votes_are_there",
+          "keywords": [
+            "how",
+            "many",
+            "electoral",
+            "votes",
+            "are",
+            "there"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Electoral Votes Are There calculator! 🕐"
+        },
+        {
+          "id": "howmanyteaspoonsinatablespoon",
+          "title": "How Many Teaspoons in a Tablespoon",
+          "description": "Calculate and convert time-related measurements from your How Many Teaspoons in a Tablespoon query",
+          "category": "time",
+          "url": "how_many_teaspoons_in_a_tablespoon/index.html",
+          "folder_name": "how_many_teaspoons_in_a_tablespoon",
+          "keywords": [
+            "how",
+            "many",
+            "teaspoons",
+            "in",
+            "a",
+            "tablespoon"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Teaspoons in a Tablespoon calculator! 🕐"
+        },
+        {
+          "id": "howmanytablespoonsin1",
+          "title": "How Many Tablespoons in 1",
+          "description": "Calculate and convert time-related measurements from your How Many Tablespoons in 1 query",
+          "category": "time",
+          "url": "how_many_tablespoons_in_1/index.html",
+          "folder_name": "how_many_tablespoons_in_1",
+          "keywords": [
+            "how",
+            "many",
+            "tablespoons",
+            "in",
+            "1"
+          ],
+          "icon": "⏰",
+          "sharing_enabled": false,
+          "share_text": "Check out this How Many Tablespoons in 1 calculator! 🕐"
+        }
+      ]
+    },
+    "length": {
+      "name": "Length",
+      "description": "Tools for length calculations and conversions",
+      "icon": "📏",
+      "tools": [
+        {
+          "id": "howmanymilesisa5k",
+          "title": "How Many Miles Is a 5k",
+          "description": "Convert between different length and distance units from your How Many Miles Is a 5k",
+          "category": "length",
+          "url": "how_many_miles_is_a_5k/index.html",
+          "folder_name": "how_many_miles_is_a_5k",
+          "keywords": [
+            "how",
+            "many",
+            "miles",
+            "is",
+            "a",
+            "5k"
+          ],
+          "icon": "📏",
+          "sharing_enabled": true,
+          "share_text": "Measure distances with this How Many Miles Is a 5k tool! 📏"
+        },
+        {
+          "id": "howmanysquarefeetinanacre",
+          "title": "How Many Square Feet in an Acre",
+          "description": "Convert between different length and distance units from your How Many Square Feet in an Acre",
+          "category": "length",
+          "url": "how_many_square_feet_in_an_acre/index.html",
+          "folder_name": "how_many_square_feet_in_an_acre",
+          "keywords": [
+            "how",
+            "many",
+            "square",
+            "feet",
+            "in",
+            "an",
+            "acre"
+          ],
+          "icon": "📏",
+          "sharing_enabled": false,
+          "share_text": "Measure distances with this How Many Square Feet in an Acre tool! 📏"
+        },
+        {
+          "id": "howmanyfeetinamile",
+          "title": "How Many Feet in a Mile",
+          "description": "Convert between different length and distance units from your How Many Feet in a Mile",
+          "category": "length",
+          "url": "how_many_feet_in_a_mile/index.html",
+          "folder_name": "how_many_feet_in_a_mile",
+          "keywords": [
+            "how",
+            "many",
+            "feet",
+            "in",
+            "a",
+            "mile"
+          ],
+          "icon": "📏",
+          "sharing_enabled": false,
+          "share_text": "Measure distances with this How Many Feet in a Mile tool! 📏"
+        },
+        {
+          "id": "howmanymilesis10000steps",
+          "title": "How Many Miles Is 10000 Steps",
+          "description": "Convert between different length and distance units from your How Many Miles Is 10000 Steps",
+          "category": "length",
+          "url": "how_many_miles_is_10000_steps/index.html",
+          "folder_name": "how_many_miles_is_10000_steps",
+          "keywords": [
+            "how",
+            "many",
+            "miles",
+            "is",
+            "10000",
+            "steps"
+          ],
+          "icon": "📏",
+          "sharing_enabled": true,
+          "share_text": "Measure distances with this How Many Miles Is 10000 Steps tool! 📏"
+        }
+      ]
+    },
+    "weight": {
+      "name": "Weight",
+      "description": "Tools for weight calculations and conversions",
+      "icon": "⚖️",
+      "tools": [
+        {
+          "id": "howmanycaloriesinabanana",
+          "title": "How Many Calories in a Banana",
+          "description": "Convert between different weight and mass units for your How Many Calories in a Banana needs",
+          "category": "weight",
+          "url": "how_many_calories_in_a_banana/index.html",
+          "folder_name": "how_many_calories_in_a_banana",
+          "keywords": [
+            "how",
+            "many",
+            "calories",
+            "in",
+            "a",
+            "banana"
+          ],
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Calories in a Banana calculator! ⚖️"
+        },
+        {
+          "id": "howmanycaloriesshouldieataday",
+          "title": "How Many Calories Should I Eat a Day",
+          "description": "Convert between different weight and mass units for your How Many Calories Should I Eat a Day needs",
+          "category": "weight",
+          "url": "how_many_calories_should_i_eat_a_day/index.html",
+          "folder_name": "how_many_calories_should_i_eat_a_day",
+          "keywords": [
+            "how",
+            "many",
+            "calories",
+            "should",
+            "i",
+            "eat",
+            "a",
+            "day"
+          ],
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Calories Should I Eat a Day calculator! ⚖️"
+        },
+        {
+          "id": "howmanygramsinanounce",
+          "title": "How Many Grams in an Ounce",
+          "description": "Convert between different weight and mass units for your How Many Grams in an Ounce needs",
+          "category": "weight",
+          "url": "how_many_grams_in_an_ounce/index.html",
+          "folder_name": "how_many_grams_in_an_ounce",
+          "keywords": [
+            "how",
+            "many",
+            "grams",
+            "in",
+            "an",
+            "ounce"
+          ],
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Grams in an Ounce calculator! ⚖️"
+        },
+        {
+          "id": "howmanygramsinapound",
+          "title": "How Many Grams in a Pound",
+          "description": "Convert between different weight and mass units for your How Many Grams in a Pound needs",
+          "category": "weight",
+          "url": "how_many_grams_in_a_pound/index.html",
+          "folder_name": "how_many_grams_in_a_pound",
+          "keywords": [
+            "how",
+            "many",
+            "grams",
+            "in",
+            "a",
+            "pound"
+          ],
+          "icon": "⚖️",
+          "sharing_enabled": false,
+          "share_text": "Calculate weights with this How Many Grams in a Pound calculator! ⚖️"
         }
       ]
     },
@@ -1462,22 +1462,22 @@
       "tools": [
         {
           "id": "howmanystepsinamile",
-          "title": "How Many Steps in a Mile​​​",
-          "description": "Get accurate measurements and calculations for your How Many Steps in a Mile​​​ question",
+          "title": "How Many Steps in a Mile",
+          "description": "Get accurate measurements and calculations for your How Many Steps in a Mile question",
           "category": "measurement",
-          "url": "how many steps in a mile​​​/index.html",
-          "folder_name": "how many steps in a mile​​​",
+          "url": "how_many_steps_in_a_mile/index.html",
+          "folder_name": "how_many_steps_in_a_mile",
           "keywords": [
             "how",
             "many",
             "steps",
             "in",
             "a",
-            "mile​​​"
+            "mile"
           ],
           "icon": "📊",
           "sharing_enabled": false,
-          "share_text": "Get accurate measurements with this How Many Steps in a Mile​​​ calculator! 📊"
+          "share_text": "Get accurate measurements with this How Many Steps in a Mile calculator! 📊"
         }
       ]
     }

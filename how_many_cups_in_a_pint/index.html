@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1H7E6RXSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1H7E6RXSX');
+    </script>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cups to Pints Converter - How Many Cups in a Pint | Unit Conversion Tool</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how many cups in a pint/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how many cups in a pint/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how many cups in a pint/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_cups_in_a_pint/" />
+    <meta name="description" content="Convert cups to pints instanly. Learn how many cups are in a pint with this easy-to-use converter tool. Free online cups to pints conversion calculator for cooking and baking.">
+    <meta name="keywords" content="cups to pints, how many cups in a pint, cup to pint converter, cooking measurements, baking conversion, volume converter, kitchen measurements">
+    <meta property="og:title" content="Cups to Pints Converter - How Many Cups in a Pint">
+    <meta property="og:description" content="Convert cups to pints instantly with our free online tool. Perfect for cooking, baking, and kitchen measurements.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="Cups to Pints Converter - How Many Cups in a Pint">
+    <meta name="twitter:description" content="Convert cups to pints instantly with our free online tool. Perfect for cooking and baking.">
+    <meta name="twitter:card" content="summary">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f2f2f7 0%, #e5e5ea 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #1c1c1e;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 40px 32px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .container:hover {
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12), 0 0 0 0.5px rgba(255, 255, 255, 0.25);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1c1c1e;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #636366;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .language-switch {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            background: rgba(120, 120, 128, 0.12);
+            border: none;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #636366;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .lang-btn.active {
+            background: #636366;
+            color: white;
+            box-shadow: 0 4px 12px rgba(99, 99, 102, 0.25);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: rgba(120, 120, 128, 0.2);
+        }
+
+        .converter {
+            background: rgba(120, 120, 128, 0.06);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 24px;
+        }
+
+        .input-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #636366;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 18px;
+            font-weight: 500;
+            background: white;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            outline: none;
+            color: #1c1c1e;
+        }
+
+        .input:focus {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 0 0 2px rgba(120, 120, 128, 0.25);
+        }
+
+        .input::placeholder {
+            color: #aeaeb2;
+            font-weight: 400;
+        }
+
+        .unit-label {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            font-weight: 600;
+            color: #636366;
+            background: rgba(120, 120, 128, 0.1);
+            padding: 4px 10px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .conversion-result {
+            background: linear-gradient(135deg, #636366 0%, #8e8e93 100%);
+            border-radius: 20px;
+            padding: 24px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .result-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 4px;
+        }
+
+        .result-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.85);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .info-box {
+            background: rgba(120, 120, 128, 0.06);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .info-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1c1c1e;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-text {
+            font-size: 14px;
+            color: #636366;
+            line-height: 1.5;
+        }
+
+        .quick-facts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .fact {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease;
+        }
+
+        .fact:hover {
+            transform: translateY(-2px);
+        }
+
+        .fact-number {
+            font-size: 20px;
+            font-weight: 700;
+            color: #636366;
+            margin-bottom: 4px;
+        }
+
+        .fact-label {
+            font-size: 12px;
+            color: #8e8e93;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(120, 120, 128, 0.1);
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #8e8e93;
+            line-height: 1.5;
+        }
+
+        /* Hide elements when needed */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 24px;
+                border-radius: 20px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .result-text {
+                font-size: 20px;
+            }
+
+            .quick-facts {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* No-scroll optimization */
+        @media (max-height: 700px) {
+            body {
+                padding: 16px;
+            }
+
+            .container {
+                padding: 24px 20px;
+            }
+
+            .converter {
+                padding: 20px;
+            }
+
+            .info-box {
+                padding: 16px;
+            }
+        }
+
+        /* Focus states for accessibility */
+        .lang-btn:focus-visible,
+        .input:focus-visible {
+            outline: 2px solid #636366;
+            outline-offset: 2px;
+        }
+
+        /* Loading animation */
+        .input:disabled {
+            background: #f2f2f7;
+            cursor: not-allowed;
+        }
+
+        /* Error states */
+        .input.error {
+            box-shadow: 0 4px 16px rgba(255, 59, 48, 0.2);
+        }
+
+        .error-message {
+            font-size: 12px;
+            color: #ff3b30;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #333; padding: 10px 20px;">
+        <a href="/" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 20px;">🧮</span> HowManyQ Home
+        </a>
+    </nav>
+    <div style="margin-top: 60px;"></div>
+    
+<div class="container">
+        <div class="header">
+            <h1 class="title" data-en="Cups to Pints Converter" data-cn="杯换品脱转换器">Cups to Pints Converter</h1>
+            <p class="subtitle" data-en="Instant cooking measurements conversion" data-cn="即时烹饪量度转换">Instant cooking measurements conversion</p>
+        </div>
+
+        <div class="language-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="cn">中文</button>
+        </div>
+
+        <div class="converter">
+            <div class="input-group">
+                <label class="input-label" data-en="Cups" data-cn="杯">Cups</label>
+                <div class="input-wrapper">
+                    <input type="number" id="cupsInput" class="input" placeholder="Enter number of cups" min="0" step="0.125" inputmode="decimal">
+                    <span class="unit-label">cups</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label" data-en="Pints" data-cn="品脱">Pints</label>
+                <div class="input-wrapper">
+                    <input type="number" id="pintsInput" class="input" placeholder="Enter number of pints" min="0" step="0.125" inputmode="decimal">
+                    <span class="unit-label">pints</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="conversion-result">
+            <div class="result-text" id="resultText">1 cup = 0.5 pint</div>
+            <div class="result-label" data-en="CONVERSION RATE" data-cn="转换率">CONVERSION RATE</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-title" data-en="Cooking Measurement Facts" data-cn="烹饪量度知识">Cooking Measurement Facts</div>
+            <div class="info-text" data-en="Understanding cup to pint conversions is essential for accurate cooking and baking measurements. Every kitchen recipe depends on precise volume measurements.">
+                Understanding cup to pint conversions is essential for accurate cooking and baking measurements. Every kitchen recipe depends on precise volume measurements.
+            </div>
+            <div class="quick-facts">
+                <div class="fact">
+                    <div class="fact-number">1</div>
+                    <div class="fact-label" data-en="CUP" data-cn="杯">CUP</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-number">0.5</div>
+                    <div class="fact-label" data-en="PINTS" data-cn="品脱">PINTS</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-number">8</div>
+                    <div class="fact-label" data-en="OZ" data-cn="盎司">OZ</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-number">16</div>
+                    <div class="fact-label" data-en="TBSP" data-cn="汤匙">TBSP</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text" data-en="Designed for bakers, cooks, and kitchen enthusiasts worldwide.">
+                Designed for bakers, cooks, and kitchen enthusiasts worldwide.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class CupsToPintsConverter {
+            constructor() {
+                this.cupsInput = document.getElementById('cupsInput');
+                this.pintsInput = document.getElementById('pintsInput');
+                this.resultText = document.getElementById('resultText');
+                this.languageBtn = document.querySelectorAll('.lang-btn');
+
+                this.init();
+            }
+
+            init() {
+                this.bindEvents();
+                this.setInitialValues();
+                this.updateLanguage();
+            }
+
+            bindEvents() {
+                // Input events with debouncing
+                this.cupsInput.addEventListener('input', this.debounce(() => {
+                    this.convertFromCups();
+                }));
+
+                this.pintsInput.addEventListener('input', this.debounce(() => {
+                    this.convertFromPints();
+                }));
+
+                // Language switching
+                this.languageBtn.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        this.switchLanguage(btn.dataset.lang);
+                    });
+                });
+
+                // Input validation
+                [this.cupsInput, this.pintsInput].forEach(input => {
+                    input.addEventListener('blur', () => {
+                        this.validateInput(input);
+                    });
+                });
+
+                // Clear input on focus if value is zero
+                [this.cupsInput, this.pintsInput].forEach(input => {
+                    input.addEventListener('focus', (e) => {
+                        if (e.target.value === '0') {
+                            e.target.value = '';
+                        }
+                    });
+                });
+            }
+
+            setInitialValues() {
+                this.cupsInput.value = '1';
+                this.convertFromCups();
+            }
+
+            convertFromCups() {
+                const cups = parseFloat(this.cupsInput.value) || 0;
+                const pints = cups * 0.5;
+
+                this.pintsInput.value = pints;
+                this.updateResult(cups, pints);
+            }
+
+            convertFromPints() {
+                const pints = parseFloat(this.pintsInput.value) || 0;
+                const cups = pints * 2;
+
+                this.cupsInput.value = cups;
+                this.updateResult(cups, pints);
+            }
+
+            updateResult(cups, pints) {
+                if (cups === 1) {
+                    this.resultText.textContent = `${cups} cup = ${pints} pint${pints === 1 ? '' : 's'}`;
+                } else if (cups > 1) {
+                    this.resultText.textContent = `${cups} cups = ${pints} pint${pints === 1 ? '' : 's'}`;
+                } else {
+                    this.resultText.textContent = `1 cup = 0.5 pint`;
+                }
+            }
+
+            validateInput(input) {
+                const value = parseFloat(input.value);
+
+                if (isNaN(value) || value < 0) {
+                    input.classList.add('error');
+                    this.showError(input, 'Please enter a valid number (≥0)');
+                } else {
+                    input.classList.remove('error');
+                    this.hideError(input);
+
+                    // Round to nearest 0.125 for cooking precision
+                    const roundedValue = Math.round(value * 8) / 8;
+                    if (Math.abs(value - roundedValue) > 0.001) {
+                        input.value = roundedValue;
+                    }
+                }
+            }
+
+            showError(input, message) {
+                this.hideError(input);
+
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.textContent = message;
+                errorDiv.id = `error-${input.id}`;
+
+                input.parentNode.appendChild(errorDiv);
+            }
+
+            hideError(input) {
+                const errorDiv = document.getElementById(`error-${input.id}`);
+                if (errorDiv) {
+                    errorDiv.remove();
+                }
+            }
+
+            switchLanguage(lang) {
+                // Update button states
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.lang === lang);
+                });
+
+                // Update text content
+                document.querySelectorAll('[data-en][data-cn]').forEach(element => {
+                    element.textContent = element.dataset[lang];
+                });
+
+                // Update placeholder text
+                if (lang === 'en') {
+                    this.cupsInput.placeholder = 'Enter number of cups';
+                    this.pintsInput.placeholder = 'Enter number of pints';
+                } else {
+                    this.cupsInput.placeholder = '输入杯数';
+                    this.pintsInput.placeholder = '输入品脱数';
+                }
+
+                // Re-update result with current values
+                const cups = parseFloat(this.cupsInput.value) || 0;
+                const pints = cups * 0.5;
+                this.updateResult(cups, pints);
+            }
+
+            updateLanguage() {
+                // Set default language (English)
+                this.switchLanguage('en');
+            }
+
+            debounce(func, delay = 100) {
+                let timeoutId;
+                return function(...args) {
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(() => func.apply(this, args), delay);
+                };
+            }
+        }
+
+        // Initialize the converter when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new CupsToPintsConverter();
+        });
+
+        // Add some additional UX enhancements
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add smooth animations to inputs
+            const inputs = document.querySelectorAll('.input');
+
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.style.transform = 'scale(1.02)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+
+            // Add click sound effect (optional, soft feedback)
+            const factElements = document.querySelectorAll('.fact');
+            factElements.forEach(fact => {
+                fact.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

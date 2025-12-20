@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1H7E6RXSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1H7E6RXSX');
+    </script>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Feet in a Mile - Feet to Mile Converter | HowManyQ</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how many feet in a mile/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how many feet in a mile/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how many feet in a mile/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_feet_in_a_mile/" />
+    <meta name="description" content="Convert feet to miles and miles to feet instantly. Learn how many feet are in a mile with our easy-to-use converter tool. Perfect for runners, hikers, and everyday conversions.">
+    <meta name="keywords" content="how many feet in a mile, feet to mile converter, feet mile conversion, mile feet calculator, 5280 feet in mile">
+    <meta name="author" content="HowManyQ">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Feet in a Mile - Easy Feet to Mile Converter">
+    <meta property="og:description" content="Instantly convert feet to miles and vice versa. Learn that 1 mile equals 5280 feet with our user-friendly converter.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- iOS Web App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Feet to Mile Converter">
+
+    <style>
+        /* Advanced Gray iOS Design System */
+        :root {
+            --primary-gray: #8E8E93;
+            --secondary-gray: #C7C7CC;
+            --background-gray: #F2F2F7;
+            --card-gray: #FFFFFF;
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --accent-blue: #007AFF;
+            --border-gray: #E5E5EA;
+            --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .converter-section {
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            border: 2px solid var(--border-gray);
+            border-radius: 12px;
+            background: var(--card-gray);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+
+        .input-field::placeholder {
+            color: var(--secondary-gray);
+        }
+
+        .unit-label {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        .swap-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: var(--accent-blue);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 16px auto;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+        }
+
+        .swap-button:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .swap-button:active {
+            transform: scale(0.95);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--accent-blue), #0051D5);
+            color: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .result-card .result-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-card .result-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .result-card .result-unit {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .info-section {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .info-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .info-section p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-button {
+            background: var(--card-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-button:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .lang-button.active {
+            background: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .input-field {
+                font-size: 16px;
+                padding: 14px;
+            }
+
+            .result-card .result-value {
+                font-size: 28px;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .container {
+                padding: 24px;
+            }
+        }
+
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Animation for results */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-card {
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        /* Quick conversion buttons */
+        .quick-conversions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .quick-btn {
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .quick-btn:hover {
+            background: var(--secondary-gray);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #333; padding: 10px 20px;">
+        <a href="/" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 20px;">🧮</span> HowManyQ Home
+        </a>
+    </nav>
+    <div style="margin-top: 60px;"></div>
+    
+<div class="language-selector">
+        <button class="lang-button active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-button" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 data-lang="title">How Many Feet in a Mile</h1>
+            <p class="subtitle" data-lang="subtitle">Convert feet to miles and miles to feet instantly</p>
+        </header>
+
+        <main class="card">
+            <section class="converter-section">
+                <div class="input-group">
+                    <label data-lang="feet-label">Feet</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="feetInput"
+                               placeholder="Enter feet"
+                               aria-label="Enter feet for conversion"
+                               oninput="convertFeetToMiles()">
+                        <span class="unit-label">ft</span>
+                    </div>
+                </div>
+
+                <button class="swap-button" onclick="swapValues()" aria-label="Swap conversion direction">
+                    ⇅
+                </button>
+
+                <div class="input-group">
+                    <label data-lang="miles-label">Miles</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="milesInput"
+                               placeholder="Enter miles"
+                               aria-label="Enter miles for conversion"
+                               oninput="convertMilesToFeet()">
+                        <span class="unit-label">mi</span>
+                    </div>
+                </div>
+            </section>
+
+            <div id="resultContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label" data-lang="result-label">Conversion Result</div>
+                    <div class="result-value" id="resultValue">0</div>
+                    <div class="result-unit" id="resultUnit">feet = 0 miles</div>
+                </div>
+            </div>
+
+            <div class="quick-conversions">
+                <button class="quick-btn" onclick="setQuickValue(5280)" data-lang="quick1">1 Mile (5280 ft)</button>
+                <button class="quick-btn" onclick="setQuickValue(10560)" data-lang="quick2">2 Miles (10560 ft)</button>
+                <button class="quick-btn" onclick="setQuickValue(2640)" data-lang="quick3">0.5 Mile (2640 ft)</button>
+                <button class="quick-btn" onclick="setQuickValue(1320)" data-lang="quick4">0.25 Mile (1320 ft)</button>
+            </div>
+        </main>
+
+        <section class="info-section">
+            <h3 data-lang="info-title">Conversion Information</h3>
+            <p data-lang="info-text1"><strong>1 mile = 5280 feet</strong> - This is the standard conversion used in the United States and other countries using the imperial system.</p>
+            <p data-lang="info-text2">The mile is a unit of length in the imperial system, while the foot is its subunit. This conversion is commonly used in running, hiking, and distance measurements.</p>
+            <p data-lang="info-text3">To convert feet to miles, divide by 5280. To convert miles to feet, multiply by 5280.</p>
+        </section>
+    </div>
+
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                title: "How Many Feet in a Mile",
+                subtitle: "Convert feet to miles and miles to feet instantly",
+                "feet-label": "Feet",
+                "miles-label": "Miles",
+                "result-label": "Conversion Result",
+                "info-title": "Conversion Information",
+                "info-text1": "<strong>1 mile = 5280 feet</strong> - This is the standard conversion used in the United States and other countries using the imperial system.",
+                "info-text2": "The mile is a unit of length in the imperial system, while the foot is its subunit. This conversion is commonly used in running, hiking, and distance measurements.",
+                "info-text3": "To convert feet to miles, divide by 5280. To convert miles to feet, multiply by 5280.",
+                "quick1": "1 Mile (5280 ft)",
+                "quick2": "2 Miles (10560 ft)",
+                "quick3": "0.5 Mile (2640 ft)",
+                "quick4": "0.25 Mile (1320 ft)"
+            },
+            zh: {
+                title: "一英里有多少英尺",
+                subtitle: "即时转换英尺和英里",
+                "feet-label": "英尺",
+                "miles-label": "英里",
+                "result-label": "转换结果",
+                "info-title": "转换信息",
+                "info-text1": "<strong>1英里 = 5280英尺</strong> - 这是美国和其他使用英制系统的国家的标准转换。",
+                "info-text2": "英里是英制系统中的长度单位，英尺是其子单位。这种转换常用于跑步、徒步和距离测量。",
+                "info-text3": "要将英尺转换为英里，除以5280。要将英里转换为英尺，乘以5280。",
+                "quick1": "1英里 (5280英尺)",
+                "quick2": "2英里 (10560英尺)",
+                "quick3": "0.5英里 (2640英尺)",
+                "quick4": "0.25英里 (1320英尺)"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh';
+
+            // Update button states
+            document.querySelectorAll('.lang-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all text elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update SEO meta tags
+            updateSEOMeta(lang);
+        }
+
+        function updateSEOMeta(lang) {
+            const title = translations[lang].title;
+            const description = translations[lang].subtitle;
+
+            document.title = title + ' - Feet to Mile Converter | HowManyQ';
+            document.querySelector('meta[name="description"]').setAttribute('content',
+                description + ' Learn how many feet are in a mile with our easy-to-use converter tool.');
+        }
+
+        function convertFeetToMiles() {
+            const feetInput = document.getElementById('feetInput');
+            const milesInput = document.getElementById('milesInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const feet = parseFloat(feetInput.value);
+
+            if (isNaN(feet) || feet < 0) {
+                milesInput.value = '';
+                resultContainer.style.display = 'none';
+                return;
+            }
+
+            const miles = feet / 5280;
+            milesInput.value = miles.toFixed(6).replace(/\.?0+$/, '');
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = feet.toLocaleString();
+            resultUnit.textContent = `${currentLang === 'en' ? 'feet' : '英尺'} = ${miles.toFixed(4).replace(/\.?0+$/, '')} ${currentLang === 'en' ? 'miles' : '英里'}`;
+        }
+
+        function convertMilesToFeet() {
+            const feetInput = document.getElementById('feetInput');
+            const milesInput = document.getElementById('milesInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const miles = parseFloat(milesInput.value);
+
+            if (isNaN(miles) || miles < 0) {
+                feetInput.value = '';
+                resultContainer.style.display = 'none';
+                return;
+            }
+
+            const feet = miles * 5280;
+            feetInput.value = feet.toLocaleString();
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = miles.toFixed(4).replace(/\.?0+$/, '');
+            resultUnit.textContent = `${currentLang === 'en' ? 'miles' : '英里'} = ${feet.toLocaleString()} ${currentLang === 'en' ? 'feet' : '英尺'}`;
+        }
+
+        function swapValues() {
+            const feetInput = document.getElementById('feetInput');
+            const milesInput = document.getElementById('milesInput');
+
+            const temp = feetInput.value;
+            feetInput.value = milesInput.value;
+            milesInput.value = temp;
+
+            if (feetInput.value) {
+                convertMilesToFeet();
+            } else if (milesInput.value) {
+                convertFeetToMiles();
+            }
+        }
+
+        function setQuickValue(feet) {
+            document.getElementById('feetInput').value = feet;
+            convertFeetToMiles();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Focus on feet input for immediate usability
+            document.getElementById('feetInput').focus();
+
+            // Add input validation
+            document.querySelectorAll('.input-field').forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    // Allow numbers, decimal point, and backspace
+                    const char = String.fromCharCode(e.which);
+                    if (!(/[0-9.]/.test(char)) && e.which !== 8) {
+                        e.preventDefault();
+                    }
+                    // Prevent multiple decimal points
+                    if (char === '.' && this.value.includes('.')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                swapValues();
+            }
+        });
+    </script>
+</body>
+</html>

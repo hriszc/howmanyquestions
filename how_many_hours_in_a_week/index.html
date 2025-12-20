@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1H7E6RXSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1H7E6RXSX');
+    </script>
+<meta charset="UTF-8" />
+  <title>How Many Hours in a Week? Simple Calculator & Practical Guide</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how_many_hours_in_a_week/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how_many_hours_in_a_week/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how_many_hours_in_a_week/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_hours_in_a_week/" />
+  <meta name="description" content="Use this simple tool to find how many hours in a week (including work, study, sleep planning). Quickly see 7-day totals, customize days, and plan your time better." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #111217;
+      --bg-soft: #151821;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59,130,246,0.14);
+      --accent-alt: #22c55e;
+      --text-main: #e5e7eb;
+      --text-soft: #9ca3af;
+      --border-subtle: rgba(148,163,253,0.16);
+      --radius-xl: 18px;
+      --radius-lg: 14px;
+      --radius-md: 10px;
+      --shadow-soft: 0 18px 55px rgba(15,23,42,0.75);
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, -system-ui, sans-serif;
+      --transition-fast: 0.22s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-sans);
+      background: radial-gradient(circle at top, #111827 0, #020817 40%, #000 100%);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      padding: 28px 16px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1080px;
+      margin: auto;
+      background: radial-gradient(circle at top left, rgba(59,130,246,0.06), transparent 55%) fixed,
+                  radial-gradient(circle at top right, rgba(56,189,248,0.05), transparent 55%) fixed,
+                  rgba(5,6,13,0.98);
+      border-radius: 26px;
+      padding: 26px 22px 24px;
+      border: 1px solid rgba(148,163,253,0.14);
+      box-shadow: 0 26px 80px rgba(15,23,42,0.9);
+      backdrop-filter: blur(18px);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-soft);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .brand .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 18px var(--accent);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 10px;
+      color: var(--accent);
+      background: radial-gradient(circle at top, rgba(59,130,246,0.18), transparent),
+                  rgba(8,11,20,1);
+      border: 1px solid rgba(59,130,246,0.32);
+    }
+    .pill span.icon {
+      font-size: 11px;
+    }
+
+    h1 {
+      margin: 6px 0 4px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #f9fafb;
+    }
+
+    .sub {
+      margin: 0;
+      font-size: 12px;
+      color: var(--text-soft);
+      max-width: 420px;
+      line-height: 1.6;
+    }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+      font-size: 10px;
+      color: var(--text-soft);
+    }
+
+    .hero-right .stat {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,253,0.22);
+      background: rgba(4,7,17,0.98);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-right .dot-soft {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent-alt);
+      box-shadow: 0 0 10px var(--accent-alt);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(240px, 1.2fr);
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .card {
+      background: radial-gradient(circle at top, rgba(148,163,253,0.05), transparent),
+                  rgba(6,9,18,0.98);
+      border-radius: var(--radius-xl);
+      padding: 14px 14px 12px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card h2 {
+      margin: 0 0 4px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #e5e7ff;
+    }
+
+    .hint {
+      margin: 0 0 10px;
+      font-size: 10px;
+      color: var(--text-soft);
+    }
+
+    .hours-display {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .hours-display .value {
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--accent);
+      text-shadow: 0 0 22px rgba(37,99,235,0.65);
+    }
+
+    .hours-display .label {
+      font-size: 11px;
+      color: var(--text-soft);
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .input-wrap {
+      flex: 1;
+      min-width: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9px;
+      color: var(--text-soft);
+      margin-bottom: 3px;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 7px 8px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(75,85,99,0.9);
+      background: rgba(6,9,18,1);
+      color: var(--text-main);
+      font-size: 11px;
+      outline: none;
+      transition: border var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+    }
+
+    input[type="number"]:focus,
+    select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 14px rgba(37,99,235,0.45);
+      background: #020817;
+      transform: translateY(-1px);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      margin: 4px 0 0;
+      accent-color: var(--accent);
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 10px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent);
+      color: #020817;
+      font-weight: 500;
+      box-shadow: 0 10px 26px rgba(37,99,235,0.55);
+      transition: all var(--transition-fast);
+    }
+
+    button span.icon {
+      font-size: 12px;
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--text-soft);
+      border: 1px solid rgba(148,163,253,0.32);
+      box-shadow: none;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(37,99,235,0.7);
+    }
+
+    button.secondary:hover {
+      background: rgba(10,16,30,1);
+      box-shadow: 0 10px 26px rgba(15,23,42,0.75);
+    }
+
+    .tags {
+      margin-top: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      font-size: 8px;
+      color: var(--text-soft);
+    }
+
+    .tags span {
+      padding: 3px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(75,85,99,0.9);
+      background: rgba(4,7,15,1);
+    }
+
+    .side-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .mini-label {
+      font-size: 9px;
+      color: var(--text-soft);
+      margin-bottom: 3px;
+    }
+
+    .summary-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 9px;
+      color: var(--text-soft);
+      display: grid;
+      gap: 3px;
+    }
+
+    .summary-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .summary-list strong {
+      color: #e5e7ff;
+      font-weight: 500;
+      font-size: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 6px;
+      border-radius: 999px;
+      font-size: 8px;
+      border: 1px solid rgba(22,163,74,0.6);
+      color: #bbf7d0;
+      background: rgba(5,46,22,0.9);
+    }
+
+    .explain {
+      font-size: 9px;
+      color: var(--text-soft);
+      line-height: 1.7;
+      margin: 4px 0 0;
+    }
+
+    .explain strong {
+      color: #e5e7ff;
+      font-weight: 500;
+    }
+
+    .note {
+      margin-top: 4px;
+      font-size: 8px;
+      color: #6b7280;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 16px 10px;
+      }
+      .page {
+        padding: 18px 14px 14px;
+        border-radius: 20px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .hours-display .value {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #333; padding: 10px 20px;">
+        <a href="/" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 20px;">🧮</span> HowManyQ Home
+        </a>
+    </nav>
+    <div style="margin-top: 60px;"></div>
+    
+<div class="page">
+    <header>
+      <div>
+        <div class="brand">
+          <span class="dot"></span>
+          <span>TIME PLANNING UTILITY</span>
+        </div>
+        <div class="pill">
+          <span class="icon">⏱</span>
+          <span>Instant answer: how many hours in a week</span>
+        </div>
+        <h1>How Many Hours in a Week?</h1>
+        <p class="sub">
+          A week always contains <strong>168 hours</strong>. Use this focused tool to see
+          how those hours are split across work, sleep and free time so you can plan smarter
+          schedules in seconds.
+        </p>
+      </div>
+      <div class="hero-right">
+        <div class="stat">
+          <span class="dot-soft"></span>
+          <span>168h verified · 7 days × 24 hours</span>
+        </div>
+        <div class="stat">
+          <span>Perfect for work planning, study routines, content creators & productivity tracking.</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <!-- Main calculator -->
+      <section class="card" aria-label="Hours in a week calculator">
+        <h2>Weekly Hours Calculator</h2>
+        <p class="hint">
+          Start from the fixed base of 168 hours in a week, then customize work days, shift length and sleep
+          to instantly see your remaining free time.
+        </p>
+
+        <div class="hours-display">
+          <div class="value" id="baseHours">168</div>
+          <div class="label">total hours in one full week</div>
+        </div>
+
+        <div class="row">
+          <div class="input-wrap">
+            <label for="daysPerWeek">
+              Work / study days per week
+            </label>
+            <input id="daysPerWeek" type="number" min="0" max="7" value="5" />
+          </div>
+          <div class="input-wrap">
+            <label for="hoursPerDay">
+              Hours per work / study day
+            </label>
+            <input id="hoursPerDay" type="number" min="0" max="24" value="8" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-wrap">
+            <label for="sleepPerNight">
+              Sleep per night (hours)
+            </label>
+            <input id="sleepPerNight" type="number" min="0" max="24" value="8" />
+          </div>
+          <div class="input-wrap">
+            <label for="includeWeekendSleep">
+              Weekend sleep
+            </label>
+            <select id="includeWeekendSleep">
+              <option value="same" selected>Same as weekdays</option>
+              <option value="extra">+1 hour per weekend night</option>
+              <option value="less">-1 hour per weekend night</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button id="applyPresetProductive">
+            <span class="icon">⚡</span>
+            Balanced 40h workweek
+          </button>
+          <button class="secondary" id="resetAll">
+            <span class="icon">↺</span>
+            Reset to defaults
+          </button>
+        </div>
+
+        <div class="tags">
+          <span>how many hours in a week</span>
+          <span>168 hours</span>
+          <span>weekly schedule planner</span>
+          <span>time blocking</span>
+          <span>work life balance</span>
+        </div>
+      </section>
+
+      <!-- Explanations & breakdown -->
+      <aside class="side-section">
+        <div class="card">
+          <div class="mini-label">Core breakdown</div>
+          <ul class="summary-list">
+            <li>
+              <span>Total hours in 7 days</span>
+              <strong id="summaryTotal">168 h</strong>
+            </li>
+            <li>
+              <span>Planned work / study time</span>
+              <strong id="summaryWork">40 h</strong>
+            </li>
+            <li>
+              <span>Planned sleep time</span>
+              <strong id="summarySleep">56 h</strong>
+            </li>
+            <li>
+              <span>Estimated free time left</span>
+              <strong id="summaryFree">72 h</strong>
+            </li>
+          </ul>
+          <div class="badge">
+            <span>✓</span>
+            <span>Instantly shows how your 168 hours in a week are allocated.</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="mini-label">Why 168 hours?</div>
+          <p class="explain">
+            A standard week is defined as <strong>7 consecutive days</strong>.
+            Each day has <strong>24 hours</strong>, so:
+            <strong>7 × 24 = 168 hours in a week</strong>. This value does not change
+            with months, seasons, or leap years.
+          </p>
+          <p class="explain">
+            Use this tool to:
+          </p>
+          <ul class="summary-list">
+            <li><span>Design realistic work or study plans</span></li>
+            <li><span>Check if your weekly goals fit into 168 hours</span></li>
+            <li><span>Visualize the trade-off between work, sleep, and free time</span></li>
+          </ul>
+          <p class="note">
+            Tip: If your free time goes negative, it means your plan does not fit into one week of 168 hours —
+            a clear sign to rebalance.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const BASE_HOURS = 168;
+
+      const daysPerWeekInput = document.getElementById('daysPerWeek');
+      const hoursPerDayInput = document.getElementById('hoursPerDay');
+      const sleepPerNightInput = document.getElementById('sleepPerNight');
+      const includeWeekendSleepSelect = document.getElementById('includeWeekendSleep');
+
+      const summaryTotal = document.getElementById('summaryTotal');
+      const summaryWork = document.getElementById('summaryWork');
+      const summarySleep = document.getElementById('summarySleep');
+      const summaryFree = document.getElementById('summaryFree');
+
+      const presetBtn = document.getElementById('applyPresetProductive');
+      const resetBtn = document.getElementById('resetAll');
+
+      function clamp(value, min, max) {
+        return Math.min(max, Math.max(min, value));
+      }
+
+      function calculate() {
+        let days = parseFloat(daysPerWeekInput.value);
+        let hoursPerDay = parseFloat(hoursPerDayInput.value);
+        let sleepPerNight = parseFloat(sleepPerNightInput.value);
+
+        if (isNaN(days)) days = 5;
+        if (isNaN(hoursPerDay)) hoursPerDay = 8;
+        if (isNaN(sleepPerNight)) sleepPerNight = 8;
+
+        days = clamp(days, 0, 7);
+        hoursPerDay = clamp(hoursPerDay, 0, 24);
+        sleepPerNight = clamp(sleepPerNight, 0, 24);
+
+        daysPerWeekInput.value = days;
+        hoursPerDayInput.value = hoursPerDay;
+        sleepPerNightInput.value = sleepPerNight;
+
+        const workHours = days * hoursPerDay;
+
+        let weeklySleep = sleepPerNight * 7;
+        const mode = includeWeekendSleepSelect.value;
+        if (mode === 'extra') {
+          weeklySleep += 2; // +1 hour for Fri & Sat (or any 2 weekend nights)
+        } else if (mode === 'less') {
+          weeklySleep = Math.max(0, weeklySleep - 2);
+        }
+
+        const freeHours = BASE_HOURS - workHours - weeklySleep;
+
+        summaryTotal.textContent = BASE_HOURS + ' h';
+        summaryWork.textContent = workHours.toFixed(1).replace(/\.0$/, '') + ' h';
+        summarySleep.textContent = weeklySleep.toFixed(1).replace(/\.0$/, '') + ' h';
+        summaryFree.textContent = (freeHours >= 0 ? freeHours : freeHours).toFixed(1).replace(/\.0$/, '') + ' h';
+        summaryFree.style.color = freeHours < 0 ? '#f97316' : '#22c55e';
+      }
+
+      function applyBalancedPreset() {
+        daysPerWeekInput.value = 5;
+        hoursPerDayInput.value = 8;
+        sleepPerNightInput.value = 8;
+        includeWeekendSleepSelect.value = 'same';
+        calculate();
+      }
+
+      function resetAll() {
+        daysPerWeekInput.value = 5;
+        hoursPerDayInput.value = 8;
+        sleepPerNightInput.value = 8;
+        includeWeekendSleepSelect.value = 'same';
+        calculate();
+      }
+
+      daysPerWeekInput.addEventListener('input', calculate);
+      hoursPerDayInput.addEventListener('input', calculate);
+      sleepPerNightInput.addEventListener('input', calculate);
+      includeWeekendSleepSelect.addEventListener('change', calculate);
+      presetBtn.addEventListener('click', applyBalancedPreset);
+      resetBtn.addEventListener('click', resetAll);
+
+      // initial
+      calculate();
+    })();
+  </script>
+</body>
+</html>

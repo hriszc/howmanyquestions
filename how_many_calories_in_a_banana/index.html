@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1H7E6RXSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1H7E6RXSX');
+    </script>
+<meta charset="UTF-8" />
+  <title>How Many Calories in a Banana - Instant Banana Calorie Calculator</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how_many_calories_in_a_banana/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how_many_calories_in_a_banana/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how_many_calories_in_a_banana/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_calories_in_a_banana/" />
+  <meta name="description" content="How many calories in a banana? Use this instant, mobile-friendly banana calorie calculator to estimate calories by size, weight, or number of bananas in a clean iOS-style interface." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --bg-elevated: #ffffff;
+      --primary: #111827;
+      --secondary: #6b7280;
+      --accent: #111827;
+      --radius: 12px;
+      --border-soft: #e5e7eb;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --shadow-soft-sm: 0 6px 18px rgba(15, 23, 42, 0.06);
+      --transition-fast: 0.22s cubic-bezier(.25,.8,.25,1);
+      --font-sans: -apple-system, BlinkMacSystemFont, system-ui, -system-ui, -apple-system, "SF Pro Text", "SF Pro Display", -apple-system, system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--primary);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .app-shell {
+      width: 100%;
+      max-width: 1200px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    header.hero {
+      background: radial-gradient(circle at top left, rgba(17, 24, 39, 0.04), transparent),
+                  radial-gradient(circle at top right, rgba(15, 23, 42, 0.06), transparent),
+                  var(--bg-elevated);
+      border-radius: 24px;
+      padding: 18px 16px 14px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-topline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .hero-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18);
+    }
+
+    .hero-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--primary);
+    }
+
+    .hero-highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 8px;
+      margin-left: 4px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 500;
+      color: #111827;
+      background: rgba(17, 24, 39, 0.04);
+    }
+
+    .hero-subtitle {
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--secondary);
+      max-width: 520px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .btn-primary {
+      border: none;
+      outline: none;
+      padding: 8px 14px;
+      font-size: 12px;
+      border-radius: 999px;
+      background: #111827;
+      color: #f9fafb;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      box-shadow: var(--shadow-soft-sm);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-primary span.icon {
+      font-size: 13px;
+    }
+
+    .btn-primary:focus-visible {
+      outline: 2px solid #111827;
+      outline-offset: 2px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+      background: #020817;
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: var(--shadow-soft-sm);
+      background: #111827;
+    }
+
+    .hero-note {
+      font-size: 10px;
+      color: var(--secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-note span.dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    .hero-metrics {
+      margin-top: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 9px;
+      color: var(--secondary);
+    }
+
+    .hero-metric-pill {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background-color: rgba(17, 24, 39, 0.03);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-metric-pill strong {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1.4fr;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 800px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background-color: var(--bg-elevated);
+      border-radius: var(--radius);
+      padding: 12px;
+      box-shadow: var(--shadow-soft-sm);
+      border: 1px solid rgba(148, 163, 253, 0.02);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .card-subtitle {
+      font-size: 10px;
+      color: var(--secondary);
+    }
+
+    .pill-label {
+      font-size: 9px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background-color: #f3f4ff;
+      color: #111827;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .pill-label span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #111827;
+    }
+
+    .input-group {
+      display: grid;
+      grid-template-columns: 1.6fr 1.4fr;
+      gap: 8px;
+      align-items: center;
+    }
+
+    @media (max-width: 480px) {
+      .input-group {
+        grid-template-columns: 1.9fr 1.1fr;
+      }
+    }
+
+    .field-label {
+      font-size: 10px;
+      color: var(--secondary);
+      margin-bottom: 4px;
+    }
+
+    .input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: var(--radius);
+      background-color: #f9fafb;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 3px 10px rgba(148, 163, 253, 0.04);
+      padding: 0 10px;
+      transition: all var(--transition-fast);
+    }
+
+    .input-wrap.focused {
+      background-color: #ffffff;
+      border-color: #111827;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.16);
+      transform: translateY(-1px);
+    }
+
+    .input-prefix {
+      font-size: 11px;
+      color: var(--secondary);
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 8px 0;
+      font-size: 14px;
+      background: transparent;
+      color: var(--primary);
+      -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .suffix {
+      font-size: 10px;
+      color: var(--secondary);
+      margin-left: 4px;
+      white-space: nowrap;
+    }
+
+    .unit-toggle {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background-color: #f9fafb;
+      border: 1px solid var(--border-soft);
+      cursor: pointer;
+      font-size: 9px;
+      color: var(--secondary);
+      transition: all var(--transition-fast);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .unit-toggle span.icon {
+      font-size: 11px;
+    }
+
+    .unit-toggle.active {
+      background-color: #111827;
+      color: #f9fafb;
+      box-shadow: var(--shadow-soft-sm);
+    }
+
+    .unit-toggle:active {
+      transform: scale(0.97);
+    }
+
+    .result-display {
+      margin-top: 4px;
+      padding: 10px 9px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #111827, #020817);
+      color: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .result-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0.8;
+    }
+
+    .result-main {
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .result-main span.unit {
+      font-size: 11px;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    .result-note {
+      font-size: 9px;
+      opacity: 0.9;
+    }
+
+    .inline-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 2px;
+      font-size: 8px;
+    }
+
+    .inline-badge {
+      padding: 3px 6px;
+      border-radius: 999px;
+      background-color: rgba(249, 250, 251, 0.06);
+      border: 0.5px solid rgba(148, 163, 253, 0.24);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .error-message {
+      margin-top: 4px;
+      font-size: 9px;
+      color: #f97316;
+      min-height: 12px;
+    }
+
+    .secondary-note {
+      font-size: 9px;
+      color: var(--secondary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .secondary-note strong {
+      color: #111827;
+      font-weight: 600;
+    }
+
+    .share-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .btn-ghost {
+      border: none;
+      outline: none;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 9px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background-color: #f9fafb;
+      color: var(--secondary);
+      border: 1px solid var(--border-soft);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-ghost span.icon {
+      font-size: 11px;
+    }
+
+    .btn-ghost:hover {
+      background-color: #111827;
+      color: #f9fafb;
+      box-shadow: var(--shadow-soft-sm);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .btn-ghost:focus-visible {
+      outline: 1px solid #111827;
+      outline-offset: 1px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      font-size: 9px;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 640px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .info-block-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 2px;
+    }
+
+    .faq-item-q {
+      font-size: 9px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .faq-item-a {
+      font-size: 9px;
+      color: var(--secondary);
+    }
+
+    .tagline {
+      font-size: 8px;
+      color: var(--secondary);
+      margin-top: 4px;
+      text-align: right;
+    }
+
+    @media (min-height: 700px) and (min-width: 640px) {
+      .app-shell {
+        padding: 20px;
+        gap: 20px;
+      }
+      header.hero {
+        padding: 20px 18px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #333; padding: 10px 20px;">
+        <a href="/" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 20px;">🧮</span> HowManyQ Home
+        </a>
+    </nav>
+    <div style="margin-top: 60px;"></div>
+    
+<div class="app-shell">
+    <header class="hero">
+      <div class="hero-topline">
+        <div class="hero-dot"></div>
+        <span>How Many Calories in a Banana</span>
+        <span>Instant Nutrition Answer</span>
+      </div>
+      <h1 class="hero-title">
+        How many calories in a banana?
+        <span class="hero-highlight">
+          <span>Live calculator</span>
+          <span>•</span>
+          <span>1-tap clarity</span>
+        </span>
+      </h1>
+      <p class="hero-subtitle">
+        Type your banana amount — by size, weight, or count — and instantly get a precise calorie estimate in an elegant, distraction-free iOS-style interface.
+        Optimized for quick health tracking, meal logging, and everyday decisions.
+      </p>
+      <div class="hero-cta-row">
+        <button class="btn-primary" id="primary-cta">
+          <span class="icon">🍌</span>
+          <span>Start calculating now</span>
+        </button>
+        <div class="hero-note">
+          <span class="dot"></span>
+          No signup. No ads. Just accurate banana calories.
+        </div>
+      </div>
+      <div class="hero-metrics">
+        <div class="hero-metric-pill">
+          <strong>~105 kcal</strong> per medium (118 g) banana
+        </div>
+        <div class="hero-metric-pill">
+          Based on USDA averages • Adjustable by weight & size
+        </div>
+        <div class="hero-metric-pill">
+          Built for diet tracking, macros & coaches
+        </div>
+      </div>
+    </header>
+
+    <main class="layout-grid" aria-label="How many calories in a banana calculator and guide">
+      <section class="card" aria-label="Banana calorie calculator">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Banana Calorie Calculator</div>
+            <div class="card-subtitle">Real-time results as you type. Choose by size, count or grams.</div>
+          </div>
+          <div class="pill-label">
+            <span class="dot"></span>
+            iOS-inspired · Mobile-first
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div>
+            <div class="field-label">1. Choose how you count bananas</div>
+            <div class="input-wrap" id="mode-wrap">
+              <span class="input-prefix">Mode</span>
+              <select id="mode-select" aria-label="Select input mode"
+                style="border:none;outline:none;background:transparent;font-size:11px;color:#111827;width:100%;padding:6px 0;cursor:pointer;">
+                <option value="count">By number of bananas</option>
+                <option value="size">By size (small / medium / large)</option>
+                <option value="grams">By weight (grams)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="field-label">2. Quick unit toggle</div>
+            <button class="unit-toggle active" id="kcal-toggle" type="button">
+              <span class="icon">●</span>
+              kcal
+            </button>
+          </div>
+        </div>
+
+        <div id="input-row-count" class="input-row">
+          <div class="field-label">Number of medium bananas</div>
+          <div class="input-wrap" data-input-wrap>
+            <span class="input-prefix">Bananas</span>
+            <input id="count-input" type="number" inputmode="decimal" min="0" step="0.25"
+              placeholder="e.g. 1, 1.5, 2" aria-label="Number of bananas" />
+          </div>
+        </div>
+
+        <div id="input-row-size" class="input-row" style="display:none;">
+          <div class="field-label">Bananas by size</div>
+          <div class="input-wrap" data-input-wrap>
+            <span class="input-prefix">Small / Medium / Large</span>
+            <input id="size-input" type="text" inputmode="text"
+              placeholder='e.g. "1 small + 1 large"' aria-label="Bananas by size description" />
+          </div>
+        </div>
+
+        <div id="input-row-grams" class="input-row" style="display:none;">
+          <div class="field-label">Total edible banana weight in grams</div>
+          <div class="input-wrap" data-input-wrap>
+            <span class="input-prefix">Weight</span>
+            <input id="grams-input" type="number" inputmode="decimal" min="0" step="1"
+              placeholder="e.g. 118" aria-label="Total banana weight in grams" />
+            <span class="suffix">g</span>
+          </div>
+        </div>
+
+        <div class="result-display" aria-live="polite">
+          <div class="result-label">Total banana calories</div>
+          <div class="result-main">
+            <span id="calories-value">0</span>
+            <span class="unit">kcal</span>
+          </div>
+          <div class="result-note" id="result-note">
+            Start typing above to instantly see how many calories are in your banana.
+          </div>
+          <div class="inline-badges">
+            <div class="inline-badge">
+              <span>📊</span>
+              <span>Based on ~0.89 kcal per gram</span>
+            </div>
+            <div class="inline-badge">
+              <span>✅</span>
+              <span>Ideal for daily logging</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="error-message" id="error-message"></div>
+
+        <div class="secondary-note">
+          <strong>Tip:</strong>
+          Adjust slightly for very green (a bit fewer kcal) or very ripe bananas.
+          This tool uses widely accepted averages for quick, reliable estimates.
+        </div>
+
+        <div class="share-actions">
+          <button class="btn-ghost" id="copy-summary-btn" type="button">
+            <span class="icon">📋</span>
+            <span>Copy calorie summary</span>
+          </button>
+          <button class="btn-ghost" id="share-twitter-btn" type="button">
+            <span class="icon">𝕏</span>
+            <span>Share on X</span>
+          </button>
+          <button class="btn-ghost" id="share-fb-btn" type="button">
+            <span class="icon">f</span>
+            <span>Share on Facebook</span>
+          </button>
+          <button class="btn-ghost" id="native-share-btn" type="button">
+            <span class="icon">🔗</span>
+            <span>Quick share</span>
+          </button>
+        </div>
+      </section>
+
+      <aside class="card" aria-label="Why this banana calorie tool">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Why this tool?</div>
+            <div class="card-subtitle">Designed for clarity, speed, and everyday health decisions.</div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div>
+            <div class="info-block-title">Why Choose Us</div>
+            <p>
+              • Instantly answers "how many calories in a banana" without noise.<br />
+              • Minimal, iOS-like interface tuned for one-handed use.<br />
+              • No signup, no popups, no clutter.
+            </p>
+          </div>
+          <div>
+            <div class="info-block-title">What You Get</div>
+            <p>
+              • Accurate estimates by size, weight, or count.<br />
+              • Perfect for macro tracking, clients, or quick checks.<br />
+              • First-screen calculator on both mobile and desktop.
+            </p>
+          </div>
+          <div>
+            <div class="info-block-title">How It Works</div>
+            <p>
+              • Uses common USDA averages: ~105 kcal per medium banana (~118g).<br />
+              • Small ≈ 90 kcal, large ≈ 120 kcal by default.<br />
+              • Weight mode uses ~0.89 kcal per gram of edible banana.
+            </p>
+          </div>
+          <div>
+            <div class="info-block-title">FAQ</div>
+            <div class="faq-list">
+              <div>
+                <div class="faq-item-q">Are these calories exact?</div>
+                <div class="faq-item-a">
+                  No. These are high-quality estimates based on typical nutrition data. Size, ripeness, and variety can slightly change values.
+                </div>
+              </div>
+              <div>
+                <div class="faq-item-q">Does peel weight matter?</div>
+                <div class="faq-item-a">
+                  Calculations are based on edible portion only. For most users, using the provided presets is precise enough.
+                </div>
+              </div>
+              <div>
+                <div class="faq-item-q">Is this free to use?</div>
+                <div class="faq-item-a">
+                  Yes. 100% free, ad-light, and optimized for fast answers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tagline">
+          A focused tiny tool built to answer one question perfectly:
+          <strong>"How many calories are in my banana?"</strong>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Inline subtle click audio (very short, low volume, base64-encoded wav) -->
+  <audio id="ui-click-sound" preload="auto">
+    <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQAAAAA=" type="audio/wav" />
+  </audio>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const KCAL_PER_GRAM = 0.89;
+      const MEDIUM_BANANA_GRAMS = 118;
+      const SMALL_KCAL = 90;
+      const MEDIUM_KCAL = 105;
+      const LARGE_KCAL = 120;
+
+      const modeSelect = document.getElementById("mode-select");
+      const countRow = document.getElementById("input-row-count");
+      const sizeRow = document.getElementById("input-row-size");
+      const gramsRow = document.getElementById("input-row-grams");
+      const countInput = document.getElementById("count-input");
+      const sizeInput = document.getElementById("size-input");
+      const gramsInput = document.getElementById("grams-input");
+      const caloriesValue = document.getElementById("calories-value");
+      const resultNote = document.getElementById("result-note");
+      const errorMessage = document.getElementById("error-message");
+      const primaryCta = document.getElementById("primary-cta");
+      const copySummaryBtn = document.getElementById("copy-summary-btn");
+      const shareTwitterBtn = document.getElementById("share-twitter-btn");
+      const shareFbBtn = document.getElementById("share-fb-btn");
+      const nativeShareBtn = document.getElementById("native-share-btn");
+      const clickSound = document.getElementById("ui-click-sound");
+
+      const inputWraps = document.querySelectorAll("[data-input-wrap]");
+      inputWraps.forEach(function (wrap) {
+        const input = wrap.querySelector("input");
+        if (!input) return;
+        input.addEventListener("focus", function () {
+          wrap.classList.add("focused");
+        });
+        input.addEventListener("blur", function () {
+          wrap.classList.remove("focused");
+        });
+      });
+
+      function playClick() {
+        if (!clickSound) return;
+        try {
+          clickSound.currentTime = 0;
+          clickSound.volume = 0.12;
+          clickSound.play().catch(function () {
+          });
+        } catch (e) {}
+      }
+
+      function softValidateNumber(value) {
+        if (value === "" || value === null || typeof value === "undefined") {
+          return { valid: false, message: "" };
+        }
+        if (!isFinite(value)) {
+          return { valid: false, message: "Please enter a valid number." };
+        }
+        if (value < 0) {
+          return { valid: false, message: "Negative bananas are not possible. Try zero or more." };
+        }
+        if (value > 10000) {
+          return { valid: false, message: "That seems unusually high. Please check your input." };
+        }
+        return { valid: true, message: "" };
+      }
+
+      function calculate() {
+        errorMessage.textContent = "";
+        const mode = modeSelect.value;
+        let kcal = 0;
+        let note = "";
+
+        if (mode === "count") {
+          const raw = countInput.value.trim();
+          if (!raw) {
+            caloriesValue.textContent = "0";
+            resultNote.textContent = "Enter how many medium bananas you eat to estimate total calories.";
+            return;
+          }
+          const num = parseFloat(raw);
+          const v = softValidateNumber(num);
+          if (!v.valid) {
+            errorMessage.textContent = v.message;
+            caloriesValue.textContent = "0";
+            resultNote.textContent = "Adjust your input to see an accurate estimate.";
+            return;
+          }
+          kcal = num * MEDIUM_KCAL;
+          note = num + " medium banana" + (num !== 1 ? "s" : "") + " ≈ " + Math.round(kcal) + " kcal.";
+        } else if (mode === "size") {
+          const raw = sizeInput.value.trim().toLowerCase();
+          if (!raw) {
+            caloriesValue.textContent = "0";
+            resultNote.textContent = 'Describe your bananas (e.g. "1 small + 1 large") for a quick breakdown.';
+            return;
+          }
+
+          const pattern = /(\d*\.?\d+)?\s*(small|sm|medium|md|med|large|lg|big)/g;
+          let match;
+          let total = 0;
+          let found = false;
+
+          while ((match = pattern.exec(raw)) !== null) {
+            found = true;
+            const qty = parseFloat(match[1] || "1");
+            const label = match[2];
+            if (label === "small" || label === "sm") {
+              total += qty * SMALL_KCAL;
+            } else if (label === "large" || label === "lg" || label === "big") {
+              total += qty * LARGE_KCAL;
+            } else {
+              total += qty * MEDIUM_KCAL;
+            }
+          }
+
+          if (!found) {
+            errorMessage.textContent = "Use phrases like '1 small', '2 medium', '1 large'.";
+            caloriesValue.textContent = "0";
+            resultNote.textContent = "Use simple size keywords so we can estimate correctly.";
+            return;
+          }
+
+          kcal = total;
+          note = "Estimated from your size description. Values use typical small/medium/large averages.";
+        } else if (mode === "grams") {
+          const raw = gramsInput.value.trim();
+          if (!raw) {
+            caloriesValue.textContent = "0";
+            resultNote.textContent = "Enter total edible banana weight in grams to estimate calories.";
+            return;
+          }
+          const grams = parseFloat(raw);
+          const v = softValidateNumber(grams);
+          if (!v.valid) {
+            errorMessage.textContent = v.message;
+            caloriesValue.textContent = "0";
+            resultNote.textContent = "Correct the weight to get a precise estimate.";
+            return;
+          }
+          kcal = grams * KCAL_PER_GRAM;
+          note = grams + " g edible banana ≈ " + Math.round(kcal) + " kcal (0.89 kcal/g).";
+        }
+
+        const rounded = Math.round(kcal);
+        caloriesValue.textContent = isFinite(rounded) ? rounded : "0";
+        resultNote.textContent = note || "Instant estimate based on recognized banana nutrition data.";
+      }
+
+      modeSelect.addEventListener("change", function () {
+        playClick();
+        const mode = modeSelect.value;
+        countRow.style.display = mode === "count" ? "block" : "none";
+        sizeRow.style.display = mode === "size" ? "block" : "none";
+        gramsRow.style.display = mode === "grams" ? "block" : "none";
+        errorMessage.textContent = "";
+        calculate();
+      });
+
+      [countInput, sizeInput, gramsInput].forEach(function (el) {
+        if (!el) return;
+        el.addEventListener("input", function () {
+          calculate();
+        });
+      });
+
+      primaryCta.addEventListener("click", function () {
+        playClick();
+        const mode = modeSelect.value;
+        if (mode === "count" && countInput) {
+          countInput.focus();
+        } else if (mode === "size" && sizeInput) {
+          sizeInput.focus();
+        } else if (mode === "grams" && gramsInput) {
+          gramsInput.focus();
+        }
+      });
+
+      function buildSummary() {
+        const kcal = caloriesValue.textContent || "0";
+        const mode = modeSelect.value;
+        let context = "";
+
+        if (mode === "count") {
+          context = countInput.value
+            ? countInput.value + " medium banana(s)"
+            : "my bananas";
+        } else if (mode === "size") {
+          context = sizeInput.value || "my bananas (by size)";
+        } else {
+          context = gramsInput.value
+            ? gramsInput.value + " g of banana"
+            : "my bananas (by weight)";
+        }
+
+        return (
+          "How many calories in a banana? " +
+          "My estimate: about " +
+          kcal +
+          " kcal for " +
+          context +
+          ", based on common nutrition data. " +
+          "Try this clean calculator: " +
+          window.location.href
+        );
+      }
+
+      copySummaryBtn.addEventListener("click", function () {
+        playClick();
+        const summary = buildSummary();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(summary).then(function () {
+            copySummaryBtn.textContent = "Copied ✓";
+            setTimeout(function () {
+              copySummaryBtn.innerHTML = '<span class="icon">📋</span><span>Copy calorie summary</span>';
+            }, 1400);
+          }).catch(function () {});
+        } else {
+          const temp = document.createElement("textarea");
+          temp.value = summary;
+          temp.style.position = "fixed";
+          temp.style.opacity = "0";
+          document.body.appendChild(temp);
+          temp.select();
+          try {
+            document.execCommand("copy");
+          } catch (e) {}
+          document.body.removeChild(temp);
+        }
+      });
+
+      shareTwitterBtn.addEventListener("click", function () {
+        playClick();
+        const text = encodeURIComponent(buildSummary());
+        const url = "https://twitter.com/intent/tweet?text=" + text;
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+
+      shareFbBtn.addEventListener("click", function () {
+        playClick();
+        const shareUrl = encodeURIComponent(window.location.href);
+        const quote = encodeURIComponent("How many calories in a banana? Instantly calculate with this clean, focused tool.");
+        const url = "https://www.facebook.com/sharer/sharer.php?u=" + shareUrl + "&quote=" + quote;
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+
+      nativeShareBtn.addEventListener("click", function () {
+        playClick();
+        const text = "How many calories in a banana? Try this instant calculator.";
+        if (navigator.share) {
+          navigator.share({
+            title: "How Many Calories in a Banana",
+            text: text,
+            url: window.location.href
+          }).catch(function () {});
+        } else {
+          const summary = buildSummary();
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(summary);
+          }
+        }
+      });
+
+      calculate();
+    })();
+  </script>
+</body>
+</html>

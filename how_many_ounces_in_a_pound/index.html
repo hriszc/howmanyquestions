@@ -12,21 +12,21 @@
     </script>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Convert ounces to gallons instantly with our iOS-style converter. Support for US/UK measurements, quarts, pints, cups, and liters. Free, fast, and accurate volume calculator.">
-    <meta name="keywords" content="ounces to gallons, oz to gallon converter, volume conversion, liquid measurements, cooking calculator, quart to gallon, pint to gallon">
-    <meta name="author" content="Volume Converter">
+    <meta name="description" content="Convert ounces to pounds instantly with our iOS-style converter. Learn how many ounces in a pound, support for grams, kilograms, and other weight units. Free, fast, and accurate weight calculator.">
+    <meta name="keywords" content="how many ounces in a pound, ounces to pounds, oz to lb converter, weight conversion, pound to ounce, weight calculator, mass converter, grams to pounds, kitchen scale">
+    <meta name="author" content="Weight Converter">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Ounces to Gallons Converter - Free Volume Calculator">
-    <meta property="og:description" content="Convert ounces to gallons instantly with our iOS-style converter. Support for US/UK measurements, quarts, pints, cups, and liters.">
+    <meta property="og:title" content="How Many Ounces in a Pound - Free Weight Converter & Calculator">
+    <meta property="og:description" content="Convert ounces to pounds instantly with our iOS-style converter. Learn how many ounces in a pound, support for grams, kilograms, and other weight units.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ounces to Gallons Converter - Free Volume Calculator">
-    <meta name="twitter:description" content="Convert ounces to gallons instantly with our iOS-style converter. Support for US/UK measurements, quarts, pints, cups, and liters.">
+    <meta name="twitter:title" content="How Many Ounces in a Pound - Free Weight Converter & Calculator">
+    <meta name="twitter:description" content="Convert ounces to pounds instantly with our iOS-style converter. Learn how many ounces in a pound, support for grams, kilograms, and other weight units.">
     <meta name="twitter:image" content="">
     
     <!-- Schema.org Structured Data -->
@@ -34,8 +34,8 @@
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Ounces to Gallons Converter",
-        "description": "Free online converter to transform ounces to gallons with support for US/UK measurements, quarts, pints, cups, and liters",
+        "name": "How Many Ounces in a Pound - Weight Converter",
+        "description": "Free online converter to transform ounces to pounds with support for grams, kilograms, and other weight units. Learn the exact answer to how many ounces in a pound.",
         "url": "",
         "applicationCategory": "UtilityApplication",
         "operatingSystem": "Web Browser",
@@ -45,21 +45,31 @@
             "priceCurrency": "USD"
         },
         "featureList": [
-            "Ounces to Gallons conversion",
-            "US and UK measurement support",
-            "Quarts, pints and cups conversion",
-            "Liters and milliliters conversion",
+            "Ounces to Pounds conversion",
+            "How many ounces in a pound calculator",
+            "Grams and kilograms support",
             "Real-time calculation",
-            "Multi-language support"
-        ]
+            "Quick conversion buttons",
+            "Multi-language support",
+            "iOS-style interface",
+            "Mobile and desktop friendly"
+        ],
+        "mainEntity": {
+            "@type": "Question",
+            "name": "How many ounces in a pound?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There are 16 ounces in 1 pound. This is the standard conversion in the US customary system of measurement."
+            }
+        }
     }
     </script>
     
-    <title>Ounces to Gallons Converter - Free Volume Calculator & Liquid Measurement Tool</title>
-    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how_many_ounces_in_a_gallon/" />
-    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how_many_ounces_in_a_gallon/?lang=zh" />
-    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how_many_ounces_in_a_gallon/" />
-  <link rel="canonical" href="https://howmanyq.com/how_many_ounces_in_a_gallon/" />
+    <title>How Many Ounces in a Pound? - Free Weight Converter & Calculator Tool</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how many ounces in a pound/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how many ounces in a pound/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how many ounces in a pound/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_ounces_in_a_pound/" />
     
     <style>
         /* iOS-inspired Design System */
@@ -104,7 +114,7 @@
             box-shadow: var(--shadow);
             padding: 40px;
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -145,7 +155,35 @@
         .subtitle {
             font-size: 1.2rem;
             color: var(--text-secondary);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .answer-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .answer-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
         }
         
         .language-selector {
@@ -263,22 +301,6 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-        }
-        
-        .result-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: shimmer 3s ease-in-out infinite;
-        }
-        
-        @keyframes shimmer {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(180deg); }
         }
         
         .result-value {
@@ -413,21 +435,6 @@
             font-size: 0.9rem;
         }
         
-        /* Loading Animation */
-        .loading {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s ease-in-out infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -470,6 +477,11 @@
                 padding: 8px 12px;
                 font-size: 0.8rem;
             }
+            
+            .answer-highlight {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -483,6 +495,10 @@
             
             .result-value {
                 font-size: 2.2rem;
+            }
+            
+            .title {
+                font-size: 1.8rem;
             }
         }
         
@@ -518,6 +534,20 @@
         .success {
             border-color: var(--success-color) !important;
         }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -530,8 +560,12 @@
     
 <div class="container">
         <header class="header">
-            <h1 class="title" id="mainTitle">How Many Ounces in a Gallon</h1>
-            <p class="subtitle" id="subtitle">Free volume calculator for precise liquid measurements</p>
+            <h1 class="title" id="mainTitle">How Many Ounces in a Pound</h1>
+            <p class="subtitle" id="subtitle">Free weight calculator for precise measurements</p>
+            
+            <div class="answer-highlight" id="answerHighlight">
+                <div id="answerText">There are 16 ounces in 1 pound</div>
+            </div>
             
             <div class="language-selector">
                 <button class="language-btn active" data-lang="en" id="langEn">English</button>
@@ -550,12 +584,10 @@
                         <input type="number" class="main-input" id="fromInput" placeholder="0" min="0" step="0.01" aria-label="Enter amount to convert">
                         <select class="unit-selector" id="fromUnit" aria-label="Select unit to convert from">
                             <option value="oz">oz</option>
-                            <option value="gallon">gallon</option>
-                            <option value="quart">quart</option>
-                            <option value="pint">pint</option>
-                            <option value="cup">cup</option>
-                            <option value="liter">L</option>
-                            <option value="ml">ml</option>
+                            <option value="lb">lb</option>
+                            <option value="g">g</option>
+                            <option value="kg">kg</option>
+                            <option value="stone">stone</option>
                         </select>
                     </div>
                 </div>
@@ -566,7 +598,7 @@
                     <label class="input-label" id="toLabel">To:</label>
                     <div class="input-wrapper" id="toWrapper">
                         <span class="main-input" id="toValue" style="font-size: 1.5rem; font-weight: 600; color: var(--text-primary);">0</span>
-                        <span class="unit-selector" id="toUnit" style="cursor: default;">gallon</span>
+                        <span class="unit-selector" id="toUnit" style="cursor: default;">lb</span>
                     </div>
                 </div>
             </div>
@@ -576,63 +608,59 @@
                 <button class="quick-btn" data-value="8" data-unit="oz" id="quick8oz">8 oz</button>
                 <button class="quick-btn" data-value="16" data-unit="oz" id="quick16oz">16 oz</button>
                 <button class="quick-btn" data-value="32" data-unit="oz" id="quick32oz">32 oz</button>
-                <button class="quick-btn" data-value="128" data-unit="oz" id="quick128oz">128 oz</button>
-                <button class="quick-btn" data-value="1" data-unit="gallon" id="quick1gallon">1 gallon</button>
+                <button class="quick-btn" data-value="1" data-unit="lb" id="quick1lb">1 lb</button>
+                <button class="quick-btn" data-value="2" data-unit="lb" id="quick2lb">2 lb</button>
             </div>
         </main>
         
         <section class="result-section" id="resultSection">
             <div class="result-value" id="resultValue">0</div>
-            <div class="result-unit" id="resultUnit">gallons</div>
+            <div class="result-unit" id="resultUnit">pounds</div>
         </section>
         
         <section class="conversion-details" id="conversionDetails" style="display: none;">
             <h3 id="detailsTitle">Other Conversions</h3>
             <div class="detail-grid">
                 <div class="detail-item">
-                    <span class="detail-value" id="quartValue">--</span>
-                    <span class="detail-label" id="quartLabel">Quarts</span>
+                    <span class="detail-value" id="gramValue">--</span>
+                    <span class="detail-label" id="gramLabel">Grams</span>
                 </div>
                 <div class="detail-item">
-                    <span class="detail-value" id="pintValue">--</span>
-                    <span class="detail-label" id="pintLabel">Pints</span>
+                    <span class="detail-value" id="kgValue">--</span>
+                    <span class="detail-label" id="kgLabel">Kilograms</span>
                 </div>
                 <div class="detail-item">
-                    <span class="detail-value" id="cupValue">--</span>
-                    <span class="detail-label" id="cupLabel">Cups</span>
+                    <span class="detail-value" id="stoneValue">--</span>
+                    <span class="detail-label" id="stoneLabel">Stones</span>
                 </div>
                 <div class="detail-item">
-                    <span class="detail-value" id="literValue">--</span>
-                    <span class="detail-label" id="literLabel">Liters</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-value" id="mlValue">--</span>
-                    <span class="detail-label" id="mlLabel">Milliliters</span>
+                    <span class="detail-value" id="tonValue">--</span>
+                    <span class="detail-label" id="tonLabel">Tons (US)</span>
                 </div>
             </div>
         </section>
         
         <section class="info-section">
-            <h2 class="info-title" id="infoTitle">About Volume Conversions</h2>
+            <h2 class="info-title" id="infoTitle">About Weight Conversions</h2>
             <p class="info-text" id="infoText">
-                This converter helps you convert between different volume measurements commonly used in cooking, brewing, and everyday liquid measurements. 
-                The tool supports US customary units and metric measurements, making it easy to work with recipes and measurements from any country.
+                This converter helps you convert between different weight measurements commonly used in cooking, shipping, fitness, and everyday life. 
+                The tool supports US customary units and metric measurements, making it easy to work with recipes, luggage weights, and body weight from any country.
             </p>
             
             <div class="conversion-facts">
                 <h3 class="facts-title" id="factsTitle">Quick Conversion Facts</h3>
                 <ul class="facts-list" id="factsList">
-                    <li id="fact1">1 US gallon = 128 US fluid ounces</li>
-                    <li id="fact2">1 US gallon = 4 US quarts</li>
-                    <li id="fact3">1 US gallon = 8 US pints</li>
-                    <li id="fact4">1 US gallon = 16 US cups</li>
-                    <li id="fact5">1 US gallon ≈ 3.785 liters</li>
+                    <li id="fact1">1 pound = 16 ounces (US customary)</li>
+                    <li id="fact2">1 pound = 453.592 grams</li>
+                    <li id="fact3">1 pound = 0.453592 kilograms</li>
+                    <li id="fact4">1 pound = 0.0714286 stones</li>
+                    <li id="fact5">1 kilogram = 2.20462 pounds</li>
                 </ul>
             </div>
         </section>
         
         <footer class="footer">
-            <p id="footerText">© 2024 Volume Converter. Made with ❤️ for precise measurements worldwide.</p>
+            <p id="footerText">© 2024 Weight Converter. Made with ❤️ for precise measurements worldwide.</p>
         </footer>
     </div>
     
@@ -640,174 +668,173 @@
         // Multi-language support
         const translations = {
             en: {
-                title: "Ounces to Gallons Converter",
-                subtitle: "Free volume calculator for precise liquid measurements",
+                title: "How Many Ounces in a Pound",
+                subtitle: "Free weight calculator for precise measurements",
+                answer: "There are 16 ounces in 1 pound",
                 fromLabel: "From:",
                 toLabel: "To:",
-                resultUnit: "gallons",
+                resultUnit: "pounds",
                 detailsTitle: "Other Conversions",
-                quartLabel: "Quarts",
-                pintLabel: "Pints",
-                cupLabel: "Cups",
-                literLabel: "Liters",
-                mlLabel: "Milliliters",
-                infoTitle: "About Volume Conversions",
-                infoText: "This converter helps you convert between different volume measurements commonly used in cooking, brewing, and everyday liquid measurements. The tool supports US customary units and metric measurements, making it easy to work with recipes and measurements from any country.",
+                gramLabel: "Grams",
+                kgLabel: "Kilograms",
+                stoneLabel: "Stones",
+                tonLabel: "Tons (US)",
+                infoTitle: "About Weight Conversions",
+                infoText: "This converter helps you convert between different weight measurements commonly used in cooking, shipping, fitness, and everyday life. The tool supports US customary units and metric measurements, making it easy to work with recipes, luggage weights, and body weight from any country.",
                 factsTitle: "Quick Conversion Facts",
-                fact1: "1 US gallon = 128 US fluid ounces",
-                fact2: "1 US gallon = 4 US quarts",
-                fact3: "1 US gallon = 8 US pints",
-                fact4: "1 US gallon = 16 US cups",
-                fact5: "1 US gallon ≈ 3.785 liters",
-                footer: "© 2024 Volume Converter. Made with ❤️ for precise measurements worldwide.",
+                fact1: "1 pound = 16 ounces (US customary)",
+                fact2: "1 pound = 453.592 grams",
+                fact3: "1 pound = 0.453592 kilograms",
+                fact4: "1 pound = 0.0714286 stones",
+                fact5: "1 kilogram = 2.20462 pounds",
+                footer: "© 2024 Weight Converter. Made with ❤️ for precise measurements worldwide.",
                 quickBtns: {
                     "1oz": "1 oz",
                     "8oz": "8 oz",
                     "16oz": "16 oz",
                     "32oz": "32 oz",
-                    "128oz": "128 oz",
-                    "1gallon": "1 gallon"
+                    "1lb": "1 lb",
+                    "2lb": "2 lb"
                 }
             },
             es: {
-                title: "Convertidor de Onzas a Galones",
-                subtitle: "Calculadora de volumen gratuita para mediciones líquidas precisas",
+                title: "Cuántas Onzas en una Libra",
+                subtitle: "Calculadora de peso gratuita para mediciones precisas",
+                answer: "Hay 16 onzas en 1 libra",
                 fromLabel: "De:",
                 toLabel: "A:",
-                resultUnit: "galones",
+                resultUnit: "libras",
                 detailsTitle: "Otras Conversiones",
-                quartLabel: "Cuartos",
-                pintLabel: "Pintas",
-                cupLabel: "Tazas",
-                literLabel: "Litros",
-                mlLabel: "Mililitros",
-                infoTitle: "Acerca de las Conversiones de Volumen",
-                infoText: "Este convertidor te ayuda a convertir entre diferentes medidas de volumen comúnmente usadas en cocina, elaboración y mediciones líquidas diarias. La herramienta soporta unidades customary de EE.UU. y medidas métricas, facilitando el trabajo con recetas y medidas de cualquier país.",
+                gramLabel: "Gramos",
+                kgLabel: "Kilogramos",
+                stoneLabel: "Piedras",
+                tonLabel: "Toneladas (US)",
+                infoTitle: "Acerca de las Conversiones de Peso",
+                infoText: "Este convertidor te ayuda a convertir entre diferentes medidas de peso comúnmente usadas en cocina, envío, fitness y vida diaria. La herramienta soporta unidades customary de EE.UU. y medidas métricas, facilitando el trabajo con recetas, pesos de equipaje y peso corporal de cualquier país.",
                 factsTitle: "Datos Rápidos de Conversión",
-                fact1: "1 galón US = 128 onzas líquidas US",
-                fact2: "1 galón US = 4 cuartos US",
-                fact3: "1 galón US = 8 pintas US",
-                fact4: "1 galón US = 16 tazas US",
-                fact5: "1 galón US ≈ 3.785 litros",
-                footer: "© 2024 Convertidor de Volumen. Hecho con ❤️ para mediciones precisas en todo el mundo.",
+                fact1: "1 libra = 16 onzas (customary US)",
+                fact2: "1 libra = 453.592 gramos",
+                fact3: "1 libra = 0.453592 kilogramos",
+                fact4: "1 libra = 0.0714286 piedras",
+                fact5: "1 kilogramo = 2.20462 libras",
+                footer: "© 2024 Convertidor de Peso. Hecho con ❤️ para mediciones precisas en todo el mundo.",
                 quickBtns: {
                     "1oz": "1 oz",
                     "8oz": "8 oz",
                     "16oz": "16 oz",
                     "32oz": "32 oz",
-                    "128oz": "128 oz",
-                    "1gallon": "1 galón"
+                    "1lb": "1 lb",
+                    "2lb": "2 lb"
                 }
             },
             fr: {
-                title: "Convertisseur Onces en Gallons",
-                subtitle: "Calculatrice de volume gratuite pour des mesures liquides précises",
+                title: "Combien d'Onces dans une Livre",
+                subtitle: "Calculatrice de poids gratuite pour des mesures précises",
+                answer: "Il y a 16 onces dans 1 livre",
                 fromLabel: "De:",
                 toLabel: "À:",
-                resultUnit: "gallons",
+                resultUnit: "livres",
                 detailsTitle: "Autres Conversions",
-                quartLabel: "Quarts",
-                pintLabel: "Pintes",
-                cupLabel: "Tasses",
-                literLabel: "Litres",
-                mlLabel: "Millilitres",
-                infoTitle: "À Propos des Conversions de Volume",
-                infoText: "Ce convertisseur vous aide à convertir entre différentes mesures de volume couramment utilisées en cuisine, brassage et mesures liquides quotidiennes. L'outil supporte les unités coutumières américaines et les mesures métriques, facilitant le travail avec des recettes et mesures de n'importe quel pays.",
+                gramLabel: "Grammes",
+                kgLabel: "Kilogrammes",
+                stoneLabel: "Pierres",
+                tonLabel: "Tonnes (US)",
+                infoTitle: "À Propos des Conversions de Poids",
+                infoText: "Ce convertisseur vous aide à convertir entre différentes mesures de poids couramment utilisées en cuisine, expédition, fitness et vie quotidienne. L'outil supporte les unités coutumières américaines et les mesures métriques, facilitant le travail avec des recettes, poids de bagages et poids corporel de n'importe quel pays.",
                 factsTitle: "Faits Rapides de Conversion",
-                fact1: "1 gallon US = 128 onces liquides US",
-                fact2: "1 gallon US = 4 quarts US",
-                fact3: "1 gallon US = 8 pintes US",
-                fact4: "1 gallon US = 16 tasses US",
-                fact5: "1 gallon US ≈ 3.785 litres",
-                footer: "© 2024 Convertisseur de Volume. Fait avec ❤️ pour des mesures précises dans le monde entier.",
+                fact1: "1 livre = 16 onces (coutumier US)",
+                fact2: "1 livre = 453.592 grammes",
+                fact3: "1 livre = 0.453592 kilogrammes",
+                fact4: "1 livre = 0.0714286 pierres",
+                fact5: "1 kilogramme = 2.20462 livres",
+                footer: "© 2024 Convertisseur de Poids. Fait avec ❤️ pour des mesures précises dans le monde entier.",
                 quickBtns: {
                     "1oz": "1 oz",
                     "8oz": "8 oz",
                     "16oz": "16 oz",
                     "32oz": "32 oz",
-                    "128oz": "128 oz",
-                    "1gallon": "1 gallon"
+                    "1lb": "1 lb",
+                    "2lb": "2 lb"
                 }
             },
             de: {
-                title: "Unzen-zu-Gallonen Konverter",
-                subtitle: "Kostenloser Volumenrechner für präzise Flüssigkeitsmessungen",
+                title: "Wie viele Unzen in einem Pfund",
+                subtitle: "Kostenloser Gewichtsrechner für präzise Messungen",
+                answer: "Es gibt 16 Unzen in 1 Pfund",
                 fromLabel: "Von:",
                 toLabel: "Zu:",
-                resultUnit: "Gallonen",
+                resultUnit: "Pfund",
                 detailsTitle: "Andere Konvertierungen",
-                quartLabel: "Quarts",
-                pintLabel: "Pints",
-                cupLabel: "Tassen",
-                literLabel: "Liter",
-                mlLabel: "Milliliter",
-                infoTitle: "Über Volumenkonvertierungen",
-                infoText: "Dieser Konverter hilft Ihnen, zwischen verschiedenen Volumenmessungen zu konvertieren, die häufig beim Kochen, Brauen und bei täglichen Flüssigkeitsmessungen verwendet werden. Das Tool unterstützt US-übliche Einheiten und metrische Messungen, wodurch es einfach ist, mit Rezepten und Messungen aus jedem Land zu arbeiten.",
+                gramLabel: "Gramm",
+                kgLabel: "Kilogramm",
+                stoneLabel: "Stone",
+                tonLabel: "Tonnen (US)",
+                infoTitle: "Über Gewichtskonvertierungen",
+                infoText: "Dieser Konverter hilft Ihnen, zwischen verschiedenen Gewichtsmessungen zu konvertieren, die häufig beim Kochen, Versand, Fitness und im täglichen Leben verwendet werden. Das Tool unterstützt US-übliche Einheiten und metrische Messungen, wodurch es einfach ist, mit Rezepten, Gepäckgewichten und Körpergewicht aus jedem Land zu arbeiten.",
                 factsTitle: "Schnelle Konvertierungsfakten",
-                fact1: "1 US-Gallone = 128 US-Flüssigunzen",
-                fact2: "1 US-Gallone = 4 US-Quarts",
-                fact3: "1 US-Gallone = 8 US-Pints",
-                fact4: "1 US-Gallone = 16 US-Tassen",
-                fact5: "1 US-Gallone ≈ 3.785 Liter",
-                footer: "© 2024 Volumen-Konverter. Mit ❤️ für präzise Messungen weltweit gemacht.",
+                fact1: "1 Pfund = 16 Unzen (US-üblich)",
+                fact2: "1 Pfund = 453.592 Gramm",
+                fact3: "1 Pfund = 0.453592 Kilogramm",
+                fact4: "1 Pfund = 0.0714286 Stone",
+                fact5: "1 Kilogramm = 2.20462 Pfund",
+                footer: "© 2024 Gewichts-Konverter. Mit ❤️ für präzise Messungen weltweit gemacht.",
                 quickBtns: {
                     "1oz": "1 oz",
                     "8oz": "8 oz",
                     "16oz": "16 oz",
                     "32oz": "32 oz",
-                    "128oz": "128 oz",
-                    "1gallon": "1 Gallone"
+                    "1lb": "1 lb",
+                    "2lb": "2 lb"
                 }
             },
             zh: {
-                title: "盎司到加仑转换器",
-                subtitle: "免费体积计算器，实现精确液体测量",
+                title: "一磅等于多少盎司",
+                subtitle: "免费重量计算器，实现精确测量",
+                answer: "1磅等于16盎司",
                 fromLabel: "从：",
                 toLabel: "到：",
-                resultUnit: "加仑",
+                resultUnit: "磅",
                 detailsTitle: "其他转换",
-                quartLabel: "夸脱",
-                pintLabel: "品脱",
-                cupLabel: "杯",
-                literLabel: "升",
-                mlLabel: "毫升",
-                infoTitle: "关于体积转换",
-                infoText: "此转换器帮助您在烹饪、酿造和日常液体测量中常用的不同体积测量单位之间进行转换。该工具支持美制单位制和公制测量，让您轻松处理来自任何国家的食谱和测量数据。",
+                gramLabel: "克",
+                kgLabel: "千克",
+                stoneLabel: "英石",
+                tonLabel: "吨(美制)",
+                infoTitle: "关于重量转换",
+                infoText: "此转换器帮助您在烹饪、运输、健身和日常生活中常用的不同重量测量单位之间进行转换。该工具支持美制单位制和公制测量，让您轻松处理来自任何国家的食谱、行李重量和体重数据。",
                 factsTitle: "快速转换知识",
-                fact1: "1美制加仑 = 128美制液体盎司",
-                fact2: "1美制加仑 = 4美制夸脱",
-                fact3: "1美制加仑 = 8美制品脱",
-                fact4: "1美制加仑 = 16美制杯",
-                fact5: "1美制加仑 ≈ 3.785升",
-                footer: "© 2024 体积转换器。为全世界的精确测量用心制作。",
+                fact1: "1磅 = 16盎司(美制)",
+                fact2: "1磅 = 453.592克",
+                fact3: "1磅 = 0.453592千克",
+                fact4: "1磅 = 0.0714286英石",
+                fact5: "1千克 = 2.20462磅",
+                footer: "© 2024 重量转换器。为全世界的精确测量用心制作。",
                 quickBtns: {
                     "1oz": "1盎司",
                     "8oz": "8盎司",
                     "16oz": "16盎司",
                     "32oz": "32盎司",
-                    "128oz": "128盎司",
-                    "1gallon": "1加仑"
+                    "1lb": "1磅",
+                    "2lb": "2磅"
                 }
             }
         };
         
-        // Conversion constants (US customary units to gallons)
+        // Conversion constants (to pounds as base unit)
         const conversions = {
-            'oz': { gallon: 0.0078125, quart: 0.03125, pint: 0.0625, cup: 0.125, liter: 0.0295735, ml: 29.5735 },
-            'gallon': { oz: 128, quart: 4, pint: 8, cup: 16, liter: 3.78541, ml: 3785.41 },
-            'quart': { oz: 32, gallon: 0.25, pint: 2, cup: 4, liter: 0.946353, ml: 946.353 },
-            'pint': { oz: 16, gallon: 0.125, quart: 0.5, cup: 2, liter: 0.473176, ml: 473.176 },
-            'cup': { oz: 8, gallon: 0.0625, quart: 0.25, pint: 0.5, liter: 0.236588, ml: 236.588 },
-            'liter': { oz: 33.814, gallon: 0.264172, quart: 1.05669, pint: 2.11338, cup: 4.22675, ml: 1000 },
-            'ml': { oz: 0.033814, gallon: 0.000264172, quart: 0.00105669, pint: 0.00211338, cup: 0.00422675, liter: 0.001 }
+            'oz': { lb: 0.0625, g: 28.3495, kg: 0.0283495, stone: 0.00446429, ton: 0.00003125 },
+            'lb': { oz: 16, g: 453.592, kg: 0.453592, stone: 0.0714286, ton: 0.0005 },
+            'g': { lb: 0.00220462, oz: 0.035274, kg: 0.001, stone: 0.000157473, ton: 0.00000110231 },
+            'kg': { lb: 2.20462, oz: 35.274, g: 1000, stone: 0.157473, ton: 0.00110231 },
+            'stone': { lb: 14, oz: 224, g: 6350.29, kg: 6.35029, ton: 0.007 },
+            'ton': { lb: 2000, oz: 32000, g: 907185, kg: 907.185, stone: 142.857 }
         };
         
-        let currentLang = localStorage.getItem('volume-converter-lang') || 'en';
+        let currentLang = localStorage.getItem('weight-converter-lang') || 'en';
         
         // Update language function
         function updateLanguage(lang) {
             currentLang = lang;
-            localStorage.setItem('volume-converter-lang', lang);
+            localStorage.setItem('weight-converter-lang', lang);
             
             const t = translations[lang];
             if (!t) return;
@@ -815,15 +842,15 @@
             // Update text content
             document.getElementById('mainTitle').textContent = t.title;
             document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('answerText').textContent = t.answer;
             document.getElementById('fromLabel').textContent = t.fromLabel;
             document.getElementById('toLabel').textContent = t.toLabel;
             document.getElementById('resultUnit').textContent = t.resultUnit;
             document.getElementById('detailsTitle').textContent = t.detailsTitle;
-            document.getElementById('quartLabel').textContent = t.quartLabel;
-            document.getElementById('pintLabel').textContent = t.pintLabel;
-            document.getElementById('cupLabel').textContent = t.cupLabel;
-            document.getElementById('literLabel').textContent = t.literLabel;
-            document.getElementById('mlLabel').textContent = t.mlLabel;
+            document.getElementById('gramLabel').textContent = t.gramLabel;
+            document.getElementById('kgLabel').textContent = t.kgLabel;
+            document.getElementById('stoneLabel').textContent = t.stoneLabel;
+            document.getElementById('tonLabel').textContent = t.tonLabel;
             document.getElementById('infoTitle').textContent = t.infoTitle;
             document.getElementById('infoText').textContent = t.infoText;
             document.getElementById('factsTitle').textContent = t.factsTitle;
@@ -840,18 +867,22 @@
                 document.getElementById('quick8oz').textContent = t.quickBtns['8oz'];
                 document.getElementById('quick16oz').textContent = t.quickBtns['16oz'];
                 document.getElementById('quick32oz').textContent = t.quickBtns['32oz'];
-                document.getElementById('quick128oz').textContent = t.quickBtns['128oz'];
-                document.getElementById('quick1gallon').textContent = t.quickBtns['1gallon'];
+                document.getElementById('quick1lb').textContent = t.quickBtns['1lb'];
+                document.getElementById('quick2lb').textContent = t.quickBtns['2lb'];
             }
             
             // Update result unit display
             const toUnit = document.getElementById('toUnit');
             if (currentLang === 'es') {
-                toUnit.textContent = 'galón';
+                toUnit.textContent = 'lb';
             } else if (currentLang === 'zh') {
-                toUnit.textContent = '加仑';
+                toUnit.textContent = '磅';
+            } else if (currentLang === 'fr') {
+                toUnit.textContent = 'lb';
+            } else if (currentLang === 'de') {
+                toUnit.textContent = 'lb';
             } else {
-                toUnit.textContent = 'gallon';
+                toUnit.textContent = 'lb';
             }
             
             // Update active language button
@@ -877,12 +908,12 @@
                 return;
             }
             
-            // Calculate conversion to gallons (base unit)
-            let gallons;
-            if (fromUnit === 'gallon') {
-                gallons = value;
-            } else if (conversions[fromUnit] && conversions[fromUnit].gallon !== undefined) {
-                gallons = value * conversions[fromUnit].gallon;
+            // Calculate conversion to pounds (base unit)
+            let pounds;
+            if (fromUnit === 'lb') {
+                pounds = value;
+            } else if (conversions[fromUnit] && conversions[fromUnit].lb !== undefined) {
+                pounds = value * conversions[fromUnit].lb;
             } else {
                 showError('Conversion not available');
                 return;
@@ -894,30 +925,34 @@
             const toValueElement = document.getElementById('toValue');
             
             // Format result based on value size
-            if (gallons < 0.001) {
-                const oz = gallons * 128; // Convert to ounces for small values
+            if (pounds < 0.01) {
+                const oz = pounds * 16; // Convert to ounces for small values
                 resultElement.textContent = oz.toFixed(2);
                 unitElement.textContent = 'ounces';
                 toValueElement.textContent = oz.toFixed(2);
                 document.getElementById('toUnit').textContent = 'oz';
             } else {
-                resultElement.textContent = gallons.toFixed(4);
+                resultElement.textContent = pounds.toFixed(4);
                 unitElement.textContent = translations[currentLang].resultUnit;
-                toValueElement.textContent = gallons.toFixed(4);
+                toValueElement.textContent = pounds.toFixed(4);
                 
                 // Update to unit display
                 const toUnitElement = document.getElementById('toUnit');
                 if (currentLang === 'es') {
-                    toUnitElement.textContent = 'galón';
+                    toUnitElement.textContent = 'lb';
                 } else if (currentLang === 'zh') {
-                    toUnitElement.textContent = '加仑';
+                    toUnitElement.textContent = '磅';
+                } else if (currentLang === 'fr') {
+                    toUnitElement.textContent = 'lb';
+                } else if (currentLang === 'de') {
+                    toUnitElement.textContent = 'lb';
                 } else {
-                    toUnitElement.textContent = 'gallon';
+                    toUnitElement.textContent = 'lb';
                 }
             }
             
             // Update detailed conversions
-            updateDetailedConversions(gallons);
+            updateDetailedConversions(pounds);
             
             // Show success state
             input.parentElement.classList.remove('error');
@@ -930,18 +965,16 @@
         }
         
         // Update detailed conversion display
-        function updateDetailedConversions(gallons) {
-            const quart = gallons * 4; // 1 gallon = 4 quarts
-            const pint = gallons * 8; // 1 gallon = 8 pints
-            const cup = gallons * 16; // 1 gallon = 16 cups
-            const liter = gallons * 3.78541; // 1 gallon = 3.78541 L
-            const ml = gallons * 3785.41; // 1 gallon = 3785.41 ml
+        function updateDetailedConversions(pounds) {
+            const gram = pounds * 453.592;
+            const kg = pounds * 0.453592;
+            const stone = pounds * 0.0714286;
+            const ton = pounds * 0.0005;
             
-            document.getElementById('quartValue').textContent = quart.toFixed(2);
-            document.getElementById('pintValue').textContent = pint.toFixed(1);
-            document.getElementById('cupValue').textContent = cup.toFixed(0);
-            document.getElementById('literValue').textContent = liter.toFixed(3);
-            document.getElementById('mlValue').textContent = ml.toFixed(0);
+            document.getElementById('gramValue').textContent = gram.toFixed(1);
+            document.getElementById('kgValue').textContent = kg.toFixed(3);
+            document.getElementById('stoneValue').textContent = stone.toFixed(4);
+            document.getElementById('tonValue').textContent = ton.toFixed(6);
         }
         
         // Show error state

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1H7E6RXSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1H7E6RXSX');
+    </script>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Square Feet in an Acre - Sq Ft to Acre Converter | HowManyQ</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how many square feet in an acre/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how many square feet in an acre/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how many square feet in an acre/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_square_feet_in_an_acre/" />
+    <meta name="description" content="Convert square feet to acres and acres to square feet instantly. Learn how many square feet are in an acre with our easy-to-use converter tool. Perfect for real estate, land measurement, and property calculations.">
+    <meta name="keywords" content="how many square feet in an acre, square feet to acre converter, sq ft acre conversion, acre square feet calculator, 43560 square feet in acre">
+    <meta name="author" content="HowManyQ">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Square Feet in an Acre - Easy Sq Ft to Acre Converter">
+    <meta property="og:description" content="Instantly convert square feet to acres and vice versa. Learn that 1 acre equals 43,560 square feet with our user-friendly converter.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- iOS Web App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sq Ft to Acre Converter">
+
+    <style>
+        /* Advanced Gray iOS Design System */
+        :root {
+            --primary-gray: #8E8E93;
+            --secondary-gray: #C7C7CC;
+            --background-gray: #F2F2F7;
+            --card-gray: #FFFFFF;
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --accent-green: #34C759;
+            --border-gray: #E5E5EA;
+            --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --real-estate-blue: #007AFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .converter-section {
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            border: 2px solid var(--border-gray);
+            border-radius: 12px;
+            background: var(--card-gray);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 3px rgba(52, 199, 89, 0.1);
+        }
+
+        .input-field::placeholder {
+            color: var(--secondary-gray);
+        }
+
+        .unit-label {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        .swap-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: var(--accent-green);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 16px auto;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+        }
+
+        .swap-button:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .swap-button:active {
+            transform: scale(0.95);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--real-estate-blue), #0051D5);
+            color: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .result-card .result-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-card .result-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .result-card .result-unit {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .info-section {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .info-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .info-section p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-button {
+            background: var(--card-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-button:hover {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        .lang-button.active {
+            background: var(--accent-green);
+            color: white;
+            border-color: var(--accent-green);
+        }
+
+        /* Measurement type selector */
+        .measurement-types {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .type-button {
+            flex: 1;
+            padding: 8px 12px;
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .type-button.active {
+            background: var(--accent-green);
+            color: white;
+            border-color: var(--accent-green);
+        }
+
+        /* Quick conversion buttons */
+        .quick-conversions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .quick-btn {
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .quick-btn:hover {
+            background: var(--secondary-gray);
+            color: var(--text-primary);
+        }
+
+        /* Additional conversions */
+        .additional-conversions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .conversion-card {
+            background: var(--background-gray);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .conversion-card .conversion-number {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--real-estate-blue);
+            margin-bottom: 4px;
+        }
+
+        .conversion-card .conversion-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .input-field {
+                font-size: 16px;
+                padding: 14px;
+            }
+
+            .result-card .result-value {
+                font-size: 28px;
+            }
+
+            .measurement-types {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .container {
+                padding: 24px;
+            }
+        }
+
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Animation for results */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-card {
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-gray: #1C1C1E;
+                --card-gray: #2C2C2E;
+                --text-primary: #FFFFFF;
+                --border-gray: #3A3A3C;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #333; padding: 10px 20px;">
+        <a href="/" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 20px;">🧮</span> HowManyQ Home
+        </a>
+    </nav>
+    <div style="margin-top: 60px;"></div>
+    
+<div class="language-selector">
+        <button class="lang-button active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-button" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 data-lang="title">How Many Square Feet in an Acre</h1>
+            <p class="subtitle" data-lang="subtitle">Convert square feet to acres and acres to square feet instantly</p>
+        </header>
+
+        <main class="card">
+            <div class="measurement-types">
+                <button class="type-button active" onclick="setMeasurementType('area', this)" data-lang="area">Area</button>
+                <button class="type-button" onclick="setMeasurementType('length', this)" data-lang="length">Length</button>
+                <button class="type-button" onclick="setMeasurementType('volume', this)" data-lang="volume">Volume</button>
+            </div>
+
+            <section class="converter-section">
+                <div class="input-group">
+                    <label data-lang="square-feet-label">Square Feet</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="squareFeetInput"
+                               placeholder="Enter square feet"
+                               aria-label="Enter square feet for conversion"
+                               oninput="convertSquareFeetToAcres()">
+                        <span class="unit-label">sq ft</span>
+                    </div>
+                </div>
+
+                <button class="swap-button" onclick="swapValues()" aria-label="Swap conversion direction">
+                    ⇅
+                </button>
+
+                <div class="input-group">
+                    <label data-lang="acres-label">Acres</label>
+                    <div class="input-wrapper">
+                        <input type="number"
+                               class="input-field"
+                               id="acresInput"
+                               placeholder="Enter acres"
+                               aria-label="Enter acres for conversion"
+                               oninput="convertAcresToSquareFeet()">
+                        <span class="unit-label">acres</span>
+                    </div>
+                </div>
+            </section>
+
+            <div id="resultContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label" data-lang="result-label">Conversion Result</div>
+                    <div class="result-value" id="resultValue">0</div>
+                    <div class="result-unit" id="resultUnit">sq ft = 0 acres</div>
+                </div>
+            </div>
+
+            <div class="quick-conversions">
+                <button class="quick-btn" onclick="setQuickValue(43560)" data-lang="quick1">1 Acre (43,560 sq ft)</button>
+                <button class="quick-btn" onclick="setQuickValue(87120)" data-lang="quick2">2 Acres (87,120 sq ft)</button>
+                <button class="quick-btn" onclick="setQuickValue(10000)" data-lang="quick3">10,000 sq ft</button>
+                <button class="quick-btn" onclick="setQuickValue(1000)" data-lang="quick4">1,000 sq ft</button>
+            </div>
+
+            <div class="additional-conversions">
+                <div class="conversion-card">
+                    <div class="conversion-number" id="squareMetersValue">0</div>
+                    <div class="conversion-text" data-lang="square-meters">Square Meters (m²)</div>
+                </div>
+                <div class="conversion-card">
+                    <div class="conversion-number" id="hectaresValue">0</div>
+                    <div class="conversion-text" data-lang="hectares">Hectares (ha)</div>
+                </div>
+                <div class="conversion-card">
+                    <div class="conversion-number" id="squareYardsValue">0</div>
+                    <div class="conversion-text" data-lang="square-yards">Square Yards (yd²)</div>
+                </div>
+                <div class="conversion-card">
+                    <div class="conversion-number" id="squareInchesValue">0</div>
+                    <div class="conversion-text" data-lang="square-inches">Square Inches (in²)</div>
+                </div>
+            </div>
+        </main>
+
+        <section class="info-section">
+            <h3 data-lang="info-title">Conversion Information</h3>
+            <p data-lang="info-text1"><strong>1 acre = 43,560 square feet</strong> - This is the standard conversion used in the United States and other countries using the imperial system for land measurement.</p>
+            <p data-lang="info-text2">The acre is a unit of area commonly used in the imperial and US customary systems. One acre is defined as the area of one chain by one furlong (66 by 660 feet), which equals 43,560 square feet.</p>
+            <p data-lang="info-text3">To convert square feet to acres, divide by 43,560. To convert acres to square feet, multiply by 43,560. This conversion is essential for real estate, land measurement, and property calculations.</p>
+        </section>
+    </div>
+
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                title: "How Many Square Feet in an Acre",
+                subtitle: "Convert square feet to acres and acres to square feet instantly",
+                "square-feet-label": "Square Feet",
+                "acres-label": "Acres",
+                "result-label": "Conversion Result",
+                "info-title": "Conversion Information",
+                "info-text1": "<strong>1 acre = 43,560 square feet</strong> - This is the standard conversion used in the United States and other countries using the imperial system for land measurement.",
+                "info-text2": "The acre is a unit of area commonly used in the imperial and US customary systems. One acre is defined as the area of one chain by one furlong (66 by 660 feet), which equals 43,560 square feet.",
+                "info-text3": "To convert square feet to acres, divide by 43,560. To convert acres to square feet, multiply by 43,560. This conversion is essential for real estate, land measurement, and property calculations.",
+                "quick1": "1 Acre (43,560 sq ft)",
+                "quick2": "2 Acres (87,120 sq ft)",
+                "quick3": "10,000 sq ft",
+                "quick4": "1,000 sq ft",
+                "area": "Area",
+                "length": "Length",
+                "volume": "Volume",
+                "square-meters": "Square Meters (m²)",
+                "hectares": "Hectares (ha)",
+                "square-yards": "Square Yards (yd²)",
+                "square-inches": "Square Inches (in²)"
+            },
+            zh: {
+                title: "一英亩有多少平方英尺",
+                subtitle: "即时转换平方英尺和英亩",
+                "square-feet-label": "平方英尺",
+                "acres-label": "英亩",
+                "result-label": "转换结果",
+                "info-title": "转换信息",
+                "info-text1": "<strong>1英亩 = 43,560平方英尺</strong> - 这是美国和其他使用英制系统进行土地测量的国家的标准转换。",
+                "info-text2": "英亩是英制和美制系统中常用的面积单位。一英亩被定义为一链乘以一浪（66乘660英尺）的面积，等于43,560平方英尺。",
+                "info-text3": "要将平方英尺转换为英亩，除以43,560。要将英亩转换为平方英尺，乘以43,560。这种转换对房地产、土地测量和财产计算至关重要。",
+                "quick1": "1英亩 (43,560平方英尺)",
+                "quick2": "2英亩 (87,120平方英尺)",
+                "quick3": "10,000平方英尺",
+                "quick4": "1,000平方英尺",
+                "area": "面积",
+                "length": "长度",
+                "volume": "体积",
+                "square-meters": "平方米 (m²)",
+                "hectares": "公顷 (ha)",
+                "square-yards": "平方码 (yd²)",
+                "square-inches": "平方英寸 (in²)"
+            }
+        };
+
+        let currentLang = 'en';
+        let currentMeasurementType = 'area';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh';
+
+            // Update button states
+            document.querySelectorAll('.lang-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all text elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update SEO meta tags
+            updateSEOMeta(lang);
+        }
+
+        function updateSEOMeta(lang) {
+            const title = translations[lang].title;
+            const description = translations[lang].subtitle;
+
+            document.title = title + ' - Sq Ft to Acre Converter | HowManyQ';
+            document.querySelector('meta[name="description"]').setAttribute('content',
+                description + ' Learn how many square feet are in an acre with our easy-to-use converter tool.');
+        }
+
+        function setMeasurementType(type, button) {
+            currentMeasurementType = type;
+
+            // Update active state
+            document.querySelectorAll('.type-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+
+            // Recalculate if there's input
+            const sqftInput = document.getElementById('squareFeetInput');
+            const acresInput = document.getElementById('acresInput');
+
+            if (sqftInput.value) {
+                convertSquareFeetToAcres();
+            } else if (acresInput.value) {
+                convertAcresToSquareFeet();
+            }
+        }
+
+        function convertSquareFeetToAcres() {
+            const sqftInput = document.getElementById('squareFeetInput');
+            const acresInput = document.getElementById('acresInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const sqft = parseFloat(sqftInput.value);
+
+            if (isNaN(sqft) || sqft < 0) {
+                acresInput.value = '';
+                resultContainer.style.display = 'none';
+                updateAdditionalConversions(0);
+                return;
+            }
+
+            const acres = sqft / 43560;
+            acresInput.value = acres.toFixed(6).replace(/\.?0+$/, '');
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = sqft.toLocaleString();
+            resultUnit.textContent = `${currentLang === 'en' ? 'sq ft' : '平方英尺'} = ${acres.toFixed(4).replace(/\.?0+$/, '')} ${currentLang === 'en' ? 'acres' : '英亩'}`;
+
+            // Update additional conversions
+            updateAdditionalConversions(sqft);
+        }
+
+        function convertAcresToSquareFeet() {
+            const sqftInput = document.getElementById('squareFeetInput');
+            const acresInput = document.getElementById('acresInput');
+            const resultContainer = document.getElementById('resultContainer');
+            const resultValue = document.getElementById('resultValue');
+            const resultUnit = document.getElementById('resultUnit');
+
+            const acres = parseFloat(acresInput.value);
+
+            if (isNaN(acres) || acres < 0) {
+                sqftInput.value = '';
+                resultContainer.style.display = 'none';
+                updateAdditionalConversions(0);
+                return;
+            }
+
+            const sqft = acres * 43560;
+            sqftInput.value = sqft.toLocaleString();
+
+            // Show result
+            resultContainer.style.display = 'block';
+            resultValue.textContent = acres.toFixed(4).replace(/\.?0+$/, '');
+            resultUnit.textContent = `${currentLang === 'en' ? 'acres' : '英亩'} = ${sqft.toLocaleString()} ${currentLang === 'en' ? 'sq ft' : '平方英尺'}`;
+
+            // Update additional conversions
+            updateAdditionalConversions(sqft);
+        }
+
+        function updateAdditionalConversions(squareFeet) {
+            // Convert to square meters (1 sq ft = 0.092903 m²)
+            const squareMeters = squareFeet * 0.092903;
+            document.getElementById('squareMetersValue').textContent = squareMeters.toFixed(2).replace(/\.?0+$/, '');
+
+            // Convert to hectares (1 hectare = 107639 sq ft)
+            const hectares = squareFeet / 107639;
+            document.getElementById('hectaresValue').textContent = hectares.toFixed(4).replace(/\.?0+$/, '');
+
+            // Convert to square yards (1 sq yd = 9 sq ft)
+            const squareYards = squareFeet / 9;
+            document.getElementById('squareYardsValue').textContent = squareYards.toFixed(2).replace(/\.?0+$/, '');
+
+            // Convert to square inches (1 sq ft = 144 sq in)
+            const squareInches = squareFeet * 144;
+            document.getElementById('squareInchesValue').textContent = squareInches.toLocaleString();
+        }
+
+        function swapValues() {
+            const sqftInput = document.getElementById('squareFeetInput');
+            const acresInput = document.getElementById('acresInput');
+
+            const temp = sqftInput.value;
+            sqftInput.value = acresInput.value;
+            acresInput.value = temp;
+
+            if (sqftInput.value) {
+                convertAcresToSquareFeet();
+            } else if (acresInput.value) {
+                convertSquareFeetToAcres();
+            }
+        }
+
+        function setQuickValue(squareFeet) {
+            document.getElementById('squareFeetInput').value = squareFeet.toLocaleString();
+            convertSquareFeetToAcres();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Focus on square feet input for immediate usability
+            document.getElementById('squareFeetInput').focus();
+
+            // Add input validation
+            document.querySelectorAll('.input-field').forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    // Allow numbers, decimal point, and backspace
+                    const char = String.fromCharCode(e.which);
+                    if (!(/[0-9.]/.test(char)) && e.which !== 8) {
+                        e.preventDefault();
+                    }
+                    // Prevent multiple decimal points
+                    if (char === '.' && this.value.includes('.')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                swapValues();
+            }
+        });
+    </script>
+</body>
+</html>

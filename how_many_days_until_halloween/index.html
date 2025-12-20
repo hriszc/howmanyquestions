@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1H7E6RXSX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1H7E6RXSX');
+    </script>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Days Until Halloween - Halloween Countdown | HowManyQ</title>
+    <link rel="alternate" hreflang="en" href="https://howmanyq.com/how many days until halloween/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://howmanyq.com/how many days until halloween/?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://howmanyq.com/how many days until halloween/" />
+  <link rel="canonical" href="https://howmanyq.com/how_many_days_until_halloween/" />
+    <meta name="description" content="Count down the days until Halloween with our accurate countdown tool. Find out exactly how many days, hours, minutes, and seconds remain until October 31st. Perfect for planning your Halloween celebration!">
+    <meta name="keywords" content="how many days until halloween, halloween countdown, days until october 31, halloween timer, halloween day counter, when is halloween">
+    <meta name="author" content="HowManyQ">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="How Many Days Until Halloween - Halloween Countdown Timer">
+    <meta property="og:description" content="Count down to Halloween with our accurate timer. See exactly how many days, hours, minutes, and seconds remain until October 31st!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- iOS Web App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Halloween Countdown">
+
+    <style>
+        /* Advanced Gray iOS Design System */
+        :root {
+            --primary-gray: #8E8E93;
+            --secondary-gray: #C7C7CC;
+            --background-gray: #F2F2F7;
+            --card-gray: #FFFFFF;
+            --text-primary: #1C1C1E;
+            --text-secondary: #8E8E93;
+            --accent-orange: #FF9500;
+            --border-gray: #E5E5EA;
+            --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --halloween-purple: #5E35B1;
+            --halloween-black: #212121;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .card {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .countdown-display {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .countdown-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .countdown-item {
+            background: linear-gradient(135deg, var(--halloween-purple), var(--halloween-black));
+            color: white;
+            border-radius: 12px;
+            padding: 16px 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .countdown-number {
+            font-size: 24px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .countdown-label {
+            font-size: 11px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .halloween-status {
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .halloween-status.halloween-today {
+            background: linear-gradient(135deg, var(--accent-orange), #FF6B35);
+            color: white;
+        }
+
+        .halloween-status.halloween-past {
+            background: var(--border-gray);
+            color: var(--text-secondary);
+        }
+
+        .halloween-status.halloween-future {
+            background: linear-gradient(135deg, var(--halloween-purple), var(--halloween-black));
+            color: white;
+        }
+
+        .status-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .status-message {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .action-btn {
+            background: var(--background-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .action-btn:hover {
+            background: var(--secondary-gray);
+            color: var(--text-primary);
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-button {
+            background: var(--card-gray);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lang-button:hover {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+        }
+
+        .lang-button.active {
+            background: var(--accent-orange);
+            color: white;
+            border-color: var(--accent-orange);
+        }
+
+        .info-section {
+            background: var(--card-gray);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .info-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .info-section p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .halloween-facts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .fact-card {
+            background: var(--background-gray);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .fact-number {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 4px;
+        }
+
+        .fact-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .countdown-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .countdown-number {
+                font-size: 20px;
+            }
+
+            .halloween-facts {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .container {
+                padding: 24px;
+            }
+        }
+
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Animation for countdown */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .countdown-item {
+            animation: pulse 2s infinite;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-gray: #1C1C1E;
+                --card-gray: #2C2C2E;
+                --text-primary: #FFFFFF;
+                --border-gray: #3A3A3C;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #333; padding: 10px 20px;">
+        <a href="/" style="color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 20px;">🧮</span> HowManyQ Home
+        </a>
+    </nav>
+    <div style="margin-top: 60px;"></div>
+    
+<div class="language-selector">
+        <button class="lang-button active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-button" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 data-lang="title">How Many Days Until Halloween</h1>
+            <p class="subtitle" data-lang="subtitle">Count down to Halloween with our accurate timer</p>
+        </header>
+
+        <main class="card">
+            <div id="halloweenStatus" class="halloween-status halloween-future">
+                <div class="status-title" data-lang="counting-down">Counting Down to Halloween</div>
+                <div class="status-message" data-lang="time-remaining">Time remaining until October 31st</div>
+            </div>
+
+            <div class="countdown-display"
+                <div class="countdown-grid"
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label" data-lang="days">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label" data-lang="hours">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label" data-lang="minutes">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label" data-lang="seconds">Seconds</span>
+                    </div>
+                </div>
+
+                <div id="currentDate" class="current-date">
+                    <!-- Current date will be displayed here -->
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <button class="action-btn" onclick="shareCountdown()" data-lang="share">Share Countdown</button>
+                <button class="action-btn" onclick="setReminder()" data-lang="reminder">Set Reminder</button>
+                <button class="action-btn" onclick="viewNextHalloween()" data-lang="next-year">Next Year</button>
+                <button class="action-btn" onclick="copyDate()" data-lang="copy-date">Copy Date</button>
+            </div>
+        </main>
+
+        <section class="info-section">
+            <h3 data-lang="info-title">Halloween Information</h3>
+            <p data-lang="info-text1"><strong>Halloween is celebrated on October 31st</strong> - This countdown timer shows exactly how many days, hours, minutes, and seconds remain until the next Halloween celebration.</p>
+            <p data-lang="info-text2">Halloween, also known as All Hallows' Eve, is a celebration observed in many countries on the eve of the Western Christian feast of All Hallows' Day. It begins the observance of Allhallowtide.</p>
+            <p data-lang="info-text3">The countdown automatically updates every second to provide the most accurate time remaining until Halloween.</p>
+
+            <div class="halloween-facts"
+                <div class="fact-card">
+                    <div class="fact-number" id="weeksUntil">0</div>
+                    <div class="fact-text" data-lang="weeks-until">Weeks Until</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number" id="monthDay">Oct 31</div>
+                    <div class="fact-text" data-lang="halloween-date">Halloween Date</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number" id="dayOfWeek">Thursday</div>
+                    <div class="fact-text" data-lang="day-of-week">Day of Week</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number" id="progressPercent">0%</div>
+                    <div class="fact-text" data-lang="year-progress">Year Progress</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                title: "How Many Days Until Halloween",
+                subtitle: "Count down to Halloween with our accurate timer",
+                "counting-down": "Counting Down to Halloween",
+                "time-remaining": "Time remaining until October 31st",
+                "halloween-today": "🎃 Happy Halloween! 🎃",
+                "halloween-message": "It's Halloween today! Time for costumes, candy, and spooky fun!",
+                "halloween-past": "Halloween has passed",
+                "next-halloween": "Counting down to next Halloween",
+                days: "Days",
+                hours: "Hours",
+                minutes: "Minutes",
+                seconds: "Seconds",
+                share: "Share Countdown",
+                reminder: "Set Reminder",
+                "next-year": "Next Year",
+                "copy-date": "Copy Date",
+                "info-title": "Halloween Information",
+                "info-text1": "<strong>Halloween is celebrated on October 31st</strong> - This countdown timer shows exactly how many days, hours, minutes, and seconds remain until the next Halloween celebration.",
+                "info-text2": "Halloween, also known as All Hallows' Eve, is a celebration observed in many countries on the eve of the Western Christian feast of All Hallows' Day. It begins the observance of Allhallowtide.",
+                "info-text3": "The countdown automatically updates every second to provide the most accurate time remaining until Halloween.",
+                "weeks-until": "Weeks Until",
+                "halloween-date": "Halloween Date",
+                "day-of-week": "Day of Week",
+                "year-progress": "Year Progress"
+            },
+            zh: {
+                title: "距离万圣节还有多少天",
+                subtitle: "使用我们的精确计时器倒计时到万圣节",
+                "counting-down": "倒计时到万圣节",
+                "time-remaining": "距离10月31日剩余时间",
+                "halloween-today": "🎃 万圣节快乐! 🎃",
+                "halloween-message": "今天是万圣节！是时候穿上服装、享受糖果和恐怖乐趣了！",
+                "halloween-past": "万圣节已经过去",
+                "next-halloween": "倒计时到下一个万圣节",
+                days: "天",
+                hours: "小时",
+                minutes: "分钟",
+                seconds: "秒",
+                share: "分享倒计时",
+                reminder: "设置提醒",
+                "next-year": "下一年",
+                "copy-date": "复制日期",
+                "info-title": "万圣节信息",
+                "info-text1": "<strong>万圣节在10月31日庆祝</strong> - 这个倒计时计时器显示距离下一个万圣节庆祝活动剩余的确切天数、小时、分钟和秒数。",
+                "info-text2": "万圣节，也称为万圣节前夜，是在许多西方国家于万圣节前夕庆祝的节日。它开始了万圣节的观察期。",
+                "info-text3": "倒计时每秒自动更新，提供距离万圣节最准确的剩余时间。",
+                "weeks-until": "剩余周数",
+                "halloween-date": "万圣节日期",
+                "day-of-week": "星期几",
+                "year-progress": "年度进度"
+            }
+        };
+
+        let currentLang = 'en';
+        let countdownInterval;
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh';
+
+            // Update button states
+            document.querySelectorAll('.lang-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all text elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update SEO meta tags
+            updateSEOMeta(lang);
+        }
+
+        function updateSEOMeta(lang) {
+            const title = translations[lang].title;
+            const description = translations[lang].subtitle;
+
+            document.title = title + ' - Halloween Countdown | HowManyQ';
+            document.querySelector('meta[name="description"]').setAttribute('content',
+                description + ' Find out exactly how many days, hours, minutes, and seconds remain until October 31st.');
+        }
+
+        function getNextHalloweenDate() {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            let halloween = new Date(currentYear, 9, 31); // October 31 (month is 0-indexed)
+
+            // If Halloween has passed this year, get next year's date
+            if (now > halloween) {
+                halloween = new Date(currentYear + 1, 9, 31);
+            }
+
+            return halloween;
+        }
+
+        function updateCountdown() {
+            const now = new Date();
+            const halloween = getNextHalloweenDate();
+            const timeDiff = halloween - now;
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            // Update countdown display
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+            // Update current date
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                weekday: 'long'
+            };
+            document.getElementById('currentDate').textContent = now.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'zh-CN', options);
+
+            // Update Halloween status
+            updateHalloweenStatus(now, halloween, days);
+
+            // Update additional info
+            updateAdditionalInfo(halloween, days);
+        }
+
+        function updateHalloweenStatus(now, halloween, days) {
+            const statusElement = document.getElementById('halloweenStatus');
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const halloweenThisYear = new Date(halloween.getFullYear(), 9, 31);
+
+            if (today.getTime() === halloweenThisYear.getTime()) {
+                // It's Halloween today!
+                statusElement.className = 'halloween-status halloween-today';
+                statusElement.innerHTML = `
+                    <div class="status-title">${translations[currentLang]['halloween-today']}</div>
+                    <div class="status-message">${translations[currentLang]['halloween-message']}</div>
+                `;
+            } else if (now > halloweenThisYear) {
+                // Halloween has passed this year
+                statusElement.className = 'halloween-status halloween-past';
+                statusElement.innerHTML = `
+                    <div class="status-title">${translations[currentLang]['halloween-past']}</div>
+                    <div class="status-message">${translations[currentLang]['next-halloween']}</div>
+                `;
+            } else {
+                // Halloween is coming
+                statusElement.className = 'halloween-status halloween-future';
+                statusElement.innerHTML = `
+                    <div class="status-title">${translations[currentLang]['counting-down']}</div>
+                    <div class="status-message">${translations[currentLang]['time-remaining']}</div>
+                `;
+            }
+        }
+
+        function updateAdditionalInfo(halloween, days) {
+            // Calculate weeks
+            const weeks = Math.floor(days / 7);
+            document.getElementById('weeksUntil').textContent = weeks;
+
+            // Get day of week for Halloween
+            const dayNames = currentLang === 'en'
+                ? ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+                : ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            const dayOfWeek = dayNames[halloween.getDay()];
+            document.getElementById('dayOfWeek').textContent = dayOfWeek;
+
+            // Calculate year progress
+            const startOfYear = new Date(halloween.getFullYear(), 0, 1);
+            const endOfYear = new Date(halloween.getFullYear(), 11, 31);
+            const yearProgress = Math.round(((halloween - startOfYear) / (endOfYear - startOfYear)) * 100);
+            document.getElementById('progressPercent').textContent = yearProgress + '%';
+        }
+
+        function shareCountdown() {
+            const days = document.getElementById('days').textContent;
+            const text = currentLang === 'en'
+                ? `Only ${days} days until Halloween! 🎃`
+                : `距离万圣节还有${days}天！🎃`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: translations[currentLang].title,
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                // Fallback: copy to clipboard
+                navigator.clipboard.writeText(text).then(() => {
+                    alert(currentLang === 'en' ? 'Countdown copied to clipboard!' : '倒计时已复制到剪贴板！');
+                });
+            }
+        }
+
+        function setReminder() {
+            const days = parseInt(document.getElementById('days').textContent);
+            if (days > 0 && days <= 30) {
+                alert(currentLang === 'en'
+                    ? `Reminder set for ${days} days before Halloween!`
+                    : `已设置${days}天前的万圣节提醒！`);
+            } else if (days > 30) {
+                alert(currentLang === 'en'
+                    ? 'Reminder set for 30 days before Halloween!'
+                    : '已设置30天前的万圣节提醒！');
+            } else {
+                alert(currentLang === 'en'
+                    ? 'Halloween is too close to set a reminder!'
+                    : '万圣节太近了，无法设置提醒！');
+            }
+        }
+
+        function viewNextHalloween() {
+            const now = new Date();
+            const nextYear = now.getFullYear() + 1;
+            const nextHalloween = new Date(nextYear, 9, 31);
+
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const dateStr = nextHalloween.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'zh-CN', options);
+
+            alert(currentLang === 'en'
+                ? `Next Halloween: ${dateStr}`
+                : `下一个万圣节：${dateStr}`);
+        }
+
+        function copyDate() {
+            const halloween = getNextHalloweenDate();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            const dateStr = halloween.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'zh-CN', options);
+
+            navigator.clipboard.writeText(dateStr).then(() => {
+                alert(currentLang === 'en' ? 'Date copied to clipboard!' : '日期已复制到剪贴板！');
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start the countdown
+            updateCountdown();
+            countdownInterval = setInterval(updateCountdown, 1000);
+
+            // Set initial Halloween date
+            const halloween = getNextHalloweenDate();
+            document.getElementById('monthDay').textContent = currentLang === 'en' ? 'Oct 31' : '10月31日';
+        });
+
+        // Clean up interval on page unload
+        window.addEventListener('beforeunload', function() {
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+        });
+    </script>
+</body>
+</html>
